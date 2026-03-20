@@ -1,29 +1,37 @@
 ---
 title: "C++ Traffic Light Project - Detailed Explanation with Source Code"
-description: "A detailed walkthrough of building a traffic light simulation in C++ using classes, bitwise operators, and command line arguments."
+description: "Learn how to build a C++ traffic light project using classes, bitwise operators, and command line arguments. Full source code included."
 pubDatetime: 2024-10-02T00:00:00Z
 author: "Sahil"
-tags: ["C++", "OOP", "beginner", "project", "classes"]
+tags: ["C++", "OOP", "beginner", "project", "classes", "bitwise operators", "command line arguments"]
 draft: false
 featured: true
 ---
 
 A C++ traffic light project is one of the best beginner exercises for learning object-oriented programming. In this tutorial, we implement a three-light traffic system — red, yellow, and green — where only one light is on at a time. The user controls the initial light and number of cycles via command line arguments.
-What You Will Learn
 
-Designing classes with public and private attributes
-Implementing classes with object-oriented principles
-Using bitwise operators to control hardware LEDs
-Control structures and for-loops
-Handling command line arguments in C++
+## What You Will Learn
 
-Designing Classes with Public and Private Attributes
+- Designing classes with public and private attributes
+- Implementing classes with object-oriented principles
+- Using bitwise operators to control hardware LEDs
+- Control structures and for-loops
+- Handling command line arguments in C++
+
+## Designing Classes with Public and Private Attributes
+
 Since we are working with hardware, it is important to have a private class to store the values of the PORTS being used, along with appropriate accessor functions to read and write to those ports. Private class variables store the current state of the traffic light to avoid conflicts.
-Implementing the Classes with Object-Oriented Principles
-Once the classes are designed, we implement them using object-oriented principles. This includes constructors and overloaded constructors for the TrafficLight class.
-OUSB Class Implementation
-The OUSB class handles communication with the hardware board via pipe commands.
-cppOUSB::OUSB() {
+
+## Implementing the Classes with Object-Oriented Principles
+
+Once the classes are designed, we implement them using object-oriented principles. This includes constructors and overloaded constructors for the `TrafficLight` class.
+
+### OUSB Class Implementation
+
+The `OUSB` class handles communication with the hardware board via pipe commands.
+
+```cpp
+OUSB::OUSB() {
     PORTA = 0;
     PORTB = 0;
     PORTC = 0;
@@ -66,9 +74,14 @@ unsigned short OUSB::readPORTC() {
     PORTC = ousb.runOUSBcommand("ousb -r pin");
     return PORTC;
 }
-TrafficLight Class Implementation
-The TrafficLight class controls which light is active and handles state transitions.
-cppvoid TrafficLight::redOn() {
+```
+
+### TrafficLight Class Implementation
+
+The `TrafficLight` class controls which light is active and handles state transitions.
+
+```cpp
+void TrafficLight::redOn() {
     OUSB ousb;
     ousb.runOUSBcommand("ousb -r io portb 1");
     cout << "Red\n";
@@ -113,16 +126,22 @@ void TrafficLight::changeTrafficLightState() {
         default: cout << "Error\n";
     }
 }
-Bitwise Operators
-The three lights are controlled by setting bits on the hardware using bitwise operators. The bit values are sent via the runOUSBcommand function. Each light maps to a specific bit pattern on the OUSB board's 8 LEDs:
+```
 
-Red = 1 (binary: 00000001)
-Green = 2 (binary: 00000010)
-Yellow = 3 (binary: 00000011)
+## Bitwise Operators
 
-Control Structures and Command Line Arguments
-The main() function uses command line arguments to control the program. If one argument is passed, it prints "Traffic Light Program". If three arguments are passed, it sets the initial light and runs through the specified number of cycles using a for-loop.
-cppint main(int argc, char *argv[]) {
+The three lights are controlled by setting bits on the hardware using bitwise operators. The bit values are sent via the `runOUSBcommand` function. Each light maps to a specific bit pattern on the OUSB board's 8 LEDs:
+
+- Red = `1` (binary: `00000001`)
+- Green = `2` (binary: `00000010`)
+- Yellow = `3` (binary: `00000011`)
+
+## Control Structures and Command Line Arguments
+
+The `main()` function uses command line arguments to control the program. If one argument is passed, it prints "Traffic Light Program". If three arguments are passed, it sets the initial light and runs through the specified number of cycles using a for-loop.
+
+```cpp
+int main(int argc, char *argv[]) {
     if (argc == 1) {
         cout << "Traffic Light Program\n";
     }
@@ -151,9 +170,18 @@ cppint main(int argc, char *argv[]) {
     }
     return 0;
 }
+```
+
 To run the program with green as the initial light and 5 cycles:
-bash./trafficlight G 5
-Summary
+
+```bash
+./trafficlight G 5
+```
+
+## Summary
+
 This C++ traffic light project covers some of the most important concepts in embedded and object-oriented C++ programming — classes, bitwise operators, hardware communication, and command line argument handling. It is a great foundation before moving on to more complex hardware projects.
 
-Want to go deeper with C++? C++ Better Explained covers projects like this and much more — grab the book and start building real programs today.
+---
+
+**Want to go deeper with C++?** [C++ Better Explained](https://start.cppbetterexplained.com) covers projects like this and much more — grab the book and start building real programs today.
