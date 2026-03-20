@@ -16,26 +16,6 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 <Layout>
   <Header />
   <main id="main-content" data-layout="index" class="app-layout">
-    <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
-      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        C++ Better Explained
-      </h1>
-      <p>
-        C++ tutorials, projects, and source code explained step by step.
-        Whether you are a beginner or looking to sharpen your skills, you will
-        find practical examples and real-world projects here.
-      </p>
-      <p class="mt-2">
-        Want to go deeper?
-        <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://start.cppbetterexplained.com/tw-sales-page"
-        >
-          Grab the book
-        </LinkButton>
-        and start building real C++ programs today.
-      </p>
-    </section>
     {
       featuredPosts.length > 0 && (
         <section
