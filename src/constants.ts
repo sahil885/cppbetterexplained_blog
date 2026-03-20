@@ -16,6 +16,8 @@ interface Social {
   icon: (_props: Props) => Element;
 }
 
+export const SOCIALS = [];
+
 export const SHARE_LINKS: Social[] = [
   {
     name: "WhatsApp",
