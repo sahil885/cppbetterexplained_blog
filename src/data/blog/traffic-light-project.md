@@ -8,6 +8,8 @@ draft: false
 featured: true
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s_bZiyLZQDc" title="C++ Traffic Light Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 A C++ traffic light project is one of the best beginner exercises for learning object-oriented programming. In this tutorial, we implement a three-light traffic system — red, yellow, and green — where only one light is on at a time. The user controls the initial light and number of cycles via command line arguments.
 
 ## What You Will Learn
