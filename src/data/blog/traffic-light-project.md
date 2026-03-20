@@ -186,4 +186,4 @@ This C++ traffic light project covers some of the most important concepts in emb
 
 ---
 
-**Want to go deeper with C++?** [The C++ Better Explained book](https://start.cppbetterexplained.com/tw-sales-page) covers the fundamentals of C++ and much more — grab the book and start building real programs today.
+**Want to go deeper with C++?** [Get the C++ Better Explained Book](https://start.cppbetterexplained.com/tw-sales-page) covers projects like this and much more — grab the book and start building real programs today.
