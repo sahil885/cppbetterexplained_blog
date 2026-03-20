@@ -112,8 +112,7 @@ const structuredData = {
       set:html={JSON.stringify(structuredData)}
     />
 
-    <!-- Enable RSS feed auto-discovery  -->
-    <!-- https://docs.astro.build/en/recipes/rss/#enabling-rss-feed-auto-discovery -->
+    <!-- Enable RSS feed auto-discovery -->
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -124,9 +123,6 @@ const structuredData = {
     <meta name="theme-color" content="" />
 
     {
-      // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
-      // include google-site-verification tag in the heading
-      // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
       PUBLIC_GOOGLE_SITE_VERIFICATION && (
         <meta
           name="google-site-verification"
@@ -137,10 +133,10 @@ const structuredData = {
 
     <ClientRouter />
 
-    <!-- Minimal inline script to prevent FOUC - sets theme immediately -->
+    <!-- Minimal inline script to prevent FOUC -->
     <script is:inline>
       (function () {
-        const initialColorScheme = ""; // "light" | "dark"
+        const initialColorScheme = "";
         const currentTheme = localStorage.getItem("theme");
 
         function getPreferTheme() {
@@ -152,11 +148,8 @@ const structuredData = {
         }
 
         const themeValue = getPreferTheme();
-
-        // Set theme immediately to prevent flash
         document.firstElementChild?.setAttribute("data-theme", themeValue);
 
-        // Export minimal API for external script
         window.theme = {
           themeValue: themeValue,
           getTheme: () => window.theme.themeValue,
@@ -166,11 +159,7 @@ const structuredData = {
         };
       })();
     </script>
-  </head>
-  <body>
-    <slot />
 
-</script>
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2676272684727826"
      crossorigin="anonymous"></script>
