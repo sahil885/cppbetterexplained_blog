@@ -16,6 +16,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 <Layout>
   <Header />
   <main id="main-content" data-layout="index" class="app-layout">
+    <h1 class="sr-only">C++ Tutorials, Projects and Source Code Explained Step by Step</h1>
     {
       featuredPosts.length > 0 && (
         <section
