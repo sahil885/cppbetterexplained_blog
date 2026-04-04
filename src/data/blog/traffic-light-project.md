@@ -184,6 +184,14 @@ To run the program with green as the initial light and 5 cycles:
 
 This C++ traffic light project covers some of the most important concepts in embedded and object-oriented C++ programming — classes, bitwise operators, hardware communication, and command line argument handling. It is a great foundation before moving on to more complex hardware projects.
 
+## Related Posts
+
+Want to keep building with C++? Here are some related tutorials:
+
+- [Blackjack C++ Using Classes](/posts/blackjack-cpp-using-classes/) — build a complete card game using C++ classes, a great companion to this project.
+- [How to Create a Lottery Program in C++](/posts/lottery-program-cpp/) — another beginner-friendly project using arrays and random number generation.
+- [Breakdown of a Simple C++ Program](/posts/breakdown-simple-cpp-program/) — a great starting point if you want to understand the fundamentals of every line of C++ code.
+
 ---
 
 **Want to go deeper with C++?** [Get the C++ Better Explained Book](https://start.cppbetterexplained.com/tw-sales-page) covers projects like this and much more — grab the book and start building real programs today.
