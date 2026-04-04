@@ -186,6 +186,14 @@ Key takeaways:
 - Use `rand() % (MAX - MIN + 1) + MIN` to generate numbers within a range
 - Break logic into small focused functions like `getLine()`, `printLine()`, and `duplicates()`
 
+## Related Posts
+
+Ready to try more C++ projects? Here are some great next steps:
+
+- [Blackjack C++ Using Classes](/posts/blackjack-cpp-using-classes/) — level up your project skills by building a full card game with object-oriented design.
+- [C++ Traffic Light Project](/posts/traffic-light-project/) — another fun project using C++ classes and bitwise operators.
+- [Breakdown of a Simple C++ Program](/posts/breakdown-simple-cpp-program/) — go back to basics and make sure you understand every line of a C++ program.
+
 ---
 
 **Want more C++ projects like this?** [C++ Better Explained](https://start.cppbetterexplained.com/tw-sales-page) walks you through real-world C++ from beginner to advanced — grab the book and start building today.
