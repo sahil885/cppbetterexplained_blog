@@ -181,6 +181,14 @@ Merge Sort is the right choice when:
 
 Merge Sort is one of the most reliable sorting algorithms in C++. Its divide and conquer approach guarantees consistent O(n log n) performance and makes it ideal for sorting linked lists and large datasets where stability matters.
 
+## Related Posts
+
+If you found this useful, here are some related posts to explore next:
+
+- [Breakdown of a Simple C++ Program Step by Step](/posts/breakdown-simple-cpp-program/) — start here if you're new to C++ and want to understand the fundamentals before diving into algorithms.
+- [Blackjack C++ Using Classes](/posts/blackjack-cpp-using-classes/) — see how C++ classes, sorting, and game logic all come together in a complete real-world project.
+- [C++ Traffic Light Project](/posts/traffic-light-project/) — another great project that shows C++ classes and bitwise operators in action.
+
 ---
 
 **Want to go deeper with C++ algorithms and data structures?** [C++ Better Explained](https://start.cppbetterexplained.com/tw-sales-page) covers sorting algorithms, data structures, and real-world C++ projects — grab the book and start building today.
