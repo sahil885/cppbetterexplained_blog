@@ -16,7 +16,10 @@ export default defineConfig({
   site: SITE.website,
   integrations: [
     sitemap({
-      filter: page => SITE.showArchives || !page.endsWith("/archives"),
+      filter: page =>
+        (SITE.showArchives || !page.endsWith("/archives/")) &&
+        !/\/tags\/.+\/\d+\/$/.test(page) &&
+        !/\/posts\/\d+\/$/.test(page)
     }),
   ],
   markdown: {
