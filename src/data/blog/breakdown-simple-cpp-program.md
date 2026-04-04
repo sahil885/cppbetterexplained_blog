@@ -162,6 +162,14 @@ Every line in a C++ program has a purpose. Even the simplest Hello World program
 | `return 0;` | Signals successful program exit |
 | `}` | Closes the function body |
 
+## Related Posts
+
+Once you're comfortable with the basics, try these next:
+
+- [Merge Sort Algorithm in C++ with Example](/posts/merge-sort-algorithm-cpp/) — a great next step to understand how arrays and recursion combine in real algorithms.
+- [Blackjack C++ Using Classes](/posts/blackjack-cpp-using-classes/) — apply what you've learned by building a complete card game with object-oriented C++.
+- [How to Create a Lottery Program in C++](/posts/lottery-program-cpp/) — a fun beginner project using arrays and random number generation.
+
 ---
 
 **Ready to go beyond Hello World?** [C++ Better Explained](https://start.cppbetterexplained.com/tw-sales-page) takes you from the basics all the way through classes, pointers, and real-world projects — grab the book and start building today.
