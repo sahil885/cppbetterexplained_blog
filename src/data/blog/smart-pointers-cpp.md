@@ -426,16 +426,9 @@ If you're still writing C++ code with `new` and `delete`, you're living in the p
 
 ---
 
-## Ready to Master C++ Completely?
+## Take Your C++ Further
 
-Smart pointers are one piece of the modern C++ puzzle. The ebook covers the full picture.
-
-**The C++ Better Explained Ebook** covers everything from fundamentals to advanced C++ — written in the same clear, practical style as this article. For just **$19**, you get:
-
-- In-depth explanations of every core C++ concept
-- Real-world code examples you can use immediately
-- Chapters on memory management, OOP, templates, STL, and more
-- Lifetime access and free updates
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
 
 👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
 
@@ -443,7 +436,4 @@ Smart pointers are one piece of the modern C++ puzzle. The ebook covers the full
 
 ## Related Articles
 
-Continue building your C++ knowledge with these guides:
 
-- [How to Use Pointers in C++: A Complete Beginner's Guide](https://cppbetterexplained.com/posts/pointers-in-cpp/)
-- [Memory Management in C++: Heap vs Stack, new/delete, and Memory Leaks](https://cppbetterexplained.com/posts/memory-management-cpp/)

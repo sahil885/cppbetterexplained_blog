@@ -821,16 +821,9 @@ Virtual functions represent one of C++'s greatest strengths. Master them, and yo
 
 ---
 
-## Ready to Master C++ Completely?
+## Take Your C++ Further
 
-Polymorphism is the heart of professional OOP in C++. Deepen your mastery with the full ebook.
-
-**The C++ Better Explained Ebook** covers everything from fundamentals to advanced C++ — written in the same clear, practical style as this article. For just **$19**, you get:
-
-- In-depth explanations of every core C++ concept
-- Real-world code examples you can use immediately
-- Chapters on memory management, OOP, templates, STL, and more
-- Lifetime access and free updates
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
 
 👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
 
@@ -838,7 +831,4 @@ Polymorphism is the heart of professional OOP in C++. Deepen your mastery with t
 
 ## Related Articles
 
-Continue building your C++ knowledge with these guides:
 
-- [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](https://cppbetterexplained.com/posts/oop-in-cpp/)
-- [C++ Design Patterns: Singleton, Factory, and Observer in Modern C++](https://cppbetterexplained.com/posts/design-patterns-cpp/)
