@@ -818,3 +818,27 @@ Key takeaways:
 Virtual functions represent one of C++'s greatest strengths. Master them, and you'll write more robust, maintainable, and extensible code.
 
 **Want to deepen your C++ skills?** Explore design patterns next—they show you how to structure class hierarchies effectively. What specific polymorphism challenge are you facing in your code?
+
+---
+
+## Ready to Master C++ Completely?
+
+Polymorphism is the heart of professional OOP in C++. Deepen your mastery with the full ebook.
+
+**The C++ Better Explained Ebook** covers everything from fundamentals to advanced C++ — written in the same clear, practical style as this article. For just **$19**, you get:
+
+- In-depth explanations of every core C++ concept
+- Real-world code examples you can use immediately
+- Chapters on memory management, OOP, templates, STL, and more
+- Lifetime access and free updates
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+
+---
+
+## Related Articles
+
+Continue building your C++ knowledge with these guides:
+
+- [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](https://cppbetterexplained.com/posts/oop-in-cpp/)
+- [C++ Design Patterns: Singleton, Factory, and Observer in Modern C++](https://cppbetterexplained.com/posts/design-patterns-cpp/)

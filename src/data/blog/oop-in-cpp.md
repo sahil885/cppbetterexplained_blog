@@ -720,3 +720,27 @@ Master these, and you're ready to build real C++ programs.
 ---
 
 **Ready to go deeper?** Check out our guide to inheritance and polymorphism to extend your OOP knowledge. Or explore the principles of design patterns to see how experienced C++ programmers organize large codebases.
+
+---
+
+## Ready to Master C++ Completely?
+
+OOP is the foundation of professional C++ development. Take it further with the full ebook.
+
+**The C++ Better Explained Ebook** covers everything from fundamentals to advanced C++ — written in the same clear, practical style as this article. For just **$19**, you get:
+
+- In-depth explanations of every core C++ concept
+- Real-world code examples you can use immediately
+- Chapters on memory management, OOP, templates, STL, and more
+- Lifetime access and free updates
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+
+---
+
+## Related Articles
+
+Continue building your C++ knowledge with these guides:
+
+- [Virtual Functions and Polymorphism in C++](https://cppbetterexplained.com/posts/virtual-functions-polymorphism-cpp/)
+- [C++ Design Patterns: Singleton, Factory, and Observer](https://cppbetterexplained.com/posts/design-patterns-cpp/)

@@ -1154,3 +1154,29 @@ These 50 questions cover the core of C++ knowledge. Study them, but don't stop h
 - **Understand performance**: Know when optimizations matter and when they don't.
 
 **Want to go deeper on any of these topics? Our C++ interview prep ebook covers all 50 questions with full explanations, practice problems, and strategies for explaining your thinking to interviewers. Master not just the answers, but the concepts behind them.**
+
+---
+
+## Ready to Master C++ Completely?
+
+Want to go deeper on every one of these topics with full explanations and practice problems?
+
+**The C++ Better Explained Ebook** covers everything from fundamentals to advanced C++ — written in the same clear, practical style as this article. For just **$19**, you get:
+
+- In-depth explanations of every core C++ concept
+- Real-world code examples you can use immediately
+- Chapters on memory management, OOP, templates, STL, and more
+- Lifetime access and free updates
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+
+---
+
+## Related Articles
+
+Continue building your C++ knowledge with these guides:
+
+- [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](https://cppbetterexplained.com/posts/oop-in-cpp/)
+- [Smart Pointers in Modern C++](https://cppbetterexplained.com/posts/smart-pointers-cpp/)
+- [Virtual Functions and Polymorphism in C++](https://cppbetterexplained.com/posts/virtual-functions-polymorphism-cpp/)
+- [C++ STL Containers Explained](https://cppbetterexplained.com/posts/stl-containers-cpp/)

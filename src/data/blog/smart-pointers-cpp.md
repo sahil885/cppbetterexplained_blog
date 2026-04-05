@@ -423,3 +423,27 @@ Smart pointers are one of the most impactful features of modern C++. They let yo
 If you're still writing C++ code with `new` and `delete`, you're living in the past. Modern C++ (C++11 onward) gives you smart pointers — use them, and your code will be faster, safer, and cleaner.
 
 **Next steps:** Try refactoring an existing project to use smart pointers. Start with `unique_ptr` everywhere, and you'll be amazed at how much cleaner your code becomes. Which smart pointer are you most excited to start using?
+
+---
+
+## Ready to Master C++ Completely?
+
+Smart pointers are one piece of the modern C++ puzzle. The ebook covers the full picture.
+
+**The C++ Better Explained Ebook** covers everything from fundamentals to advanced C++ — written in the same clear, practical style as this article. For just **$19**, you get:
+
+- In-depth explanations of every core C++ concept
+- Real-world code examples you can use immediately
+- Chapters on memory management, OOP, templates, STL, and more
+- Lifetime access and free updates
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+
+---
+
+## Related Articles
+
+Continue building your C++ knowledge with these guides:
+
+- [How to Use Pointers in C++: A Complete Beginner's Guide](https://cppbetterexplained.com/posts/pointers-in-cpp/)
+- [Memory Management in C++: Heap vs Stack, new/delete, and Memory Leaks](https://cppbetterexplained.com/posts/memory-management-cpp/)

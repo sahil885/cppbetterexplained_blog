@@ -989,3 +989,27 @@ Key takeaways:
 The three patterns we explored—Singleton, Factory, and Observer—are among the most useful. Master these, and you'll handle most architectural challenges.
 
 **Ready to take your C++ architecture to the next level?** Design patterns combine with virtual functions to create flexible, maintainable systems. What pattern does your codebase need most?
+
+---
+
+## Ready to Master C++ Completely?
+
+Design patterns are what separate good developers from great ones. The ebook dives deep into real-world C++ architecture.
+
+**The C++ Better Explained Ebook** covers everything from fundamentals to advanced C++ — written in the same clear, practical style as this article. For just **$19**, you get:
+
+- In-depth explanations of every core C++ concept
+- Real-world code examples you can use immediately
+- Chapters on memory management, OOP, templates, STL, and more
+- Lifetime access and free updates
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+
+---
+
+## Related Articles
+
+Continue building your C++ knowledge with these guides:
+
+- [Virtual Functions and Polymorphism in C++](https://cppbetterexplained.com/posts/virtual-functions-polymorphism-cpp/)
+- [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](https://cppbetterexplained.com/posts/oop-in-cpp/)

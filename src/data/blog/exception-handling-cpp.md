@@ -819,3 +819,27 @@ Modern C++ combines exceptions with RAII to give you automatic, safe resource ma
 **Challenge yourself**: Take an existing function that uses error codes and rewrite it with exceptions. Compare the clarity and complexity. Which approach feels more natural for your use case?
 
 The best code is robust code. Whether you achieve that with exceptions or error codes is less important than making a conscious, informed choice. Now you have the knowledge to make that choice wisely.
+
+---
+
+## Ready to Master C++ Completely?
+
+Writing robust, error-safe C++ is a skill that sets professionals apart. The ebook has you covered.
+
+**The C++ Better Explained Ebook** covers everything from fundamentals to advanced C++ — written in the same clear, practical style as this article. For just **$19**, you get:
+
+- In-depth explanations of every core C++ concept
+- Real-world code examples you can use immediately
+- Chapters on memory management, OOP, templates, STL, and more
+- Lifetime access and free updates
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+
+---
+
+## Related Articles
+
+Continue building your C++ knowledge with these guides:
+
+- [Smart Pointers in Modern C++: unique_ptr, shared_ptr, and weak_ptr Explained](https://cppbetterexplained.com/posts/smart-pointers-cpp/)
+- [Memory Management in C++: Heap vs Stack, new/delete, and Memory Leaks](https://cppbetterexplained.com/posts/memory-management-cpp/)
