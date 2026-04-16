@@ -1,42 +1,33 @@
-import type { APIRoute } from "astro";
-
-export const prerender = false;
-
-export const POST: APIRoute = async ({ request }) => {
-  const apiToken = import.meta.env.SENDER_API_TOKEN;
-  const groupId  = import.meta.env.SENDER_GROUP_ID ?? "enGQp5";
-
-  if (!apiToken) {
-    return new Response(JSON.stringify({ error: "Server misconfiguration" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
   }
 
-  let email: string;
+  const apiToken = process.env.SENDER_API_TOKEN;
+  const groupId  = process.env.SENDER_GROUP_ID || "enGQp5";
+
+  if (!apiToken) {
+    return res.status(500).json({ error: "Server misconfiguration" });
+  }
+
+  let email;
   try {
-    const body = await request.json();
-    email = (body.email ?? "").trim().toLowerCase();
-  } catch {
-    return new Response(JSON.stringify({ error: "Invalid request body" }), {
-      status: 400,
-      headers: { "Content-Type": "application/json" },
-    });
+    const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+    email = (body.email || "").trim().toLowerCase();
+  } catch (e) {
+    return res.status(400).json({ error: "Invalid request body" });
   }
 
   if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return new Response(JSON.stringify({ error: "Invalid email address" }), {
-      status: 400,
-      headers: { "Content-Type": "application/json" },
-    });
+    return res.status(400).json({ error: "Invalid email address" });
   }
 
   const senderRes = await fetch("https://api.sender.net/v2/subscribers", {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${apiToken}`,
+      "Authorization": `Bearer ${apiToken}`,
       "Content-Type": "application/json",
-      Accept: "application/json",
+      "Accept": "application/json",
     },
     body: JSON.stringify({ email, groups: [groupId] }),
   });
@@ -44,14 +35,8 @@ export const POST: APIRoute = async ({ request }) => {
   if (!senderRes.ok) {
     const err = await senderRes.text();
     console.error("Sender.net error:", err);
-    return new Response(JSON.stringify({ error: "Subscription failed" }), {
-      status: 502,
-      headers: { "Content-Type": "application/json" },
-    });
+    return res.status(502).json({ error: "Subscription failed" });
   }
 
-  return new Response(JSON.stringify({ ok: true }), {
-    status: 200,
-    headers: { "Content-Type": "application/json" },
-  });
-};
+  return res.status(200).json({ ok: true });
+}
