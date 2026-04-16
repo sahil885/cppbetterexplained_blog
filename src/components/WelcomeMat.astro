@@ -1,23 +1,19 @@
 ---
 // WelcomeMat.astro
-// Full-screen welcome mat that collects emails via /api/subscribe -> Sender.net.
-// Shows once per visitor using localStorage. Respects dark/light theme.
+// Full-screen welcome mat -> collects email via /api/subscribe -> redirects to tripwire.
+// Shows only once per browser using localStorage.
 ---
 
-<!-- Welcome Mat Overlay -->
 <div id="welcome-mat" aria-modal="true" role="dialog" aria-labelledby="wm-heading" style="display:none;">
   <div id="wm-backdrop"></div>
   <div id="wm-card">
     <button id="wm-close" aria-label="Close">&times;</button>
-
     <div id="wm-icon">📘</div>
-
     <h2 id="wm-heading">Level up your C++ skills</h2>
     <p id="wm-subtext">
       Get clear, intuitive explanations of tricky C++ concepts — delivered straight to your inbox.
       No spam, ever. Unsubscribe anytime.
     </p>
-
     <form id="wm-form">
       <div id="wm-input-row">
         <input
@@ -32,12 +28,10 @@
       </div>
       <p id="wm-privacy">🔒 No spam. Unsubscribe anytime.</p>
     </form>
-
     <div id="wm-success" style="display:none;">
       <div id="wm-success-icon">🎉</div>
-      <p id="wm-success-msg">You're in! Check your inbox to confirm.</p>
+      <p id="wm-success-msg">You're in! Redirecting you to a special offer...</p>
     </div>
-
     <button id="wm-skip">No thanks, I'll just browse</button>
   </div>
 </div>
@@ -47,29 +41,24 @@
     position: fixed;
     inset: 0;
     z-index: 9999;
-    display: flex !important;
     align-items: center;
     justify-content: center;
     animation: wm-fadein 0.4s ease;
   }
-
   @keyframes wm-fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
   }
-
   @keyframes wm-slideup {
     from { transform: translateY(40px); opacity: 0; }
     to   { transform: translateY(0);    opacity: 1; }
   }
-
   #wm-backdrop {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(4px);
   }
-
   #wm-card {
     position: relative;
     z-index: 1;
@@ -84,7 +73,6 @@
     box-shadow: 0 25px 60px rgba(0,0,0,0.25);
     animation: wm-slideup 0.45s cubic-bezier(0.16, 1, 0.3, 1);
   }
-
   #wm-close {
     position: absolute;
     top: 0.75rem;
@@ -99,12 +87,7 @@
     transition: opacity 0.2s;
   }
   #wm-close:hover { opacity: 1; }
-
-  #wm-icon {
-    font-size: 3rem;
-    margin-bottom: 0.75rem;
-  }
-
+  #wm-icon { font-size: 3rem; margin-bottom: 0.75rem; }
   #wm-heading {
     font-size: 1.6rem;
     font-weight: 700;
@@ -112,20 +95,17 @@
     line-height: 1.2;
     color: var(--color-text-base, #111);
   }
-
   #wm-subtext {
     font-size: 0.95rem;
     line-height: 1.6;
     opacity: 0.8;
     margin: 0 0 1.5rem;
   }
-
   #wm-input-row {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
   }
-
   #wm-email {
     flex: 1;
     min-width: 0;
@@ -138,10 +118,7 @@
     outline: none;
     transition: border-color 0.2s;
   }
-  #wm-email:focus {
-    border-color: var(--color-accent, #6366f1);
-  }
-
+  #wm-email:focus { border-color: var(--color-accent, #6366f1); }
   #wm-submit {
     padding: 0.65rem 1.4rem;
     border-radius: 0.5rem;
@@ -156,13 +133,7 @@
   }
   #wm-submit:hover { opacity: 0.88; }
   #wm-submit:disabled { opacity: 0.55; cursor: not-allowed; }
-
-  #wm-privacy {
-    font-size: 0.75rem;
-    opacity: 0.55;
-    margin: 0.6rem 0 0;
-  }
-
+  #wm-privacy { font-size: 0.75rem; opacity: 0.55; margin: 0.6rem 0 0; }
   #wm-skip {
     margin-top: 1.2rem;
     background: none;
@@ -175,49 +146,73 @@
     transition: opacity 0.2s;
   }
   #wm-skip:hover { opacity: 0.8; }
-
   #wm-success-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
-  #wm-success-msg  { font-size: 1rem; font-weight: 600; }
-
+  #wm-success-msg { font-size: 1rem; font-weight: 600; }
   @media (max-width: 360px) {
     #wm-input-row { flex-direction: column; }
-    #wm-submit    { width: 100%; }
+    #wm-submit { width: 100%; }
   }
 </style>
 
 <script is:inline>
 (function () {
   var STORAGE_KEY = "wm_dismissed";
-  var DELAY_MS    = 3000;
+  var TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
+  var DELAY_MS = 3000;
+  var _initialised = false;
+
+  function isDismissed() {
+    try { return !!localStorage.getItem(STORAGE_KEY); } catch(e) { return false; }
+  }
+
+  function markDismissed() {
+    try { localStorage.setItem(STORAGE_KEY, "1"); } catch(e) {}
+  }
+
+  function hide() {
+    var el = document.getElementById("welcome-mat");
+    if (!el) return;
+    el.style.opacity = "0";
+    el.style.transition = "opacity 0.3s";
+    setTimeout(function () { el.style.display = "none"; }, 320);
+  }
 
   function dismiss() {
-    try { localStorage.setItem(STORAGE_KEY, "1"); } catch(e) {}
-    var el = document.getElementById("welcome-mat");
-    if (el) {
-      el.style.opacity = "0";
-      el.style.transition = "opacity 0.3s";
-      setTimeout(function () { el.style.display = "none"; }, 320);
-    }
+    markDismissed();
+    hide();
   }
 
   function init() {
-    try {
-      if (localStorage.getItem(STORAGE_KEY)) return;
-    } catch(e) {}
+    // Guard: if already dismissed, never show again
+    if (isDismissed()) return;
 
-    var mat     = document.getElementById("welcome-mat");
+    var mat = document.getElementById("welcome-mat");
+    if (!mat) return;
+
+    // Guard: don't double-bind listeners
+    if (mat.dataset.wmInit) return;
+    mat.dataset.wmInit = "1";
+
     var form    = document.getElementById("wm-form");
     var success = document.getElementById("wm-success");
     var submit  = document.getElementById("wm-submit");
 
-    if (!mat) return;
+    // Show after delay
+    var timer = setTimeout(function () {
+      // Re-check in case user dismissed during delay (e.g. navigated away and back)
+      if (isDismissed()) return;
+      mat.style.display = "flex";
+    }, DELAY_MS);
 
-    setTimeout(function () { mat.style.display = "flex"; }, DELAY_MS);
+    // Store timer ref so we can cancel on early navigation
+    mat.dataset.wmTimer = timer;
 
     document.getElementById("wm-close").addEventListener("click", dismiss);
     document.getElementById("wm-skip").addEventListener("click", dismiss);
     document.getElementById("wm-backdrop").addEventListener("click", dismiss);
-    document.addEventListener("keydown", function(e) { if (e.key === "Escape") dismiss(); });
+    document.addEventListener("keydown", function onKey(e) {
+      if (e.key === "Escape") { dismiss(); document.removeEventListener("keydown", onKey); }
+    });
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -231,18 +226,23 @@
         body: JSON.stringify({ email: email })
       })
       .then(function (res) {
+        markDismissed();
         if (res.ok) {
           form.style.display = "none";
           success.style.display = "block";
-          setTimeout(dismiss, 3000);
-          try { localStorage.setItem(STORAGE_KEY, "1"); } catch(e) {}
+          // Redirect to tripwire after short pause so user sees success msg
+          setTimeout(function () {
+            window.location.href = TRIPWIRE_URL;
+          }, 1200);
         } else {
-          submit.disabled = false;
-          submit.textContent = "Subscribe";
-          alert("Something went wrong. Please try again.");
+          // Even on API error, still redirect — subscriber may have been added
+          setTimeout(function () {
+            window.location.href = TRIPWIRE_URL;
+          }, 1200);
         }
       })
       .catch(function () {
+        // Network error — let them retry
         submit.disabled = false;
         submit.textContent = "Subscribe";
         alert("Network error. Please try again.");
@@ -250,12 +250,17 @@
     });
   }
 
+  // Run on initial page load
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {
     init();
   }
 
-  document.addEventListener("astro:page-load", init);
+  // Re-run on Astro view transitions (new page content swapped in)
+  document.addEventListener("astro:page-load", function () {
+    // Reset the init guard since DOM was replaced, but still respect dismissal
+    init();
+  });
 })();
 </script>
