@@ -5,7 +5,6 @@ import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import tailwindcss from "@tailwindcss/vite";
 import { SITE } from "./src/config";
-import { fontFamily } from "astro/fonts";
 
 // https://astro.build/config
 export default defineConfig({
@@ -47,17 +46,5 @@ export default defineConfig({
   },
   experimental: {
     preserveScriptOrder: true,
-    fonts: [
-      fontFamily({
-        name: "Google Sans Code",
-        cssVariable: "--font-google-sans-code",
-        provider: "google",
-        weights: [300, 400, 500, 600, 700],
-        styles: ["normal", "italic"],
-        subsets: ["latin"],
-        fallback: ["monospace"],
-        optimizedLoading: true,
-      }),
-    ],
   },
 });
