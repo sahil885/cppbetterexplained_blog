@@ -1,6 +1,6 @@
 ---
 // WelcomeMat.astro
-// Full-screen welcome mat -> collects email via /api/subscribe -> redirects to tripwire.
+// Full-screen welcome mat -> calls Sender.net API directly -> redirects to tripwire.
 // Shows only once per browser using localStorage.
 ---
 
@@ -51,7 +51,7 @@
   }
   @keyframes wm-slideup {
     from { transform: translateY(40px); opacity: 0; }
-    to   { transform: translateY(0);    opacity: 1; }
+    to   { transform: translateY(0); opacity: 1; }
   }
   #wm-backdrop {
     position: absolute;
@@ -101,11 +101,7 @@
     opacity: 0.8;
     margin: 0 0 1.5rem;
   }
-  #wm-input-row {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
+  #wm-input-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
   #wm-email {
     flex: 1;
     min-width: 0;
@@ -156,19 +152,18 @@
 
 <script is:inline>
 (function () {
-  var STORAGE_KEY = "wm_dismissed";
-  var TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
-  var DELAY_MS = 3000;
-  var _initialised = false;
+  var STORAGE_KEY   = "wm_dismissed";
+  var TRIPWIRE_URL  = "https://start.cppbetterexplained.com/tw-sales-page";
+  var SENDER_TOKEN  = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDA4OGU5ZDk3MGYzNzliYzEwYTY0ODlkOWM0NDEwOWM1MzgxNDkwZjZlZjJlNDljMjAwNmZkMDI1OTM1OTJmNThmNmU5M2Q0ZmMzM2FkMTEiLCJpYXQiOjE3NzYzMTczMjQuOTY2OTg4LCJuYmYiOjE3NzYzMTczMjQuOTY2OTkxLCJleHAiOjE3Nzg5MDkzMjQuOTY1MTMzLCJzdWIiOiI4NTQ4ODQiLCJzY29wZXMiOltdfQ.AhEG99-ith_VDtqyloUapqmbstoG3pnEZrOk1h_pntEo6AvXkgFNKVfOmGC6wrN_kkgp-DmRunC9PokhWMRfGW3A6hY7ZvDSmDmZ5LcBDrDzKeMyIFz-3J33_af3R3t7_Un-0DwTRbb0HdEGkLzhpC3Hyiu379HKWeC_seXuGYxG71dZNc1jlY82p0TNCfVfAogSi5m-r3fjAdyameYF7QgGWou4Z6HZ83WpmlBRScIs8Bw7EI3SZHIPWiqjpvrLxBNfBf3Rhbsrw_GyjmLluxfwobUKmAavxrtFfP98iBxiVXIJI2t6EQnFfppsin-X8Npmy7BtEHahqp8XDmqf4od8HahljpcIvBqnH5eJJ06ivL-boSStlHUEY79Qto_iqsZsbthSqBiIFgJRZDLpw0CuBJtAFgdLCgBbdSTzFsPYyjjmKe6RxNnYHUs2ruwVCJpFQWKgzV2nsGBy79AVZTj2z_TgRlGC6-2sIhmyJ1sG5sXyThNCEF6aHZ9-rPeTJpZUAdk8FB-ktLnkoUazPvoxJEL8OV63ibwBgZVVZ3zo5mcoLZAZiER3gSDFbzVGyq0KFCaGJZFmTBzwF8-ahtkaBHYzd9NX3UvrC6ycS-eWoDzaJR0DDc85J_-_cJyyc5Lb80HzXHhAboU5lCEPhMXEC4FCsRPz1vXH8lH5Xk4";
+  var SENDER_GROUP  = "enGQp5";
+  var DELAY_MS      = 3000;
 
   function isDismissed() {
     try { return !!localStorage.getItem(STORAGE_KEY); } catch(e) { return false; }
   }
-
   function markDismissed() {
     try { localStorage.setItem(STORAGE_KEY, "1"); } catch(e) {}
   }
-
   function hide() {
     var el = document.getElementById("welcome-mat");
     if (!el) return;
@@ -176,20 +171,12 @@
     el.style.transition = "opacity 0.3s";
     setTimeout(function () { el.style.display = "none"; }, 320);
   }
-
-  function dismiss() {
-    markDismissed();
-    hide();
-  }
+  function dismiss() { markDismissed(); hide(); }
 
   function init() {
-    // Guard: if already dismissed, never show again
     if (isDismissed()) return;
-
     var mat = document.getElementById("welcome-mat");
     if (!mat) return;
-
-    // Guard: don't double-bind listeners
     if (mat.dataset.wmInit) return;
     mat.dataset.wmInit = "1";
 
@@ -197,15 +184,10 @@
     var success = document.getElementById("wm-success");
     var submit  = document.getElementById("wm-submit");
 
-    // Show after delay
-    var timer = setTimeout(function () {
-      // Re-check in case user dismissed during delay (e.g. navigated away and back)
+    setTimeout(function () {
       if (isDismissed()) return;
       mat.style.display = "flex";
     }, DELAY_MS);
-
-    // Store timer ref so we can cancel on early navigation
-    mat.dataset.wmTimer = timer;
 
     document.getElementById("wm-close").addEventListener("click", dismiss);
     document.getElementById("wm-skip").addEventListener("click", dismiss);
@@ -220,47 +202,36 @@
       submit.disabled = true;
       submit.textContent = "Subscribing\u2026";
 
-      fetch("/api/subscribe", {
+      fetch("https://api.sender.net/v2/subscribers", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email })
+        headers: {
+          "Authorization": "Bearer " + SENDER_TOKEN,
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({ email: email, groups: [SENDER_GROUP] })
       })
       .then(function (res) {
         markDismissed();
-        if (res.ok) {
-          form.style.display = "none";
-          success.style.display = "block";
-          // Redirect to tripwire after short pause so user sees success msg
-          setTimeout(function () {
-            window.location.href = TRIPWIRE_URL;
-          }, 1200);
-        } else {
-          // Even on API error, still redirect — subscriber may have been added
-          setTimeout(function () {
-            window.location.href = TRIPWIRE_URL;
-          }, 1200);
-        }
+        form.style.display = "none";
+        success.style.display = "block";
+        setTimeout(function () {
+          window.location.href = TRIPWIRE_URL;
+        }, 1200);
       })
       .catch(function () {
-        // Network error — let them retry
-        submit.disabled = false;
-        submit.textContent = "Subscribe";
-        alert("Network error. Please try again.");
+        // Even on error, redirect — don't block the user
+        markDismissed();
+        window.location.href = TRIPWIRE_URL;
       });
     });
   }
 
-  // Run on initial page load
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {
     init();
   }
-
-  // Re-run on Astro view transitions (new page content swapped in)
-  document.addEventListener("astro:page-load", function () {
-    // Reset the init guard since DOM was replaced, but still respect dismissal
-    init();
-  });
+  document.addEventListener("astro:page-load", init);
 })();
 </script>
