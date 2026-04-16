@@ -1,5 +1,7 @@
 import type { APIRoute } from "astro";
 
+export const prerender = false;
+
 export const POST: APIRoute = async ({ request }) => {
   const apiToken = import.meta.env.SENDER_API_TOKEN;
   const groupId  = import.meta.env.SENDER_GROUP_ID ?? "enGQp5";
