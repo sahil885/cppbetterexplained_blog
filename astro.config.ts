@@ -1,6 +1,5 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
-import vercel from "@astrojs/vercel";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import tailwindcss from "@tailwindcss/vite";
@@ -9,8 +8,6 @@ import { SITE } from "./src/config";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
-  output: "hybrid",
-  adapter: vercel(),
   integrations: [
     sitemap({
       filter: page =>
@@ -20,12 +17,7 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [
       remarkToc,
-      [
-        remarkCollapse,
-        {
-          test: "Table of contents",
-        },
-      ],
+      [remarkCollapse, { test: "Table of contents" }],
     ],
     shikiConfig: {
       themes: { light: "min-light", dark: "night-owl" },
@@ -36,15 +28,8 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
-    optimizeDeps: {
-      exclude: ["@resvg/resvg-js"],
-    },
+    optimizeDeps: { exclude: ["@resvg/resvg-js"] },
   },
-  image: {
-    responsiveStyles: true,
-    layout: "constrained",
-  },
-  experimental: {
-    preserveScriptOrder: true,
-  },
+  image: { responsiveStyles: true, layout: "constrained" },
+  experimental: { preserveScriptOrder: true },
 });
