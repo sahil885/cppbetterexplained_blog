@@ -1,6 +1,6 @@
 ---
 // WelcomeMat.astro
-// Full-screen welcome mat that collects emails via Formspree (free tier).
+// Full-screen welcome mat that collects emails via /api/subscribe -> Sender.net.
 // Shows once per visitor using localStorage. Respects dark/light theme.
 ---
 
@@ -18,12 +18,7 @@
       No spam, ever. Unsubscribe anytime.
     </p>
 
-    <form
-      id="wm-form"
-      action="https://formspree.io/f/YOUR_FORM_ID"
-      method="POST"
-    >
-      <input type="hidden" name="_subject" value="New subscriber from welcome mat" />
+    <form id="wm-form">
       <div id="wm-input-row">
         <input
           type="email"
@@ -210,36 +205,30 @@
       if (localStorage.getItem(STORAGE_KEY)) return;
     } catch(e) {}
 
-    var mat    = document.getElementById("welcome-mat");
-    var form   = document.getElementById("wm-form");
-    var success= document.getElementById("wm-success");
-    var submit = document.getElementById("wm-submit");
+    var mat     = document.getElementById("welcome-mat");
+    var form    = document.getElementById("wm-form");
+    var success = document.getElementById("wm-success");
+    var submit  = document.getElementById("wm-submit");
 
     if (!mat) return;
 
-    setTimeout(function () {
-      mat.style.display = "flex";
-    }, DELAY_MS);
+    setTimeout(function () { mat.style.display = "flex"; }, DELAY_MS);
 
     document.getElementById("wm-close").addEventListener("click", dismiss);
     document.getElementById("wm-skip").addEventListener("click", dismiss);
     document.getElementById("wm-backdrop").addEventListener("click", dismiss);
-
-    document.addEventListener("keydown", function(e) {
-      if (e.key === "Escape") dismiss();
-    });
+    document.addEventListener("keydown", function(e) { if (e.key === "Escape") dismiss(); });
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+      var email = document.getElementById("wm-email").value.trim();
       submit.disabled = true;
       submit.textContent = "Subscribing\u2026";
 
-      var data = new FormData(form);
-
-      fetch(form.action, {
+      fetch("/api/subscribe", {
         method: "POST",
-        body: data,
-        headers: { "Accept": "application/json" }
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email })
       })
       .then(function (res) {
         if (res.ok) {
