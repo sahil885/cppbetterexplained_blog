@@ -209,7 +209,8 @@
           "Content-Type": "application/json",
           "Accept": "application/json"
         },
-        body: JSON.stringify({ email: email, groups: [SENDER_GROUP] })
+        body: JSON.stringify({ email: email, groups: [SENDER_GROUP] }),
+        keepalive: true
       })
       .then(function (res) {
         markDismissed();
