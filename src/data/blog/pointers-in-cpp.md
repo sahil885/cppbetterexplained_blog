@@ -196,7 +196,7 @@ Use references when you want:
 
 For beginners: **Prefer references whenever possible, and use pointers only when you specifically need pointer behavior.**
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
 
 ## Pointer Arithmetic: Moving Through Memory
 
