@@ -15,6 +15,7 @@ type Props = {
   modDatetime?: Date | null;
   scrollSmooth?: boolean;
   faqSchema?: { question: string; answer: string }[];
+  noindex?: boolean;
 };
 
 const {
@@ -28,6 +29,7 @@ const {
   modDatetime,
   scrollSmooth = false,
   faqSchema,
+  noindex = false,
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.url);
@@ -107,6 +109,7 @@ const structuredData = isArticle
     <meta name="description" content={description} />
     <meta name="author" content={author} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    {noindex && <meta name="robots" content="noindex, follow" />}
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={isArticle ? "article" : "website"} />
