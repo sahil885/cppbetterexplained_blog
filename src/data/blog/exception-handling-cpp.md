@@ -831,5 +831,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
-
+- [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](/posts/oop-in-cpp/) — custom exception classes are built using C++ OOP; read this first if you're new to classes.
+- [Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks](/posts/memory-management-cpp/) — exceptions interact with memory management; learn RAII to write leak-free exception-safe code.
+- [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — exception handling is a frequent interview topic; test your knowledge with common questions.
 

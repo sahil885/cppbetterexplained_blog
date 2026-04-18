@@ -830,5 +830,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
-
+- [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](/posts/oop-in-cpp/) — virtual functions build on OOP fundamentals; read this first if you're new to classes and inheritance.
+- [C++ Design Patterns Explained: Singleton, Factory, and Observer in Modern C++](/posts/design-patterns-cpp/) — polymorphism is the engine behind many design patterns; see it applied in real-world code.
+- [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — virtual functions and vtables are a classic deep-dive topic in C++ technical interviews.
 

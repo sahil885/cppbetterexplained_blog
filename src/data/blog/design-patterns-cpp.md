@@ -1001,5 +1001,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
-
+- [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](/posts/oop-in-cpp/) — design patterns build directly on OOP fundamentals; master classes and inheritance first.
+- [Virtual Functions and Polymorphism in C++: How Runtime Dispatch Actually Works](/posts/virtual-functions-polymorphism-cpp/) — polymorphism powers many design patterns, including Factory and Observer.
+- [C++ Templates From Scratch: Generic Programming Explained Simply](/posts/cpp-templates-explained/) — templates enable powerful generic versions of classic patterns.
 

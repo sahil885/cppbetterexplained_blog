@@ -402,6 +402,10 @@ The initializer list initializes directly, avoiding unnecessary temporary object
 
 ---
 
+> **OOP clicking into place?** The [C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page) goes deeper on inheritance, polymorphism, design patterns, and everything else that makes C++ OOP powerful — with the same clear explanations you're reading now. **Just $19.** 👉 [Get the Ebook](https://start.cppbetterexplained.com/tw-sales-page)
+
+---
+
 ## Destructors: Cleanup When Objects Die
 
 A **destructor** is the opposite of a constructor. It runs automatically when an object is destroyed (when it goes out of scope or is deleted). Destructors are useful for cleanup: closing files, freeing memory, releasing resources.
@@ -732,5 +736,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
-
+- [Virtual Functions and Polymorphism in C++: How Runtime Dispatch Actually Works](/posts/virtual-functions-polymorphism-cpp/) — the natural next step after learning classes; see how runtime polymorphism works under the hood.
+- [C++ Design Patterns Explained: Singleton, Factory, and Observer in Modern C++](/posts/design-patterns-cpp/) — put your OOP knowledge to work with real-world design patterns used in production code.
+- [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — OOP questions (inheritance, polymorphism, encapsulation) make up a large chunk of C++ interviews.
 

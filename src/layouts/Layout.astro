@@ -14,6 +14,7 @@ type Props = {
   pubDatetime?: Date;
   modDatetime?: Date | null;
   scrollSmooth?: boolean;
+  faqSchema?: { question: string; answer: string }[];
 };
 
 const {
@@ -26,6 +27,7 @@ const {
   pubDatetime,
   modDatetime,
   scrollSmooth = false,
+  faqSchema,
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.url);
@@ -36,6 +38,8 @@ const structuredData = isArticle
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: `${title}`,
+      description: `${description}`,
+      url: `${canonicalURL}`,
       image: `${socialImageURL}`,
       datePublished: pubDatetime!.toISOString(),
       ...(modDatetime && { dateModified: modDatetime.toISOString() }),
@@ -46,6 +50,19 @@ const structuredData = isArticle
           ...(profile && { url: profile }),
         },
       ],
+      publisher: {
+        "@type": "Organization",
+        name: SITE.title,
+        url: SITE.website,
+        logo: {
+          "@type": "ImageObject",
+          url: `${new URL("/favicon.svg", Astro.url)}`,
+        },
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": `${canonicalURL}`,
+      },
     }
   : {
       "@context": "https://schema.org",
@@ -53,6 +70,11 @@ const structuredData = isArticle
       name: `${title}`,
       url: `${canonicalURL}`,
       description: `${description}`,
+      publisher: {
+        "@type": "Organization",
+        name: SITE.title,
+        url: SITE.website,
+      },
     }
 ---
 
@@ -87,10 +109,12 @@ const structuredData = isArticle
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={isArticle ? "article" : "website"} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={socialImageURL} />
+    <meta property="og:site_name" content={SITE.title} />
 
     <!-- Article Published/Modified time -->
     {
@@ -110,12 +134,13 @@ const structuredData = isArticle
       )
     }
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={socialImageURL} />
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageURL} />
+    <meta name="twitter:site" content="@cppbetterexpl" />
 
     <!-- Google JSON-LD Structured data -->
     <script
@@ -123,6 +148,28 @@ const structuredData = isArticle
       is:inline
       set:html={JSON.stringify(structuredData)}
     />
+
+    <!-- FAQPage JSON-LD (injected when post includes faqSchema) -->
+    {
+      faqSchema && faqSchema.length > 0 && (
+        <script
+          type="application/ld+json"
+          is:inline
+          set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqSchema.map(({ question, answer }) => ({
+              "@type": "Question",
+              name: question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: answer,
+              },
+            })),
+          })}
+        />
+      )
+    }
 
     <!-- Enable RSS feed auto-discovery -->
     <link

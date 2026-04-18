@@ -196,6 +196,8 @@ Use references when you want:
 
 For beginners: **Prefer references whenever possible, and use pointers only when you specifically need pointer behavior.**
 
+> **Pointers finally making sense?** The [C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page) covers pointers, smart pointers, memory management, and the entire C++ language with the same beginner-first approach you're reading now. **Just $19.** 👉 [Get the Ebook](https://start.cppbetterexplained.com/tw-sales-page)
+
 ## Pointer Arithmetic: Moving Through Memory
 
 Pointers support arithmetic operations. You can add or subtract integers from pointers:
@@ -372,5 +374,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
-
+- [Smart Pointers in Modern C++: unique_ptr, shared_ptr, and weak_ptr Explained](/posts/smart-pointers-cpp/) — once you understand raw pointers, upgrade to smart pointers to write safer, modern C++.
+- [Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks](/posts/memory-management-cpp/) — pointers and memory management go hand in hand; learn how the heap and stack actually work.
+- [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — pointers appear in nearly every C++ technical interview; test yourself here.
 

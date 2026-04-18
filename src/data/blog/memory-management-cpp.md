@@ -497,5 +497,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
-
+- [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/) — pointers are the foundation of manual memory management; start here if you're new to the topic.
+- [Smart Pointers in Modern C++: unique_ptr, shared_ptr, and weak_ptr Explained](/posts/smart-pointers-cpp/) — smart pointers solve most memory management problems automatically; the modern C++ way.
+- [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — memory management questions are nearly guaranteed in any C++ technical interview.
 

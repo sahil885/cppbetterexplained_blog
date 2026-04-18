@@ -6,6 +6,37 @@ author: "Sahil"
 tags: ["C++", "interview", "career", "OOP", "STL", "advanced"]
 draft: false
 featured: true
+faqSchema:
+  - question: "What are the basic data types in C++?"
+    answer: "C++ has built-in types including: char (1 byte), short (2 bytes), int (4 bytes), long long (8 bytes), float (4 bytes), double (8 bytes), and bool (1 byte). Use sizeof(type) to verify sizes on your specific platform."
+  - question: "What is the difference between const and constexpr in C++?"
+    answer: "const creates a runtime constant — the value can't be changed but may be determined at runtime. constexpr creates a compile-time constant — the value must be known at compile time and can be used in template parameters and array sizes."
+  - question: "What is a class in C++ and how does it differ from a struct?"
+    answer: "A class is a blueprint for creating objects that bundles data (member variables) and functions (methods) together. The key difference from struct is default access: class members are private by default, while struct members are public by default."
+  - question: "What are constructors and destructors in C++?"
+    answer: "A constructor is called automatically when an object is created — it initializes member variables. A destructor is called when the object is destroyed — it cleans up resources. Destructors are especially important when the class manages dynamic memory."
+  - question: "What is polymorphism in C++?"
+    answer: "Polymorphism means 'many forms'. Compile-time polymorphism (function overloading, templates) is resolved at compile time. Runtime polymorphism (virtual functions) lets a base class pointer call the correct derived class method at runtime via the vtable mechanism."
+  - question: "What are virtual functions in C++ and why do we need them?"
+    answer: "A virtual function is declared with the 'virtual' keyword and enables runtime polymorphism. When called through a base class pointer or reference, a virtual function dispatches to the most-derived override. Without virtual, the base class version is always called — this is known as static dispatch."
+  - question: "What is a memory leak in C++ and how do you prevent it?"
+    answer: "A memory leak occurs when heap memory is allocated with 'new' but never freed with 'delete', causing the program to gradually consume more memory. Prevention: use smart pointers (unique_ptr, shared_ptr), follow RAII, and always pair every 'new' with a 'delete' in manual memory management."
+  - question: "What are smart pointers in C++? Name the types."
+    answer: "Smart pointers automatically manage heap memory using RAII. The three main types are: unique_ptr (exclusive ownership, automatically deletes on scope exit), shared_ptr (shared ownership with reference counting), and weak_ptr (non-owning observer that breaks circular references)."
+  - question: "What is RAII in C++?"
+    answer: "RAII (Resource Acquisition Is Initialization) is an idiom where resources (memory, file handles, locks) are tied to object lifetimes. Resources are acquired in the constructor and released in the destructor. This ensures cleanup happens automatically even when exceptions are thrown."
+  - question: "What is the Standard Template Library (STL) in C++?"
+    answer: "The STL is a collection of generic data structures and algorithms in the C++ standard library. Key components: containers (vector, list, map, set, unordered_map), iterators (for traversing containers), and algorithms (sort, find, transform). The STL uses templates to work with any data type."
+  - question: "What is the difference between stack and heap memory in C++?"
+    answer: "Stack memory is automatically managed, fast, and limited in size. Variables on the stack are created/destroyed as functions are called/returned. Heap memory is manually managed (using new/delete or smart pointers), larger, but slower. Heap allocations persist until explicitly freed."
+  - question: "What is inheritance in C++ and what are its types?"
+    answer: "Inheritance lets a class (derived) acquire properties and methods from another class (base). Types: public inheritance (is-a relationship, base public/protected members keep their access), protected inheritance (external access becomes protected), and private inheritance (all base members become private in derived)."
+  - question: "What is function overloading in C++?"
+    answer: "Function overloading allows multiple functions with the same name but different parameter lists (different types, number, or order of parameters). The compiler selects the correct version based on the arguments at the call site. Return type alone is not sufficient to overload a function."
+  - question: "What are C++ templates and how do they work?"
+    answer: "Templates enable generic programming by letting you write code that works with any data type. Function templates generate a function for each type it's called with. Class templates create a class for each type. The STL is built entirely on templates. The compiler instantiates templates at compile time."
+  - question: "What is the difference between deep copy and shallow copy in C++?"
+    answer: "A shallow copy copies the pointer address, so both the original and copy point to the same heap memory — modifying one affects the other and can cause double-free errors. A deep copy allocates new memory and copies the actual data, so each object owns independent memory."
 ---
 
 # Top 50 C++ Interview Questions and Answers (Beginner to Advanced)
@@ -284,6 +315,10 @@ The `std::` namespace contains all standard library components. Use namespaces t
 
 ---
 
+> **Want all 50 answers explained with depth and examples?** The [C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page) covers every question on this list — plus practice problems and tips for explaining your thinking to interviewers. **Just $19.** 👉 [Get the Ebook](https://start.cppbetterexplained.com/tw-sales-page)
+
+---
+
 ## Section 2: Object-Oriented Programming (Questions 13–24)
 
 ### 13. What is a class? How does it differ from a struct?
@@ -536,6 +571,10 @@ private:
 ```
 
 Composition is often preferred over inheritance for flexibility. You can change components without inheritance hierarchy constraints. Inheritance should represent true "is-a" relationships; use composition for most other cases.
+
+---
+
+> **Preparing for an interview this week?** The [C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page) walks through all 50 questions with full explanations and coding examples — perfect for a last-minute deep dive. **$19.** 👉 [Grab it here](https://start.cppbetterexplained.com/tw-sales-page)
 
 ---
 
@@ -1167,4 +1206,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 ## Related Articles
 
-
+- [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/) — master the memory management concepts that appear in every C++ interview.
+- [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](/posts/oop-in-cpp/) — deep dive into the OOP topics covered in Questions 13–24.
+- [Smart Pointers in Modern C++: unique_ptr, shared_ptr, and weak_ptr Explained](/posts/smart-pointers-cpp/) — essential reading to nail the memory management questions.
+- [C++ STL Containers Explained: Choosing the Right Container for Every Situation](/posts/stl-containers-cpp/) — covers the STL topics from Questions 34–41 in detail.

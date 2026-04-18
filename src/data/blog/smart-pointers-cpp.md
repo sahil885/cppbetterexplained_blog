@@ -435,5 +435,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
-
+- [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/) — read this first if you're new to pointers; smart pointers build directly on raw pointer concepts.
+- [Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks](/posts/memory-management-cpp/) — smart pointers automate memory management; this guide explains what they're managing for you.
+- [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — smart pointers and ownership semantics are a popular advanced topic in C++ interviews.
 

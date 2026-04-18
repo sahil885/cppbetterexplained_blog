@@ -900,4 +900,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 ## Related Articles
 
+- [C++ STL Containers Explained: Choosing the Right Container for Every Situation](/posts/stl-containers-cpp/) — the STL is built entirely on templates; understanding both unlocks powerful C++ patterns.
+- [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](/posts/oop-in-cpp/) — templates and OOP work closely together in modern C++; master both for a complete picture.
+- [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — templates are a common advanced topic in C++ technical interviews.
 
