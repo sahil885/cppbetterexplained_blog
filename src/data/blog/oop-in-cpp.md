@@ -402,7 +402,7 @@ The initializer list initializes directly, avoiding unnecessary temporary object
 
 ---
 
-> **OOP clicking into place?** The [C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page) goes deeper on inheritance, polymorphism, design patterns, and everything else that makes C++ OOP powerful — with the same clear explanations you're reading now. **Just $19.** 👉 [Get the Ebook](https://start.cppbetterexplained.com/tw-sales-page)
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.
 
 ---
 

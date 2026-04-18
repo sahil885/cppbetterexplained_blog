@@ -315,7 +315,7 @@ The `std::` namespace contains all standard library components. Use namespaces t
 
 ---
 
-> **Want all 50 answers explained with depth and examples?** The [C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page) covers every question on this list — plus practice problems and tips for explaining your thinking to interviewers. **Just $19.** 👉 [Get the Ebook](https://start.cppbetterexplained.com/tw-sales-page)
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.
 
 ---
 
@@ -574,7 +574,7 @@ Composition is often preferred over inheritance for flexibility. You can change 
 
 ---
 
-> **Preparing for an interview this week?** The [C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page) walks through all 50 questions with full explanations and coding examples — perfect for a last-minute deep dive. **$19.** 👉 [Grab it here](https://start.cppbetterexplained.com/tw-sales-page)
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.
 
 ---
 
