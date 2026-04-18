@@ -97,6 +97,8 @@ Think of it like filling in a phone book. If someone calls `square()`, you look 
 
 ---
 
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+
 ## What Causes "Undefined Reference to X"? Seven Common Causes
 
 ### Cause 1: Forgetting to Define a Function (Declaration vs Definition)

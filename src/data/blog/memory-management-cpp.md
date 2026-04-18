@@ -228,6 +228,8 @@ Even if you delete at the end, an early return or exception can cause a leak.
 
 ---
 
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+
 ## How to Detect Memory Leaks: Valgrind and AddressSanitizer
 
 You can't always see memory leaks by running your program. You need tools. The two most common are **Valgrind** and **AddressSanitizer**.

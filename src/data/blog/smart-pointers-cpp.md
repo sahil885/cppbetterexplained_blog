@@ -130,6 +130,8 @@ int main() {
 
 This pattern is elegant: the function signals "I'm giving you ownership of this resource" by returning a `unique_ptr`. The caller knows they're responsible for the lifetime, and the compiler enforces it automatically.
 
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+
 ## shared_ptr: Shared Ownership
 
 `shared_ptr` represents **shared ownership** of a dynamically allocated object. Multiple `shared_ptr` instances can point to the same object, and the object is only deleted when the **last** `shared_ptr` is destroyed.

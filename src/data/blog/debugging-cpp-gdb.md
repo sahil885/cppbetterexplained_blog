@@ -232,6 +232,8 @@ Move up and down the stack to inspect variables in different contexts:
 
 This is incredibly useful when a crash happens deep in the call stack. You can trace back to understand the chain of events.
 
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+
 ## Debugging Segmentation Faults: A Step-by-Step Walkthrough
 
 Segmentation faults (segfaults) crash your program by accessing invalid memory. Let's debug one.

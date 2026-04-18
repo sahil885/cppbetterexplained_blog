@@ -299,6 +299,8 @@ std::string s = std::format("Pi is approximately {:.2f}", pi);
 
 This is cleaner and type-safe compared to `printf()` (which is error-prone) or `std::ostringstream` (which is verbose).
 
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+
 ## Efficient String Building: Why += in a Loop is Slow
 
 Concatenating strings in a loop seems convenient but can be inefficient:

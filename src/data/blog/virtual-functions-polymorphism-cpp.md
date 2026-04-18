@@ -371,6 +371,8 @@ int main() {
 
 A class with at least one pure virtual function is **abstract**—you cannot instantiate it directly. This is powerful for defining interfaces that derived classes must implement.
 
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+
 ## Virtual Destructors: Why Forgetting Them Causes Bugs
 
 This is critical and often overlooked. Always make destructors virtual in base classes:

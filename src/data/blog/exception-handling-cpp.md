@@ -340,6 +340,8 @@ Caught: Error at level 3!
 
 **Critical insight**: Destructors run during stack unwinding. This is why RAII (Resource Acquisition Is Initialization) works so well with exceptions — your resources are automatically cleaned up.
 
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+
 ## Exception Safety Guarantees: Levels of Commitment
 
 Different functions provide different guarantees about exception safety:

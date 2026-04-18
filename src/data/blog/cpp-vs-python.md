@@ -138,6 +138,8 @@ Performance doesn't matter when you're:
 
 **Verdict:** C++ can be orders of magnitude faster, but in most applications, the difference doesn't impact the user experience. Choose based on other factors first, not performance alone.
 
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+
 ## Use Cases: What Each Language Is Actually Used For
 
 ### Python's Sweet Spots

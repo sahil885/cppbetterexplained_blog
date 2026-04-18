@@ -256,6 +256,8 @@ lock.unlock();
 
 **Best practice**: Use `std::lock_guard` for simple cases and `std::unique_lock` when you need flexibility.
 
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+
 ## Deadlock: What It Is and How to Avoid It
 
 **Deadlock** occurs when threads are stuck waiting for each other. Classic example:

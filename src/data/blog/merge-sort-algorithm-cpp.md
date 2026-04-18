@@ -46,6 +46,8 @@ At each level the algorithm splits, and at each level coming back up it merges i
 
 Unlike Quick Sort, Merge Sort always runs in O(n log n) regardless of the input — making it reliable for large datasets.
 
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+
 ## Implementation of Merge Sort in C++
 
 The implementation consists of two functions — `merge()` which combines two sorted sub-arrays, and `mergeSort()` which recursively divides the array.
