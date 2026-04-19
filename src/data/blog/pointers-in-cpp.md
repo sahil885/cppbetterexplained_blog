@@ -6,6 +6,23 @@ author: "Sahil"
 tags: ["C++", "pointers", "beginner", "memory", "tutorial"]
 draft: false
 featured: true
+faqSchema:
+  - question: "What is a pointer in C++?"
+    answer: "A pointer is a variable that stores the memory address of another variable. Instead of holding a value like an int or string, a pointer holds the location in memory where a value lives. You declare a pointer with an asterisk: int* ptr;"
+  - question: "What is the difference between * and & in C++ pointers?"
+    answer: "The & (address-of) operator gives you the memory address of a variable. The * (dereference) operator gives you the value stored at a memory address. When declaring a pointer, * means 'this variable is a pointer'. When using a pointer, * means 'give me the value at this address'."
+  - question: "What is a null pointer in C++?"
+    answer: "A null pointer is a pointer that doesn't point to any valid memory address. In modern C++, you represent this with nullptr. Always initialise pointers to nullptr if you don't have an address for them yet — dereferencing a null pointer causes a crash, which is safer than silently corrupting memory."
+  - question: "What is the difference between a pointer and a reference in C++?"
+    answer: "A reference is an alias for an existing variable — it must be initialised when declared and cannot be reassigned to point to something else. A pointer is a variable holding an address — it can be null, reassigned, and used with pointer arithmetic. References are safer and simpler; pointers are more flexible."
+  - question: "What does dereferencing a pointer mean?"
+    answer: "Dereferencing a pointer means accessing the value stored at the memory address the pointer holds. You dereference with the * operator. For example: int x = 10; int* ptr = &x; then *ptr gives you 10. Changing *ptr also changes x, because they share the same memory location."
+  - question: "Why are pointers important in C++?"
+    answer: "Pointers are fundamental to C++ because they enable dynamic memory allocation (new/delete), passing large objects to functions without copying, building data structures like linked lists and trees, and interacting with hardware or legacy C code. Understanding pointers is essential for understanding how C++ works under the hood."
+  - question: "What is pointer arithmetic in C++?"
+    answer: "Pointer arithmetic means performing arithmetic operations on pointers. When you increment a pointer (ptr++), it advances by the size of the type it points to — not by 1 byte. For an int* on a 64-bit system, ptr++ moves forward 4 bytes. This is how arrays and iteration with raw pointers work in C++."
+  - question: "What is a dangling pointer in C++?"
+    answer: "A dangling pointer is a pointer that holds the address of memory that has been freed or has gone out of scope. Dereferencing a dangling pointer causes undefined behaviour — the program may crash or produce garbage values. Always set a pointer to nullptr after deleting it to avoid this."
 ---
 
 # How to Use Pointers in C++: A Complete Beginner's Guide

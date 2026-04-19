@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://www.cppbetterexplained.com/", // canonical www domain // replace this with your deployed domain
   author: "Sahil Bora",
   profile: "https://sahilbora.com",
-  desc: "Learn C++ with step-by-step tutorials, real-world projects like Blackjack and Traffic Light, and fully annotated source code. Perfect for beginners.",
+  desc: "Free step-by-step C++ tutorials for beginners. Master pointers, OOP, STL, and more — then go deeper with the C++ Better Explained Ebook for just $19.",
   title: "C++ Better Explained",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
