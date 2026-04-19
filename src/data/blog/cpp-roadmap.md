@@ -390,6 +390,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the interactive version of this roadmap with numbered steps, direct links to every tutorial, and a built-in learning path.
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — the more practical companion to this roadmap, with step-by-step first-week guidance.
 - [What Is C++ Used For? Real-World Applications Explained](/posts/what-is-cpp-used-for/) — understand where C++ fits in the real world before you commit to learning it.
-- [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-and-data-types/) — the first real concept to master, explained clearly.
+- [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — the first real concept to master, explained clearly.

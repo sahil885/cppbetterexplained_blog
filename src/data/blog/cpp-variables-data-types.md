@@ -346,6 +346,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [C++ Conditionals Tutorial: if, else, and switch Explained](/posts/cpp-conditionals-tutorial/) — variables are what conditionals test; learn how to use them in if/else and switch statements.
+- [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — loops operate on variables and counters; the natural next step after learning data types.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — variables are inputs and outputs of functions; learn them next.
 - [C++ Arrays Tutorial: Store and Access Multiple Values](/posts/cpp-arrays-tutorial/) — the natural extension of single variables: storing collections of data.
-- [How to Start Learning C++ in 2026](/posts/how-to-start-learning-cpp/) — see how variables fit into the bigger picture of learning C++.
+- [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — see where variables fit in the full structured learning path.

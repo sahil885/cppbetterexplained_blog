@@ -438,6 +438,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 ## Related Articles
 - [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/) — read this first if you're new to pointers; smart pointers build directly on raw pointer concepts.
+- [C++ Move Semantics Explained: rvalue References, std::move, and Performance](/posts/cpp-move-semantics/) — unique_ptr relies entirely on move semantics; you cannot copy it, only move it.
+- [C++ Concurrency Tutorial: Threads, Mutex, and Thread Safety Explained](/posts/cpp-concurrency-mutex/) — shared_ptr uses atomic reference counting and is thread-safe for the pointer itself; learn how that matters in concurrent code.
 - [Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks](/posts/memory-management-cpp/) — smart pointers automate memory management; this guide explains what they're managing for you.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — smart pointers and ownership semantics are a popular advanced topic in C++ interviews.
 

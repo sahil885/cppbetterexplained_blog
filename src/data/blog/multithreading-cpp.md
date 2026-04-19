@@ -524,7 +524,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [C++ Concurrency Tutorial: Threads, Mutex, and Thread Safety Explained](/posts/cpp-concurrency-mutex/) — a beginner-focused companion guide covering std::thread, lock_guard, condition variables, and std::atomic with step-by-step examples.
+- [C++ Move Semantics Explained: rvalue References, std::move, and Performance](/posts/cpp-move-semantics/) — moving data between threads efficiently with std::move avoids expensive copies in concurrent code.
 - [C++ Design Patterns Explained: Singleton, Factory, and Observer in Modern C++](/posts/design-patterns-cpp/) — thread-safe design patterns like the Singleton are essential in concurrent C++ programs.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — multithreading is a common advanced topic in C++ interviews; test your knowledge here.
-- [Exception Handling in C++: Best Practices for Writing Robust, Error-Free Code](/posts/exception-handling-cpp/) — exception handling in multithreaded code requires extra care; learn the best practices.
 

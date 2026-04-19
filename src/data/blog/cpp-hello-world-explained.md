@@ -296,6 +296,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
-- [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-and-data-types/) — once you understand the program structure, learn how to store and use data.
+- [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the full structured learning path from Hello World to advanced topics, with every step linked.
+- [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — once you understand the program structure, learn how to store and use data.
+- [C++ Conditionals Tutorial: if, else, and switch Explained](/posts/cpp-conditionals-tutorial/) — the next step after Hello World — make your program make decisions.
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — the full path from Hello World to real programs.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — `main` is a function — learn how to write your own.

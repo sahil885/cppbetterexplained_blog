@@ -489,5 +489,6 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 ## Related Articles
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — member functions are the behavior side of classes; make sure you understand functions first.
-- [C++ Arrays Tutorial: Store and Access Multiple Values](/posts/cpp-arrays-tutorial/) — learn how classes commonly contain vector and array members.
-- [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — see how OOP fits into the full C++ learning journey.
+- [C++ Move Semantics Explained: rvalue References, std::move, and Performance](/posts/cpp-move-semantics/) — once you understand classes, learn the Rule of Five and how to write efficient move constructors.
+- [C++ Vector Tutorial: The Complete Guide to std::vector](/posts/cpp-vector-tutorial/) — classes commonly own vectors as members; learn how they work together.
+- [OOP in C++: Inheritance, Encapsulation, and Polymorphism Explained](/posts/oop-in-cpp/) — the natural next step — applying classes to real object-oriented design.

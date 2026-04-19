@@ -289,6 +289,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
-- [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-and-data-types/) — the first real concept every C++ beginner needs to understand, explained clearly.
-- [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — once you know variables, functions are your next stop.
+- [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the full structured learning path from first program to advanced topics, all in one place.
+- [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — the first real concept every C++ beginner needs to understand, explained clearly.
+- [C++ Conditionals Tutorial: if, else, and switch Explained](/posts/cpp-conditionals-tutorial/) — make your program make decisions; the natural second step after variables.
+- [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — repeat code efficiently; essential for almost every real program.
 - [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/) — when you're ready for the concept everyone finds scary.

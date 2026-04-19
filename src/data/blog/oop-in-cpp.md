@@ -736,6 +736,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [C++ Move Semantics Explained: rvalue References, std::move, and Performance](/posts/cpp-move-semantics/) — the Rule of Five extends OOP with move constructors and move assignment; essential for classes that manage resources.
 - [Virtual Functions and Polymorphism in C++: How Runtime Dispatch Actually Works](/posts/virtual-functions-polymorphism-cpp/) — the natural next step after learning classes; see how runtime polymorphism works under the hood.
 - [C++ Design Patterns Explained: Singleton, Factory, and Observer in Modern C++](/posts/design-patterns-cpp/) — put your OOP knowledge to work with real-world design patterns used in production code.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — OOP questions (inheritance, polymorphism, encapsulation) make up a large chunk of C++ interviews.

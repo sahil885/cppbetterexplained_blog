@@ -474,6 +474,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
-- [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-and-data-types/) — arrays store collections of typed variables; understand single variables first.
+- [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — arrays store collections of typed variables; understand single variables first.
+- [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — arrays and loops go hand in hand; iterating over an array with a for loop is one of the most common patterns in C++.
+- [C++ Vector Tutorial: The Complete Guide to std::vector](/posts/cpp-vector-tutorial/) — vectors are the modern, safer alternative to raw arrays; learn when to use each.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — arrays are commonly passed to functions; learn how that works.
-- [C++ Classes and Objects: A Beginner's Guide to OOP](/posts/cpp-classes-and-objects/) — the natural next step after arrays is organizing data with classes.
