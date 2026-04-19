@@ -1165,6 +1165,527 @@ int main() {
 
 ---
 
+## Section 6: Practice Problems
+
+Reading answers is half the job. Writing code under pressure is the other half. These 10 problems cover the concepts from the 50 questions above — work through them before your interview.
+
+---
+
+### Problem 1: Reverse a String In-Place
+
+**Problem:** Write a function that reverses a `std::string` in-place without using `std::reverse` or any extra string.
+
+**Concepts tested:** Loops, indexing, swap.
+
+**Hint:** Use two indices — one at the start, one at the end — and swap characters while they haven't crossed.
+
+**Solution:**
+
+```cpp
+#include <iostream>
+#include <string>
+
+void reverseString(std::string& s) {
+    int left = 0;
+    int right = s.size() - 1;
+    while (left < right) {
+        std::swap(s[left], s[right]);
+        left++;
+        right--;
+    }
+}
+
+int main() {
+    std::string s = "hello";
+    reverseString(s);
+    std::cout << s << std::endl;  // Output: olleh
+    return 0;
+}
+```
+
+**What interviewers look for:** Do you handle edge cases (empty string, single character)? Do you know why passing by reference matters here?
+
+---
+
+### Problem 2: Implement a Stack Using `std::vector`
+
+**Problem:** Implement a generic `Stack<T>` class with `push()`, `pop()`, `top()`, `isEmpty()`, and `size()` operations. Throw `std::runtime_error` if `pop()` or `top()` is called on an empty stack.
+
+**Concepts tested:** Class design, templates, STL containers, exception handling.
+
+**Solution:**
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <stdexcept>
+
+template <typename T>
+class Stack {
+public:
+    void push(const T& value) {
+        data.push_back(value);
+    }
+
+    void pop() {
+        if (isEmpty()) throw std::runtime_error("Stack is empty");
+        data.pop_back();
+    }
+
+    T& top() {
+        if (isEmpty()) throw std::runtime_error("Stack is empty");
+        return data.back();
+    }
+
+    bool isEmpty() const { return data.empty(); }
+    size_t size() const { return data.size(); }
+
+private:
+    std::vector<T> data;
+};
+
+int main() {
+    Stack<int> s;
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    std::cout << s.top() << std::endl;  // 30
+    s.pop();
+    std::cout << s.top() << std::endl;  // 20
+    std::cout << s.size() << std::endl; // 2
+    return 0;
+}
+```
+
+**What interviewers look for:** Correct use of templates, const-correctness on `isEmpty()` and `size()`, exception throwing over silent failures.
+
+---
+
+### Problem 3: Count Word Frequencies
+
+**Problem:** Given a `std::vector<std::string>` of words, return a `std::map<std::string, int>` with the count of each word. Then print the words and their frequencies in alphabetical order.
+
+**Concepts tested:** STL `map`, range-based for loops, structured iteration.
+
+**Solution:**
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <map>
+#include <string>
+
+std::map<std::string, int> countWords(const std::vector<std::string>& words) {
+    std::map<std::string, int> freq;
+    for (const auto& word : words) {
+        freq[word]++;  // Creates entry with 0 if not present, then increments
+    }
+    return freq;
+}
+
+int main() {
+    std::vector<std::string> words = {"apple", "banana", "apple", "cherry", "banana", "apple"};
+    auto freq = countWords(words);
+
+    for (const auto& [word, count] : freq) {  // C++17 structured binding
+        std::cout << word << ": " << count << "\n";
+    }
+    // Output (alphabetically):
+    // apple: 3
+    // banana: 2
+    // cherry: 1
+    return 0;
+}
+```
+
+**What interviewers look for:** Knowledge that `map[key]++` auto-initializes to 0. Using structured bindings for clean iteration. Understanding that `std::map` is sorted by key.
+
+---
+
+### Problem 4: RAII — Safe File Reader
+
+**Problem:** Write a `FileReader` class that opens a file in its constructor, reads all lines into a `std::vector<std::string>`, and closes the file in its destructor. The class should not be copyable.
+
+**Concepts tested:** RAII, constructors/destructors, Rule of Three/Zero, deleting copy operations.
+
+**Solution:**
+
+```cpp
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
+#include <stdexcept>
+
+class FileReader {
+public:
+    explicit FileReader(const std::string& filename) {
+        file.open(filename);
+        if (!file.is_open()) {
+            throw std::runtime_error("Could not open file: " + filename);
+        }
+        std::string line;
+        while (std::getline(file, line)) {
+            lines.push_back(line);
+        }
+    }
+
+    ~FileReader() {
+        if (file.is_open()) file.close();
+    }
+
+    // Delete copy — this class manages a resource
+    FileReader(const FileReader&) = delete;
+    FileReader& operator=(const FileReader&) = delete;
+
+    const std::vector<std::string>& getLines() const { return lines; }
+    size_t lineCount() const { return lines.size(); }
+
+private:
+    std::fstream file;
+    std::vector<std::string> lines;
+};
+
+int main() {
+    try {
+        FileReader reader("example.txt");
+        for (const auto& line : reader.getLines()) {
+            std::cout << line << "\n";
+        }
+    } catch (const std::runtime_error& e) {
+        std::cerr << "Error: " << e.what() << "\n";
+    }
+    return 0;
+}
+```
+
+**What interviewers look for:** Why `= delete` on copy operations, why `explicit` on the constructor, why throwing in the constructor is correct RAII behaviour.
+
+---
+
+### Problem 5: Polymorphism — Shape Area Calculator
+
+**Problem:** Define an abstract `Shape` class with a pure virtual `area()` method. Implement `Circle` and `Rectangle` subclasses. Write a function that takes a `std::vector<std::unique_ptr<Shape>>` and prints the area of each shape.
+
+**Concepts tested:** Abstract classes, virtual functions, polymorphism, smart pointers.
+
+**Solution:**
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <memory>
+#include <cmath>
+
+class Shape {
+public:
+    virtual double area() const = 0;  // Pure virtual
+    virtual std::string name() const = 0;
+    virtual ~Shape() = default;  // Virtual destructor is required!
+};
+
+class Circle : public Shape {
+public:
+    explicit Circle(double radius) : radius(radius) {}
+    double area() const override { return M_PI * radius * radius; }
+    std::string name() const override { return "Circle"; }
+private:
+    double radius;
+};
+
+class Rectangle : public Shape {
+public:
+    Rectangle(double w, double h) : width(w), height(h) {}
+    double area() const override { return width * height; }
+    std::string name() const override { return "Rectangle"; }
+private:
+    double width, height;
+};
+
+void printAreas(const std::vector<std::unique_ptr<Shape>>& shapes) {
+    for (const auto& shape : shapes) {
+        std::cout << shape->name() << " area: " << shape->area() << "\n";
+    }
+}
+
+int main() {
+    std::vector<std::unique_ptr<Shape>> shapes;
+    shapes.push_back(std::make_unique<Circle>(5.0));
+    shapes.push_back(std::make_unique<Rectangle>(4.0, 6.0));
+    shapes.push_back(std::make_unique<Circle>(3.0));
+    printAreas(shapes);
+    // Circle area: 78.5398
+    // Rectangle area: 24
+    // Circle area: 28.2743
+    return 0;
+}
+```
+
+**What interviewers look for:** Virtual destructor on the base class (critical — forgetting this causes undefined behaviour), `override` keyword, `std::make_unique`, passing by const reference.
+
+---
+
+### Problem 6: Remove Duplicates from a Vector
+
+**Problem:** Given a `std::vector<int>`, remove all duplicate values and return a new vector with only unique elements, preserving the original order.
+
+**Concepts tested:** `std::unordered_set`, iteration, algorithmic thinking.
+
+**Solution:**
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+
+std::vector<int> removeDuplicates(const std::vector<int>& input) {
+    std::unordered_set<int> seen;
+    std::vector<int> result;
+    for (int val : input) {
+        if (seen.find(val) == seen.end()) {  // Not seen yet
+            seen.insert(val);
+            result.push_back(val);
+        }
+    }
+    return result;
+}
+
+int main() {
+    std::vector<int> v = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3};
+    auto unique = removeDuplicates(v);
+    for (int x : unique) {
+        std::cout << x << " ";  // Output: 3 1 4 5 9 2 6
+    }
+    return 0;
+}
+```
+
+**Variation an interviewer might ask:** Do it in-place using `std::sort` + `std::unique` + `erase`. Discuss the tradeoff: the set approach is O(n) average time, O(n) space; the sort approach is O(n log n) time but preserves nothing about order.
+
+---
+
+### Problem 7: Move Semantics — Buffer Class
+
+**Problem:** Implement a `Buffer` class that wraps a heap-allocated `int` array. It should support move construction and move assignment so that transferring a `Buffer` doesn't copy the data — it just moves ownership.
+
+**Concepts tested:** Move constructor, move assignment, `std::move`, Rule of Five, `noexcept`.
+
+**Solution:**
+
+```cpp
+#include <iostream>
+#include <utility>
+
+class Buffer {
+public:
+    explicit Buffer(size_t size) : size(size), data(new int[size]()) {
+        std::cout << "Constructed buffer of size " << size << "\n";
+    }
+
+    ~Buffer() {
+        delete[] data;
+        std::cout << "Destroyed buffer\n";
+    }
+
+    // Copy: expensive (allocates new memory)
+    Buffer(const Buffer& other) : size(other.size), data(new int[other.size]) {
+        std::copy(other.data, other.data + size, data);
+        std::cout << "Copied buffer\n";
+    }
+
+    // Move: cheap (just steals the pointer)
+    Buffer(Buffer&& other) noexcept : size(other.size), data(other.data) {
+        other.data = nullptr;
+        other.size = 0;
+        std::cout << "Moved buffer\n";
+    }
+
+    Buffer& operator=(Buffer&& other) noexcept {
+        if (this != &other) {
+            delete[] data;
+            data = other.data;
+            size = other.size;
+            other.data = nullptr;
+            other.size = 0;
+        }
+        return *this;
+    }
+
+    size_t getSize() const { return size; }
+
+private:
+    size_t size;
+    int* data;
+};
+
+int main() {
+    Buffer b1(1000);
+    Buffer b2 = std::move(b1);  // Move, not copy
+    std::cout << "b2 size: " << b2.getSize() << "\n";  // 1000
+    std::cout << "b1 size: " << b1.getSize() << "\n";  // 0
+    return 0;
+}
+```
+
+**What interviewers look for:** Setting the moved-from pointer to `nullptr` (critical — prevents double-free), `noexcept` on move operations (required for STL container optimisations), self-assignment check in move assignment.
+
+---
+
+### Problem 8: Thread-Safe Counter
+
+**Problem:** Implement a `ThreadSafeCounter` class that can be incremented safely from multiple threads. Demonstrate it by spawning 10 threads that each increment the counter 1000 times, then verify the final count is exactly 10,000.
+
+**Concepts tested:** `std::thread`, `std::mutex`, `std::lock_guard`, race conditions.
+
+**Solution:**
+
+```cpp
+#include <iostream>
+#include <thread>
+#include <mutex>
+#include <vector>
+
+class ThreadSafeCounter {
+public:
+    void increment() {
+        std::lock_guard<std::mutex> lock(mutex);
+        ++count;
+    }
+
+    int get() const {
+        std::lock_guard<std::mutex> lock(mutex);
+        return count;
+    }
+
+private:
+    int count = 0;
+    mutable std::mutex mutex;  // mutable: allows locking in const methods
+};
+
+int main() {
+    ThreadSafeCounter counter;
+    std::vector<std::thread> threads;
+
+    for (int i = 0; i < 10; ++i) {
+        threads.emplace_back([&counter]() {
+            for (int j = 0; j < 1000; ++j) {
+                counter.increment();
+            }
+        });
+    }
+
+    for (auto& t : threads) {
+        t.join();
+    }
+
+    std::cout << "Final count: " << counter.get() << "\n";  // Always 10000
+    return 0;
+}
+```
+
+**What interviewers look for:** Why `mutable` on the mutex, why `lock_guard` instead of raw `lock()`/`unlock()`, what would happen without the mutex (race condition — non-deterministic results).
+
+---
+
+### Problem 9: Find the Two Numbers That Sum to a Target
+
+**Problem:** Given a `std::vector<int>` and a target integer, find and return the indices of the two numbers that add up to the target. Assume exactly one solution exists. Solve it in O(n) time.
+
+**Concepts tested:** `std::unordered_map`, algorithmic thinking, one-pass hash table.
+
+**Solution:**
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+#include <stdexcept>
+
+std::pair<int, int> twoSum(const std::vector<int>& nums, int target) {
+    std::unordered_map<int, int> seen;  // value -> index
+
+    for (int i = 0; i < static_cast<int>(nums.size()); ++i) {
+        int complement = target - nums[i];
+        if (seen.count(complement)) {
+            return {seen[complement], i};
+        }
+        seen[nums[i]] = i;
+    }
+    throw std::runtime_error("No solution found");
+}
+
+int main() {
+    std::vector<int> nums = {2, 7, 11, 15};
+    auto [idx1, idx2] = twoSum(nums, 9);
+    std::cout << "Indices: " << idx1 << ", " << idx2 << "\n";  // 0, 1
+    // nums[0] + nums[1] = 2 + 7 = 9
+    return 0;
+}
+```
+
+**What interviewers look for:** Why this is O(n) not O(n²), the complement trick, using `unordered_map` for O(1) average lookup. An O(n²) brute-force nested loop solution exists but would likely not pass in a real interview for large inputs.
+
+---
+
+### Problem 10: Flatten a Nested Vector
+
+**Problem:** Given a `std::vector<std::vector<int>>`, write a function that returns a single `std::vector<int>` with all elements flattened in order.
+
+**Concepts tested:** Nested containers, `insert()`, range-based for loops, iterators.
+
+**Solution:**
+
+```cpp
+#include <iostream>
+#include <vector>
+
+std::vector<int> flatten(const std::vector<std::vector<int>>& nested) {
+    std::vector<int> result;
+    for (const auto& inner : nested) {
+        result.insert(result.end(), inner.begin(), inner.end());
+    }
+    return result;
+}
+
+int main() {
+    std::vector<std::vector<int>> nested = {
+        {1, 2, 3},
+        {4, 5},
+        {6, 7, 8, 9}
+    };
+
+    auto flat = flatten(nested);
+    for (int x : flat) {
+        std::cout << x << " ";  // 1 2 3 4 5 6 7 8 9
+    }
+    return 0;
+}
+```
+
+**Bonus extension:** Reserve capacity upfront for performance:
+
+```cpp
+std::vector<int> flatten(const std::vector<std::vector<int>>& nested) {
+    size_t total = 0;
+    for (const auto& inner : nested) total += inner.size();
+
+    std::vector<int> result;
+    result.reserve(total);  // Single allocation, no reallocations
+    for (const auto& inner : nested) {
+        result.insert(result.end(), inner.begin(), inner.end());
+    }
+    return result;
+}
+```
+
+**What interviewers look for:** Knowledge of `insert()` with iterator range, awareness of `reserve()` for performance, clean loop structure.
+
+---
+
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+
+---
+
 ## Interview Tips
 
 1. **Understand the Why**: Don't just memorize answers. Understand why each feature exists and when to use it.
