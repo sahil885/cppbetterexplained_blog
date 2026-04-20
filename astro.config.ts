@@ -8,6 +8,9 @@ import { SITE } from "./src/config";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
+  redirects: {
+    "/sitemap.xml": "/sitemap-index.xml",
+  },
   integrations: [
     sitemap({
       filter: page =>
