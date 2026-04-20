@@ -290,7 +290,10 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 ## Related Articles
 - [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the full structured learning path from first program to advanced topics, all in one place.
+- [How to Set Up C++: Install a Compiler and Write Your First Program](/posts/cpp-setup-guide/) — the practical first step: get a working C++ environment on your machine.
+- [Is C++ Hard to Learn? An Honest Answer for Beginners](/posts/is-cpp-hard-to-learn/) — an honest look at the difficulty curve and what to expect.
 - [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — the first real concept every C++ beginner needs to understand, explained clearly.
 - [C++ Conditionals Tutorial: if, else, and switch Explained](/posts/cpp-conditionals-tutorial/) — make your program make decisions; the natural second step after variables.
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — repeat code efficiently; essential for almost every real program.
+- [C++ Projects for Beginners: 4 Guided Projects with Full Source Code](/posts/cpp-beginner-projects/) — once you know the basics, build something real.
 - [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/) — when you're ready for the concept everyone finds scary.

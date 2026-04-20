@@ -350,4 +350,5 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — loops operate on variables and counters; the natural next step after learning data types.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — variables are inputs and outputs of functions; learn them next.
 - [C++ Arrays Tutorial: Store and Access Multiple Values](/posts/cpp-arrays-tutorial/) — the natural extension of single variables: storing collections of data.
+- [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — a handy reference for data types and syntax you can bookmark and come back to.
 - [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — see where variables fit in the full structured learning path.

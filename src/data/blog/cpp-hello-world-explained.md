@@ -297,7 +297,9 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 ## Related Articles
 - [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the full structured learning path from Hello World to advanced topics, with every step linked.
+- [How to Set Up C++: Install a Compiler and Write Your First Program](/posts/cpp-setup-guide/) — before Hello World, you need a working compiler. This guide covers Windows, Mac, and Linux.
 - [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — once you understand the program structure, learn how to store and use data.
 - [C++ Conditionals Tutorial: if, else, and switch Explained](/posts/cpp-conditionals-tutorial/) — the next step after Hello World — make your program make decisions.
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — the full path from Hello World to real programs.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — `main` is a function — learn how to write your own.
+- [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — bookmark this for whenever you need a fast reminder on syntax.

@@ -170,5 +170,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 ## Related Articles
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — now that you know why, here's exactly how to start.
+- [Is C++ Hard to Learn? An Honest Answer for Beginners](/posts/is-cpp-hard-to-learn/) — an honest assessment of the learning curve before you commit.
 - [C++ vs Python: Which Should You Learn First?](/posts/cpp-vs-python/) — a side-by-side comparison to help you choose the right language for your goals.
+- [C++ vs Java: Which Should You Learn?](/posts/cpp-vs-java/) — how C++ stacks up against Java for career and project goals.
+- [How to Set Up C++: Install a Compiler and Write Your First Program](/posts/cpp-setup-guide/) — get your environment ready in under 15 minutes.
 - [C++ Better Explained: Top 50 Interview Questions](/posts/cpp-interview-questions/) — test your understanding with the most common C++ interview questions.

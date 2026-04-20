@@ -358,6 +358,9 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 ## Related Articles
 - [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/) — pointers are where C++ truly diverges from Python; this guide makes them approachable.
+- [Is C++ Hard to Learn? An Honest Answer for Beginners](/posts/is-cpp-hard-to-learn/) — an honest look at the learning curve if you decide to go with C++.
+- [How to Set Up C++: Install a Compiler and Write Your First Program](/posts/cpp-setup-guide/) — your first practical step if you choose C++.
+- [C++ vs Java: Which Should You Learn?](/posts/cpp-vs-java/) — comparing C++ against another major language if you're still weighing options.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — once you've chosen C++, practice with the most common interview questions.
 - [Breakdown of a Simple C++ Program Step by Step](/posts/breakdown-simple-cpp-program/) — see exactly what C++ code looks like and how it runs, compared to what you're used to in Python.
 

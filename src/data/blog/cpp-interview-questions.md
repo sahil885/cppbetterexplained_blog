@@ -1731,3 +1731,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](/posts/oop-in-cpp/) — deep dive into the OOP topics covered in Questions 13–24.
 - [Smart Pointers in Modern C++: unique_ptr, shared_ptr, and weak_ptr Explained](/posts/smart-pointers-cpp/) — essential reading to nail the memory management questions.
 - [C++ STL Containers Explained: Choosing the Right Container for Every Situation](/posts/stl-containers-cpp/) — covers the STL topics from Questions 34–41 in detail.
+- [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — a fast-reference card to review syntax before your interview.

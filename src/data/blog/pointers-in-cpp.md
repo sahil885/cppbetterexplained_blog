@@ -393,5 +393,6 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ## Related Articles
 - [Smart Pointers in Modern C++: unique_ptr, shared_ptr, and weak_ptr Explained](/posts/smart-pointers-cpp/) — once you understand raw pointers, upgrade to smart pointers to write safer, modern C++.
 - [Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks](/posts/memory-management-cpp/) — pointers and memory management go hand in hand; learn how the heap and stack actually work.
+- [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — a quick-reference card covering pointer syntax alongside the rest of C++.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — pointers appear in nearly every C++ technical interview; test yourself here.
 
