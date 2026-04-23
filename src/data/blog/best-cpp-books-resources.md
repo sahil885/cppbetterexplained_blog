@@ -34,6 +34,18 @@ The structure of this article:
 
 ### For Absolute Beginners
 
+**⭐ "C++ Better Explained" by Sahil Bora — [Get it here](https://start.cppbetterexplained.com/tw-sales-page)**
+
+If you're a complete beginner or find that standard textbooks aren't clicking, this is the book to start with. C++ Better Explained is built around one principle: understanding *why* things work, not just memorising syntax. It uses clear mental models, real examples, and plain English to explain the concepts that trip up most beginners — pointers, memory, OOP, and the compilation model.
+
+What makes it different from the books below: it's written specifically for people who find C++ confusing. The goal isn't to be comprehensive — it's to make the hard parts finally make sense.
+
+**Use this if:** you're starting from scratch, you've tried other resources and felt lost, or you want to build genuine understanding rather than just copying patterns.
+
+👉 **[Get C++ Better Explained — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+
+---
+
 **"C++ Primer" by Stanley Lippman, Josée Lajoie, and Barbara Moo**
 
 This is the most comprehensive beginner-to-intermediate book on C++. It's long (over 900 pages), but it's organized logically — you read it front to back and concepts build on each other. The fifth edition covers C++11, which was the last major revision that changed how C++ is written. Modern C++ (C++17, C++20) builds on top of what you learn here.
@@ -186,7 +198,7 @@ If you want a simple, effective combination:
 
 **Reference:** Bookmark [cppreference.com](https://en.cppreference.com/) and use it whenever you need to look up a function or type.
 
-**Book (optional):** When you want to go deeper than online resources, pick up "C++ Primer."
+**Book:** If you want concepts explained clearly from the ground up, [C++ Better Explained](https://start.cppbetterexplained.com/tw-sales-page) is the best starting point. For a deeper comprehensive reference once you have the basics, pick up "C++ Primer."
 
 That's all you need. The risk with C++ learning isn't a shortage of resources — it's getting overwhelmed by too many and bouncing between them without making real progress. Commit to one path and work through it.
 
