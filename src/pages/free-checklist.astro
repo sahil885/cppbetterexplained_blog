@@ -1,0 +1,88 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="Free C++ Checklist | C++ Better Explained" description="Download the free 1-page checklist: The 10 Mistakes Every C++ Beginner Makes (And How to Avoid Them).">
+  <Header />
+  <main id="main-content" class="app-layout py-16 text-center">
+    <div class="mx-auto max-w-lg">
+      <div class="text-5xl mb-4">📋</div>
+      <h1 class="text-3xl font-bold mb-4 text-accent leading-tight">
+        Download Free: The 10 Mistakes Every C++ Beginner Makes (And How to Avoid Them)
+      </h1>
+      <p class="text-base opacity-80 mb-8 leading-relaxed">
+        A free 1-page checklist that shows you the exact traps that slow down every C++ beginner — so you can avoid them from day one.
+      </p>
+      <form id="cl-form" class="flex flex-col sm:flex-row gap-3 justify-center">
+        <input
+          type="email"
+          id="cl-email"
+          name="email"
+          placeholder="you@example.com"
+          required
+          autocomplete="email"
+          class="flex-1 min-w-0 px-4 py-3 rounded-lg border border-border bg-card text-foreground text-base outline-none focus:border-accent transition-colors"
+        />
+        <button
+          type="submit"
+          id="cl-submit"
+          class="px-6 py-3 rounded-lg bg-accent text-white font-semibold text-base cursor-pointer whitespace-nowrap hover:opacity-90 transition-opacity disabled:opacity-50"
+        >
+          Send it to me
+        </button>
+      </form>
+      <p class="text-xs opacity-50 mt-3">🔒 No spam. Unsubscribe anytime.</p>
+      <div id="cl-success" class="hidden mt-6">
+        <div class="text-4xl mb-3">🎉</div>
+        <p class="text-lg font-semibold">You're in! Redirecting you to a special offer...</p>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<script is:inline>
+(function () {
+  var TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
+  var SENDER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDA4OGU5ZDk3MGYzNzliYzEwYTY0ODlkOWM0NDEwOWM1MzgxNDkwZjZlZjJlNDljMjAwNmZkMDI1OTM1OTJmNThmNmU5M2Q0ZmMzM2FkMTEiLCJpYXQiOjE3NzYzMTczMjQuOTY2OTg4LCJuYmYiOjE3NzYzMTczMjQuOTY2OTkxLCJleHAiOjE3Nzg5MDkzMjQuOTY1MTMzLCJzdWIiOiI4NTQ4ODQiLCJzY29wZXMiOltdfQ.AhEG99-ith_VDtqyloUapqmbstoG3pnEZrOk1h_pntEo6AvXkgFNKVfOmGC6wrN_kkgp-DmRunC9PokhWMRfGW3A6hY7ZvDSmDmZ5LcBDrDzKeMyIFz-3J33_af3R3t7_Un-0DwTRbb0HdEGkLzhpC3Hyiu379HKWeC_seXuGYxG71dZNc1jlY82p0TNCfVfAogSi5m-r3fjAdyameYF7QgGWou4Z6HZ83WpmlBRScIs8Bw7EI3SZHIPWiqjpvrLxBNfBf3Rhbsrw_GyjmLluxfwobUKmAavxrtFfP98iBxiVXIJI2t6EQnFfppsin-X8Npmy7BtEHahqp8XDmqf4od8HahljpcIvBqnH5eJJ06ivL-boSStlHUEY79Qto_iqsZsbthSqBiIFgJRZDLpw0CuBJtAFgdLCgBbdSTzFsPYyjjmKe6RxNnYHUs2ruwVCJpFQWKgzV2nsGBy79AVZTj2z_TgRlGC6-2sIhmyJ1sG5sXyThNCEF6aHZ9-rPeTJpZUAdk8FB-ktLnkoUazPvoxJEL8OV63ibwBgZVVZ3zo5mcoLZAZiER3gSDFbzVGyq0KFCaGJZFmTBzwF8-ahtkaBHYzd9NX3UvrC6ycS-eWoDzaJR0DDc85J_-_cJyyc5Lb80HzXHhAboU5lCEPhMXEC4FCsRPz1vXH8lH5Xk4";
+  var SENDER_GROUP = "enGQp5";
+
+  var form    = document.getElementById("cl-form");
+  var success = document.getElementById("cl-success");
+  var submit  = document.getElementById("cl-submit");
+
+  if (!form) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var email = document.getElementById("cl-email").value.trim();
+    submit.disabled = true;
+    submit.textContent = "Sending\u2026";
+
+    fetch("https://api.sender.net/v2/subscribers", {
+      method: "POST",
+      headers: {
+        "Authorization": "Bearer " + SENDER_TOKEN,
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({ email: email, groups: [SENDER_GROUP] }),
+      keepalive: true
+    })
+    .then(function () {
+      try { localStorage.setItem("wm_dismissed", "1"); } catch(e) {}
+      form.style.display = "none";
+      success.classList.remove("hidden");
+      setTimeout(function () {
+        window.location.href = TRIPWIRE_URL;
+      }, 1200);
+    })
+    .catch(function () {
+      try { localStorage.setItem("wm_dismissed", "1"); } catch(e) {}
+      window.location.href = TRIPWIRE_URL;
+    });
+  });
+})();
+</script>
