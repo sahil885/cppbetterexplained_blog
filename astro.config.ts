@@ -10,6 +10,10 @@ export default defineConfig({
   site: SITE.website,
   redirects: {
     "/sitemap.xml": "/sitemap-index.xml",
+    "/home": "/",
+    "/home/": "/",
+    "/how-to-implement-insertion-sort-in-cpp": "/posts/insertion-sort-cpp/",
+    "/how-to-implement-insertion-sort-in-cpp/": "/posts/insertion-sort-cpp/",
   },
   integrations: [
     sitemap({
