@@ -396,3 +396,11 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — a quick-reference card covering pointer syntax alongside the rest of C++.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — pointers appear in nearly every C++ technical interview; test yourself here.
 
+
+---
+
+## Video Walkthrough
+
+Watch this beginner-friendly video walkthrough of C++ pointers:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7MUmGSByHwM" title="Understanding C++ Pointers: A Beginner's Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

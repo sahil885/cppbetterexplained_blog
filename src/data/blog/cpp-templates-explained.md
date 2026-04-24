@@ -908,3 +908,11 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](/posts/oop-in-cpp/) — templates and OOP work closely together in modern C++; master both for a complete picture.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — templates are a common advanced topic in C++ technical interviews.
 
+
+---
+
+## Video Walkthrough
+
+Watch this introduction to C++ template metaprogramming:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wqvcf85Tujs" title="What is C++ Template Metaprogramming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

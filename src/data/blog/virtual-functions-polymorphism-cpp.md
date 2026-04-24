@@ -836,3 +836,11 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Design Patterns Explained: Singleton, Factory, and Observer in Modern C++](/posts/design-patterns-cpp/) — polymorphism is the engine behind many design patterns; see it applied in real-world code.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — virtual functions and vtables are a classic deep-dive topic in C++ technical interviews.
 
+
+---
+
+## Video Walkthrough
+
+Watch this introduction to polymorphism in C++:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yRBGGLM3HBs" title="What is Polymorphism in Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
