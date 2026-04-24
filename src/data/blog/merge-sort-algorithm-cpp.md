@@ -1,9 +1,16 @@
 ---
-title: "Merge Sort Algorithm in C++ with Example - Full Implementation"
-description: "Learn how the merge sort algorithm works in C++ with a step-by-step explanation, visual diagram, and full source code implementation."
+title: "Merge Sort in C++: Algorithm with Full Source Code"
+description: "Learn merge sort in C++ with a clear explanation, step-by-step walkthrough, full source code, and O(n log n) time complexity analysis."
 pubDatetime: 2024-09-28T00:00:00Z
 author: "Sahil"
 tags: ["C++", "algorithms", "sorting", "merge sort", "divide and conquer", "beginner"]
+faqSchema:
+  - question: "How does merge sort work in C++?"
+    answer: "Merge sort divides the array in half recursively until each sub-array has one element, then merges pairs of sub-arrays in sorted order. The merge step compares the front elements of two sorted halves and places the smaller one into the result. Time complexity is O(n log n) in all cases."
+  - question: "What is the time complexity of merge sort?"
+    answer: "Merge sort has O(n log n) time complexity in best, average, and worst cases — unlike quicksort which degrades to O(n²) on bad input. Space complexity is O(n) because it needs a temporary array for the merge step. This makes it suitable for sorting linked lists and external data."
+  - question: "When should you use merge sort over std::sort in C++?"
+    answer: "Use std::sort for general-purpose sorting in C++ — it uses introsort with O(n log n) guaranteed performance. Use merge sort when you need a stable sort (preserving equal elements' order), when sorting linked lists, or when implementing external sorting for data too large to fit in memory."
 draft: false
 featured: true
 ---

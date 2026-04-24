@@ -1,6 +1,6 @@
 ---
-title: "Top 50 C++ Interview Questions and Answers (Beginner to Advanced)"
-description: "Prepare for your C++ technical interview with 50 real questions and detailed answers covering fundamentals, OOP, memory, STL, and advanced topics."
+title: "Top 50 C++ Interview Questions and Answers"
+description: "Prepare for C++ technical interviews with the top 50 questions and answers. Covers pointers, OOP, memory, STL, and modern C++ features."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "interview", "career", "OOP", "STL", "advanced"]

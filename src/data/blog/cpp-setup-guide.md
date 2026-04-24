@@ -1,6 +1,6 @@
 ---
-title: "How to Set Up C++: Install a Compiler and Write Your First Program"
-description: "Step-by-step C++ setup guide for Windows, Mac, and Linux. Install a compiler, set up VS Code, and run your first C++ program in under 15 minutes."
+title: "How to Set Up C++: Install Compiler & First Program"
+description: "Set up C++ on Windows, Mac, or Linux. Install a compiler, choose the best IDE, and write your first program with this step-by-step guide."
 pubDatetime: 2026-04-20T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "getting-started", "tools", "tutorial"]

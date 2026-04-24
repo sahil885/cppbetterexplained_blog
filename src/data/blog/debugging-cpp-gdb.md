@@ -4,6 +4,13 @@ description: "Struggling to debug C++ programs? This practical GDB guide teaches
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "debugging", "GDB", "tools", "intermediate"]
+faqSchema:
+  - question: "How do you debug a C++ program?"
+    answer: "The most common ways to debug C++ are: using a debugger like GDB or the debugger built into your IDE (VS Code, Visual Studio, CLion), adding print statements with cout, using assertions with assert(), and running with AddressSanitizer to detect memory errors."
+  - question: "What is GDB and how do you use it?"
+    answer: "GDB is the GNU Debugger, a command-line tool for debugging C and C++ programs. Compile with -g to include debug info, run gdb ./yourprogram, set breakpoints with break main, step through code with next or step, and inspect variables with print varname."
+  - question: "What are common C++ runtime errors and how do you fix them?"
+    answer: "Common C++ runtime errors include segmentation faults (accessing invalid memory, often from null or dangling pointers), buffer overflows (writing past array bounds), and undefined behaviour (using uninitialised variables). Use GDB to find the crash location and AddressSanitizer (-fsanitize=address) to detect memory errors."
 draft: false
 featured: false
 ---

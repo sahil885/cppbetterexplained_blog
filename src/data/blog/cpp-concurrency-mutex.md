@@ -1,9 +1,16 @@
 ---
-title: "C++ Concurrency Tutorial: Threads, Mutex, and Thread Safety Explained"
-description: "Learn C++ concurrency from scratch. This tutorial covers std::thread, std::mutex, lock_guard, data races, and thread-safe programming with clear examples."
+title: "C++ Concurrency & Mutex: Thread Safety Explained"
+description: "Learn C++ concurrency and mutex with clear examples. Covers std::thread, std::mutex, lock_guard, and how to write thread-safe code."
 pubDatetime: 2026-04-19T00:00:00Z
 author: "Sahil"
 tags: ["C++", "concurrency", "threads", "mutex", "C++11", "tutorial"]
+faqSchema:
+  - question: "What is a mutex in C++?"
+    answer: "A mutex (mutual exclusion) is a synchronisation primitive that prevents multiple threads from accessing shared data simultaneously. In C++, std::mutex from <mutex> provides a lock() and unlock() interface. Use std::lock_guard for automatic unlocking to avoid deadlocks."
+  - question: "What is a race condition in C++?"
+    answer: "A race condition occurs when two or more threads access shared data concurrently and at least one thread modifies it, producing unpredictable results. Race conditions are prevented by using mutexes or other synchronisation mechanisms to serialise access to shared resources."
+  - question: "When should you use std::mutex vs std::atomic in C++?"
+    answer: "Use std::atomic for simple shared variables like counters where you just need increment/read operations — it's faster than a mutex. Use std::mutex when you need to protect a block of code or more complex data structures that require multiple operations to complete atomically."
 draft: false
 featured: false
 ---

@@ -1,9 +1,16 @@
 ---
-title: "C++ Design Patterns Explained: Singleton, Factory, and Observer in Modern C++"
-description: "Learn the most important C++ design patterns with modern C++17 code examples — Singleton, Factory Method, Observer, and more, explained clearly."
+title: "C++ Design Patterns: Singleton, Factory & Observer"
+description: "Learn the most important C++ design patterns with practical examples. Covers Singleton, Factory, and Observer patterns with modern C++ implementations."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "design patterns", "advanced", "architecture", "modern C++"]
+faqSchema:
+  - question: "What are design patterns in C++?"
+    answer: "Design patterns are reusable solutions to common software design problems. In C++, the most widely used patterns include Singleton (one instance), Factory (create objects without specifying exact class), Observer (event notification), and RAII (tie resource lifetime to object lifetime)."
+  - question: "What is the Singleton pattern in C++?"
+    answer: "The Singleton pattern ensures a class has only one instance and provides a global access point to it. In modern C++, it is implemented with a static local variable: static MyClass instance; inside a static method. This is thread-safe in C++11 and later."
+  - question: "What is the Factory pattern in C++?"
+    answer: "The Factory pattern provides an interface for creating objects without specifying the exact class to instantiate. It is useful when the type of object to create depends on runtime conditions. In C++, it is typically implemented with a static factory method that returns a base class pointer or smart pointer."
 draft: false
 featured: false
 ---

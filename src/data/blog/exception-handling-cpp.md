@@ -1,9 +1,16 @@
 ---
-title: "Exception Handling in C++: Best Practices for Writing Robust, Error-Free Code"
-description: "Learn how to write robust C++ code with exception handling — covers try/catch/throw, custom exceptions, RAII guarantees, and when NOT to use exceptions."
+title: "Exception Handling in C++: try, catch & throw"
+description: "Master exception handling in C++. Learn how try, catch, and throw work, when to use exceptions vs error codes, and how to write robust error-safe code."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "exceptions", "error handling", "RAII", "intermediate"]
+faqSchema:
+  - question: "How does exception handling work in C++?"
+    answer: "C++ exception handling uses three keywords: throw to raise an exception, try to mark a block where exceptions might occur, and catch to handle specific exception types. When an exception is thrown, the runtime unwinds the stack until a matching catch block is found."
+  - question: "What should you throw in C++ exceptions?"
+    answer: "Best practice is to throw objects derived from std::exception from the <stdexcept> header, such as std::runtime_error or std::invalid_argument. Avoid throwing raw integers or strings. Always catch by const reference (catch (const std::exception& e)) to avoid slicing."
+  - question: "When should you use exceptions vs error codes in C++?"
+    answer: "Use exceptions for truly exceptional conditions that a caller cannot reasonably ignore — file not found, out of memory, invalid input. Use error codes (or std::expected in C++23) for expected failure cases that callers should handle in normal flow. Exceptions have overhead and can make code harder to reason about if overused."
 draft: false
 featured: false
 ---

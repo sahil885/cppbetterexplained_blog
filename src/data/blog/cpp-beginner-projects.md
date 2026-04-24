@@ -1,6 +1,6 @@
 ---
-title: "C++ Projects for Beginners: 4 Guided Projects with Full Source Code"
-description: "4 beginner C++ projects with full source code and step-by-step explanations. Build a lottery program, traffic light, blackjack game, and merge sort."
+title: "C++ Projects for Beginners: 4 Guided Projects"
+description: "Build 4 beginner C++ projects with full source code and step-by-step explanations. Covers Rock Paper Scissors, Hangman, ATM machine, and Blackjack."
 pubDatetime: 2026-04-20T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "project", "tutorial"]

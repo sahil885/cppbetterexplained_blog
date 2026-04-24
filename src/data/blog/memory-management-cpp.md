@@ -1,9 +1,16 @@
 ---
-title: "Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks"
-description: "Master C++ memory management — understand heap vs stack, how new and delete work, what memory leaks are, and how to write safe, efficient code."
+title: "C++ Memory Management: Heap, Stack, new/delete Explained"
+description: "Master C++ memory management. Learn the difference between stack and heap, how new/delete work, and how to prevent memory leaks with practical examples."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "memory", "heap", "stack", "pointers", "intermediate"]
+faqSchema:
+  - question: "What is the difference between stack and heap memory in C++?"
+    answer: "Stack memory is managed automatically — local variables are allocated when a function is called and freed when it returns. Heap memory is managed manually with new and delete (or automatically with smart pointers). Stack is faster but limited in size; heap is larger but requires careful management to avoid leaks."
+  - question: "What causes a memory leak in C++?"
+    answer: "A memory leak occurs when heap memory allocated with new is never freed with delete. This happens when a pointer goes out of scope before delete is called, or when an exception is thrown before cleanup. Smart pointers (unique_ptr, shared_ptr) eliminate most memory leaks by freeing memory automatically."
+  - question: "What is RAII in C++?"
+    answer: "RAII (Resource Acquisition Is Initialisation) is a C++ programming pattern where resources like memory, file handles, or locks are tied to object lifetimes. The resource is acquired in the constructor and released in the destructor, guaranteeing cleanup even when exceptions are thrown. Smart pointers and std::lock_guard are RAII implementations."
 draft: false
 featured: false
 ---

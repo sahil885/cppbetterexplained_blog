@@ -1,9 +1,16 @@
 ---
-title: "Virtual Functions and Polymorphism in C++: How Runtime Dispatch Actually Works"
-description: "This guide explains C++ virtual functions, runtime polymorphism, vtables, and virtual destructors with clear examples including what's happening under the hood."
+title: "Virtual Functions & Polymorphism in C++ Explained"
+description: "Understand virtual functions and runtime polymorphism in C++. Learn how vtables work, when to use override, and how to design polymorphic class hierarchies."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "OOP", "polymorphism", "virtual functions", "intermediate", "advanced"]
+faqSchema:
+  - question: "What is a virtual function in C++?"
+    answer: "A virtual function is a member function declared with the virtual keyword in a base class that can be overridden in derived classes. When called through a base class pointer or reference, the derived class version is called at runtime. This enables runtime polymorphism."
+  - question: "What is the difference between virtual and non-virtual functions in C++?"
+    answer: "A non-virtual function is resolved at compile time based on the pointer type (static dispatch). A virtual function is resolved at runtime based on the actual object type (dynamic dispatch via vtable). Virtual functions enable polymorphism but add a small overhead from the vtable lookup."
+  - question: "What is a pure virtual function in C++?"
+    answer: "A pure virtual function is declared with = 0 and has no implementation in the base class: virtual void draw() = 0; A class with at least one pure virtual function is an abstract class that cannot be instantiated. Derived classes must override all pure virtual functions to become concrete."
 draft: false
 featured: false
 ---

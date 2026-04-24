@@ -1,9 +1,16 @@
 ---
 title: "C++ Loops Tutorial: for, while, and do-while Explained"
-description: "Learn how C++ loops work from scratch. This beginner's tutorial covers for loops, while loops, do-while loops, range-based for loops, break, continue, and common mistakes."
+description: "Master C++ loops with this complete tutorial. Covers for, while, do-while loops, range-based for, break, continue, and common loop patterns."
 pubDatetime: 2026-04-19T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "loops", "tutorial"]
+faqSchema:
+  - question: "What are the types of loops in C++?"
+    answer: "C++ has four loop types: for (for a known number of iterations), while (while a condition is true), do-while (runs at least once before checking the condition), and range-based for (for iterating over containers). Each suits different situations."
+  - question: "What is the difference between while and do-while in C++?"
+    answer: "A while loop checks its condition before executing the body, so it may run zero times. A do-while loop executes the body first, then checks the condition, guaranteeing at least one execution. Use do-while when you need the loop body to run at least once."
+  - question: "What do break and continue do in C++ loops?"
+    answer: "break immediately exits the loop, skipping all remaining iterations. continue skips the rest of the current iteration and jumps to the next one. Both work in for, while, and do-while loops."
 draft: false
 featured: false
 ---

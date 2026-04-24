@@ -1,9 +1,16 @@
 ---
-title: "Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained"
-description: "Learn C++ OOP the easy way — this guide explains classes, objects, constructors, destructors, and encapsulation with clear examples and mental models."
+title: "Object-Oriented Programming in C++: Classes & Objects"
+description: "Learn OOP in C++ from scratch. Covers classes, objects, constructors, inheritance, and encapsulation with clear examples and full source code."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "OOP", "classes", "objects", "beginner", "intermediate"]
+faqSchema:
+  - question: "What are the four pillars of OOP in C++?"
+    answer: "The four pillars are: Encapsulation (bundling data and methods together, hiding implementation details), Inheritance (a class deriving properties from a parent class), Polymorphism (one interface, multiple behaviours), and Abstraction (exposing only what is necessary through interfaces and abstract classes)."
+  - question: "What is the difference between public, private, and protected in C++?"
+    answer: "public members are accessible from anywhere. private members are only accessible within the class itself. protected members are accessible within the class and its derived classes. Use private by default and only expose what other code needs to use."
+  - question: "What is inheritance in C++?"
+    answer: "Inheritance lets a derived class acquire the properties and methods of a base class using the : public BaseClass syntax. The derived class can add new members, override virtual functions, and be used wherever a base class pointer or reference is expected. This enables code reuse and polymorphism."
 draft: false
 featured: false
 ---

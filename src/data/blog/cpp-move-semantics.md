@@ -1,9 +1,16 @@
 ---
-title: "C++ Move Semantics Explained: rvalue References, std::move, and Performance"
-description: "Learn C++ move semantics from scratch. This tutorial explains rvalue references, the move constructor, move assignment operator, and std::move with clear examples."
+title: "C++ Move Semantics: rvalue References & std::move"
+description: "Understand C++ move semantics from scratch. Learn rvalue references, std::move, and the Rule of Five to write fast, efficient modern C++ code."
 pubDatetime: 2026-04-19T00:00:00Z
 author: "Sahil"
 tags: ["C++", "move semantics", "rvalue", "performance", "C++11", "tutorial"]
+faqSchema:
+  - question: "What are move semantics in C++?"
+    answer: "Move semantics allow a C++ object's resources to be transferred rather than copied. Instead of duplicating heap memory, the source object's pointer is moved to the destination and the source is left in a valid empty state. This is much faster for objects like vectors and strings."
+  - question: "What is the difference between std::move and copy in C++?"
+    answer: "Copying duplicates all data, which is expensive for large objects. std::move casts an object to an rvalue reference, signalling that its resources can be stolen. After a move, the source object is in a valid but unspecified state and should not be used."
+  - question: "What is an rvalue reference in C++?"
+    answer: "An rvalue reference (declared with &&) binds to temporary objects or objects explicitly cast with std::move. They enable move constructors and move assignment operators, which transfer resources instead of copying them, improving performance significantly."
 draft: false
 featured: false
 ---

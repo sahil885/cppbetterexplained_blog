@@ -1,9 +1,16 @@
 ---
-title: "How to Fix Undefined Reference Errors in C++ (Linker Errors Explained)"
-description: "Getting undefined reference errors in C++? This guide explains exactly why linker errors happen and how to fix every common type — step by step."
+title: "C++ Undefined Reference Errors: How to Fix Them"
+description: "Learn what causes undefined reference linker errors in C++ and how to fix them. Clear explanations with real examples and diagnostic steps."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "debugging", "linker", "errors", "beginner", "build"]
+faqSchema:
+  - question: "What causes an undefined reference error in C++?"
+    answer: "Undefined reference errors occur at the linking stage when the linker cannot find the implementation of a function or variable that is declared but not defined. Common causes include forgetting to define a function, not linking a required library, or missing a source file in the build."
+  - question: "How do you fix undefined reference to main in C++?"
+    answer: "This error means your program has no main() function the linker can find. Check that your main() is spelled correctly (all lowercase), that the file containing it is included in your build command, and that it has the correct signature: int main() or int main(int argc, char* argv[])."
+  - question: "What is the difference between a compiler error and a linker error in C++?"
+    answer: "Compiler errors occur when the compiler cannot parse or type-check your code — syntax errors, undeclared variables, type mismatches. Linker errors occur after compilation when the linker cannot resolve references between object files — missing function definitions, missing libraries. Both must be fixed for the program to build."
 draft: false
 featured: false
 ---

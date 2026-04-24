@@ -1,9 +1,16 @@
 ---
-title: "C++ Traffic Light Project - Detailed Explanation with Source Code"
-description: "Learn how to build a C++ traffic light project using classes, bitwise operators, and command line arguments. Full source code included."
+title: "C++ Traffic Light Project: Beginner OOP Tutorial"
+description: "Build a C++ traffic light simulation using OOP. Step-by-step project tutorial with full source code, classes, and command-line control."
 pubDatetime: 2024-10-02T00:00:00Z
 author: "Sahil"
 tags: ["C++", "OOP", "beginner", "project", "classes", "bitwise operators", "command line arguments"]
+faqSchema:
+  - question: "How do you build a traffic light simulation in C++?"
+    answer: "A C++ traffic light simulation uses a class to represent the light with a state variable (red, yellow, green), member functions to transition between states, and a loop to cycle through states. Command-line arguments can control the initial state and number of cycles."
+  - question: "What C++ concepts does a traffic light project teach?"
+    answer: "The traffic light project teaches class design, enums for representing states, loops for cycling, command-line argument handling with argc and argv, and basic OOP principles. It is a great beginner project for practising object-oriented thinking."
+  - question: "Is a traffic light project good for a C++ beginner?"
+    answer: "Yes, it is one of the best beginner OOP projects because it has a clear real-world model, requires a class with state and behaviour, and is small enough to complete in a few hours. It is a natural stepping stone after learning basic classes and objects."
 draft: false
 featured: true
 ---

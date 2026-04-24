@@ -18,7 +18,19 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter: page =>
-        SITE.showArchives || !page.includes("/archives/") && !page.includes("/page/"),
+        !page.includes("/tags/") &&
+        !page.includes("/search") &&
+        (SITE.showArchives || !page.includes("/archives/")) &&
+        !page.includes("/posts/2/") &&
+        !page.includes("/posts/3/") &&
+        !page.includes("/posts/4/") &&
+        !page.includes("/posts/5/") &&
+        !page.includes("/posts/6/") &&
+        !page.includes("/posts/7/") &&
+        !page.includes("/posts/8/") &&
+        !page.includes("/posts/9/") &&
+        !page.includes("/posts/10/") &&
+        !page.includes("/posts/11/"),
     }),
   ],
   markdown: {

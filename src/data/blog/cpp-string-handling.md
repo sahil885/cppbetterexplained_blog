@@ -1,9 +1,16 @@
 ---
-title: "C++ String Handling: std::string, string_view, and Performance Tips"
-description: "Master C++ string handling — from std::string basics to std::string_view performance, string formatting, efficient string building, and common pitfalls."
+title: "C++ String Handling: std::string & string_view Guide"
+description: "Master string handling in C++. Learn std::string operations, string_view for performance, common string functions, and how to avoid common pitfalls."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "strings", "std::string", "string_view", "intermediate", "performance"]
+faqSchema:
+  - question: "How do strings work in C++?"
+    answer: "C++ strings are managed through std::string from the <string> header. Unlike C-style char arrays, std::string handles memory automatically, supports common operations like concatenation (+), comparison (==), and searching (find()). std::string_view provides a lightweight non-owning view for read-only access."
+  - question: "What is the difference between std::string and std::string_view in C++?"
+    answer: "std::string owns its character data and manages memory. std::string_view is a lightweight non-owning reference to a string — it doesn't copy data and cannot modify it. Use string_view for function parameters when you only need to read a string, as it avoids unnecessary copies."
+  - question: "How do you convert a string to an integer in C++?"
+    answer: "Use std::stoi() to convert a string to an int, or std::stod() for double. For the reverse, use std::to_string(). These functions are in the <string> header. Always handle potential exceptions (std::invalid_argument, std::out_of_range) when converting user input."
 draft: false
 featured: false
 ---

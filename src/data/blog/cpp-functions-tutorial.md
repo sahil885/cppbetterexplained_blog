@@ -1,9 +1,16 @@
 ---
 title: "C++ Functions Tutorial: How to Write and Use Functions"
-description: "Learn how C++ functions work from scratch. This beginner's tutorial covers declaring functions, parameters, return values, pass by reference, overloading, and common mistakes to avoid."
+description: "Learn C++ functions from scratch. Covers function declaration, parameters, return types, overloading, default arguments, and recursion with examples."
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "functions", "tutorial"]
+faqSchema:
+  - question: "What is a function in C++?"
+    answer: "A function in C++ is a named block of code that performs a specific task. Functions take zero or more parameters, optionally return a value, and can be called multiple times from anywhere in the program. They are the primary way to organise and reuse code in C++."
+  - question: "What is the difference between pass by value and pass by reference in C++?"
+    answer: "Pass by value copies the argument, so changes inside the function don't affect the original. Pass by reference passes the memory address, so the function can modify the original variable. Use const references for large objects you want to read but not modify."
+  - question: "What is function overloading in C++?"
+    answer: "Function overloading allows you to define multiple functions with the same name but different parameter types or counts. The compiler picks the correct version based on the arguments you pass. For example, you can have add(int, int) and add(double, double) coexist."
 draft: false
 featured: false
 ---

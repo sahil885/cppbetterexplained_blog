@@ -1,9 +1,16 @@
 ---
-title: "Smart Pointers in Modern C++: unique_ptr, shared_ptr, and weak_ptr Explained"
-description: "Stop using raw pointers. This guide explains C++ smart pointers — unique_ptr, shared_ptr, and weak_ptr — with real examples, ownership rules, and when to use each."
+title: "C++ Smart Pointers: unique_ptr & shared_ptr Guide"
+description: "Learn how C++ smart pointers work. Covers unique_ptr, shared_ptr, and weak_ptr with examples showing how they prevent memory leaks."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "smart pointers", "memory", "modern C++", "intermediate"]
+faqSchema:
+  - question: "What is a smart pointer in C++?"
+    answer: "A smart pointer is a wrapper around a raw pointer that automatically frees the memory when the pointer goes out of scope. C++ provides three smart pointers: unique_ptr (sole ownership), shared_ptr (shared ownership with reference counting), and weak_ptr (non-owning reference to a shared_ptr)."
+  - question: "When should you use unique_ptr vs shared_ptr in C++?"
+    answer: "Use unique_ptr when one owner is responsible for the resource — it is lighter and faster. Use shared_ptr when multiple parts of the code need to share ownership of the same resource and the resource should only be freed when all owners are done. Avoid shared_ptr by default due to the reference counting overhead."
+  - question: "Do smart pointers eliminate all memory management issues in C++?"
+    answer: "Smart pointers eliminate most memory leaks and dangling pointer issues, but not all. Shared pointer cycles (where two objects hold shared_ptrs to each other) cause leaks — break cycles with weak_ptr. Smart pointers also don't protect against using a pointer after explicitly releasing it with release() or reset()."
 draft: false
 featured: false
 ---

@@ -1,9 +1,16 @@
 ---
-title: "Multithreading in C++: Threads, Mutexes, and Writing Thread-Safe Code"
-description: "Learn C++ multithreading from scratch — covers std::thread, mutexes, lock_guard, atomic operations, race conditions, and thread-safe design patterns."
+title: "Multithreading in C++: std::thread Explained"
+description: "Learn multithreading in C++ with practical examples. Covers std::thread, joining threads, passing arguments, and avoiding race conditions."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "multithreading", "concurrency", "advanced", "performance"]
+faqSchema:
+  - question: "How do you create a thread in C++?"
+    answer: "Use std::thread from the <thread> header: std::thread t(myFunction); creates a thread that runs myFunction. Call t.join() to wait for it to finish, or t.detach() to let it run independently. Always join or detach before the std::thread object is destroyed."
+  - question: "What is the difference between join and detach in C++?"
+    answer: "join() blocks the calling thread until the target thread finishes — use this when you need the result before continuing. detach() lets the thread run independently in the background — use this for fire-and-forget tasks. A thread must be either joined or detached before it goes out of scope."
+  - question: "How do you share data safely between threads in C++?"
+    answer: "Protect shared data with std::mutex and std::lock_guard to prevent race conditions. For simple shared counters, use std::atomic which is faster than a mutex. For producer-consumer patterns, use std::condition_variable to signal between threads without busy-waiting."
 draft: false
 featured: false
 ---

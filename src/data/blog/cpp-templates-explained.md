@@ -1,9 +1,16 @@
 ---
-title: "C++ Templates From Scratch: Generic Programming Explained Simply"
-description: "Templates are C++'s most powerful feature. This guide explains function templates, class templates, template specialization, and variadic templates with simple examples."
+title: "C++ Templates Explained: Function & Class Templates"
+description: "Learn C++ templates from scratch. Covers function templates, class templates, template specialization, and variadic templates with examples."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "templates", "generic programming", "advanced", "intermediate"]
+faqSchema:
+  - question: "What are templates in C++?"
+    answer: "Templates in C++ allow you to write generic code that works with any data type. Instead of writing separate functions for int, double, and string, you write one function template with a type parameter T, and the compiler generates the appropriate version for each type you use."
+  - question: "What is the difference between a function template and a class template in C++?"
+    answer: "A function template generates a family of functions for different types, like a generic sort or swap. A class template generates a family of classes — std::vector<T> and std::map<K,V> are examples. Both use the template<typename T> syntax."
+  - question: "What is template specialisation in C++?"
+    answer: "Template specialisation lets you provide a custom implementation for a specific type. Full specialisation handles one exact type (e.g. template<> for bool). Partial specialisation handles a subset of types (e.g. pointers). Use it when the generic version doesn't work correctly for a specific type."
 draft: false
 featured: false
 ---

@@ -1,9 +1,16 @@
 ---
 title: "C++ Hello World Explained: Every Line, Every Symbol"
-description: "A complete line-by-line explanation of the C++ Hello World program. Understand exactly what #include, int main(), cout, endl, and return 0 actually mean and why they're there."
+description: "Understand every line of a C++ Hello World program. A complete beginner breakdown of #include, main(), cout, return 0, and how compilation works."
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "hello world", "tutorial", "basics"]
+faqSchema:
+  - question: "What does every line of a C++ Hello World program mean?"
+    answer: "#include <iostream> loads the I/O library. using namespace std; lets you write cout instead of std::cout. int main() is the required entry point function. cout << 'Hello World' << endl; prints the text. return 0; tells the OS the program succeeded."
+  - question: "Why is main() required in C++?"
+    answer: "Every C++ executable needs exactly one main() function because it is the entry point — the first function the operating system calls when your program starts. Without it, the linker cannot produce an executable."
+  - question: "What is the difference between cout and printf in C++?"
+    answer: "cout is the C++ standard output stream and works with the << operator. printf is inherited from C and uses format strings like %d. cout is type-safe and extensible with custom types. Both work in C++ but cout is the idiomatic modern choice."
 draft: false
 featured: false
 ---

@@ -4,6 +4,13 @@ description: "Learn what every line of a simple C++ program means. A step-by-ste
 pubDatetime: 2024-09-26T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "hello world", "basics", "getting started"]
+faqSchema:
+  - question: "What does a simple C++ program consist of?"
+    answer: "A basic C++ program has four main parts: preprocessor directives like #include, the main() function which is the entry point, statements that perform actions, and a return value. Every C++ executable must have exactly one main() function."
+  - question: "What does #include <iostream> do in C++?"
+    answer: "#include <iostream> tells the preprocessor to include the input/output stream library, which gives you access to cout for printing output and cin for reading input. Without it, you cannot use cout or cin in your program."
+  - question: "Why does main() return an int in C++?"
+    answer: "main() returns an int to indicate the program's exit status to the operating system. Returning 0 means success. Returning a non-zero value signals an error. Modern compilers allow you to omit the return statement in main() and it will implicitly return 0."
 draft: false
 featured: true
 ---

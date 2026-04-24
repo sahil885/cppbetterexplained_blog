@@ -1,9 +1,16 @@
 ---
-title: "C++ map and unordered_map Tutorial: Key-Value Storage Explained"
-description: "Learn how to use std::map and std::unordered_map in C++. This beginner's tutorial covers declaration, insertion, lookup, deletion, iteration, and when to use each container."
+title: "C++ map vs unordered_map: Complete Tutorial"
+description: "Learn C++ map and unordered_map with clear examples. Covers insertion, lookup, iteration, performance differences, and when to use each."
 pubDatetime: 2026-04-19T00:00:00Z
 author: "Sahil"
 tags: ["C++", "STL", "map", "unordered_map", "beginner", "tutorial"]
+faqSchema:
+  - question: "What is the difference between map and unordered_map in C++?"
+    answer: "std::map stores keys in sorted order using a red-black tree with O(log n) operations. std::unordered_map uses a hash table with O(1) average operations but no ordering. Use map when you need sorted keys or ordered iteration; use unordered_map when speed matters most."
+  - question: "How do you iterate over a map in C++?"
+    answer: "Use a range-based for loop: for (const auto& [key, value] : myMap) to iterate over all key-value pairs. In older C++ you can use for (const auto& pair : myMap) and access pair.first and pair.second."
+  - question: "How do you check if a key exists in a C++ map?"
+    answer: "Use the find() method: if (myMap.find(key) != myMap.end()) — this returns an iterator to the element if found, or end() if not. Alternatively, use count(key) which returns 1 if the key exists or 0 if not."
 draft: false
 featured: false
 ---

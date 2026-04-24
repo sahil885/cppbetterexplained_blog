@@ -1,9 +1,16 @@
 ---
-title: "How to Create a Lottery Program in C++ - Step by Step with Source Code"
-description: "Learn how to create a lottery program in C++ using arrays, for loops, and random number generation. Full source code with a step by step explanation."
+title: "C++ Lottery Program: Step-by-Step Tutorial"
+description: "Build a lottery ticket generator in C++ from scratch. Full source code with explanation of arrays, loops, and random number generation."
 pubDatetime: 2024-10-02T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "arrays", "random numbers", "project", "for loop"]
+faqSchema:
+  - question: "How do you generate random numbers in C++?"
+    answer: "In modern C++, use the <random> header. Create a std::mt19937 engine seeded with std::random_device, then use std::uniform_int_distribution to generate numbers in a range. Avoid the old rand() function as it has poor randomness and is not thread-safe."
+  - question: "What C++ concepts does a lottery program teach?"
+    answer: "A C++ lottery program teaches arrays for storing ticket numbers, for loops for iteration, random number generation with <random>, and functions for organising the code. It is a great exercise for solidifying beginner fundamentals."
+  - question: "How do you avoid duplicate numbers in a C++ lottery generator?"
+    answer: "Store generated numbers in a vector or set and check before adding each new number. A std::set automatically rejects duplicates. Alternatively, shuffle a pre-filled array of all possible numbers using std::shuffle and take the first N elements."
 draft: false
 featured: true
 ---

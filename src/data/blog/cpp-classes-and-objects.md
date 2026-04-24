@@ -1,9 +1,16 @@
 ---
 title: "C++ Classes and Objects: A Beginner's Guide to OOP"
-description: "Learn C++ classes and objects from scratch. This beginner's guide explains what classes are, how to write them, constructors, access modifiers, member functions, and inheritance with clear examples."
+description: "Learn C++ classes and objects with clear examples. Covers constructors, member functions, access specifiers, and how to design your own classes."
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "classes", "OOP", "tutorial"]
+faqSchema:
+  - question: "What is a class in C++?"
+    answer: "A class in C++ is a user-defined type that bundles data (member variables) and functions (member functions) together. It serves as a blueprint for creating objects. You define a class with the class keyword and create objects from it by declaring variables of that type."
+  - question: "What is the difference between a class and a struct in C++?"
+    answer: "In C++, the only technical difference between class and struct is the default access specifier: class members are private by default, struct members are public by default. By convention, structs are used for simple data containers and classes for objects with behaviour."
+  - question: "What is a constructor in C++?"
+    answer: "A constructor is a special member function that runs automatically when an object is created. It has the same name as the class and no return type. Constructors are used to initialise member variables to valid starting values."
 draft: false
 featured: false
 ---

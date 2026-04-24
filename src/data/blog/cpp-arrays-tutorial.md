@@ -1,9 +1,16 @@
 ---
 title: "C++ Arrays Tutorial: Store and Access Multiple Values"
-description: "Learn how arrays work in C++ from scratch. This beginner's tutorial covers declaring arrays, accessing elements, looping through arrays, std::vector, and common beginner mistakes."
+description: "Learn C++ arrays from scratch. Covers declaration, initialization, multidimensional arrays, array functions, and when to use vectors instead."
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "arrays", "vectors", "tutorial"]
+faqSchema:
+  - question: "What is an array in C++?"
+    answer: "An array in C++ is a fixed-size collection of elements of the same type stored in contiguous memory. You declare one with: int numbers[5]; which creates space for 5 integers. Arrays are zero-indexed, so the first element is numbers[0]."
+  - question: "What is the difference between an array and a vector in C++?"
+    answer: "A C++ array has a fixed size set at compile time and cannot grow. A vector is a dynamic array that can grow and shrink at runtime. For most modern C++ code, std::vector is preferred over raw arrays because it's safer and more flexible."
+  - question: "How do you iterate over an array in C++?"
+    answer: "You can iterate over a C++ array using a for loop with an index (for int i = 0; i < size; i++), or with a range-based for loop (for (int x : arr)) if the size is known at compile time. For dynamically sized arrays, always track the size separately."
 draft: false
 featured: false
 ---

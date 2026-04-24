@@ -1,9 +1,16 @@
 ---
 title: "C++ Variables and Data Types: A Complete Beginner's Guide"
-description: "Learn C++ variables and data types from scratch. This beginner's guide explains int, double, string, bool, and more with clear examples and common mistakes to avoid."
+description: "Learn C++ variables and data types from scratch. Covers int, float, double, char, bool, type modifiers, constants, and best practices for beginners."
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "variables", "data types", "tutorial"]
+faqSchema:
+  - question: "What are the basic data types in C++?"
+    answer: "C++ basic types include: int (integers), float and double (floating-point numbers), char (single characters), bool (true/false), and void (no value). Each has variants with different sizes — short, long, unsigned. Use int for most integer work and double for decimal numbers."
+  - question: "What is the difference between float and double in C++?"
+    answer: "float uses 4 bytes and has about 7 decimal digits of precision. double uses 8 bytes and has about 15 decimal digits of precision. Always prefer double unless memory is severely constrained, as float precision errors can cause subtle bugs in calculations."
+  - question: "What is a constant in C++?"
+    answer: "A constant is a variable whose value cannot change after initialisation. Declare one with const: const int MAX = 100; or with constexpr for compile-time constants: constexpr double PI = 3.14159. Use constants instead of magic numbers to make code more readable and maintainable."
 draft: false
 featured: false
 ---

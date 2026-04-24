@@ -1,9 +1,16 @@
 ---
 title: "C++ Conditionals Tutorial: if, else, and switch Explained"
-description: "Learn how C++ conditionals work from scratch. This beginner's tutorial covers if statements, else-if chains, switch statements, ternary operators, and common mistakes."
+description: "Master C++ conditionals with this beginner tutorial. Covers if, else if, else, switch statements, ternary operator, and common logic mistakes to avoid."
 pubDatetime: 2026-04-19T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "conditionals", "if-else", "tutorial"]
+faqSchema:
+  - question: "What are the conditional statements in C++?"
+    answer: "C++ has three main conditional statements: if/else for two-way branching, else if for multi-way branching, and switch for matching a variable against specific values. There is also the ternary operator ?: for simple inline conditions."
+  - question: "What is the difference between if-else and switch in C++?"
+    answer: "if-else can test any condition including ranges and complex expressions. switch can only test a single variable against constant integer or enum values, but is often more readable when checking many specific values. Switch also requires break statements to prevent fall-through."
+  - question: "What is a ternary operator in C++?"
+    answer: "The ternary operator ?: is a shorthand for a simple if-else. The syntax is: condition ? value_if_true : value_if_false. For example: int max = (a > b) ? a : b; assigns the larger of a and b to max."
 draft: false
 featured: false
 ---
