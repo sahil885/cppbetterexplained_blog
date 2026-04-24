@@ -10,6 +10,12 @@ featured: false
 
 # C++ Templates From Scratch: Generic Programming Explained Simply
 
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wqvcf85Tujs" title="What is C++ Template Metaprogramming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Introduction: What Problem Do Templates Solve?
 
 Templates are C++'s most powerful feature, yet they often intimidate newcomers. Here's the core idea: **templates enable you to write code once and apply it to many different types without sacrificing type safety.**
@@ -907,12 +913,3 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ map and unordered_map Tutorial: Key-Value Storage Explained](/posts/cpp-map-unordered-map/) — map and unordered_map are template classes; see templates applied to one of C++'s most-used containers.
 - [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](/posts/oop-in-cpp/) — templates and OOP work closely together in modern C++; master both for a complete picture.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — templates are a common advanced topic in C++ technical interviews.
-
-
----
-
-## Video Walkthrough
-
-Watch this introduction to C++ template metaprogramming:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wqvcf85Tujs" title="What is C++ Template Metaprogramming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

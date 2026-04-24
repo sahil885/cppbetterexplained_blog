@@ -14,6 +14,12 @@ If you've been learning C++, you've probably heard that you should use `std::vec
 
 By the end of this guide, you'll understand `std::vector` deeply — what it does, how to use it, when to use it, and the common mistakes to avoid. You'll also see plenty of real, runnable code examples at every step.
 
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jRXFJJN1Va4" title="Beginner's Guide to Vectors in C++: Everything You Need to Know" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## What Is std::vector?
 
 A `std::vector` is a **dynamic array** — an array that can grow and shrink at runtime.
@@ -698,11 +704,3 @@ If you're looking to go deeper with C++, the **C++ Better Explained Ebook** is p
 - [C++ STL Containers Explained: Choosing the Right Container for Every Situation](/posts/stl-containers-cpp/) — once you know vectors, explore when to use lists, maps, and sets instead.
 - [Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks](/posts/memory-management-cpp/) — vectors manage heap memory under the hood; understanding memory makes you a better C++ developer.
 - [C++ String Handling: std::string, string_view, and Performance Tips](/posts/cpp-string-handling/) — strings and vectors are the two most common STL types — master both together.
-
----
-
-## Video Walkthrough
-
-Watch this beginner-friendly video walkthrough of C++ vectors:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Mt109zJHcVQ" title="Beginner's Guide to Vectors in C++: Everything You Need to Know" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

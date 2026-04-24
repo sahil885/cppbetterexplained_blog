@@ -29,6 +29,12 @@ faqSchema:
 
 If you're learning C++, you've probably heard that pointers are the most confusing topic for beginners. And honestly? There's a reason. Pointers aren't taught well in most tutorials because instructors jump straight into syntax without building the mental model first. This article changes that. By the time you finish reading, pointers won't just make sense—they'll feel obvious.
 
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7MUmGSByHwM" title="Understanding C++ Pointers: A Beginner's Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Why Pointers Confuse Beginners (And Why You Need to Learn Them)
 
 Here's the thing: pointers aren't actually complicated. They're just a way to work with memory addresses. But most tutorials explain them backwards—they show you the syntax before explaining what's actually happening under the hood.
@@ -395,12 +401,3 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks](/posts/memory-management-cpp/) — pointers and memory management go hand in hand; learn how the heap and stack actually work.
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — a quick-reference card covering pointer syntax alongside the rest of C++.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — pointers appear in nearly every C++ technical interview; test yourself here.
-
-
----
-
-## Video Walkthrough
-
-Watch this beginner-friendly video walkthrough of C++ pointers:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7MUmGSByHwM" title="Understanding C++ Pointers: A Beginner's Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

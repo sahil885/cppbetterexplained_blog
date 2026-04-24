@@ -19,6 +19,19 @@ faqSchema:
 
 Reading tutorials is essential, but nothing cements C++ concepts like actually building something. This page collects all the beginner projects on this site — each one fully annotated, with complete source code and a step-by-step explanation of how and why it works.
 
+
+## Video Walkthroughs
+
+**Rock Paper Scissors in C++**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s0dFv8-gKNI" title="Rock Paper Scissors Game in C++ Complete Project Tutorial for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**Hangman Game in C++**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PapLtC7Sbxs" title="C++ Hangman Game - How to Code Your Own Hangman Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**ATM Machine in C++**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2z6VvHmGZI0" title="How to Create a Simple ATM Machine in C++ Program" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## How to Use These Projects
 
 Each project below is a standalone tutorial. You can work through them in order (they roughly increase in complexity) or jump to whichever matches the concepts you've been learning.
@@ -98,18 +111,3 @@ Once you've worked through these, you have a solid foundation. Here's where to g
 **If you want to go deeper on concepts:** the [C++ learning roadmap](/learn-cpp/) covers everything from pointers and memory management through STL containers and modern C++ features — all with the same step-by-step approach as these projects.
 
 **If you're preparing for interviews:** the [C++ interview questions guide](/posts/cpp-interview-questions/) covers the 50 most common technical questions with detailed answers.
-
----
-
-## Video Walkthroughs
-
-Watch these video tutorials for beginner C++ projects:
-
-**Rock Paper Scissors in C++**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s0dFv8-gKNI" title="Rock Paper Scissors Game in C++ Complete Project Tutorial for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-**Hangman Game in C++**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PapLtC7Sbxs" title="C++ Hangman Game - How to Code Your Own Hangman Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-**ATM Machine in C++**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2z6VvHmGZI0" title="How to Create a Simple ATM Machine in C++ Program" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

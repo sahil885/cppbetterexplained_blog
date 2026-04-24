@@ -36,6 +36,12 @@ Let's break it down completely.
 
 ---
 
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ue36DR-jnDs" title="Writing a Simple C++ Program | Hello World Broken Down Step by Step" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Line 1: `#include <iostream>`
 
 This is a **preprocessor directive**. The `#` symbol signals that this line isn't regular C++ code — it's an instruction to the **preprocessor**, a tool that runs before your actual compilation begins.
@@ -303,11 +309,3 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — the full path from Hello World to real programs.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — `main` is a function — learn how to write your own.
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — bookmark this for whenever you need a fast reminder on syntax.
-
----
-
-## Video Walkthrough
-
-Watch this step-by-step video walkthrough of a simple C++ program:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ue36DR-jnDs" title="Writing a Simple C++ Program | Hello World Broken Down Step by Step" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -10,6 +10,12 @@ featured: false
 
 # C++ String Handling: std::string, string_view, and Performance Tips
 
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V2_qfensOwE" title="String Manipulation in C++ Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Introduction: Strings in C++ — A Brief History
 
 For decades, C++ developers worked with C-style strings: `char*` and `char[]`. They were fast (no overhead), but dangerous (easy to overflow, tedious to manage, error-prone).
@@ -609,12 +615,3 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ STL Containers Explained: Choosing the Right Container for Every Situation](/posts/stl-containers-cpp/) — strings are one piece of the STL puzzle; learn how vectors, maps, and sets fit in.
 - [C++ Vector Tutorial: The Complete Guide to std::vector for Beginners](/posts/cpp-vector-tutorial/) — another essential STL type, explained from scratch with clear examples.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — practice the string and STL questions you're likely to face in technical interviews.
-
-
----
-
-## Video Walkthrough
-
-Watch this video on string manipulation in C++:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V2_qfensOwE" title="String Manipulation in C++ Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

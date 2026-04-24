@@ -10,6 +10,12 @@ featured: false
 
 # Virtual Functions and Polymorphism in C++: How Runtime Dispatch Actually Works
 
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yRBGGLM3HBs" title="What is Polymorphism in Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Introduction: What Is Polymorphism and Why Should You Care?
 
 Polymorphism—literally "many forms"—is one of the most powerful concepts in object-oriented programming. It allows you to write code that works with objects of different types through a single interface, making your code more flexible, maintainable, and extensible.
@@ -835,12 +841,3 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained](/posts/oop-in-cpp/) — virtual functions build on OOP fundamentals; read this first if you're new to classes and inheritance.
 - [C++ Design Patterns Explained: Singleton, Factory, and Observer in Modern C++](/posts/design-patterns-cpp/) — polymorphism is the engine behind many design patterns; see it applied in real-world code.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — virtual functions and vtables are a classic deep-dive topic in C++ technical interviews.
-
-
----
-
-## Video Walkthrough
-
-Watch this introduction to polymorphism in C++:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yRBGGLM3HBs" title="What is Polymorphism in Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -10,6 +10,12 @@ featured: false
 
 # Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks
 
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cf8t7kbaSDE" title="Stack Vs Heap Memory in C++ - Simple Explanation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Introduction: Why Memory Management is C++'s Superpower AND Its Biggest Trap
 
 When people talk about C++, they often mention two things: incredible performance and the difficulty of memory management. There's truth to both. Unlike languages like Python or Java that automatically clean up after you, C++ puts *you* in charge. And that's actually a feature, not a bug.
@@ -504,12 +510,3 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [Smart Pointers in Modern C++: unique_ptr, shared_ptr, and weak_ptr Explained](/posts/smart-pointers-cpp/) — smart pointers solve most memory management problems automatically; the modern C++ way.
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — includes a quick reference section on smart pointers and memory management syntax.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — memory management questions are nearly guaranteed in any C++ technical interview.
-
-
----
-
-## Video Walkthrough
-
-Watch this simple explanation of stack vs heap memory in C++:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cf8t7kbaSDE" title="Stack Vs Heap Memory in C++ - Simple Explanation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

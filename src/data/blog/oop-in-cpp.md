@@ -10,6 +10,12 @@ featured: false
 
 # Object-Oriented Programming in C++: Classes, Objects, and Constructors Explained
 
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mL-03EWQcCg" title="Writing Clean Code with SOLID Principles in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Introduction: Why OOP Exists—The Problem It Solves
 
 Imagine you're building a large program without objects. You'd have functions everywhere:
@@ -742,12 +748,3 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — a quick reference for class syntax, inheritance, and OOP patterns you can bookmark.
 - [C++ Projects for Beginners: 4 Guided Projects with Full Source Code](/posts/cpp-beginner-projects/) — the Blackjack project is a great way to practice multi-class OOP design.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — OOP questions (inheritance, polymorphism, encapsulation) make up a large chunk of C++ interviews.
-
-
----
-
-## Video Walkthrough
-
-Watch this video on writing clean code with SOLID principles in C++:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mL-03EWQcCg" title="Writing Clean Code with SOLID Principles in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
