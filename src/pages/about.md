@@ -33,4 +33,4 @@ The [**C++ Better Explained Online Course**](https://start.cppbetterexplained.co
 
 Have a question, suggestion, or just want to say hi? Email me at **sahilbora885@gmail.com**
 
-You can also find me on [YouTube](https://www.youtube.com/channel/UCSxZnVqnm1AjYFzroczeCqQ) where I post C++ video tutorials.
+I also ran a [YouTube channel](https://www.youtube.com/channel/UCSxZnVqnm1AjYFzroczeCqQ) with C++ video tutorials, which I retired from at the end of 2024. The videos are still available to watch.
