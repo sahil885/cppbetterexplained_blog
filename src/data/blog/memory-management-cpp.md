@@ -13,7 +13,7 @@ featured: false
 
 ## Video Walkthrough
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cf8t7kbaSDE" title="Stack Vs Heap Memory in C++ - Simple Explanation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V2_qfensOwE" title="Stack Vs Heap Memory in C++ - Simple Explanation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Introduction: Why Memory Management is C++'s Superpower AND Its Biggest Trap

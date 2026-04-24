@@ -23,13 +23,13 @@ Reading tutorials is essential, but nothing cements C++ concepts like actually b
 ## Video Walkthroughs
 
 **Rock Paper Scissors in C++**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s0dFv8-gKNI" title="Rock Paper Scissors Game in C++ Complete Project Tutorial for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6fZUaYzh9wc" title="Rock Paper Scissors Game in C++ Complete Project Tutorial for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Hangman Game in C++**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PapLtC7Sbxs" title="C++ Hangman Game - How to Code Your Own Hangman Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2z6VvHmGZI0" title="C++ Hangman Game - How to Code Your Own Hangman Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **ATM Machine in C++**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2z6VvHmGZI0" title="How to Create a Simple ATM Machine in C++ Program" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7MUmGSByHwM" title="How to Create a Simple ATM Machine in C++ Program" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## How to Use These Projects

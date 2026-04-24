@@ -32,7 +32,7 @@ If you're learning C++, you've probably heard that pointers are the most confusi
 
 ## Video Walkthrough
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7MUmGSByHwM" title="Understanding C++ Pointers: A Beginner's Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rq6UsIdOXPs" title="Understanding C++ Pointers: A Beginner's Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Why Pointers Confuse Beginners (And Why You Need to Learn Them)

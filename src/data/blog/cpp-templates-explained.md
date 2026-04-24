@@ -13,7 +13,7 @@ featured: false
 
 ## Video Walkthrough
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wqvcf85Tujs" title="What is C++ Template Metaprogramming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BcEzNEvYoDc" title="What is C++ Template Metaprogramming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Introduction: What Problem Do Templates Solve?

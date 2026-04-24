@@ -26,7 +26,7 @@ Before you can write C++, you need two things: a **compiler** (which turns your 
 
 ## Video Walkthrough
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hGNqwO5EAMI" title="The Best IDE for C++ Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yBztgAYQLfg" title="The Best IDE for C++ Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Option 0: Try It Online First (No Install Needed)
