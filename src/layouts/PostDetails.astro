@@ -364,10 +364,16 @@ const nextPost =
         .then(function () {
           form.style.display = "none";
           success.classList.remove("hidden");
+          setTimeout(function () {
+            window.location.href = "https://start.cppbetterexplained.com/tw-sales-page";
+          }, 1200);
         })
         .catch(function () {
           form.style.display = "none";
           success.classList.remove("hidden");
+          setTimeout(function () {
+            window.location.href = "https://start.cppbetterexplained.com/tw-sales-page";
+          }, 1200);
         });
       });
     }
