@@ -133,6 +133,37 @@ const nextPost =
       <Content />
     </article>
 
+    <!-- ===== Email Opt-in: Free Checklist ===== -->
+    <div class="my-10 rounded-2xl border border-accent/30 bg-accent/5 px-6 py-8 text-center">
+      <div class="text-3xl mb-3">📋</div>
+      <h3 class="text-xl font-bold text-accent mb-2">Free Download: The 10 Mistakes Every C++ Beginner Makes</h3>
+      <p class="text-sm opacity-75 mb-5 max-w-md mx-auto">
+        A free 1-page checklist that shows the exact traps that slow down every C++ beginner — so you can avoid them from day one.
+      </p>
+      <form id="post-optin-form" class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+        <input
+          type="email"
+          id="post-optin-email"
+          placeholder="your@email.com"
+          required
+          autocomplete="email"
+          class="flex-1 min-w-0 px-4 py-2.5 rounded-lg border border-border bg-card text-foreground text-sm outline-none focus:border-accent transition-colors"
+        />
+        <button
+          type="submit"
+          id="post-optin-submit"
+          class="px-5 py-2.5 rounded-lg bg-accent text-white font-semibold text-sm cursor-pointer whitespace-nowrap hover:opacity-90 transition-opacity disabled:opacity-50"
+        >
+          Send it to me →
+        </button>
+      </form>
+      <p class="text-xs opacity-40 mt-3">🔒 No spam. Unsubscribe anytime.</p>
+      <div id="post-optin-success" class="hidden mt-4">
+        <p class="text-base font-semibold text-accent">🎉 Check your inbox — it's on its way!</p>
+      </div>
+    </div>
+    <!-- ===== End Email Opt-in ===== -->
+
     <hr class="my-8 border-dashed" />
 
     <EditPost class="sm:hidden" {hideEditPost} {post} />
@@ -301,4 +332,47 @@ const nextPost =
   document.addEventListener("astro:after-swap", () =>
     window.scrollTo({ left: 0, top: 0, behavior: "instant" })
   );
+
+  /* ===== Email Opt-in Form (Sender.net) ===== */
+  (function () {
+    var SENDER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDA4OGU5ZDk3MGYzNzliYzEwYTY0ODlkOWM0NDEwOWM1MzgxNDkwZjZlZjJlNDljMjAwNmZkMDI1OTM1OTJmNThmNmU5M2Q0ZmMzM2FkMTEiLCJpYXQiOjE3NzYzMTczMjQuOTY2OTg4LCJuYmYiOjE3NzYzMTczMjQuOTY2OTkxLCJleHAiOjE3Nzg5MDkzMjQuOTY1MTMzLCJzdWIiOiI4NTQ4ODQiLCJzY29wZXMiOltdfQ.AhEG99-ith_VDtqyloUapqmbstoG3pnEZrOk1h_pntEo6AvXkgFNKVfOmGC6wrN_kkgp-DmRunC9PokhWMRfGW3A6hY7ZvDSmDmZ5LcBDrDzKeMyIFz-3J33_af3R3t7_Un-0DwTRbb0HdEGkLzhpC3Hyiu379HKWeC_seXuGYxG71dZNc1jlY82p0TNCfVfAogSi5m-r3fjAdyameYF7QgGWou4Z6HZ83WpmlBRScIs8Bw7EI3SZHIPWiqjpvrLxBNfBf3Rhbsrw_GyjmLluxfwobUKmAavxrtFfP98iBxiVXIJI2t6EQnFfppsin-X8Npmy7BtEHahqp8XDmqf4od8HahljpcIvBqnH5eJJ06ivL-boSStlHUEY79Qto_iqsZsbthSqBiIFgJRZDLpw0CuBJtAFgdLCgBbdSTzFsPYyjjmKe6RxNnYHUs2ruwVCJpFQWKgzV2nsGBy79AVZTj2z_TgRlGC6-2sIhmyJ1sG5sXyThNCEF6aHZ9-rPeTJpZUAdk8FB-ktLnkoUazPvoxJEL8OV63ibwBgZVVZ3zo5mcoLZAZiER3gSDFbzVGyq0KFCaGJZFmTBzwF8-ahtkaBHYzd9NX3UvrC6ycS-eWoDzaJR0DDc85J_-_cJyyc5Lb80HzXHhAboU5lCEPhMXEC4FCsRPz1vXH8lH5Xk4";
+    var SENDER_GROUP = "enGQp5";
+
+    function initPostOptinForm() {
+      var form    = document.getElementById("post-optin-form");
+      var success = document.getElementById("post-optin-success");
+      var submit  = document.getElementById("post-optin-submit");
+
+      if (!form) return;
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var email = document.getElementById("post-optin-email").value.trim();
+        submit.disabled = true;
+        submit.textContent = "Sending…";
+
+        fetch("https://api.sender.net/v2/subscribers", {
+          method: "POST",
+          headers: {
+            "Authorization": "Bearer " + SENDER_TOKEN,
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({ email: email, groups: [SENDER_GROUP] }),
+          keepalive: true
+        })
+        .then(function () {
+          form.style.display = "none";
+          success.classList.remove("hidden");
+        })
+        .catch(function () {
+          form.style.display = "none";
+          success.classList.remove("hidden");
+        });
+      });
+    }
+
+    initPostOptinForm();
+    document.addEventListener("astro:page-load", initPostOptinForm);
+  })();
 </script>
