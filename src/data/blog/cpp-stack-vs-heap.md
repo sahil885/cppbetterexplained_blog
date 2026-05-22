@@ -15,6 +15,7 @@ draft: false
 featured: false
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V2_qfensOwE" title="C++ Stack vs Heap Memory: What's the Difference?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # C++ Stack vs Heap Memory: What's the Difference?
 
 When a C++ program runs, it uses two regions of memory in very different ways: the **stack** and the **heap**. Understanding both is essential — it explains why pointers exist, why memory leaks happen, and why smart pointers were invented.

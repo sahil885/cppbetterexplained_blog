@@ -15,6 +15,7 @@ draft: false
 featured: false
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0iSw4YFPfFI" title="C++ Ternary Operator: How to Use ? : in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # C++ Ternary Operator: How to Use `? :` in C++
 
 The ternary operator is a compact way to write a simple `if/else` in a single expression. Once you know it, you'll see it everywhere — in assignments, function calls, and print statements.

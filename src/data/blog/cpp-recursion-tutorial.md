@@ -15,6 +15,7 @@ draft: false
 featured: false
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dyWeVKqaalA" title="C++ Recursion Tutorial: How Recursive Functions Work" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # C++ Recursion Tutorial: How Recursive Functions Work
 
 Recursion is one of those ideas that sounds circular at first — a function that calls itself? — but clicks quickly once you see it in action.

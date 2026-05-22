@@ -15,6 +15,7 @@ draft: false
 featured: false
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wxmh9oMzQd4" title="C++ Struct vs Class: What's the Difference?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # C++ Struct vs Class: What's the Difference?
 
 If you're coming from C, you know `struct` as a simple data container. In C++, the distinction between `struct` and `class` is much smaller than most beginners expect.
