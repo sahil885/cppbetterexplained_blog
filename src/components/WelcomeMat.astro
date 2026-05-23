@@ -153,7 +153,7 @@
 (function () {
   var STORAGE_KEY   = "wm_dismissed";
   var TRIPWIRE_URL  = "https://start.cppbetterexplained.com/tw-sales-page";
-  var SENDER_TOKEN  = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDA4OGU5ZDk3MGYzNzliYzEwYTY0ODlkOWM0NDEwOWM1MzgxNDkwZjZlZjJlNDljMjAwNmZkMDI1OTM1OTJmNThmNmU5M2Q0ZmMzM2FkMTEiLCJpYXQiOjE3NzYzMTczMjQuOTY2OTg4LCJuYmYiOjE3NzYzMTczMjQuOTY2OTkxLCJleHAiOjE3Nzg5MDkzMjQuOTY1MTMzLCJzdWIiOiI4NTQ4ODQiLCJzY29wZXMiOltdfQ.AhEG99-ith_VDtqyloUapqmbstoG3pnEZrOk1h_pntEo6AvXkgFNKVfOmGC6wrN_kkgp-DmRunC9PokhWMRfGW3A6hY7ZvDSmDmZ5LcBDrDzKeMyIFz-3J33_af3R3t7_Un-0DwTRbb0HdEGkLzhpC3Hyiu379HKWeC_seXuGYxG71dZNc1jlY82p0TNCfVfAogSi5m-r3fjAdyameYF7QgGWou4Z6HZ83WpmlBRScIs8Bw7EI3SZHIPWiqjpvrLxBNfBf3Rhbsrw_GyjmLluxfwobUKmAavxrtFfP98iBxiVXIJI2t6EQnFfppsin-X8Npmy7BtEHahqp8XDmqf4od8HahljpcIvBqnH5eJJ06ivL-boSStlHUEY79Qto_iqsZsbthSqBiIFgJRZDLpw0CuBJtAFgdLCgBbdSTzFsPYyjjmKe6RxNnYHUs2ruwVCJpFQWKgzV2nsGBy79AVZTj2z_TgRlGC6-2sIhmyJ1sG5sXyThNCEF6aHZ9-rPeTJpZUAdk8FB-ktLnkoUazPvoxJEL8OV63ibwBgZVVZ3zo5mcoLZAZiER3gSDFbzVGyq0KFCaGJZFmTBzwF8-ahtkaBHYzd9NX3UvrC6ycS-eWoDzaJR0DDc85J_-_cJyyc5Lb80HzXHhAboU5lCEPhMXEC4FCsRPz1vXH8lH5Xk4";
+  var SENDER_TOKEN  = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWYyMzlhZThkNTE2ZDQxODM4ZTI2NjlhNTBiZDliYjIxZDcyOWQ1OTQ4MTc4NDdkNzI1YmY4NTdkMzU2OTQyNWY2MGQ4YzdkM2RjZTBhN2YiLCJpYXQiOjE3Nzk1MDg3MzYuNzQzNjAyLCJuYmYiOjE3Nzk1MDg3MzYuNzQzNjA0LCJleHAiOjQ5MzMxMDg3MzYuNzQxMDY5LCJzdWIiOiI4NTQ4ODQiLCJzY29wZXMiOltdfQ.dnBkMd3Qn-TEBQSYxjRHPMKjUX9VPez42V7hDGMlKVM9kgrTm_W8tDx6xVeoBNWQY8v7dsvPUR1iq2-PHjiaaFErQS86CqBcFZp7i4v9PauYHpXU3EI0SkFZGC_OFCtZ495fiGRa5ioUaEMDJY_KXqaKh85NRJPhrAtRLiQa2HSQ1HO7al7YJekcY8SuZqEUEJgU33jyNhBMdEpwYt9ycr1VQHEeo1peZXUH7jkd_ewn_GMb5-2jO1DJ24EoXuB7IjOoJg5sB9-8V1zpQRFXsWY_yNT1bQylVhKyd4ajRYTLgqzOk0P-stS6k1s_UrZARls2o57qH1-umqQOCPgUHjImGzHJ_NWNJJQq2H8nqi4pwqWjGnLwLN7KmNW_UvFus1AisYLexuVcgH3wZtlM9bj5BDS2e0rxrA9XWZvskEvlcMwVVzH84yKMLzjoS_T2hJwAnmsFPsfG3o9eeYN6zCGDYeX3qGa7_LhIh7rFS_kvk8VnnaZX-gPgnKdnZz7dtOCtHhTISrelMLcc4IxSm2Pyo1Mt8PJugkd27UByTn1b-a_YMUWmDSFyFKqETRZGcmKKtmhtM9JjdUmcy6Zf_4yL-SCaBxH6dxqCVuC5SP48QfkTqdQ8UdoRXG-Sdc3TO7E-u_45f47yyjQwkk0GwkoQla6RQ2Mc1CmbHU6jvmo";
   var SENDER_GROUP  = "enGQp5";
   var DELAY_MS      = 3000;
 
@@ -212,6 +212,10 @@
         keepalive: true
       })
       .then(function (res) {
+        if (!res.ok) {
+          // API returned an error — log it but still redirect so user isn't blocked
+          console.error("Sender API error:", res.status, res.statusText);
+        }
         markDismissed();
         form.style.display = "none";
         success.style.display = "block";
@@ -219,8 +223,9 @@
           window.location.href = TRIPWIRE_URL;
         }, 1200);
       })
-      .catch(function () {
-        // Even on error, redirect — don't block the user
+      .catch(function (err) {
+        // Network error — log and redirect
+        console.error("Sender API network error:", err);
         markDismissed();
         window.location.href = TRIPWIRE_URL;
       });
