@@ -46,9 +46,6 @@ import Footer from "@/components/Footer.astro";
 <script is:inline>
 (function () {
   var TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
-  var SENDER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWYyMzlhZThkNTE2ZDQxODM4ZTI2NjlhNTBiZDliYjIxZDcyOWQ1OTQ4MTc4NDdkNzI1YmY4NTdkMzU2OTQyNWY2MGQ4YzdkM2RjZTBhN2YiLCJpYXQiOjE3Nzk1MDg3MzYuNzQzNjAyLCJuYmYiOjE3Nzk1MDg3MzYuNzQzNjA0LCJleHAiOjQ5MzMxMDg3MzYuNzQxMDY5LCJzdWIiOiI4NTQ4ODQiLCJzY29wZXMiOltdfQ.dnBkMd3Qn-TEBQSYxjRHPMKjUX9VPez42V7hDGMlKVM9kgrTm_W8tDx6xVeoBNWQY8v7dsvPUR1iq2-PHjiaaFErQS86CqBcFZp7i4v9PauYHpXU3EI0SkFZGC_OFCtZ495fiGRa5ioUaEMDJY_KXqaKh85NRJPhrAtRLiQa2HSQ1HO7al7YJekcY8SuZqEUEJgU33jyNhBMdEpwYt9ycr1VQHEeo1peZXUH7jkd_ewn_GMb5-2jO1DJ24EoXuB7IjOoJg5sB9-8V1zpQRFXsWY_yNT1bQylVhKyd4ajRYTLgqzOk0P-stS6k1s_UrZARls2o57qH1-umqQOCPgUHjImGzHJ_NWNJJQq2H8nqi4pwqWjGnLwLN7KmNW_UvFus1AisYLexuVcgH3wZtlM9bj5BDS2e0rxrA9XWZvskEvlcMwVVzH84yKMLzjoS_T2hJwAnmsFPsfG3o9eeYN6zCGDYeX3qGa7_LhIh7rFS_kvk8VnnaZX-gPgnKdnZz7dtOCtHhTISrelMLcc4IxSm2Pyo1Mt8PJugkd27UByTn1b-a_YMUWmDSFyFKqETRZGcmKKtmhtM9JjdUmcy6Zf_4yL-SCaBxH6dxqCVuC5SP48QfkTqdQ8UdoRXG-Sdc3TO7E-u_45f47yyjQwkk0GwkoQla6RQ2Mc1CmbHU6jvmo";
-  var SENDER_GROUP = "enGQp5";
-
   var form    = document.getElementById("cl-form");
   var success = document.getElementById("cl-success");
   var submit  = document.getElementById("cl-submit");
@@ -61,15 +58,10 @@ import Footer from "@/components/Footer.astro";
     submit.disabled = true;
     submit.textContent = "Sending\u2026";
 
-    fetch("https://api.sender.net/v2/subscribers", {
+    fetch("/api/subscribe", {
       method: "POST",
-      headers: {
-        "Authorization": "Bearer " + SENDER_TOKEN,
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({ email: email, groups: [SENDER_GROUP] }),
-      keepalive: true
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: email })
     })
     .then(function (res) {
       if (!res.ok) {
