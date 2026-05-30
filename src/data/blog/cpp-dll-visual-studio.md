@@ -25,6 +25,12 @@ A DLL (Dynamic Link Library) lets you package C++ code into a reusable component
 
 This guide walks you through creating a C++ DLL in Visual Studio, exporting a function from it, and then calling that function from a separate program. We'll build a tiny math library as the example.
 
+Prefer to watch first? Here's the full video walkthrough:
+
+<div class="video-embed" style="position:relative;width:100%;aspect-ratio:16/9;margin:1.5rem 0;">
+  <iframe src="https://www.youtube-nocookie.com/embed/ZPss6v6vMwc" title="How to Create a C++ DLL in Visual Studio" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;"></iframe>
+</div>
+
 ## What Is a DLL (and Why Use One)?
 
 A DLL is a compiled file full of functions and data that multiple programs can use _without_ baking the code into each one. Think of it as a shared toolbox: write the tools once, then any program can open the box and use them.
