@@ -21,7 +21,7 @@ faqSchema:
 
 # C++ Command Line Arguments: How to Use argc and argv
 
-Most beginner C++ programs are self-contained: you run them, they ask for input with `cin`, and that's it. But real command line tools work differently — you pass them information *when you launch them*, like `grep "error" log.txt` or `g++ main.cpp -o app`. Those extra words after the program name are **command line arguments**, and C++ hands them to you through two parameters: `argc` and `argv`.
+Most beginner C++ programs are self-contained: you run them, they ask for input with `cin`, and that's it. But real command line tools work differently — you pass them information _when you launch them_, like `grep "error" log.txt` or `g++ main.cpp -o app`. Those extra words after the program name are **command line arguments**, and C++ hands them to you through two parameters: `argc` and `argv`.
 
 This guide explains exactly how they work, how to read them safely, and how to turn them into numbers and flags you can actually use.
 
@@ -49,7 +49,7 @@ Both are valid. The second simply asks the runtime to pass in the arguments. The
 
 ## What argc and argv Actually Hold
 
-- **`argc`** ("argument count") is an `int`. It's the number of arguments, *including the program's own name*.
+- **`argc`** ("argument count") is an `int`. It's the number of arguments, _including the program's own name_.
 - **`argv`** ("argument vector") is an array of C-style strings (`char*`). Each entry is one argument as text.
 
 The crucial detail that trips up beginners: **`argv[0]` is the program name**, not the first real argument. The arguments the user typed start at `argv[1]`.
@@ -62,11 +62,11 @@ So if you run:
 
 You get:
 
-| Index | Value | What it is |
-| --- | --- | --- |
+| Index     | Value     | What it is            |
+| --------- | --------- | --------------------- |
 | `argv[0]` | `./greet` | the program name/path |
-| `argv[1]` | `Alice` | first user argument |
-| `argv[2]` | `42` | second user argument |
+| `argv[1]` | `Alice`   | first user argument   |
+| `argv[2]` | `42`      | second user argument  |
 
 And `argc` is `3` — three slots total. That's why `argc` is always at least `1`.
 
@@ -96,7 +96,7 @@ If the `for` loop syntax feels rusty, the [C++ loops tutorial](/posts/cpp-loops-
 
 ## A Worked Example: Reading a Single Command
 
-Here's a complete program that checks the first argument and responds to the commands `P`, `A`, or `L`. Copy it into Visual Studio (or any compiler) and experiment by passing different arguments — it's the quickest way to *feel* how `argc` and `argv` behave.
+Here's a complete program that checks the first argument and responds to the commands `P`, `A`, or `L`. Copy it into Visual Studio (or any compiler) and experiment by passing different arguments — it's the quickest way to _feel_ how `argc` and `argv` behave.
 
 ```cpp
 #include <iostream>
@@ -204,7 +204,7 @@ For decimals, use `std::stod` (string to double) the same way. There's a full br
 
 ## Handling Flags and Options
 
-Real tools accept *flags* like `-v` or `--help`. Since each argument is just a string, you compare it against the options you support. The cleanest way is to wrap each `argv[i]` in a `std::string` so you can use `==`:
+Real tools accept _flags_ like `-v` or `--help`. Since each argument is just a string, you compare it against the options you support. The cleanest way is to wrap each `argv[i]` in a `std::string` so you can use `==`:
 
 ```cpp
 #include <iostream>
@@ -240,7 +240,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-Why convert to `std::string`? Because comparing raw `char*` with `==` compares *pointers*, not text. Wrapping in `std::string` gives you real content comparison — a classic beginner trap. If strings in general feel shaky, see the [C++ string handling guide](/posts/cpp-string-handling/).
+Why convert to `std::string`? Because comparing raw `char*` with `==` compares _pointers_, not text. Wrapping in `std::string` gives you real content comparison — a classic beginner trap. If strings in general feel shaky, see the [C++ string handling guide](/posts/cpp-string-handling/).
 
 ## A Common Pattern: Collect Arguments into a Vector
 
