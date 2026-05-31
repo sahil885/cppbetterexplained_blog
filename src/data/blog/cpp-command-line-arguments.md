@@ -25,6 +25,10 @@ Most beginner C++ programs are self-contained: you run them, they ask for input 
 
 This guide explains exactly how they work, how to read them safely, and how to turn them into numbers and flags you can actually use.
 
+Prefer to watch? Here's a video walkthrough of using command line arguments in C++:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pSA0pr36E8w" title="How to use command line arguments in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## The Two Forms of main()
 
 You've probably always written `main` like this:
