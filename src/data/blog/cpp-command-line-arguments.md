@@ -94,6 +94,54 @@ Run it as `./program hello world` and you'll see `argv[0]` (the program name) fo
 
 If the `for` loop syntax feels rusty, the [C++ loops tutorial](/posts/cpp-loops-tutorial/) is a quick refresher.
 
+## A Worked Example: Reading a Single Command
+
+Here's a complete program that checks the first argument and responds to the commands `P`, `A`, or `L`. Copy it into Visual Studio (or any compiler) and experiment by passing different arguments — it's the quickest way to *feel* how `argc` and `argv` behave.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+    // The default case: no argument was passed, so argc is 1
+    if (argc == 1)
+    {
+        cout << "This is testing out command line arguments\n";
+    }
+
+    // Exactly one argument was passed (argc is 2)
+    if (argc == 2)
+    {
+        if (argv[1][0] == 'P')
+        {
+            cout << "The P command has been entered in\n";
+        }
+        else if (argv[1][0] == 'A')
+        {
+            cout << "The A command has been entered in\n";
+        }
+        else if (argv[1][0] == 'L')
+        {
+            cout << "The L command has been entered in\n";
+        }
+        else
+        {
+            // If none of the commands are P, A, or L
+            cout << "None of the commands are P, A or L\n";
+        }
+    }
+
+    return 0;
+}
+```
+
+A few things worth noticing:
+
+- When you run the program with **no** arguments, `argc` is `1`, so only the default message prints.
+- `argv[1][0]` reads the **first character** of the first argument. Because `argv[1]` is a C-style string, you can index into it like an array — `[1]` picks the argument, `[0]` picks its first letter. If indexing into strings/arrays is new, the [C++ arrays tutorial](/posts/cpp-arrays-tutorial/) explains the idea.
+- This checks one character only. For full words like `"Print"` you'd compare the whole argument — see the flags section below for the `std::string` approach.
+
 ## Always Validate Before You Read
 
 Here's the single most important habit with command line arguments: **check `argc` before you touch `argv`**. If you read `argv[1]` when the user passed nothing, you're reading memory that doesn't belong to you — undefined behavior, and a likely crash.
@@ -218,14 +266,18 @@ int main(int argc, char* argv[])
 
 The line `std::vector<std::string> args(argv + 1, argv + argc)` builds the vector from the range starting just after the program name to the end — a neat one-liner that skips `argv[0]` automatically. From there you have all of `std::vector`'s conveniences. New to vectors? The [C++ vector tutorial](/posts/cpp-vector-tutorial/) covers them from scratch.
 
-## How to Pass Arguments When Running Your Program
+## How to Pass Arguments in Visual Studio
 
-How you supply arguments depends on how you run the program:
+When you run a program from a terminal, you simply type the arguments after the executable name: `./myprogram P` (or `myprogram.exe P` on Windows). But inside an IDE there's no command line to type into, so you set the arguments in the project's settings. In Visual Studio:
 
-- **Terminal (Linux/macOS/Windows):** type them after the executable — `./myprogram arg1 arg2` (or `myprogram.exe arg1 arg2` on Windows).
-- **Visual Studio:** Project > Properties > Debugging > **Command Arguments**.
-- **VS Code:** add an `"args"` array to your `launch.json` configuration.
-- **CLion / other IDEs:** look for a "Program arguments" field in the run configuration.
+1. In **Solution Explorer**, right-click your project and choose **Properties**.
+2. Open **Configuration Properties** and select **Debugging**.
+3. Find the **Command Arguments** field — this is where you type the arguments your program should receive.
+4. Enter the value you want to test (for the example above, a single letter like `P`), then click **OK**.
+5. Close the properties window and run the program with **Ctrl + F5** (Start Without Debugging).
+6. The program now runs as if you'd launched it with those command line arguments.
+
+For other environments: in **VS Code**, add an `"args"` array to your `launch.json`; in **CLion**, use the **Program arguments** field in the run configuration; and from any **terminal**, just type the arguments after the executable.
 
 If you haven't set up a compiler or IDE yet, start with the [C++ setup guide](/posts/cpp-setup-guide/).
 
