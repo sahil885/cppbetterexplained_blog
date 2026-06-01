@@ -15,6 +15,7 @@ draft: false
 featured: false
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M9LnMQEkh70" title="C++ Bitwise Operators Explained: AND, OR, XOR, Shift, and NOT for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # C++ Bitwise Operators Explained: AND, OR, XOR, Shift, and NOT
 
 Every integer in your computer is stored as a sequence of bits — 0s and 1s. Bitwise operators let you work directly at that level, manipulating individual bits instead of whole numbers.

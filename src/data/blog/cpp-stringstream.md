@@ -15,6 +15,7 @@ draft: false
 featured: false
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3j6vi5G86Gg" title="C++ stringstream Tutorial: Parse and Build Strings Like a Pro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # C++ stringstream Tutorial: Parse and Build Strings
 
 You already know that `cin` reads from the keyboard and `cout` writes to the screen. `stringstream` works the same way — but instead of a keyboard or screen, it reads from and writes to a **string in memory**.
