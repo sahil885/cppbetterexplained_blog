@@ -6,6 +6,9 @@ export default async function handler(req, res) {
   const apiToken = process.env.SENDER_API_TOKEN;
   const groupId  = process.env.SENDER_GROUP_ID || "enGQp5";
 
+  // Diagnostic: log token prefix and length (safe - not exposing the full token)
+  console.log("Token check — prefix:", apiToken ? apiToken.substring(0, 8) : "MISSING", "| length:", apiToken ? apiToken.length : 0);
+
   if (!apiToken) {
     return res.status(500).json({ error: "Server misconfiguration" });
   }
