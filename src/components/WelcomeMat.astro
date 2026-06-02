@@ -156,10 +156,15 @@
   var DELAY_MS      = 3000;
 
   function isDismissed() {
-    try { return !!localStorage.getItem(STORAGE_KEY); } catch(e) { return false; }
+    try {
+      var ts = localStorage.getItem(STORAGE_KEY);
+      if (!ts) return false;
+      // Show again after 7 days — someone who closed it once might subscribe later
+      return (Date.now() - parseInt(ts, 10)) < 7 * 24 * 60 * 60 * 1000;
+    } catch(e) { return false; }
   }
   function markDismissed() {
-    try { localStorage.setItem(STORAGE_KEY, "1"); } catch(e) {}
+    try { localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch(e) {}
   }
   function hide() {
     var el = document.getElementById("welcome-mat");
@@ -206,8 +211,10 @@
       })
       .then(function (res) {
         if (!res.ok) {
-          // API returned an error — log it but still redirect so user isn't blocked
-          console.error("Sender API error:", res.status, res.statusText);
+          console.error("Subscribe error:", res.status, res.statusText);
+          submit.disabled = false;
+          submit.textContent = "Try again";
+          return;
         }
         markDismissed();
         form.style.display = "none";
@@ -217,10 +224,9 @@
         }, 1200);
       })
       .catch(function (err) {
-        // Network error — log and redirect
-        console.error("Sender API network error:", err);
-        markDismissed();
-        window.location.href = TRIPWIRE_URL;
+        console.error("Subscribe network error:", err);
+        submit.disabled = false;
+        submit.textContent = "Try again";
       });
     });
   }

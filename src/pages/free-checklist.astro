@@ -65,9 +65,12 @@ import Footer from "@/components/Footer.astro";
     })
     .then(function (res) {
       if (!res.ok) {
-        console.error("Sender API error:", res.status, res.statusText);
+        console.error("Subscribe error:", res.status, res.statusText);
+        submit.disabled = false;
+        submit.textContent = "Try again";
+        return;
       }
-      try { localStorage.setItem("wm_dismissed", "1"); } catch(e) {}
+      try { localStorage.setItem("wm_dismissed", String(Date.now())); } catch(e) {}
       form.style.display = "none";
       success.classList.remove("hidden");
       setTimeout(function () {
@@ -75,9 +78,9 @@ import Footer from "@/components/Footer.astro";
       }, 1200);
     })
     .catch(function (err) {
-      console.error("Sender API network error:", err);
-      try { localStorage.setItem("wm_dismissed", "1"); } catch(e) {}
-      window.location.href = TRIPWIRE_URL;
+      console.error("Subscribe network error:", err);
+      submit.disabled = false;
+      submit.textContent = "Try again";
     });
   });
 })();

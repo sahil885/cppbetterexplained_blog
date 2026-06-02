@@ -333,17 +333,17 @@ const nextPost =
     window.scrollTo({ left: 0, top: 0, behavior: "instant" })
   );
 
-  /* ===== Email Opt-in Form (Sender.net) ===== */
+  /* ===== Email Opt-in Form ===== */
   (function () {
-    var SENDER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDA4OGU5ZDk3MGYzNzliYzEwYTY0ODlkOWM0NDEwOWM1MzgxNDkwZjZlZjJlNDljMjAwNmZkMDI1OTM1OTJmNThmNmU5M2Q0ZmMzM2FkMTEiLCJpYXQiOjE3NzYzMTczMjQuOTY2OTg4LCJuYmYiOjE3NzYzMTczMjQuOTY2OTkxLCJleHAiOjE3Nzg5MDkzMjQuOTY1MTMzLCJzdWIiOiI4NTQ4ODQiLCJzY29wZXMiOltdfQ.AhEG99-ith_VDtqyloUapqmbstoG3pnEZrOk1h_pntEo6AvXkgFNKVfOmGC6wrN_kkgp-DmRunC9PokhWMRfGW3A6hY7ZvDSmDmZ5LcBDrDzKeMyIFz-3J33_af3R3t7_Un-0DwTRbb0HdEGkLzhpC3Hyiu379HKWeC_seXuGYxG71dZNc1jlY82p0TNCfVfAogSi5m-r3fjAdyameYF7QgGWou4Z6HZ83WpmlBRScIs8Bw7EI3SZHIPWiqjpvrLxBNfBf3Rhbsrw_GyjmLluxfwobUKmAavxrtFfP98iBxiVXIJI2t6EQnFfppsin-X8Npmy7BtEHahqp8XDmqf4od8HahljpcIvBqnH5eJJ06ivL-boSStlHUEY79Qto_iqsZsbthSqBiIFgJRZDLpw0CuBJtAFgdLCgBbdSTzFsPYyjjmKe6RxNnYHUs2ruwVCJpFQWKgzV2nsGBy79AVZTj2z_TgRlGC6-2sIhmyJ1sG5sXyThNCEF6aHZ9-rPeTJpZUAdk8FB-ktLnkoUazPvoxJEL8OV63ibwBgZVVZ3zo5mcoLZAZiER3gSDFbzVGyq0KFCaGJZFmTBzwF8-ahtkaBHYzd9NX3UvrC6ycS-eWoDzaJR0DDc85J_-_cJyyc5Lb80HzXHhAboU5lCEPhMXEC4FCsRPz1vXH8lH5Xk4";
-    var SENDER_GROUP = "enGQp5";
+    var TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
 
     function initPostOptinForm() {
       var form    = document.getElementById("post-optin-form");
       var success = document.getElementById("post-optin-success");
       var submit  = document.getElementById("post-optin-submit");
 
-      if (!form) return;
+      if (!form || form.dataset.bound) return;
+      form.dataset.bound = "1";
 
       form.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -351,29 +351,30 @@ const nextPost =
         submit.disabled = true;
         submit.textContent = "Sending…";
 
-        fetch("https://api.sender.net/v2/subscribers", {
+        fetch("/api/subscribe", {
           method: "POST",
-          headers: {
-            "Authorization": "Bearer " + SENDER_TOKEN,
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-          },
-          body: JSON.stringify({ email: email, groups: [SENDER_GROUP] }),
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: email }),
           keepalive: true
         })
-        .then(function () {
+        .then(function (res) {
+          if (!res.ok) {
+            // Server error — re-enable form so user can try again
+            console.error("Subscribe error:", res.status);
+            submit.disabled = false;
+            submit.textContent = "Try again";
+            return;
+          }
           form.style.display = "none";
           success.classList.remove("hidden");
           setTimeout(function () {
-            window.location.href = "https://start.cppbetterexplained.com/tw-sales-page";
+            window.location.href = TRIPWIRE_URL;
           }, 1200);
         })
-        .catch(function () {
-          form.style.display = "none";
-          success.classList.remove("hidden");
-          setTimeout(function () {
-            window.location.href = "https://start.cppbetterexplained.com/tw-sales-page";
-          }, 1200);
+        .catch(function (err) {
+          console.error("Subscribe network error:", err);
+          submit.disabled = false;
+          submit.textContent = "Try again";
         });
       });
     }
