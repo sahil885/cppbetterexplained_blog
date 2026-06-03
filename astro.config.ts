@@ -14,6 +14,10 @@ export default defineConfig({
     "/home/": "/",
     "/how-to-implement-insertion-sort-in-cpp": "/posts/insertion-sort-cpp/",
     "/how-to-implement-insertion-sort-in-cpp/": "/posts/insertion-sort-cpp/",
+    "/understanding-and-breaking-down-pointers": "/posts/pointers-in-cpp/",
+    "/understanding-and-breaking-down-pointers/": "/posts/pointers-in-cpp/",
+    "/copy-constructor-with-example": "/posts/cpp-copy-constructor/",
+    "/copy-constructor-with-example/": "/posts/cpp-copy-constructor/",
   },
   integrations: [
     sitemap({
