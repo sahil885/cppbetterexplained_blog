@@ -499,3 +499,6 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Move Semantics Explained: rvalue References, std::move, and Performance](/posts/cpp-move-semantics/) — once you understand classes, learn the Rule of Five and how to write efficient move constructors.
 - [C++ Vector Tutorial: The Complete Guide to std::vector](/posts/cpp-vector-tutorial/) — classes commonly own vectors as members; learn how they work together.
 - [OOP in C++: Inheritance, Encapsulation, and Polymorphism Explained](/posts/oop-in-cpp/) — the natural next step — applying classes to real object-oriented design.
+- [C++ Constructors and Destructors Explained](/posts/cpp-constructors-destructors/) — how objects are initialized and cleaned up; the first thing to learn after defining a class.
+- [C++ Copy Constructor: Deep Copy vs Shallow Copy Explained](/posts/cpp-copy-constructor/) — what happens when you copy an object, and how to control it with the Rule of Three.
+- [C++ Struct vs Class: What's the Difference?](/posts/cpp-struct-vs-class/) — structs and classes are nearly identical in C++; learn the one real difference and when to use each.
