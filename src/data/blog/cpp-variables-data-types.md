@@ -359,3 +359,6 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Arrays Tutorial: Store and Access Multiple Values](/posts/cpp-arrays-tutorial/) — the natural extension of single variables: storing collections of data.
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — a handy reference for data types and syntax you can bookmark and come back to.
 - [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — see where variables fit in the full structured learning path.
+- [C++ Type Casting Explained: static_cast, dynamic_cast, and More](/posts/cpp-type-casting/) — how to convert safely between data types once you know what the types are.
+- [C++ const vs constexpr: What's the Difference?](/posts/cpp-const-vs-constexpr/) — two ways to make a variable constant; learn which to use and when.
+- [C++ Stack vs Heap Memory: What's the Difference?](/posts/cpp-stack-vs-heap/) — where your variables actually live in memory, and why it matters.
