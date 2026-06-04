@@ -415,3 +415,6 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — variables are what loops operate on; make sure you understand them first.
 - [C++ Arrays Tutorial: Store and Access Multiple Values](/posts/cpp-arrays-tutorial/) — loops and arrays are used together constantly; learn how to iterate arrays properly.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — once you understand loops, wrapping them in functions is the next step.
+- [C++ do-while Loop: How It Works and When to Use It](/posts/cpp-do-while-loop/) — a deeper look at the loop that always runs at least once.
+- [C++ Switch Statement: How It Works with Examples](/posts/cpp-switch-statement/) — a cleaner alternative to long if-else chains when branching on one value.
+- [C++ Ternary Operator: How to Use ? : in C++](/posts/cpp-ternary-operator/) — the one-line conditional for simple either/or choices.
