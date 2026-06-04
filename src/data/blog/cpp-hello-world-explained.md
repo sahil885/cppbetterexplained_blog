@@ -316,4 +316,5 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — the full path from Hello World to real programs.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — `main` is a function — learn how to write your own.
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — bookmark this for whenever you need a fast reminder on syntax.
-- [C++ Namespace Tutorial: using namespace std Explained](/posts/cpp-namespace-tutorial/) — "using namespace std" appears in every Hello World; learn exactly what it does and when to avoid it.  - - [C++ File Handling: Reading and Writing Files with fstream](/posts/cpp-file-handling/) — once you can print to the screen, the next step is reading and writing files with fstream.
+- [C++ Namespace Tutorial: using namespace std Explained](/posts/cpp-namespace-tutorial/) — "using namespace std" appears in every Hello World; learn exactly what it does and when to avoid it.
+- [C++ File Handling: Reading and Writing Files with fstream](/posts/cpp-file-handling/) — once you can print to the screen, the next step is reading and writing files with fstream.
