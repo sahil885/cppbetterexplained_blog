@@ -68,7 +68,7 @@ const isActive = (path: string) => {
           "sm:mt-0 sm:flex sm:w-auto sm:gap-x-3 sm:gap-y-0",
         ]}
       >
-        <li class="col-span-2">
+        <li class="col-span-2 relative group">
           <a
             href="https://start.cppbetterexplained.com/tw-sales-page"
             target="_blank"
@@ -76,6 +76,18 @@ const isActive = (path: string) => {
           >
             Book
           </a>
+          <ul class="block mt-1 sm:hidden sm:group-hover:block sm:absolute sm:top-full sm:left-1/2 sm:-translate-x-1/2 sm:bg-background sm:border sm:border-border sm:rounded-lg sm:shadow-md sm:z-50 sm:min-w-max sm:py-1 sm:mt-0">
+            <li>
+              <a
+                href="https://www.amazon.com/dp/1542446155/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block px-4 py-2 text-sm text-center font-medium hover:text-accent whitespace-nowrap"
+              >
+                Paperback Edition
+              </a>
+            </li>
+          </ul>
         </li>
         <li class="col-span-2">
           <a
