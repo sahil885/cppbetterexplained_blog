@@ -1,6 +1,6 @@
 ---
-title: "C++ File Handling: Reading and Writing Files with fstream"
-description: "Learn C++ file handling with fstream. Covers reading, writing, and appending to files with ifstream, ofstream, and fstream with practical examples."
+title: "C++ Read File Line by Line — fstream Reading and Writing Guide"
+description: "Learn to read a file line by line in C++ with ifstream and getline, plus how to write, append, and read a file into a vector, all with runnable examples."
 pubDatetime: 2026-04-28T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "tutorial", "files", "fstream"]
@@ -17,7 +17,9 @@ faqSchema:
     answer: "Open the file with ifstream and call .is_open() to check if it opened successfully. If the file does not exist, is_open() returns false. In C++17 you can also use std::filesystem::exists() from the <filesystem> header."
 ---
 
-# C++ File Handling: Reading and Writing Files with fstream
+# C++ Read File Line by Line — fstream Reading and Writing Guide
+
+**To read a file line by line in C++**, open it with an `std::ifstream` and loop using `std::getline(file, line)` — each iteration reads the next line until you reach the end of the file.
 
 Almost every real C++ program needs to read from or write to files at some point — whether it is loading configuration, saving game state, processing data, or writing logs. C++ makes this straightforward through the `<fstream>` library.
 

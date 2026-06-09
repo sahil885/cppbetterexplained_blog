@@ -1,6 +1,6 @@
 ---
 title: "C++ Calculator Program: Build One Step by Step"
-description: "Learn how to build a C++ calculator program from scratch. This beginner tutorial covers basic arithmetic, switch statements, functions, loops, and input validation — with full working code."
+description: "Build a C++ calculator program step by step. This beginner tutorial covers arithmetic, switch statements, functions, and input validation, with full code."
 pubDatetime: 2026-05-16T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "projects", "tutorial"]

@@ -1,6 +1,6 @@
 ---
 title: "C++ const vs constexpr: What's the Difference?"
-description: "Learn the difference between const and constexpr in C++. This guide explains compile-time vs runtime constants, when to use each, and how constexpr functions work."
+description: "C++ const vs constexpr: learn the difference between runtime and compile-time constants, when to use each, and how constexpr functions work, with examples."
 pubDatetime: 2026-05-16T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "modern C++", "tutorial"]

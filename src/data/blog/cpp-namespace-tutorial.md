@@ -1,6 +1,6 @@
 ---
-title: "C++ Namespace Tutorial: using namespace std Explained"
-description: "Learn what C++ namespaces are, what 'using namespace std' does, and why it's both useful and dangerous. Includes how to define your own namespaces and best practices."
+title: "using namespace std: What It Means and Why to Avoid It (C++)"
+description: "What does using namespace std mean in C++? Learn what it does, why experienced developers often avoid it, and how to use namespaces correctly and safely."
 pubDatetime: 2026-05-16T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "namespaces", "tutorial"]
@@ -15,7 +15,9 @@ draft: false
 featured: false
 ---
 
-# C++ Namespace Tutorial: using namespace std Explained
+# using namespace std: What It Means and Why to Avoid It
+
+**`using namespace std;`** tells the compiler to bring every name from the standard library's `std` namespace into the current scope, so you can write `cout` instead of `std::cout`.
 
 If you've ever written a C++ program, you've probably seen this line:
 

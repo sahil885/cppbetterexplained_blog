@@ -1,6 +1,6 @@
 ---
 title: "C++ Lambda Functions Explained: A Beginner's Guide"
-description: "Learn C++ lambda expressions from scratch. This beginner guide covers lambda syntax, captures, parameters, return types, and practical use cases with clear examples."
+description: "Learn C++ lambda functions from scratch: syntax, captures, parameters, return types, and practical use cases, all explained with clear beginner examples."
 pubDatetime: 2026-05-14T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "lambda", "tutorial"]

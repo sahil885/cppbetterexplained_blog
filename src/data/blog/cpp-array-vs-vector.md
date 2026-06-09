@@ -1,6 +1,6 @@
 ---
-title: "C++ Array vs Vector: Which One Should You Use?"
-description: "Learn the differences between C++ arrays and vectors. This guide explains when to use std::vector vs raw arrays, with examples, performance notes, and a clear recommendation for beginners."
+title: "C++ Array vs Vector: When to Use Each (with Examples)"
+description: "C++ array vs vector: when to use std::vector versus a raw array, the key differences in sizing, safety, and performance, plus a clear beginner recommendation."
 pubDatetime: 2026-05-16T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "arrays", "vectors", "STL", "tutorial"]
@@ -15,7 +15,9 @@ draft: false
 featured: false
 ---
 
-# C++ Array vs Vector: Which One Should You Use?
+# C++ Array vs Vector: When to Use Each (with Examples)
+
+**C++ array vs vector in one line:** use `std::vector` by default for its safety and automatic resizing, and reach for a raw array only for small, fixed-size, performance-critical data.
 
 C++ gives you two main ways to store sequences of values: old-style arrays inherited from C, and `std::vector` from the standard library. Beginners often wonder which to use.
 

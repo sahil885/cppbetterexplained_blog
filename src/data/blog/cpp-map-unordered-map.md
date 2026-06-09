@@ -1,6 +1,6 @@
 ---
-title: "C++ map vs unordered_map: Complete Tutorial"
-description: "Learn C++ map and unordered_map with clear examples. Covers insertion, lookup, iteration, performance differences, and when to use each."
+title: "C++ map vs unordered_map: Differences and When to Use Each"
+description: "C++ map vs unordered_map: the performance differences, how each stores key-value pairs, and exactly when to use unordered_map vs map, with clear examples."
 pubDatetime: 2026-04-19T00:00:00Z
 author: "Sahil"
 tags: ["C++", "STL", "map", "unordered_map", "beginner", "tutorial"]
@@ -15,7 +15,9 @@ draft: false
 featured: false
 ---
 
-# C++ map and unordered_map Tutorial: Key-Value Storage Explained
+# C++ map vs unordered_map: Key-Value Storage Explained
+
+**C++ map vs unordered_map in short:** `std::map` keeps keys sorted with O(log n) operations, while `std::unordered_map` uses a hash table for average O(1) lookups but no ordering.
 
 Imagine you want to store the ages of everyone in your class. You could use a vector of pairs, but then every lookup requires scanning the whole list. What if you could just write `ages["Alice"]` and instantly get her age back? That's exactly what C++'s map containers give you.
 

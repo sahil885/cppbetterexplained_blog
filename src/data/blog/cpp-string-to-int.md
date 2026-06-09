@@ -1,6 +1,6 @@
 ---
 title: "How to Convert String to int in C++: stoi, atoi, and stringstream"
-description: "Learn how to convert a string to int in C++ using stoi, atoi, and stringstream. Includes error handling, examples, and when to use each method."
+description: "Learn how to convert a string to int in C++ using stoi, atoi, and stringstream. Includes error handling, examples, and when to use each method safely."
 pubDatetime: 2026-05-23T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "strings", "tutorial"]

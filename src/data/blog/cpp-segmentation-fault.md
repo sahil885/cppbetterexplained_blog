@@ -1,6 +1,6 @@
 ---
 title: "C++ Segmentation Fault: What It Is and How to Fix It"
-description: "Learn what causes segmentation faults in C++ and how to fix them. Covers null pointer dereference, array out of bounds, stack overflow, dangling pointers, and how to use AddressSanitizer to find memory bugs."
+description: "A C++ segmentation fault means your program touched memory it shouldn't. Learn the causes — null and dangling pointers, out-of-bounds — and how to fix them."
 pubDatetime: 2026-05-16T00:00:00Z
 author: "Sahil"
 tags: ["C++", "debugging", "pointers", "errors", "tutorial"]

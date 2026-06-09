@@ -1,6 +1,6 @@
 ---
 title: "What Is C++ Used For? Real-World Applications Explained"
-description: "Discover what C++ is used for in the real world. From games and OS to finance and embedded systems — with real examples of major C++ projects."
+description: "Discover what C++ is used for in the real world — games, operating systems, finance, embedded systems, and more — with real examples of major projects."
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "overview", "applications"]

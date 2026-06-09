@@ -1,6 +1,6 @@
 ---
 title: "C++ Reference vs Pointer: What's the Difference?"
-description: "Learn the differences between C++ references and pointers — syntax, semantics, when to use each, and the rules that govern them. A practical guide for beginners who understand pointers but are confused about references."
+description: "C++ reference vs pointer: the differences in syntax and behavior, when to use each, and the key rules — a practical guide for beginners who know pointers."
 pubDatetime: 2026-05-16T00:00:00Z
 author: "Sahil"
 tags: ["C++", "pointers", "references", "beginner", "tutorial"]

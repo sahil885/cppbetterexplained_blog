@@ -1,6 +1,6 @@
 ---
 title: "C++ Smart Pointers: unique_ptr & shared_ptr Guide"
-description: "Learn how C++ smart pointers work. Covers unique_ptr, shared_ptr, and weak_ptr with examples showing how they prevent memory leaks."
+description: "Learn how C++ smart pointers work — unique_ptr, shared_ptr, and weak_ptr — with clear examples showing how they manage memory and prevent leaks for you."
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "smart pointers", "memory", "modern C++", "intermediate"]
