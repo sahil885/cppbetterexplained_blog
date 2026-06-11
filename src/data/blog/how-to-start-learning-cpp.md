@@ -23,6 +23,8 @@ Here's the truth: C++ isn't hard — it's just taught badly. Most tutorials thro
 
 This guide is different. You'll get a clear, structured path from absolute zero to writing real C++ programs, with honest advice on what actually matters and what to skip as a beginner.
 
+<div class="inline-cta"><strong>Short on time?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> packs everything you need into 87 pages of plain-English explanations, analogies, and code diagrams — just $19.</div>
+
 ## Why Learn C++ in 2026?
 
 Before you invest months learning a language, it's worth knowing why C++ is still worth it in 2026.
