@@ -25,6 +25,8 @@ Each stage includes what to learn, roughly how long it takes, and what to build 
 
 ---
 
+<div class="inline-cta"><strong>Short on time?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> packs everything you need into 87 pages of plain-English explanations, analogies, and code diagrams — just $19.</div>
+
 ## Stage 0: Set Up Your Environment (Day 1)
 
 Before you write a single line of code, get your tools in place. A broken environment is responsible for more beginner dropouts than anything else.
