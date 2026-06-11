@@ -21,6 +21,18 @@ const canonicalURL = new URL("/learn-cpp/", SITE.website);
       The complete beginner's path through C++. Each guide builds on the last — follow them in order and you'll go from zero to writing real programs with confidence.
     </p>
 
+    <!-- Inline email optin -->
+    <div class="mb-12 rounded-lg border border-accent/30 bg-accent/5 p-6">
+      <h2 class="text-xl font-semibold mb-2">Free: The 10 Mistakes Every C++ Beginner Makes</h2>
+      <p class="text-sm text-foreground/70 mb-4">A free 1-page checklist that shows you the exact traps that slow down every C++ beginner — so you can avoid them from day one.</p>
+      <form id="pillar-optin-form" class="flex flex-col sm:flex-row gap-3">
+        <input id="pillar-optin-email" type="email" name="email" required placeholder="Your email address" class="flex-1 rounded-md border border-foreground/20 bg-background px-4 py-2.5 text-foreground" />
+        <button type="submit" class="rounded-md bg-accent px-5 py-2.5 font-semibold text-background hover:opacity-90">Send it to me</button>
+      </form>
+      <p id="pillar-optin-msg" class="text-sm text-foreground/70 mt-2 hidden"></p>
+      <p class="text-xs text-foreground/50 mt-2">🔒 No spam. Unsubscribe anytime.</p>
+    </div>
+
     <!-- Stage 1 -->
     <section class="mb-12">
       <h2 class="text-2xl font-semibold mb-1">Stage 1: Getting Started</h2>
@@ -246,6 +258,13 @@ const canonicalURL = new URL("/learn-cpp/", SITE.website);
         </li>
       </ol>
     </section>
+
+    <!-- Book CTA -->
+    <div class="mb-12 rounded-lg border border-accent/30 bg-accent/5 p-6">
+      <h2 class="text-xl font-semibold mb-2">Want to go deeper, faster?</h2>
+      <p class="text-foreground/70 mb-4">If you're looking to go deeper with C++, the <strong>C++ Better Explained Ebook</strong> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just <strong>$19</strong>.</p>
+      <a href="https://start.cppbetterexplained.com/tw-sales-page" class="inline-block rounded-md bg-accent px-5 py-2.5 font-semibold text-background hover:opacity-90">👉 Get the C++ Better Explained Ebook — $19</a>
+    </div>
 
     <!-- Stage 3 -->
     <section class="mb-12">
@@ -604,3 +623,31 @@ const canonicalURL = new URL("/learn-cpp/", SITE.website);
   </main>
   <Footer />
 </Layout>
+
+<script is:inline>
+  document.addEventListener("submit", async function (e) {
+    const form = e.target && e.target.id === "pillar-optin-form" ? e.target : null;
+    if (!form) return;
+    e.preventDefault();
+    const email = document.getElementById("pillar-optin-email").value.trim();
+    const msg = document.getElementById("pillar-optin-msg");
+    if (!email) return;
+    msg.classList.remove("hidden");
+    msg.textContent = "Sending...";
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email }),
+      });
+      if (res.ok) {
+        msg.textContent = "You're in! Check your inbox for the checklist.";
+        form.reset();
+      } else {
+        msg.textContent = "Something went wrong — please try again.";
+      }
+    } catch (err) {
+      msg.textContent = "Something went wrong — please try again.";
+    }
+  });
+</script>
