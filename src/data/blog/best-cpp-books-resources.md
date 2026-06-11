@@ -23,6 +23,8 @@ This list is different. It's opinionated, ranked by usefulness for actual beginn
 
 ---
 
+<div class="inline-cta"><strong>Short on time?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> packs everything you need into 87 pages of plain-English explanations, analogies, and code diagrams — just $19.</div>
+
 ## How to Use This List
 
 Different resources serve different purposes. A book gives depth. A course gives structure. A reference site answers quick questions. You don't need everything here — pick one primary learning resource and supplement with the others as needed.
