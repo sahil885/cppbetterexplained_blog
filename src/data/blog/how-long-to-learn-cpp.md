@@ -29,6 +29,8 @@ Here's the honest version, without the hype.
 
 That's the short answer. The rest of this guide breaks down what each stage actually looks like, the factors that speed you up or slow you down, and a realistic weekly plan you can follow.
 
+<div class="inline-cta"><strong>Short on time?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> packs everything you need into 87 pages of plain-English explanations, analogies, and code diagrams — just $19.</div>
+
 ## Quick Answer: Timeline by Goal
 
 Different goals mean different timelines. Here's roughly what to expect with consistent practice:
