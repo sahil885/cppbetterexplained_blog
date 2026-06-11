@@ -44,6 +44,16 @@ const projectPosts = sortedPosts.filter(p =>
   <main id="main-content" data-layout="index" class="app-layout">
     <h1 class="sr-only">C++ Tutorials, Projects and Source Code Explained Step by Step</h1>
 
+    <!-- Hero: funnel into roadmap + book -->
+    <section class="pt-12 pb-6 border-b border-border">
+      <h2 class="text-3xl sm:text-4xl font-bold leading-tight">Learn C++ the Easy Way</h2>
+      <p class="mt-3 max-w-2xl text-foreground/70">Step-by-step tutorials, real projects, and plain-English explanations — no 1,300-page textbook required. New here? Start with the free roadmap.</p>
+      <div class="mt-5 flex flex-wrap gap-3">
+        <a href="/learn-cpp/" class="inline-block rounded-md bg-accent px-5 py-2.5 font-semibold text-background hover:opacity-90">Start the Free C++ Roadmap</a>
+        <a href="https://start.cppbetterexplained.com/tw-sales-page" class="inline-block rounded-md border border-accent/40 px-5 py-2.5 font-semibold text-accent hover:bg-accent/10">Get the Ebook — $19</a>
+      </div>
+    </section>
+
     {
       featuredPosts.length > 0 && (
         <section
