@@ -25,16 +25,9 @@ export default defineConfig({
         !page.includes("/tags/") &&
         !page.includes("/search") &&
         (SITE.showArchives || !page.includes("/archives/")) &&
-        !page.includes("/posts/2/") &&
-        !page.includes("/posts/3/") &&
-        !page.includes("/posts/4/") &&
-        !page.includes("/posts/5/") &&
-        !page.includes("/posts/6/") &&
-        !page.includes("/posts/7/") &&
-        !page.includes("/posts/8/") &&
-        !page.includes("/posts/9/") &&
-        !page.includes("/posts/10/") &&
-        !page.includes("/posts/11/"),
+        // Exclude all numbered pagination pages (/posts/2/ ... /posts/N/) from the sitemap.
+        // Keeps /posts/ (page 1) and article slugs.
+        !/\/posts\/\d+\/?$/.test(page),
     }),
   ],
   markdown: {
