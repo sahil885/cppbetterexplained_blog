@@ -15,6 +15,8 @@ draft: false
 featured: false
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qr7jt1XgDy4" title="FizzBuzz in C++ Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # FizzBuzz in C++
 
 FizzBuzz is the most famous beginner programming exercise — and a question interviewers really do ask to check you can write a simple loop. The task sounds trivial, but it quietly tests loops, conditionals, and the modulo operator all at once. Let's build it from scratch.

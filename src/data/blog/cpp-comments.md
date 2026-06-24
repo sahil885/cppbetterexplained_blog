@@ -15,6 +15,8 @@ draft: false
 featured: false
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e2rkO8iS9TU" title="How to Write Comments in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # C++ Comments Explained
 
 A comment is a note you leave in your code for humans to read — the compiler ignores it completely. Comments don't change what your program does, but they make it far easier to understand later. Here's how to write them in C++ and, just as important, when you actually should.
