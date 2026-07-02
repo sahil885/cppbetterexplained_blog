@@ -151,9 +151,10 @@
 
 <script is:inline>
 (function () {
-  var STORAGE_KEY   = "wm_dismissed";
-  var TRIPWIRE_URL  = "https://start.cppbetterexplained.com/tw-sales-page";
-  var DELAY_MS      = 3000;
+  var STORAGE_KEY      = "wm_dismissed";
+  var TRIPWIRE_URL     = "https://start.cppbetterexplained.com/tw-sales-page";
+  var SCROLL_TRIGGER   = 0.35;   // show after 35% scroll depth (engaged reader)
+  var FALLBACK_MS      = 45000;  // fallback for visitors who never scroll
 
   function isDismissed() {
     try {
@@ -186,10 +187,31 @@
     var success = document.getElementById("wm-success");
     var submit  = document.getElementById("wm-submit");
 
-    setTimeout(function () {
-      if (isDismissed()) return;
+    // Show once on: 35% scroll depth, exit intent, or 45s dwell - whichever first.
+    var shown = false;
+    function show() {
+      if (shown || isDismissed()) return;
+      shown = true;
       mat.style.display = "flex";
-    }, DELAY_MS);
+      cleanup();
+    }
+    function onScroll() {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      if (max <= 0) return;
+      if (window.scrollY / max >= SCROLL_TRIGGER) show();
+    }
+    function onExitIntent(e) {
+      // Mouse left the viewport toward the top (heading for the tab bar)
+      if (!e.relatedTarget && e.clientY <= 0) show();
+    }
+    var fallbackTimer = setTimeout(show, FALLBACK_MS);
+    function cleanup() {
+      window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("mouseout", onExitIntent);
+      clearTimeout(fallbackTimer);
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("mouseout", onExitIntent);
 
     document.getElementById("wm-close").addEventListener("click", dismiss);
     document.getElementById("wm-skip").addEventListener("click", dismiss);

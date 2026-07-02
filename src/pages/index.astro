@@ -52,6 +52,33 @@ const projectPosts = sortedPosts.filter(p =>
         <a href="/learn-cpp/" class="inline-block rounded-md bg-accent px-5 py-2.5 font-semibold text-background hover:opacity-90">Start the Free C++ Roadmap</a>
         <a href="https://start.cppbetterexplained.com/tw-sales-page" class="inline-block rounded-md border border-accent/40 px-5 py-2.5 font-semibold text-accent hover:bg-accent/10">Get the Ebook — $19</a>
       </div>
+
+      <!-- Hero email capture -->
+      <div class="mt-8 max-w-xl rounded-xl border border-accent/25 bg-accent/5 px-5 py-5">
+        <p class="font-semibold">📋 Free: The 10 Mistakes Every C++ Beginner Makes</p>
+        <p class="mt-1 text-sm text-foreground/70">A 1-page checklist of the traps that slow down every beginner — avoid them from day one.</p>
+        <form id="hero-optin-form" class="mt-3 flex flex-col sm:flex-row gap-3">
+          <input
+            type="email"
+            name="email"
+            required
+            autocomplete="email"
+            placeholder="your@email.com"
+            class="flex-1 min-w-0 px-4 py-2.5 rounded-lg border border-border bg-card text-foreground text-sm outline-none focus:border-accent transition-colors"
+          />
+          <button
+            type="submit"
+            id="hero-optin-submit"
+            class="px-5 py-2.5 rounded-lg bg-accent text-white font-semibold text-sm cursor-pointer whitespace-nowrap hover:opacity-90 transition-opacity disabled:opacity-50"
+          >
+            Send it to me →
+          </button>
+        </form>
+        <p class="mt-2 text-xs text-foreground/50">🔒 No spam. Unsubscribe anytime.</p>
+        <div id="hero-optin-success" class="hidden mt-3">
+          <p class="text-base font-semibold text-accent">🎉 Check your inbox — it's on its way!</p>
+        </div>
+      </div>
     </section>
 
     {
@@ -140,4 +167,55 @@ const projectPosts = sortedPosts.filter(p =>
       sessionStorage.setItem("backUrl", "/");
     }
   });
+</script>
+
+<script is:inline>
+(function () {
+  var TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
+
+  function initHeroOptin() {
+    var form = document.getElementById("hero-optin-form");
+    if (!form || form.dataset.bound) return;
+    form.dataset.bound = "1";
+
+    var submit  = document.getElementById("hero-optin-submit");
+    var success = document.getElementById("hero-optin-success");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var email = form.querySelector("input[name=email]").value.trim();
+      submit.disabled = true;
+      submit.textContent = "Sending\u2026";
+
+      fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email, list: "checklist" }),
+        keepalive: true
+      })
+      .then(function (res) {
+        if (!res.ok) {
+          console.error("Subscribe error:", res.status);
+          submit.disabled = false;
+          submit.textContent = "Try again";
+          return;
+        }
+        try { localStorage.setItem("wm_dismissed", String(Date.now())); } catch (err) {}
+        form.style.display = "none";
+        if (success) success.classList.remove("hidden");
+        setTimeout(function () {
+          window.location.href = TRIPWIRE_URL;
+        }, 1200);
+      })
+      .catch(function (err) {
+        console.error("Subscribe network error:", err);
+        submit.disabled = false;
+        submit.textContent = "Try again";
+      });
+    });
+  }
+
+  initHeroOptin();
+  document.addEventListener("astro:page-load", initHeroOptin);
+})();
 </script>

@@ -38,6 +38,26 @@ const {
 
 const { Content } = await render(post);
 
+// Project posts get a "source code" content upgrade instead of the generic checklist
+const isProject = (tags ?? []).includes("project");
+const optin = isProject
+  ? {
+      icon: "\u{1F4BB}",
+      heading: "Get the Complete Source Code",
+      subtext:
+        "Enter your email and I'll send you the full, ready-to-compile source code for this project \u2014 plus my free C++ beginner checklist.",
+      button: "Send me the code \u2192",
+      list: "source-code",
+    }
+  : {
+      icon: "\u{1F4CB}",
+      heading: "Free Download: The 10 Mistakes Every C++ Beginner Makes",
+      subtext:
+        "A free 1-page checklist that shows the exact traps that slow down every C++ beginner \u2014 so you can avoid them from day one.",
+      button: "Send it to me \u2192",
+      list: "checklist",
+    };
+
 let ogImageUrl: string | undefined;
 
 // Determine OG image source
@@ -133,17 +153,17 @@ const nextPost =
       <Content />
     </article>
 
-    <!-- ===== Email Opt-in: Free Checklist ===== -->
+    <!-- ===== Email Opt-in (bottom of post) ===== -->
     <div class="my-10 rounded-2xl border border-accent/30 bg-accent/5 px-6 py-8 text-center">
-      <div class="text-3xl mb-3">📋</div>
-      <h3 class="text-xl font-bold text-accent mb-2">Free Download: The 10 Mistakes Every C++ Beginner Makes</h3>
+      <div class="text-3xl mb-3">{optin.icon}</div>
+      <h3 class="text-xl font-bold text-accent mb-2">{optin.heading}</h3>
       <p class="text-sm opacity-75 mb-5 max-w-md mx-auto">
-        A free 1-page checklist that shows the exact traps that slow down every C++ beginner — so you can avoid them from day one.
+        {optin.subtext}
       </p>
-      <form id="post-optin-form" class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+      <form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list={optin.list}>
         <input
           type="email"
-          id="post-optin-email"
+          name="email"
           placeholder="your@email.com"
           required
           autocomplete="email"
@@ -151,18 +171,45 @@ const nextPost =
         />
         <button
           type="submit"
-          id="post-optin-submit"
           class="px-5 py-2.5 rounded-lg bg-accent text-white font-semibold text-sm cursor-pointer whitespace-nowrap hover:opacity-90 transition-opacity disabled:opacity-50"
         >
-          Send it to me →
+          {optin.button}
         </button>
       </form>
       <p class="text-xs opacity-40 mt-3">🔒 No spam. Unsubscribe anytime.</p>
-      <div id="post-optin-success" class="hidden mt-4">
+      <div class="post-optin-success hidden mt-4">
         <p class="text-base font-semibold text-accent">🎉 Check your inbox — it's on its way!</p>
       </div>
     </div>
     <!-- ===== End Email Opt-in ===== -->
+
+    <!-- Mid-article opt-in: inserted before the middle H2 by script below -->
+    <template id="mid-optin-template">
+      <div class="mid-optin not-prose my-8 rounded-xl border border-accent/30 bg-accent/5 px-5 py-6 text-center">
+        <h3 class="text-lg font-bold text-accent mb-1">{optin.icon} {optin.heading}</h3>
+        <p class="text-sm opacity-75 mb-4 max-w-md mx-auto">{optin.subtext}</p>
+        <form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list={optin.list}>
+          <input
+            type="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+            autocomplete="email"
+            class="flex-1 min-w-0 px-4 py-2.5 rounded-lg border border-border bg-card text-foreground text-sm outline-none focus:border-accent transition-colors"
+          />
+          <button
+            type="submit"
+            class="px-5 py-2.5 rounded-lg bg-accent text-white font-semibold text-sm cursor-pointer whitespace-nowrap hover:opacity-90 transition-opacity disabled:opacity-50"
+          >
+            {optin.button}
+          </button>
+        </form>
+        <p class="text-xs opacity-40 mt-3">🔒 No spam. Unsubscribe anytime.</p>
+        <div class="post-optin-success hidden mt-4">
+          <p class="text-base font-semibold text-accent">🎉 Check your inbox — it's on its way!</p>
+        </div>
+      </div>
+    </template>
 
     <hr class="my-8 border-dashed" />
 
@@ -333,40 +380,40 @@ const nextPost =
     window.scrollTo({ left: 0, top: 0, behavior: "instant" })
   );
 
-  /* ===== Email Opt-in Form ===== */
+  /* ===== Email Opt-in Forms (bottom + mid-article) ===== */
   (function () {
     var TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
 
-    function initPostOptinForm() {
-      var form    = document.getElementById("post-optin-form");
-      var success = document.getElementById("post-optin-success");
-      var submit  = document.getElementById("post-optin-submit");
-
+    function bindOptinForm(form) {
       if (!form || form.dataset.bound) return;
       form.dataset.bound = "1";
 
+      var submit  = form.querySelector("button[type=submit]");
+      var success = form.parentElement.querySelector(".post-optin-success");
+
       form.addEventListener("submit", function (e) {
         e.preventDefault();
-        var email = document.getElementById("post-optin-email").value.trim();
+        var email = form.querySelector("input[name=email]").value.trim();
         submit.disabled = true;
-        submit.textContent = "Sending…";
+        submit.textContent = "Sending\u2026";
 
         fetch("/api/subscribe", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email: email }),
+          body: JSON.stringify({ email: email, list: form.dataset.list || "checklist" }),
           keepalive: true
         })
         .then(function (res) {
           if (!res.ok) {
-            // Server error — re-enable form so user can try again
             console.error("Subscribe error:", res.status);
             submit.disabled = false;
             submit.textContent = "Try again";
             return;
           }
+          // Don't show the welcome mat to someone who just subscribed
+          try { localStorage.setItem("wm_dismissed", String(Date.now())); } catch (err) {}
           form.style.display = "none";
-          success.classList.remove("hidden");
+          if (success) success.classList.remove("hidden");
           setTimeout(function () {
             window.location.href = TRIPWIRE_URL;
           }, 1200);
@@ -379,7 +426,26 @@ const nextPost =
       });
     }
 
-    initPostOptinForm();
-    document.addEventListener("astro:page-load", initPostOptinForm);
+    function insertMidOptin() {
+      var article  = document.getElementById("article");
+      var template = document.getElementById("mid-optin-template");
+      if (!article || !template) return;
+      if (article.querySelector(".mid-optin")) return;
+
+      // Only insert in longer posts; place before the middle H2 (a natural pause)
+      var headings = article.querySelectorAll("h2");
+      if (headings.length < 3) return;
+      var target = headings[Math.floor(headings.length / 2)];
+      var box = template.content.firstElementChild.cloneNode(true);
+      target.parentNode.insertBefore(box, target);
+    }
+
+    function initOptins() {
+      insertMidOptin();
+      document.querySelectorAll(".post-optin-form").forEach(bindOptinForm);
+    }
+
+    initOptins();
+    document.addEventListener("astro:page-load", initOptins);
   })();
 </script>

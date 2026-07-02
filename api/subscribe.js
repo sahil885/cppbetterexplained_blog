@@ -4,19 +4,23 @@ export default async function handler(req, res) {
   }
 
   const apiToken = process.env.SENDER_API_TOKEN;
-  const groupId  = process.env.SENDER_GROUP_ID || "enGQp5";
 
-  // Diagnostic: log token prefix and length (safe - not exposing the full token)
-  console.log("Token check — prefix:", apiToken ? apiToken.substring(0, 8) : "MISSING", "| length:", apiToken ? apiToken.length : 0);
+  // Default (checklist) group, plus an optional source-code group.
+  // Subscribers who ask for project source code go into SENDER_GROUP_SOURCECODE
+  // (set up a matching automation in Sender.net that delivers the code).
+  // Until that env var is set, they fall back to the default group.
+  const defaultGroup    = process.env.SENDER_GROUP_ID || "enGQp5";
+  const sourceCodeGroup = process.env.SENDER_GROUP_SOURCECODE || defaultGroup;
 
   if (!apiToken) {
     return res.status(500).json({ error: "Server misconfiguration" });
   }
 
-  let email;
+  let email, list;
   try {
     const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
     email = (body.email || "").trim().toLowerCase();
+    list  = body.list || "checklist";
   } catch (e) {
     return res.status(400).json({ error: "Invalid request body" });
   }
@@ -25,6 +29,13 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Invalid email address" });
   }
 
+  // Whitelist of allowed lists -> Sender.net group IDs
+  const groups = {
+    "checklist":   [defaultGroup],
+    "source-code": [sourceCodeGroup, defaultGroup],
+  };
+  const groupIds = [...new Set(groups[list] || [defaultGroup])];
+
   const senderRes = await fetch("https://api.sender.net/v2/subscribers", {
     method: "POST",
     headers: {
@@ -32,7 +43,7 @@ export default async function handler(req, res) {
       "Content-Type": "application/json",
       "Accept": "application/json",
     },
-    body: JSON.stringify({ email, groups: [groupId] }),
+    body: JSON.stringify({ email, groups: groupIds }),
   });
 
   if (!senderRes.ok) {
