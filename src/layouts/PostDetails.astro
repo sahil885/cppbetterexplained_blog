@@ -38,8 +38,13 @@ const {
 
 const { Content } = await render(post);
 
-// Project posts get a "source code" content upgrade instead of the generic checklist
-const isProject = (tags ?? []).includes("project");
+// Posts that offer the full source code as a content upgrade (instead of the checklist)
+const SOURCE_CODE_SLUGS = [
+  "blackjack-cpp-using-classes",
+  "lottery-program-cpp",
+  "traffic-light-project",
+];
+const isProject = SOURCE_CODE_SLUGS.some(slug => post.id.includes(slug));
 const optin = isProject
   ? {
       icon: "\u{1F4BB}",
