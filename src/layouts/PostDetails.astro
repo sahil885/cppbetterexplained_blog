@@ -44,15 +44,18 @@ const SOURCE_CODE_SLUGS = [
   "lottery-program-cpp",
   "traffic-light-project",
 ];
-const isProject = SOURCE_CODE_SLUGS.some(slug => post.id.includes(slug));
+const sourceSlug = SOURCE_CODE_SLUGS.find(slug => post.id.includes(slug));
+const isProject = Boolean(sourceSlug);
 const optin = isProject
   ? {
       icon: "\u{1F4BB}",
       heading: "Get the Complete Source Code",
       subtext:
-        "Enter your email and I'll send you the full, ready-to-compile source code for this project \u2014 plus my free C++ beginner checklist.",
+        "Enter your email and get the full, ready-to-compile source code for this project as an instant download \u2014 plus my free C++ beginner checklist.",
       button: "Send me the code \u2192",
       list: "source-code",
+      download: `/downloads/${sourceSlug}.zip`,
+      success: "\u{1F389} Your download is starting\u2026",
     }
   : {
       icon: "\u{1F4CB}",
@@ -61,6 +64,8 @@ const optin = isProject
         "A free 1-page checklist that shows the exact traps that slow down every C++ beginner \u2014 so you can avoid them from day one.",
       button: "Send it to me \u2192",
       list: "checklist",
+      download: null,
+      success: "\u{1F389} Check your inbox \u2014 it's on its way!",
     };
 
 let ogImageUrl: string | undefined;
@@ -165,7 +170,7 @@ const nextPost =
       <p class="text-sm opacity-75 mb-5 max-w-md mx-auto">
         {optin.subtext}
       </p>
-      <form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list={optin.list}>
+      <form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list={optin.list} data-download={optin.download}>
         <input
           type="email"
           name="email"
@@ -183,7 +188,7 @@ const nextPost =
       </form>
       <p class="text-xs opacity-40 mt-3">🔒 No spam. Unsubscribe anytime.</p>
       <div class="post-optin-success hidden mt-4">
-        <p class="text-base font-semibold text-accent">🎉 Check your inbox — it's on its way!</p>
+        <p class="text-base font-semibold text-accent">{optin.success}</p>
       </div>
     </div>
     <!-- ===== End Email Opt-in ===== -->
@@ -193,7 +198,7 @@ const nextPost =
       <div class="mid-optin not-prose my-8 rounded-xl border border-accent/30 bg-accent/5 px-5 py-6 text-center">
         <h3 class="text-lg font-bold text-accent mb-1">{optin.icon} {optin.heading}</h3>
         <p class="text-sm opacity-75 mb-4 max-w-md mx-auto">{optin.subtext}</p>
-        <form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list={optin.list}>
+        <form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list={optin.list} data-download={optin.download}>
           <input
             type="email"
             name="email"
@@ -211,7 +216,7 @@ const nextPost =
         </form>
         <p class="text-xs opacity-40 mt-3">🔒 No spam. Unsubscribe anytime.</p>
         <div class="post-optin-success hidden mt-4">
-          <p class="text-base font-semibold text-accent">🎉 Check your inbox — it's on its way!</p>
+          <p class="text-base font-semibold text-accent">{optin.success}</p>
         </div>
       </div>
     </template>
@@ -419,9 +424,18 @@ const nextPost =
           try { localStorage.setItem("wm_dismissed", String(Date.now())); } catch (err) {}
           form.style.display = "none";
           if (success) success.classList.remove("hidden");
+          // Project posts: start the source-code zip download immediately
+          if (form.dataset.download) {
+            var a = document.createElement("a");
+            a.href = form.dataset.download;
+            a.setAttribute("download", "");
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+          }
           setTimeout(function () {
             window.location.href = TRIPWIRE_URL;
-          }, 1200);
+          }, form.dataset.download ? 2000 : 1200);
         })
         .catch(function (err) {
           console.error("Subscribe network error:", err);
