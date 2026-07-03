@@ -1,6 +1,5 @@
 import type { Props } from "astro";
 import IconMail from "@/assets/icons/IconMail.svg";
-import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconYoutube from "@/assets/icons/IconYoutube.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
 import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
@@ -23,18 +22,6 @@ export const SOCIALS: Social[] = [
     href: "https://www.youtube.com/@cbetterexplained",
     linkTitle: `${SITE.title} on YouTube`,
     icon: IconYoutube,
-  },
-  {
-    name: "X",
-    href: "https://x.com/cppbetterexpl",
-    linkTitle: `${SITE.title} on X`,
-    icon: IconBrandX,
-  },
-  {
-    name: "GitHub",
-    href: "https://github.com/sahil885",
-    linkTitle: `${SITE.title} on GitHub`,
-    icon: IconGitHub,
   },
   {
     name: "Mail",
