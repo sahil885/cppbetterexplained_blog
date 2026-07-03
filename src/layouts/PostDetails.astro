@@ -9,6 +9,8 @@ import EditPost from "@/components/EditPost.astro";
 import ShareLinks from "@/components/ShareLinks.astro";
 import BackButton from "@/components/BackButton.astro";
 import BackToTopButton from "@/components/BackToTopButton.astro";
+import AuthorBio from "@/components/AuthorBio.astro";
+import Card from "@/components/Card.astro";
 import { getPath } from "@/utils/getPath";
 import { slugifyStr } from "@/utils/slugify";
 import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
@@ -98,6 +100,27 @@ const layoutProps = {
   scrollSmooth: true,
   faqSchema,
 };
+
+/* ========== Related Posts (internal linking) ========== */
+
+// Pick up to 4 posts that share the most tags with this one and are NOT
+// already linked in the article body — so every post also links laterally
+// to newer/stranded posts instead of only its hand-picked related articles.
+const currentTagSet = new Set(tags.map((t: string) => slugifyStr(t)));
+const postBody = post.body ?? "";
+const relatedPosts = posts
+  .filter(p => p.id !== post.id)
+  .map(p => ({
+    entry: p,
+    sharedTags: (p.data.tags ?? []).filter((t: string) =>
+      currentTagSet.has(slugifyStr(t))
+    ).length,
+    alreadyLinked: postBody.includes(getPath(p.id, p.filePath)),
+  }))
+  .filter(({ sharedTags, alreadyLinked }) => sharedTags > 0 && !alreadyLinked)
+  .sort((a, b) => b.sharedTags - a.sharedTags)
+  .slice(0, 4)
+  .map(({ entry }) => entry);
 
 /* ========== Prev/Next Posts ========== */
 
@@ -233,6 +256,8 @@ const nextPost =
 
     <ShareLinks />
 
+    <AuthorBio />
+
     <hr class="my-6 border-dashed" />
 
     <!-- Previous/Next Post Buttons -->
@@ -266,6 +291,20 @@ const nextPost =
         )
       }
     </div>
+    <!-- Related posts: automatic internal links -->
+    {
+      relatedPosts.length > 0 && (
+        <section data-pagefind-ignore class="mt-12">
+          <h2 class="text-2xl font-semibold tracking-wide">Keep Learning</h2>
+          <ul>
+            {relatedPosts.map(p => (
+              <Card variant="h3" {...p} />
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
   </main>
   <Footer />
 </Layout>

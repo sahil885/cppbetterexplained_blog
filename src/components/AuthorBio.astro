@@ -1,0 +1,38 @@
+---
+import { SITE } from "@/config";
+
+const links = [
+  { name: "About", href: "/about/" },
+  { name: "YouTube", href: "https://www.youtube.com/@cbetterexplained" },
+];
+---
+
+<section
+  data-pagefind-ignore
+  class="mt-8 rounded-2xl border border-border bg-card px-6 py-5"
+  aria-label="About the author"
+>
+  <p class="mb-1 text-xs font-semibold tracking-wide uppercase opacity-60">
+    Written by
+  </p>
+  <h3 class="text-lg font-bold text-accent">{SITE.author}</h3>
+  <p class="mt-1 text-sm opacity-80">
+    C++ developer and educator. Author of the
+    <a
+      href="https://start.cppbetterexplained.com/tw-sales-page"
+      class="underline decoration-dashed underline-offset-4"
+      >C++ Better Explained ebook</a
+    >
+    and creator of the C++ Better Explained YouTube channel, where many of
+    these tutorials have full video walkthroughs.
+  </p>
+  <div class="mt-3 flex flex-wrap gap-4 text-sm">
+    {
+      links.map(link => (
+        <a href={link.href} class="text-accent hover:underline">
+          {link.name}
+        </a>
+      ))
+    }
+  </div>
+</section>

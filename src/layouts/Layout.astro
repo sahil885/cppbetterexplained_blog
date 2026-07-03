@@ -34,6 +34,9 @@ const {
 
 const socialImageURL = new URL(ogImage, Astro.url);
 
+// Public profiles for E-E-A-T (linked via sameAs in structured data)
+const AUTHOR_SAME_AS = ["https://www.youtube.com/@cbetterexplained"];
+
 const isArticle = !!pubDatetime;
 const structuredData = isArticle
   ? {
@@ -50,12 +53,14 @@ const structuredData = isArticle
           "@type": "Person",
           name: `${author}`,
           ...(profile && { url: profile }),
+          sameAs: AUTHOR_SAME_AS,
         },
       ],
       publisher: {
         "@type": "Organization",
         name: SITE.title,
         url: SITE.website,
+        sameAs: AUTHOR_SAME_AS,
         logo: {
           "@type": "ImageObject",
           url: `${new URL("/favicon.svg", Astro.url)}`,
@@ -76,6 +81,7 @@ const structuredData = isArticle
         "@type": "Organization",
         name: SITE.title,
         url: SITE.website,
+        sameAs: AUTHOR_SAME_AS,
       },
     }
 ---
@@ -143,7 +149,6 @@ const structuredData = isArticle
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImageURL} />
-    <meta name="twitter:site" content="@cppbetterexpl" />
 
     <!-- Google JSON-LD Structured data -->
     <script
