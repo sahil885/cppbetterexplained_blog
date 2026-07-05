@@ -103,6 +103,7 @@ Don't get stuck on this decision. Pick the one that matches your goal, and start
 
 ## Related Guides
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
 - [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — what to expect once you've chosen C++.
 - [C++ vs Python: Which Language Should You Learn First?](/posts/cpp-vs-python/) — the other big "which language" question.
 - [C++ vs Java: Key Differences and Which to Learn](/posts/cpp-vs-java/) — how C++ compares to another popular choice.

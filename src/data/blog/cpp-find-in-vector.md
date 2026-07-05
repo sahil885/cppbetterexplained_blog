@@ -1,6 +1,7 @@
 ---
 title: "How to Find an Element in a Vector in C++ (std::find)"
 description: "Learn how to find an element in a vector in C++ with std::find: check if a value exists, get its index, and use find_if with a lambda for custom conditions."
+modDatetime: 2026-07-05T00:00:00Z
 pubDatetime: 2026-06-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "vectors", "tutorial"]
@@ -46,7 +47,7 @@ The key is the test `it != nums.end()`. The special "end" iterator means "past t
 
 ---
 
-## Getting the Index
+## How to Get the Index of an Element in a Vector
 
 An iterator tells you *where* the match is, but often you want a plain number. Convert it with `std::distance`:
 
@@ -93,9 +94,11 @@ int main() {
 
 The lambda `[](int x){ return x > 10; }` is called on each element until one returns `true`. `find_if` then stops and returns that element. This is far cleaner than writing your own loop with a flag.
 
+**std::find vs find_if — which should you use?** Use `std::find` when you're looking for an exact value (`find(v.begin(), v.end(), 42)`). Use `std::find_if` when you're looking for the first element matching a *condition* (`x > 10`, `name.starts_with("A")`). They return the same thing: an iterator to the match, or `end()` if nothing matched.
+
 ---
 
-## Just Checking Existence
+## How to Check if a Vector Contains a Value
 
 If you only care *whether* something is present — not where — compare `find` to `end()` right in a `bool`:
 

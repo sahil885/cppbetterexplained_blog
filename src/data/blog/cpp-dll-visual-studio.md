@@ -1,6 +1,7 @@
 ---
 title: "How to Create a C++ DLL in Visual Studio (Step by Step)"
 description: "Learn how to create a C++ DLL in Visual Studio, export functions with __declspec(dllexport), and use the DLL from another app — a clear, beginner-friendly walkthrough."
+modDatetime: 2026-07-05T00:00:00Z
 pubDatetime: 2026-05-30T00:00:00Z
 author: "Sahil"
 tags: ["C++", "Visual Studio", "DLL", "Windows", "tutorial"]
@@ -171,6 +172,14 @@ That's a working DLL, called from a separate program.
 **Architecture mismatch (x86 vs x64).** The DLL and the client must target the same platform. If the DLL is x64, build the client as x64 too. Mixing them causes load failures.
 
 **You changed the DLL but the client still uses the old behavior.** Rebuild the DLL, then copy the **new** `.dll` next to the `.exe` again. It's easy to keep running a stale copy.
+
+## How Do You Compile C++ Code Into a DLL?
+
+In Visual Studio: create a **Dynamic-link Library (DLL)** project, mark the functions you want to expose with `__declspec(dllexport)`, and build — the compiler produces a `.dll` (the library) and a `.lib` (the import library used at link time). Steps 1–4 above walk through it with full code.
+
+## How Do You Add an Existing DLL to a Visual Studio Project?
+
+Three things are required: point the project at the DLL's **header file** (Properties → C/C++ → Additional Include Directories), link against its **`.lib` import library** (Properties → Linker → Input → Additional Dependencies), and make sure the **`.dll` file sits next to your `.exe`** at runtime (or on the PATH). Step 5 above shows each setting.
 
 ## Quick Recap
 

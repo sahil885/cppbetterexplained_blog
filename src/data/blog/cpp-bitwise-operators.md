@@ -1,6 +1,7 @@
 ---
 title: "C++ Bitwise Operators Explained: AND, OR, XOR, Shift, and NOT for Beginners"
 description: "Learn C++ bitwise operators with working code examples. Covers &, |, ^, ~, <<, >> with practical use cases and bit manipulation patterns for beginners."
+modDatetime: 2026-07-05T00:00:00Z
 pubDatetime: 2026-06-01T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "operators", "tutorial"]
@@ -21,6 +22,14 @@ featured: false
 Every integer in your computer is stored as a sequence of bits — 0s and 1s. Bitwise operators let you work directly at that level, manipulating individual bits instead of whole numbers.
 
 This sounds low-level, but you'll encounter bitwise operations regularly: reading hardware flags, implementing permissions systems, optimizing code, working with graphics or networking. Understanding them unlocks a whole layer of how computers actually work.
+
+---
+
+## What Do << and >> Mean in C++?
+
+`<<` and `>>` have **two different meanings** in C++ depending on context. On integers, they are the **bitwise shift operators**: `x << 2` shifts the bits of `x` two places left (multiplying by 4), and `x >> 2` shifts right (dividing by 4). With streams, they are the **insertion and extraction operators**: `std::cout << x` prints a value and `std::cin >> x` reads one — that usage is covered in our [cin and user input tutorial](/posts/cpp-cin-user-input/).
+
+This article covers the bitwise meaning: shifts, AND, OR, XOR, and NOT.
 
 ---
 

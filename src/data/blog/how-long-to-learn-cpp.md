@@ -134,6 +134,7 @@ Pick a plan, show up most days, and the timeline takes care of itself.
 
 ## Related Guides
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
 - [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the full structured path from first program to advanced topics.
 - [How to Start Learning C++ in 2026: Beginner Roadmap](/posts/how-to-start-learning-cpp/) — the best order to learn topics and mistakes to avoid.
 - [Is C++ Hard to Learn? An Honest Answer for Beginners](/posts/is-cpp-hard-to-learn/) — what makes C++ challenging and what makes it manageable.
