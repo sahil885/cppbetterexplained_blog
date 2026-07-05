@@ -399,7 +399,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
-- [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the interactive version of this roadmap with numbered steps, direct links to every tutorial, and a built-in learning path.
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
+- [How to Learn C++ From Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the interactive version of this roadmap with numbered steps, direct links to every tutorial, and a built-in learning path.
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — the more practical companion to this roadmap, with step-by-step first-week guidance.
 - [Is C++ Hard to Learn? An Honest Answer for Beginners](/posts/is-cpp-hard-to-learn/) — honest expectations on the learning curve before you start.
 - [How to Set Up C++: Install a Compiler and Write Your First Program](/posts/cpp-setup-guide/) — the first practical step: get your environment working.
