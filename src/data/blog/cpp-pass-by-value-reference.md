@@ -6,6 +6,7 @@ author: "Sahil"
 tags: ["C++", "beginner", "tutorial", "pointers", "functions"]
 draft: false
 featured: false
+hideAds: true
 faqSchema:
   - question: "What is pass by value in C++?"
     answer: "Pass by value copies the argument into the function parameter. Changes made to the parameter inside the function do not affect the original variable. It is safe but can be expensive for large objects like vectors or strings."
@@ -153,6 +154,8 @@ Const reference is the standard way to pass strings, vectors, and custom objects
 
 ---
 
+<div class="inline-cta">Pointers and references are where most C++ beginners get stuck. The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> walks through them with diagrams and plain-English mental models — just $19.</div>
+
 ## Practical Example: Swap Two Numbers
 
 This is a classic demonstration of why pass by reference matters:
@@ -239,6 +242,14 @@ A practical rule: **for primitives use value, for objects use const reference, f
 | Safer to use | ✅ Generally | ❌ More error-prone |
 
 References are almost always the better choice for function parameters. Use pointers when you need nullable or reassignable semantics.
+
+---
+
+## Take Your C++ Further
+
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

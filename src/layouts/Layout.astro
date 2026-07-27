@@ -16,6 +16,7 @@ type Props = {
   scrollSmooth?: boolean;
   faqSchema?: { question: string; answer: string }[];
   noindex?: boolean;
+  hideAds?: boolean;
 };
 
 const {
@@ -30,6 +31,7 @@ const {
   scrollSmooth = false,
   faqSchema,
   noindex = false,
+  hideAds = false,
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.url);
@@ -261,9 +263,16 @@ const structuredData = isArticle
       })();
     </script>
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2676272684727826"
-      crossorigin="anonymous"></script>
+    <!-- Google AdSense (Auto Ads) — suppressed on high-intent funnel pages via hideAds -->
+    {
+      !hideAds && (
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2676272684727826"
+          crossorigin="anonymous"
+        ></script>
+      )
+    }
   </head>
   <body>
     <slot />

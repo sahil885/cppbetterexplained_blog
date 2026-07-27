@@ -23,6 +23,9 @@ const blog = defineCollection({
       faqSchema: z
         .array(z.object({ question: z.string(), answer: z.string() }))
         .optional(),
+      hideAds: z.boolean().optional(),
+      hidePostOptin: z.boolean().optional(),
+      hideMidOptin: z.boolean().optional(),
     }),
 });
 

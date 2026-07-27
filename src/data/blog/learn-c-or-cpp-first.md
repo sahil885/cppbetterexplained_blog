@@ -6,6 +6,7 @@ author: "Sahil"
 tags: ["C++", "C", "beginner", "learning", "comparison"]
 draft: false
 featured: false
+hideAds: true
 faqSchema:
   - question: "Should I learn C or C++ first?"
     answer: "For most beginners, learn C++ first. You do not need to learn C beforehand — C++ is a complete modern language you can start with directly. Learn C first only if you specifically need it for embedded systems, operating-systems work, or a course that requires it."
@@ -28,6 +29,8 @@ Here's the clear version.
 **For most beginners, learn C++ first.** You do not need to learn C before C++. The only strong reason to start with C is if you specifically need it — usually for embedded systems or a course that requires it.
 
 Let's unpack why, and how to decide for your situation.
+
+<div class="inline-cta">Already leaning toward C++? The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you from your very first program to pointers and OOP in 87 plain-English pages — just $19.</div>
 
 ## The Myth: "You Must Learn C Before C++"
 

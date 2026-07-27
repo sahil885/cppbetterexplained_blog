@@ -63,6 +63,50 @@ html[data-theme="dark"] {
   @apply underline decoration-wavy decoration-2 underline-offset-8;
 }
 
+.featured-book {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  background: color-mix(in srgb, var(--accent) 8%, var(--background));
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+@media (min-width: 640px) {
+  .featured-book { flex-direction: row; align-items: center; }
+}
+.featured-book img {
+  width: 150px;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  flex: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  margin: 0;
+}
+.featured-book .fb-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.15rem;
+}
+.featured-book h3 { margin: 0 0 0.4rem; font-size: 1.3rem; }
+.featured-book p { margin: 0 0 0.9rem; font-size: 0.95rem; line-height: 1.6; opacity: 0.85; }
+.featured-book .fb-cta {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.6rem 1.15rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.featured-book .fb-cta:hover { opacity: 0.9; }
+
 .inline-cta {
   border-left: 4px solid var(--accent);
   background: color-mix(in srgb, var(--accent) 8%, var(--background));
