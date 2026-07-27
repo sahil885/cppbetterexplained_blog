@@ -291,6 +291,14 @@ This is the preferred modern C++ approach — it guarantees the file is closed e
 
 ---
 
+## Take Your C++ Further
+
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+
+---
+
 ## Related Articles
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — understand the types you will be reading and writing to files.
 - [C++ String Handling: std::string & string_view Guide](/posts/cpp-string-handling/) — strings are the most common data type when working with files.

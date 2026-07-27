@@ -225,3 +225,11 @@ Adding `-Wall -Wextra` is particularly valuable when learning — the compiler w
 Now that your environment is working, the logical next step is understanding exactly what every line of that Hello World program means. The [C++ Hello World explained line by line](/posts/cpp-hello-world-explained/) breaks it down completely.
 
 Or if you want the full structured path from here, follow the [C++ learning roadmap →](/learn-cpp/)
+
+---
+
+## Take Your C++ Further
+
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**

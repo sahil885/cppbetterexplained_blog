@@ -209,6 +209,14 @@ std::sort(arr.begin(), arr.end());
 
 ---
 
+## Take Your C++ Further
+
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+
+---
+
 ## Related Articles
 - [Insertion Sort in C++: How It Works with Full Source Code](/posts/insertion-sort-cpp/) — another simple O(n²) sort that outperforms bubble sort in practice.
 - [Merge Sort in C++: Algorithm with Full Source Code](/posts/merge-sort-algorithm-cpp/) — a faster O(n log n) sort using divide-and-conquer.

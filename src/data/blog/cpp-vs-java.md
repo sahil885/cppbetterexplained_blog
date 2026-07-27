@@ -98,3 +98,11 @@ If you're targeting **enterprise software, Android, or backend web development**
 **Can't decide?** If you learn C++ first, picking up Java later is straightforward — the syntax is similar and Java's abstractions will make more sense once you understand what they're hiding. Many developers know both.
 
 If you've decided on C++, the [complete C++ learning roadmap](/learn-cpp/) is the best place to start.
+
+---
+
+## Take Your C++ Further
+
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**

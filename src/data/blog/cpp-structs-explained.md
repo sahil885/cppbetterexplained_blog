@@ -303,6 +303,14 @@ int main() {
 
 ---
 
+## Take Your C++ Further
+
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+
+---
+
 ## Related Articles
 - [Object-Oriented Programming in C++: Classes & Objects](/posts/oop-in-cpp/) — the natural step up from structs, introducing encapsulation and access control.
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — the building blocks you group together inside structs.

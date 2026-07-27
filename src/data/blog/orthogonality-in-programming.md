@@ -121,3 +121,11 @@ Orthogonality is a powerful default, not a religion. Pushing it to an extreme �
 Orthogonality means designing your code so that components are independent — changing one doesn't break another, the same way turning a steering wheel doesn't change your speed. It's the practical result of high cohesion and loose coupling, and it pays off in code that's easier to change, reuse, and test. You don't achieve it with a single pattern; you achieve it by giving each piece one job, hiding internals behind clear interfaces, avoiding shared global state, and constantly asking, "if I change this, what else must change?"
 
 Get that habit right, and you'll spend far less time afraid of your own codebase.
+
+---
+
+## Take Your C++ Further
+
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**

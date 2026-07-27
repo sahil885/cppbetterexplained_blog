@@ -111,3 +111,11 @@ Once you've worked through these, you have a solid foundation. Here's where to g
 **If you want to go deeper on concepts:** the [C++ learning roadmap](/learn-cpp/) covers everything from pointers and memory management through STL containers and modern C++ features — all with the same step-by-step approach as these projects.
 
 **If you're preparing for interviews:** the [C++ interview questions guide](/posts/cpp-interview-questions/) covers the 50 most common technical questions with detailed answers.
+
+---
+
+## Take Your C++ Further
+
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**

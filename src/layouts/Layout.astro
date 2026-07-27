@@ -292,9 +292,15 @@ const structuredData = isArticle
       });
       document.addEventListener("submit", function (e) {
         var f = e.target;
-        if (f && f.tagName === "FORM" && /optin|wm-form/.test(f.id || "") && typeof gtag === "function") {
+        if (
+          f &&
+          f.tagName === "FORM" &&
+          typeof gtag === "function" &&
+          (/optin|wm-form/.test(f.id || "") ||
+            (f.classList && f.classList.contains("post-optin-form")))
+        ) {
           gtag("event", "optin_submit", {
-            form_id: f.id,
+            form_id: f.id || "post-optin-" + (f.dataset.list || "checklist"),
             page_path: location.pathname,
           });
         }

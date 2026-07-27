@@ -95,3 +95,11 @@ Is C++ hard to learn? Yes, harder than Python. No, not impossibly hard. The lear
 The people who succeed with C++ aren't necessarily smarter. They're the ones who kept going through the first frustrating weeks until things started making sense. If you're willing to do that, C++ is completely within your reach.
 
 **Ready to start?** Follow the [complete C++ learning roadmap →](/learn-cpp/)
+
+---
+
+## Take Your C++ Further
+
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+
+👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
