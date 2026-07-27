@@ -98,6 +98,12 @@ The people who succeed with C++ aren't necessarily smarter. They're the ones who
 
 ---
 
+## Related Reading
+
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
+
+---
+
 ## Take Your C++ Further
 
 If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.

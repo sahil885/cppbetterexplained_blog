@@ -502,3 +502,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Constructors and Destructors Explained](/posts/cpp-constructors-destructors/) — how objects are initialized and cleaned up; the first thing to learn after defining a class.
 - [C++ Copy Constructor: Deep Copy vs Shallow Copy Explained](/posts/cpp-copy-constructor/) — what happens when you copy an object, and how to control it with the Rule of Three.
 - [C++ Struct vs Class: What's the Difference?](/posts/cpp-struct-vs-class/) — structs and classes are nearly identical in C++; learn the one real difference and when to use each.
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
