@@ -37,6 +37,11 @@ This list is different. It's opinionated, ranked by usefulness for actual beginn
   </div>
 </div>
 
+<div class="book-quote">
+  <p>"Great book, well set out. The diagrams are what sets your book apart. Different learning styles require different approaches. Lines and lines of code mean nothing to someone who is a visual learner. Your diagrams make understanding much easier for visual learners. It is the initial first steps where someone either gives up or continues."</p>
+  <cite>— Verified reader of C++ Better Explained</cite>
+</div>
+
 ## Best C++ Books at a Glance (2026)
 
 | Book | Best for | Level | Price | Verdict |
