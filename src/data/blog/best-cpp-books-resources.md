@@ -28,7 +28,7 @@ This list is different. It's opinionated, ranked by usefulness for actual beginn
 ---
 
 <div class="featured-book">
-  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="eager" />
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="eager" onerror="this.style.display='none'" />
   <div>
     <p class="fb-eyebrow">#1 pick for beginners</p>
     <h3>C++ Better Explained</h3>
