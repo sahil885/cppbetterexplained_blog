@@ -1,6 +1,7 @@
 ---
 title: "How Long Does It Take to Learn C++? An Honest Timeline"
 description: "How long does it take to learn C++? An honest, goal-based timeline — basics in 2–3 months, job-ready in 6–12 — plus a weekly study plan that actually works."
+modDatetime: 2026-07-27T00:00:00Z
 pubDatetime: 2026-05-29T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "learning", "getting-started", "roadmap"]

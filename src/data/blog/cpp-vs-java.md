@@ -101,6 +101,12 @@ If you've decided on C++, the [complete C++ learning roadmap](/learn-cpp/) is th
 
 ---
 
+## Related Reading
+
+- [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — a realistic timeline for how long it takes to learn C++.
+
+---
+
 ## Take Your C++ Further
 
 If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.

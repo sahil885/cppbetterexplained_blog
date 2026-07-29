@@ -408,3 +408,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — bookmark this and keep it open while you work through the roadmap.
 - [What Is C++ Used For? Real-World Applications Explained](/posts/what-is-cpp-used-for/) — understand where C++ fits in the real world before you commit to learning it.
 - [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — the first real concept to master, explained clearly.
+- [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — how long each stage of the roadmap actually takes in practice.

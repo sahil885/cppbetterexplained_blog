@@ -372,4 +372,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ vs Java: Which Should You Learn?](/posts/cpp-vs-java/) — comparing C++ against another major language if you're still weighing options.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — once you've chosen C++, practice with the most common interview questions.
 - [Breakdown of a Simple C++ Program Step by Step](/posts/breakdown-simple-cpp-program/) — see exactly what C++ code looks like and how it runs, compared to what you're used to in Python.
-
+- [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — how long C++ takes to learn compared with Python.

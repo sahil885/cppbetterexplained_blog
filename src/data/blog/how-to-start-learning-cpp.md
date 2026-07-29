@@ -307,3 +307,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — repeat code efficiently; essential for almost every real program.
 - [C++ Projects for Beginners: 4 Guided Projects with Full Source Code](/posts/cpp-beginner-projects/) — once you know the basics, build something real.
 - [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/) — when you're ready for the concept everyone finds scary.
+- [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — a realistic, goal-based timeline from your first program to job-ready.

@@ -101,6 +101,7 @@ The people who succeed with C++ aren't necessarily smarter. They're the ones who
 ## Related Reading
 
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
+- [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — if C++ feels hard, here's realistically how long it takes to get comfortable.
 
 ---
 

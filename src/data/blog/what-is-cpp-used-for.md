@@ -182,3 +182,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ vs Java: Which Should You Learn?](/posts/cpp-vs-java/) — how C++ stacks up against Java for career and project goals.
 - [How to Set Up C++: Install a Compiler and Write Your First Program](/posts/cpp-setup-guide/) — get your environment ready in under 15 minutes.
 - [C++ Better Explained: Top 50 Interview Questions](/posts/cpp-interview-questions/) — test your understanding with the most common C++ interview questions.
+- [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — once you know what C++ is for, here's how long it takes to learn.
