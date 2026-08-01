@@ -1,6 +1,7 @@
 ---
 title: "C++ Comments Explained: Single-Line, Multi-Line, and When to Use Them"
 description: "Learn how to write comments in C++ with // and /* */, see clear examples, and find out when a comment really helps and when cleaner code is the better fix."
+modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-06-24T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "basics", "tutorial"]
@@ -23,7 +24,7 @@ A comment is a note you leave in your code for humans to read — the compiler i
 
 ---
 
-## Single-Line Comments with //
+## How to Write a Single-Line Comment in C++ (//)
 
 The most common comment starts with two forward slashes, `//`. Everything from the slashes to the end of that line is ignored:
 
@@ -41,7 +42,7 @@ Notice you can put a `//` comment on its own line *or* at the end of a line of c
 
 ---
 
-## Multi-Line Comments with /* */
+## How to Write a Multi-Line Comment in C++ (/* */)
 
 When a note is longer than one line, wrap it in `/*` and `*/`. Everything between them is ignored, no matter how many lines it covers:
 

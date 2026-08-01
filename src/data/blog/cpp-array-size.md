@@ -1,6 +1,7 @@
 ---
 title: "How to Find the Size of an Array in C++ (Length of an Array)"
 description: "Find the length of an array in C++ the right way: the sizeof trick, std::size in C++17, and why an array's size is lost once you pass it to a function."
+modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-06-24T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "arrays", "tutorial"]
@@ -18,6 +19,12 @@ featured: false
 # How to Find the Size of an Array in C++
 
 C++ arrays don't carry a handy `.length` property like arrays in some other languages, so finding how many elements one holds trips up almost every beginner. The good news: there are two reliable ways to do it, plus one big trap you need to know about.
+
+---
+
+## How to Get the Length of an Array in C++
+
+**The short answer:** for a plain C-style array, use `std::size(arr)` (C++17) or the `sizeof(arr) / sizeof(arr[0])` trick. For `std::vector` and `std::array`, just call the `.size()` member function. Each option is explained below — plus the pointer-decay trap that breaks all of them.
 
 ---
 
@@ -103,6 +110,22 @@ int main() {
 For a resizable list, `std::vector` works the same way with `.size()`. Both keep their length when passed to functions, which sidesteps the decay problem entirely.
 
 ---
+
+## What About .size()? (Vectors and std::array)
+
+If you're coming from another language and typed `arr.size()` on a plain array, you've hit a wall: **C-style arrays have no member functions.** But every standard container does. `std::vector`, `std::array`, and `std::string` all support `.size()`, which returns the number of elements as an unsigned `size_t`:
+
+```cpp
+std::vector<int> v = {1, 2, 3, 4};
+std::array<int, 3> a = {10, 20, 30};
+std::string s = "hello";
+
+std::cout << v.size() << '\n';  // 4
+std::cout << a.size() << '\n';  // 3
+std::cout << s.size() << '\n';  // 5
+```
+
+This is the biggest practical reason to prefer `std::vector` or `std::array` over raw arrays: the size travels with the object, so there's nothing to compute and nothing to get wrong. If you find yourself repeatedly needing an array's length, that's usually a hint to switch to a [vector](/posts/cpp-vector-tutorial/).
 
 ## Quick Reference
 
