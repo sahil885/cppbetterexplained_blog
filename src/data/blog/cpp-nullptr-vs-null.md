@@ -1,6 +1,7 @@
 ---
 title: "C++ nullptr vs NULL: What's the Difference (Beginner Guide)"
 description: "Learn the difference between nullptr and NULL in C++, why nullptr is safer, and how it fixes a real overload bug. Clear beginner examples with working code."
+modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-06-03T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "pointers", "modern-cpp"]
@@ -18,6 +19,12 @@ featured: false
 # C++ nullptr vs NULL: What's the Difference
 
 When a pointer doesn't point at anything yet, you give it a "null" value. For decades C++ programmers used `NULL` for this, but C++11 introduced `nullptr` as a safer replacement. Understanding why the change happened will make you a more careful pointer user.
+
+---
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y6Rt_aA7uW0" title="Null Pointers in C++ - The Key to Cleaner Code!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

@@ -42,6 +42,12 @@ This list is different. It's opinionated, ranked by usefulness for actual beginn
   <cite>— Michael Heenan, C++ Better Explained reader</cite>
 </div>
 
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2q66zfje3I4" title="The Best C++ Book for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Best C++ Books at a Glance (2026)
 
 | Book | Best for | Level | Price | Verdict |

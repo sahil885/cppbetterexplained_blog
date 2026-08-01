@@ -1,6 +1,7 @@
 ---
 title: "C++ Enum Tutorial: enum and enum class Explained"
 description: "Learn C++ enums from scratch. This beginner guide covers plain enums, enum class (scoped enums), when to use each, and why enum class is preferred in modern C++."
+modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-05-14T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "enum", "tutorial"]
@@ -22,6 +23,12 @@ Imagine tracking the status of a network request. You could represent it as an i
 Enums (enumerations) solve this by giving meaningful names to a set of related integer values. Instead of `2`, you write `Status::FAILED`. That's readable at a glance.
 
 This tutorial covers C++ enums from scratch — including the modern `enum class` that you should be using in new code.
+
+---
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nD4DvgtB9Ww" title="What are Enums in C++ Programming?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

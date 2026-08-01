@@ -1,6 +1,7 @@
 ---
 title: "C++ Variables and Data Types: A Complete Beginner's Guide"
 description: "Learn C++ variables and data types from scratch. Covers int, float, double, char, bool, type modifiers, constants, and best practices for beginners."
+modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "variables", "data types", "tutorial"]
@@ -20,6 +21,12 @@ featured: false
 Every program stores information. A game stores your score. A calculator stores the numbers you enter. A weather app stores temperature readings. In C++, the mechanism for storing information is called a **variable**.
 
 Understanding variables and data types is the single most foundational concept in programming. Get this right, and everything else — loops, functions, classes — makes sense faster. This guide explains it from the ground up, with clear examples and honest notes on the parts beginners typically get wrong.
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/31A1uiWHF9Y" title="What is a Variable in Programming Language?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 ## What Is a Variable?
 
