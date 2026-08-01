@@ -126,6 +126,36 @@ const relatedPosts = posts
   .slice(0, 4)
   .map(({ entry }) => entry);
 
+/* ========== VideoObject schema for embedded YouTube videos ========== */
+
+// Emit VideoObject JSON-LD for every YouTube embed in the article so posts
+// become eligible for video rich results in Google Search.
+const iframeTags = postBody.match(/<iframe[^>]*youtube\.com\/embed\/[^>]*>/g) ?? [];
+const videoSchemas = iframeTags
+  .map(tag => {
+    const id = (tag.match(/embed\/([\w-]+)/) || [])[1];
+    if (!id) return null;
+    const vTitle = (tag.match(/title="([^"]*)"/) || [])[1];
+    return {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: vTitle || `${title} — Video Walkthrough`,
+      description: vTitle
+        ? `${vTitle} — video walkthrough from the C++ Better Explained YouTube channel.`
+        : `Video walkthrough for: ${title}`,
+      thumbnailUrl: [`https://i.ytimg.com/vi/${id}/hqdefault.jpg`],
+      uploadDate: pubDatetime.toISOString(),
+      embedUrl: `https://www.youtube.com/embed/${id}`,
+      contentUrl: `https://www.youtube.com/watch?v=${id}`,
+      publisher: {
+        "@type": "Organization",
+        name: SITE.title,
+        url: SITE.website,
+      },
+    };
+  })
+  .filter(Boolean);
+
 /* ========== Prev/Next Posts ========== */
 
 const allPosts = posts.map(({ data: { title }, id, filePath }) => ({
@@ -263,6 +293,12 @@ const nextPost =
     <ul class="mt-4 mb-8 flex flex-wrap gap-4 sm:my-8">
       {tags.map(tag => <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />)}
     </ul>
+
+    {
+      videoSchemas.map(v => (
+        <script type="application/ld+json" is:inline set:html={JSON.stringify(v)} />
+      ))
+    }
 
     <BackToTopButton />
 
