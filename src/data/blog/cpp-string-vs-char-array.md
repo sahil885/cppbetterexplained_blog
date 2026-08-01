@@ -1,6 +1,7 @@
 ---
 title: "C++ string vs char Array: Which Should You Use?"
 description: "Learn the differences between C++ std::string and char arrays (C-strings). This guide covers syntax, functionality, safety, and when each is appropriate — with practical examples."
+modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-05-16T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "strings", "tutorial"]
@@ -18,6 +19,12 @@ featured: false
 # C++ `string` vs `char` Array: Which Should You Use?
 
 C++ has two ways to work with text: `std::string` (a modern class from the standard library) and `char` arrays (C-strings inherited from C). Understanding both is important — but choosing between them for new code is usually straightforward.
+
+---
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/92vXWP5shHQ" title="How to implement Array of Strings in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

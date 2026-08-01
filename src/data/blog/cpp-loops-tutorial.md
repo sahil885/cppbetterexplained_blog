@@ -1,6 +1,7 @@
 ---
 title: "C++ Loops Tutorial: for, while, and do-while Explained"
 description: "Master C++ loops with this complete tutorial. Covers for, while, do-while loops, range-based for, break, continue, and common loop patterns."
+modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-04-19T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "loops", "tutorial"]
@@ -20,6 +21,12 @@ featured: false
 Imagine you need to print the numbers 1 to 100. Without loops, you'd write 100 separate `std::cout` statements. With a loop, it's three lines. Loops are one of the most fundamental building blocks in programming — they let you repeat a block of code without repeating yourself.
 
 C++ has three loop types: `for`, `while`, and `do-while`. Each fits a different situation. This tutorial explains all three from scratch, with clear examples.
+
+---
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X4i_p_ntOks" title="How to write an Infinite loop in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

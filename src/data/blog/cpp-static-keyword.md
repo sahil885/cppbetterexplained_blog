@@ -1,6 +1,7 @@
 ---
 title: "C++ static Keyword: What It Does in Each Context"
 description: "Learn all the uses of the C++ static keyword — static local variables, static class members, static functions, and static at file scope. Each context explained with examples."
+modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-05-16T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "static", "tutorial"]
@@ -20,6 +21,12 @@ featured: false
 The `static` keyword in C++ is one of those words that means different things depending on where you use it. This often confuses beginners — but there's a pattern: `static` always either **extends lifetime** or **restricts visibility**.
 
 Here are all four contexts with examples.
+
+---
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x6OJNCf9qoA" title="What are the Different Storage Classes in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "C++ Error Messages Explained: What They Mean and How to Fix Them"
 description: "Learn what common C++ error messages actually mean. This beginner guide demystifies compiler errors like 'undeclared identifier', 'undefined reference', 'no matching function', and more."
+modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-05-14T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "debugging", "errors", "tutorial"]
@@ -20,6 +21,12 @@ featured: false
 C++ error messages have a well-deserved reputation for being cryptic. The compiler dumps 30 lines of template noise at you when you mistype a variable name. Learning to read these messages — to extract the actual problem from the surrounding noise — is one of the most useful skills you can develop as a C++ programmer.
 
 This guide covers the most common error messages beginners encounter, what they actually mean, and how to fix them.
+
+---
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mn-d7OcGeDw" title="What are Syntax Errors in Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "using namespace std: What It Means and Why to Avoid It (C++)"
 description: "What does using namespace std mean in C++? Learn what it does, why experienced developers often avoid it, and how to use namespaces correctly and safely."
+modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-05-16T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "namespaces", "tutorial"]
@@ -28,6 +29,12 @@ using namespace std;
 It's in almost every beginner tutorial. But what does it actually do? And why do some programmers say you shouldn't use it?
 
 This guide explains namespaces from scratch — what they are, how `using namespace std` works, why it's controversial, and how to create your own.
+
+---
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/su2StdLGHFI" title="What are Namespaces in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 

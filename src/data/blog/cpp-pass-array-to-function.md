@@ -1,6 +1,7 @@
 ---
 title: "How to Pass an Array to a Function in C++ (The Right Way)"
 description: "Learn how to pass an array to a function in C++: pointer decay, why you must pass the length, modifying in place, and how a std::vector makes it safer."
+modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-06-24T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "arrays", "functions"]
@@ -18,6 +19,12 @@ featured: false
 # How to Pass an Array to a Function in C++
 
 Passing an array to a function looks simple, but C++ does something surprising behind the scenes that catches almost every beginner: the array doesn't go in as a whole array. Understand that one detail and array-and-function code stops being mysterious.
+
+---
+
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lLsvAu_MTKw" title="How to Return Array Elements with a Function in C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
