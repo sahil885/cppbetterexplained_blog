@@ -21,6 +21,10 @@ Rock paper scissors is the perfect second project after a number guessing game. 
 
 We'll build it in pieces and assemble the full program at the end.
 
+## Video Walkthrough
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6fZUaYzh9wc" title="Rock Paper Scissors Game in C++ Complete Project Tutorial for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ---
 
 ## Step 1: Represent the Moves
