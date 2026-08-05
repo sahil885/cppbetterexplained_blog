@@ -138,6 +138,7 @@ The outer loop hands you one row at a time; the inner loop prints it. The newlin
 
 ## Related Articles
 
+- [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — the complete guide to std::vector
 - [C++ Range-Based For Loop](/posts/cpp-range-based-for-loop/) — the modern way to loop
 - [C++ Find an Element in a Vector](/posts/cpp-find-in-vector/) — search a vector with std::find

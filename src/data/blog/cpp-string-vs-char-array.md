@@ -249,6 +249,7 @@ string getSafeString() {
 
 ## Related Articles
 
+- [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ String Handling](/posts/cpp-string-handling/) — std::string methods, string_view, performance tips
 - [C++ int to string Conversion](/posts/cpp-int-to-string/) — converting numbers to strings
 - [C++ Arrays Tutorial](/posts/cpp-arrays-tutorial/) — char arrays in the context of arrays

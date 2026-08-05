@@ -129,6 +129,7 @@ C-style multidimensional arrays have fixed sizes set at compile time and are awk
 
 ## Related Articles
 
+- [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ 2D Array Tutorial](/posts/cpp-2d-array/) — a deeper dive into 2D arrays
 - [C++ 2D Vector](/posts/cpp-2d-vector/) — the flexible vector alternative
 - [C++ Arrays Tutorial](/posts/cpp-arrays-tutorial/) — one-dimensional array basics
