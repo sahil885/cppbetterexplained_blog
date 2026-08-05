@@ -199,6 +199,7 @@ Use a plain 2D array when the size is fixed and known. Use `vector<vector<T>>` w
 
 ## Related Articles
 
+- [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ Arrays Tutorial: Store and Access Multiple Values](/posts/cpp-arrays-tutorial/)
 - [C++ Vector Tutorial: The Complete Guide to std::vector](/posts/cpp-vector-tutorial/)
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/)

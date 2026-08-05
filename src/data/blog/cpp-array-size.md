@@ -1,7 +1,7 @@
 ---
-title: "How to Find the Size of an Array in C++ (Length of an Array)"
-description: "Find the length of an array in C++ the right way: the sizeof trick, std::size in C++17, and why an array's size is lost once you pass it to a function."
-modDatetime: 2026-08-01T00:00:00Z
+title: "C++ Array Length: How to Get the Size of an Array (5 Ways)"
+description: "Get the length of an array in C++ five ways: sizeof, std::size, std::array, vector .size(), and inside a function. Copy-paste examples for every case."
+modDatetime: 2026-08-04T00:00:00Z
 pubDatetime: 2026-06-24T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "arrays", "tutorial"]
@@ -10,6 +10,12 @@ faqSchema:
     answer: "For a normal stack array, divide the total bytes by the bytes of one element: sizeof(arr) / sizeof(arr[0]). In C++17 and later you can also call std::size(arr) from the <iterator> header, which is clearer and safer."
   - question: "Why does sizeof give the wrong array size inside a function?"
     answer: "When you pass an array to a function it decays to a pointer, so sizeof returns the size of the pointer, not the array. Always pass the length as a separate parameter, or use a std::vector or std::array instead."
+  - question: "How do you get the length of an int array in C++?"
+    answer: "Exactly the same as any other array: int arr[10]; then sizeof(arr) / sizeof(arr[0]) gives 10, or std::size(arr) in C++17. The element type does not change the technique, because sizeof(arr[0]) adjusts automatically."
+  - question: "Does C++ have an array.length or .size() like other languages?"
+    answer: "Plain C-style arrays have no members at all, so arr.length and arr.size() do not compile. std::array and std::vector do have .size(), which is one of the main reasons to prefer them over raw arrays in modern C++."
+  - question: "How do you find the size of a 2D array in C++?"
+    answer: "Use sizeof(arr) / sizeof(arr[0]) for the number of rows, and sizeof(arr[0]) / sizeof(arr[0][0]) for the number of columns. std::size(arr) gives the row count directly in C++17."
   - question: "What is the difference between sizeof and std::size in C++?"
     answer: "sizeof returns a size in bytes, so you must divide to count elements. std::size, added in C++17, returns the element count directly and won't compile on a decayed pointer, which catches a common bug early."
 draft: false
@@ -126,6 +132,48 @@ std::cout << s.size() << '\n';  // 5
 ```
 
 This is the biggest practical reason to prefer `std::vector` or `std::array` over raw arrays: the size travels with the object, so there's nothing to compute and nothing to get wrong. If you find yourself repeatedly needing an array's length, that's usually a hint to switch to a [vector](/posts/cpp-vector-tutorial/).
+
+## Getting the Length of an int Array (or Any Type)
+
+The technique never changes with the element type — that's the point of dividing by `sizeof(arr[0])`:
+
+```cpp
+int    nums[10];
+double vals[7];
+char   letters[26];
+
+std::cout << sizeof(nums)    / sizeof(nums[0])    << '\n';  // 10
+std::cout << sizeof(vals)    / sizeof(vals[0])    << '\n';  // 7
+std::cout << sizeof(letters) / sizeof(letters[0]) << '\n';  // 26
+```
+
+An `int` is usually 4 bytes and a `double` 8, but because the denominator scales with the type, the result is always the element count. Same with `std::size(nums)` — it returns 10 regardless of type.
+
+## How to Get the Size of a 2D Array in C++
+
+A [2D array](/posts/cpp-2d-array/) needs two calculations — rows and columns:
+
+```cpp
+int grid[3][5];
+
+int rows = sizeof(grid)    / sizeof(grid[0]);     // 3
+int cols = sizeof(grid[0]) / sizeof(grid[0][0]);  // 5
+int total = rows * cols;                          // 15
+```
+
+`sizeof(grid)` is the whole block of memory, `sizeof(grid[0])` is one row, and `sizeof(grid[0][0])` is a single element. In C++17, `std::size(grid)` gives the row count and `std::size(grid[0])` the column count — much easier to read.
+
+## Which Method Should You Use?
+
+| You have | Get the length with | Works inside a function? |
+|---|---|---|
+| C-style array (`int arr[10]`) | `std::size(arr)` (C++17) or `sizeof(arr)/sizeof(arr[0])` | No — the array decays to a pointer |
+| `std::array<int, 10>` | `arr.size()` | Yes |
+| `std::vector<int>` | `vec.size()` | Yes |
+| 2D array (`int g[3][5]`) | `sizeof(g)/sizeof(g[0])` for rows | No |
+| C-string (`char s[]`) | `strlen(s)` for text length | Yes |
+
+The pattern: if the length has to survive being passed around, use [std::vector](/posts/cpp-vector-tutorial/) or [std::array](/posts/cpp-std-array/). Raw arrays only know their own size in the scope where they were declared.
 
 ## Quick Reference
 
