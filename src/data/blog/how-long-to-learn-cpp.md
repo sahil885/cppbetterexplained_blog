@@ -135,6 +135,8 @@ Pick a plan, show up most days, and the timeline takes care of itself.
 
 ## Related Guides
 
+- [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — job demand, salaries, and who should skip it.
+- [Can You Learn C++ on Your Own? A Self-Taught Guide](/posts/learn-cpp-on-your-own/) — the realistic self-taught path, in order.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
 - [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the full structured path from first program to advanced topics.
 - [How to Start Learning C++ in 2026: Beginner Roadmap](/posts/how-to-start-learning-cpp/) — the best order to learn topics and mistakes to avoid.

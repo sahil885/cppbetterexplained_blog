@@ -1,6 +1,7 @@
 ---
 title: "C++ Projects for Beginners: 4 Guided Projects"
 description: "Build C++ projects for beginners with full source code and step-by-step guidance: Rock Paper Scissors, Hangman, an ATM machine, and Blackjack included."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-04-20T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "project", "tutorial"]
@@ -119,3 +120,8 @@ Once you've worked through these, you have a solid foundation. Here's where to g
 If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
 
 👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+
+## Related Guides
+
+- [Can You Learn C++ on Your Own? A Self-Taught Guide](/posts/learn-cpp-on-your-own/) — the realistic self-taught path, in order.
+- [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — job demand, salaries, and who should skip it.

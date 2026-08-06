@@ -1,6 +1,7 @@
 ---
 title: "What Is C++ Used For? Real-World Applications Explained"
 description: "Discover what C++ is used for in the real world — games, operating systems, finance, embedded systems, and more — with real examples of major projects."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "overview", "applications"]
@@ -176,6 +177,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — job demand, salaries, and who should skip it.
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — now that you know why, here's exactly how to start.
 - [Is C++ Hard to Learn? An Honest Answer for Beginners](/posts/is-cpp-hard-to-learn/) — an honest assessment of the learning curve before you commit.
 - [C++ vs Python: Which Should You Learn First?](/posts/cpp-vs-python/) — a side-by-side comparison to help you choose the right language for your goals.

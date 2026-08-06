@@ -1,6 +1,7 @@
 ---
 title: "Should I Learn C or C++ First? A Clear, Honest Answer"
 description: "Should I learn C or C++ first? A clear, no-hedging answer based on your goals — games, embedded, jobs, or CS classes — plus a simple decision guide to follow."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-05-29T00:00:00Z
 author: "Sahil"
 tags: ["C++", "C", "beginner", "learning", "comparison"]
@@ -106,6 +107,7 @@ Don't get stuck on this decision. Pick the one that matches your goal, and start
 
 ## Related Guides
 
+- [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — job demand, salaries, and who should skip it.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
 - [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — what to expect once you've chosen C++.
 - [C++ vs Python: Which Language Should You Learn First?](/posts/cpp-vs-python/) — the other big "which language" question.

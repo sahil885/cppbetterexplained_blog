@@ -1,6 +1,7 @@
 ---
 title: "C++ vs Python: Which to Learn First (Performance & Use Cases)"
 description: "C++ vs Python compared: performance, use cases, the job market, and learning curve, so you can decide which language to learn first for your goals and career."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "Python", "beginner", "comparison", "career"]
@@ -366,6 +367,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — job demand, salaries, and who should skip it.
 - [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/) — pointers are where C++ truly diverges from Python; this guide makes them approachable.
 - [Is C++ Hard to Learn? An Honest Answer for Beginners](/posts/is-cpp-hard-to-learn/) — an honest look at the learning curve if you decide to go with C++.
 - [How to Set Up C++: Install a Compiler and Write Your First Program](/posts/cpp-setup-guide/) — your first practical step if you choose C++.

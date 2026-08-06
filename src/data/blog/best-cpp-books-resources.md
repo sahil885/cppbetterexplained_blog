@@ -274,6 +274,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [C++ Book vs Course vs YouTube: Which Actually Works?](/posts/cpp-book-vs-course-vs-youtube/) — how to pick a primary learning resource and avoid tutorial drift.
+- [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — job demand, salaries, and who should skip it.
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — a structured step-by-step path from your first program to OOP and pointers.
 - [C++ Roadmap 2026: What to Learn and In What Order](/posts/cpp-roadmap/) — the complete learning roadmap with stage-by-stage guidance and timelines.
 - [What Is C++ Used For? Real-World Applications Explained](/posts/what-is-cpp-used-for/) — understand the real-world domains where C++ is used before you commit to learning it.
