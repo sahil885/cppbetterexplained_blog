@@ -1,6 +1,7 @@
 ---
 title: "How to Start Learning C++ in 2026: Beginner Roadmap"
 description: "Not sure how to start learning C++? This beginner roadmap covers the best order to learn topics, resources to use, and mistakes to avoid."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "learning", "tutorial", "roadmap"]
@@ -298,6 +299,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [Can You Learn C++ on Your Own? A Self-Taught Guide](/posts/learn-cpp-on-your-own/) — the realistic self-taught path, in order.
+- [C++ Book vs Course vs YouTube: Which Actually Works?](/posts/cpp-book-vs-course-vs-youtube/) — how to pick a primary learning resource and avoid tutorial drift.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
 - [How to Learn C++ From Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the full structured learning path from first program to advanced topics, all in one place.
 - [How to Set Up C++: Install a Compiler and Write Your First Program](/posts/cpp-setup-guide/) — the practical first step: get a working C++ environment on your machine.

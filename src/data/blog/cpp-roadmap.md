@@ -1,6 +1,7 @@
 ---
 title: "C++ Roadmap 2026: What to Learn and In What Order"
 description: "The complete C++ learning roadmap for beginners. Follow this structured path from Hello World to advanced topics with curated tutorials at every step."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "roadmap", "learning", "career"]
@@ -399,6 +400,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [Can You Learn C++ on Your Own? A Self-Taught Guide](/posts/learn-cpp-on-your-own/) — the realistic self-taught path, in order.
+- [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — job demand, salaries, and who should skip it.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
 - [How to Learn C++ From Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the interactive version of this roadmap with numbered steps, direct links to every tutorial, and a built-in learning path.
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — the more practical companion to this roadmap, with step-by-step first-week guidance.
