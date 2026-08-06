@@ -1,6 +1,7 @@
 ---
 title: "C++ Read File Line by Line — fstream Reading and Writing Guide"
 description: "Learn to read a file line by line in C++ with ifstream and getline, plus how to write, append, and read a file into a vector, all with runnable examples."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-04-28T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "tutorial", "files", "fstream"]
@@ -300,6 +301,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [How to Learn C++ From Scratch: The Complete Roadmap](/learn-cpp/) — the full step-by-step learning path, in order, from your first program onward.
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — understand the types you will be reading and writing to files.
 - [C++ String Handling: std::string & string_view Guide](/posts/cpp-string-handling/) — strings are the most common data type when working with files.
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — organise your file I/O logic into clean, reusable functions.

@@ -211,6 +211,7 @@ The underlying theme: `static` either **extends the lifetime** (local variables,
 
 ## Related Articles
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Classes and Objects](/posts/cpp-classes-and-objects/) — class members and access control
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — local variables and scope
 - [C++ Namespace Tutorial](/posts/cpp-namespace-tutorial/) — anonymous namespaces as an alternative to file-scope static

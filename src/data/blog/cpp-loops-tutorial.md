@@ -419,6 +419,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [How to Learn C++ From Scratch: The Complete Roadmap](/learn-cpp/) — the full step-by-step learning path, in order, from your first program onward.
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — variables are what loops operate on; make sure you understand them first.
 - [C++ Arrays Tutorial: Store and Access Multiple Values](/posts/cpp-arrays-tutorial/) — loops and arrays are used together constantly; learn how to iterate arrays properly.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — once you understand loops, wrapping them in functions is the next step.

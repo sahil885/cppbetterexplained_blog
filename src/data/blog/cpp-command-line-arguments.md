@@ -1,6 +1,7 @@
 ---
 title: "C++ Command Line Arguments: How to Use argc and argv"
 description: "Learn how to use command line arguments in C++ with argc and argv. Covers parsing flags, converting arguments to numbers, validation, and practical examples."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-05-30T00:00:00Z
 author: "Sahil"
 tags: ["C++", "command-line", "beginner", "tutorial", "argc-argv"]
@@ -303,6 +304,7 @@ Want every C++ concept explained this clearly, in order, from the ground up?
 
 ## Related Guides
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — `main` is a function too; understand parameters and return values.
 - [C++ User Input with cin: Reading from the Keyboard](/posts/cpp-cin-user-input/) — the other main way programs take input.
 - [C++ String to int Conversion: stoi, atoi, and stringstream](/posts/cpp-string-to-int/) — turn argument text into numbers safely.

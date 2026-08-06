@@ -1,6 +1,7 @@
 ---
 title: "C++ Classes and Objects: A Beginner's Guide to OOP"
 description: "Learn C++ classes and objects with clear examples. Covers constructors, member functions, access specifiers, and how to design your own classes."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "classes", "OOP", "tutorial"]
@@ -495,6 +496,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — what a realistic path from beginner to competent actually looks like.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — member functions are the behavior side of classes; make sure you understand functions first.
 - [C++ Move Semantics Explained: rvalue References, std::move, and Performance](/posts/cpp-move-semantics/) — once you understand classes, learn the Rule of Five and how to write efficient move constructors.
 - [C++ Vector Tutorial: The Complete Guide to std::vector](/posts/cpp-vector-tutorial/) — classes commonly own vectors as members; learn how they work together.

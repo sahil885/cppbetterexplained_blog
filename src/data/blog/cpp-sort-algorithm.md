@@ -1,6 +1,7 @@
 ---
 title: "C++ std::sort Explained: How to Sort Vectors and Arrays for Beginners"
 description: "Master C++ std::sort with clear examples. Sort vectors, arrays, strings, and custom objects using comparators and lambdas — beginner-friendly tutorial."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-05-28T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "STL", "tutorial"]
@@ -216,6 +217,7 @@ int main() {
 
 ## Related Articles
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Vector Tutorial: The Complete Guide to std::vector](/posts/cpp-vector-tutorial/)
 - [C++ Lambda Functions Explained: Closures, Captures, and std::function](/posts/cpp-lambda-functions/)
 - [C++ STL Containers Explained: Choosing the Right Container](/posts/stl-containers-cpp/)

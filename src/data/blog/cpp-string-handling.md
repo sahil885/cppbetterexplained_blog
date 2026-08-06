@@ -1,6 +1,7 @@
 ---
 title: "C++ String Handling: std::string & string_view Guide"
 description: "Master string handling in C++. Learn std::string operations, string_view for performance, common string functions, and how to avoid common pitfalls."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "strings", "std::string", "string_view", "intermediate", "performance"]
@@ -619,6 +620,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 ## Related Articles
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ STL Containers Explained: Choosing the Right Container for Every Situation](/posts/stl-containers-cpp/) — strings are one piece of the STL puzzle; learn how vectors, maps, and sets fit in.
 - [C++ Vector Tutorial: The Complete Guide to std::vector for Beginners](/posts/cpp-vector-tutorial/) — another essential STL type, explained from scratch with clear examples.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — practice the string and STL questions you're likely to face in technical interviews.

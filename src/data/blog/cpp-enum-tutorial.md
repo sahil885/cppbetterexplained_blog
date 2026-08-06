@@ -306,6 +306,7 @@ The enum makes the state machine's logic clear and self-documenting. Anyone read
 
 ## Related Articles
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — enums are a user-defined type built on top of integers
 - [C++ Switch Statement](/posts/cpp-switch-statement/) — the natural companion to enums
 - [C++ Conditionals Tutorial](/posts/cpp-conditionals-tutorial/) — if/else with enum conditions

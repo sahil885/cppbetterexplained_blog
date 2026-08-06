@@ -189,6 +189,8 @@ The pattern: if the length has to survive being passed around, use [std::vector]
 
 ## Related Articles
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
+- [How to Learn C++ From Scratch: The Complete Roadmap](/learn-cpp/) — the full step-by-step learning path, in order, from your first program onward.
 - [C++ Arrays Tutorial](/posts/cpp-arrays-tutorial/) — declaring and using arrays
 - [How to Pass an Array to a Function in C++](/posts/cpp-pass-array-to-function/) — handle the decay problem
 - [C++ Array vs Vector](/posts/cpp-array-vs-vector/) — when to switch to a vector

@@ -1,6 +1,7 @@
 ---
 title: "C++ Concurrency & Mutex: Thread Safety Explained"
 description: "Learn C++ concurrency and mutex with clear examples. Covers std::thread, std::mutex, lock_guard, and how to write thread-safe code."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-04-19T00:00:00Z
 author: "Sahil"
 tags: ["C++", "concurrency", "threads", "mutex", "C++11", "tutorial"]
@@ -488,6 +489,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Move Semantics Explained: rvalue References, std::move, and Performance](/posts/cpp-move-semantics/) — concurrent code benefits greatly from move semantics for passing data between threads efficiently.
 - [Smart Pointers in Modern C++: unique_ptr, shared_ptr, and weak_ptr Explained](/posts/smart-pointers-cpp/) — `std::shared_ptr` uses atomic reference counting; it's thread-safe for the pointer itself, though not for the pointed-to data.
 - [Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks](/posts/memory-management-cpp/) — threads share the heap; understanding memory ownership is critical for safe concurrent code.

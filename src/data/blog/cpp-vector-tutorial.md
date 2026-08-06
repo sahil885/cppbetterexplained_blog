@@ -1,6 +1,7 @@
 ---
 title: "C++ Vector Tutorial: Complete Guide to std::vector"
 description: "Master std::vector in C++ with this complete guide. Covers declaration, push_back, iteration, resizing, memory layout, and common patterns."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-04-14T00:00:00Z
 author: "Sahil"
 tags: ["C++", "vector", "STL", "beginner", "arrays", "containers", "tutorial"]
@@ -708,6 +709,7 @@ If you're looking to go deeper with C++, the **C++ Better Explained Ebook** is p
 
 ## Related Articles
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ STL Containers Explained: Choosing the Right Container for Every Situation](/posts/stl-containers-cpp/) — once you know vectors, explore when to use lists, maps, and sets instead.
 - [Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks](/posts/memory-management-cpp/) — vectors manage heap memory under the hood; understanding memory makes you a better C++ developer.
