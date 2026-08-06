@@ -1,6 +1,7 @@
 ---
 title: "How to Return Multiple Values from a C++ Function: 5 Practical Methods"
 description: "C++ functions return one value by default. Learn five clean ways to return multiple values: structs, pairs, tuples, output parameters, and std::tie."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-06-01T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "functions", "tutorial"]
@@ -210,6 +211,7 @@ For new code, the struct approach is almost always the clearest. `pair` is fine 
 
 ## Related Articles
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/)
 - [C++ Pass by Value vs Pass by Reference](/posts/cpp-pass-by-value-reference/)
 - [C++ Structs Explained](/posts/cpp-structs-explained/)

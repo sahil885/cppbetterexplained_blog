@@ -360,6 +360,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Conditionals Tutorial: if, else, and switch Explained](/posts/cpp-conditionals-tutorial/) — variables are what conditionals test; learn how to use them in if/else and switch statements.
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — loops operate on variables and counters; the natural next step after learning data types.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — variables are inputs and outputs of functions; learn them next.

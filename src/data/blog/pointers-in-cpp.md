@@ -1,6 +1,7 @@
 ---
 title: "How to Use Pointers in C++: A Complete Beginner's Guide"
 description: "Learn how to use pointers in C++ with clear mental models and real code examples. Understand addresses, dereferencing, and why pointers matter, step by step."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
 tags: ["C++", "pointers", "beginner", "memory", "tutorial"]
@@ -399,6 +400,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
+- [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — what a realistic path from beginner to competent actually looks like.
 - [Smart Pointers in Modern C++: unique_ptr, shared_ptr, and weak_ptr Explained](/posts/smart-pointers-cpp/) — once you understand raw pointers, upgrade to smart pointers to write safer, modern C++.
 - [Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks](/posts/memory-management-cpp/) — pointers and memory management go hand in hand; learn how the heap and stack actually work.
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — a quick-reference card covering pointer syntax alongside the rest of C++.

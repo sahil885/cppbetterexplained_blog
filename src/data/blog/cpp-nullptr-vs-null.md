@@ -114,6 +114,7 @@ The rule is simple: in any C++11 or newer code, always write `nullptr`. It says 
 
 ## Related Articles
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [Pointers in C++](/posts/pointers-in-cpp/) — what pointers are and how to use them
 - [C++ Smart Pointers](/posts/smart-pointers-cpp/) — modern, automatic memory management
 - [C++ Reference vs Pointer](/posts/cpp-reference-vs-pointer/) — two ways to refer to data

@@ -136,6 +136,8 @@ If you ever need to disable a large region that already contains `/* */` comment
 
 ## Related Articles
 
+- [How to Learn C++ From Scratch: The Complete Roadmap](/learn-cpp/) — the full step-by-step learning path, in order, from your first program onward.
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Hello World Explained](/posts/cpp-hello-world-explained/) — your first program, line by line
 - [Breakdown of a Simple C++ Program](/posts/breakdown-simple-cpp-program/) — what each part does
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — name things clearly so you need fewer comments

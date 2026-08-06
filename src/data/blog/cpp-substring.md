@@ -1,6 +1,7 @@
 ---
 title: "How to Get a Substring in C++ with substr()"
 description: "Extract a substring in C++ using the substr() method. Learn the position and length arguments, how to grab the rest of a string, and how to avoid out_of_range."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-06-24T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "strings", "tutorial"]
@@ -124,6 +125,8 @@ This matters most when `pos` comes from `find()`, which returns `std::string::np
 
 ## Related Articles
 
+- [How to Learn C++ From Scratch: The Complete Roadmap](/learn-cpp/) — the full step-by-step learning path, in order, from your first program onward.
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ String Handling](/posts/cpp-string-handling/) — the std::string basics
 - [C++ String Contains a Substring](/posts/cpp-string-contains-substring/) — searching with find()
 - [C++ Split a String](/posts/cpp-split-string/) — break text into multiple pieces

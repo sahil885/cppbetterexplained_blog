@@ -128,6 +128,7 @@ This reads almost like a sentence: "does names contain Bob?" It works for string
 
 ## Related Articles
 
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — the complete guide to std::vector
 - [How to Print a Vector in C++](/posts/cpp-print-vector/) — show what you searched
 - [C++ Remove from Vector](/posts/cpp-remove-from-vector/) — erase the element you found

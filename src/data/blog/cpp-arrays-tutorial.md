@@ -1,6 +1,7 @@
 ---
 title: "C++ Arrays Tutorial: Store and Access Multiple Values"
 description: "Learn C++ arrays from scratch. Covers declaration, initialization, multidimensional arrays, array functions, and when to use vectors instead."
+modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "arrays", "vectors", "tutorial"]
@@ -481,6 +482,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [How to Learn C++ From Scratch: The Complete Roadmap](/learn-cpp/) — the full step-by-step learning path, in order, from your first program onward.
+- [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — arrays store collections of typed variables; understand single variables first.
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — arrays and loops go hand in hand; iterating over an array with a for loop is one of the most common patterns in C++.
