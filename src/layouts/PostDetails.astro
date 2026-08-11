@@ -126,6 +126,57 @@ const relatedPosts = posts
   .slice(0, 4)
   .map(({ entry }) => entry);
 
+/* ========== Beginner series navigation ========== */
+
+// The core beginner learning path, in teaching order. Posts inside this
+// list get "Part N of M" navigation so readers move to the next lesson
+// instead of leaving after one page.
+const SERIES: string[] = [
+  "cpp-hello-world-explained",
+  "cpp-comments",
+  "cpp-variables-data-types",
+  "cpp-cin-user-input",
+  "cpp-conditionals-tutorial",
+  "cpp-loops-tutorial",
+  "cpp-nested-loops",
+  "cpp-break-continue",
+  "cpp-functions-tutorial",
+  "cpp-recursion-tutorial",
+  "cpp-arrays-tutorial",
+  "cpp-array-size",
+  "cpp-pass-array-to-function",
+  "cpp-2d-array",
+  "cpp-string-handling",
+  "cpp-vector-tutorial",
+  "pointers-in-cpp",
+  "cpp-reference-vs-pointer",
+  "cpp-stack-vs-heap",
+  "memory-management-cpp",
+  "cpp-structs-explained",
+  "cpp-classes-and-objects",
+  "oop-in-cpp",
+  "cpp-inheritance",
+  "virtual-functions-polymorphism-cpp",
+  "stl-containers-cpp",
+];
+
+const currentSlug = post.id.split("/").pop()?.replace(/\.md$/, "") ?? post.id;
+const seriesIndex = SERIES.indexOf(currentSlug);
+const inSeries = seriesIndex !== -1;
+
+const slugToPost = new Map(
+  posts.map(p => [p.id.split("/").pop()?.replace(/\.md$/, "") ?? p.id, p])
+);
+const seriesPrev = inSeries && seriesIndex > 0 ? slugToPost.get(SERIES[seriesIndex - 1]) : undefined;
+const seriesNext =
+  inSeries && seriesIndex < SERIES.length - 1 ? slugToPost.get(SERIES[seriesIndex + 1]) : undefined;
+
+// The single best "read next" suggestion for the in-article prompt:
+// the next lesson if this post is part of the series, otherwise the
+// closest tag-related post.
+const readNext = seriesNext ?? relatedPosts[0];
+const readNextLabel = seriesNext ? "Next lesson" : "Read next";
+
 /* ========== VideoObject schema for embedded YouTube videos ========== */
 
 // Emit VideoObject JSON-LD for every YouTube embed in the article so posts
@@ -213,6 +264,35 @@ const nextPost =
       >
       <EditPost {hideEditPost} {post} class="max-sm:hidden" />
     </div>
+    {
+      inSeries && (
+        <nav
+          class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 rounded-lg border border-border bg-card px-4 py-3 text-sm"
+          aria-label="Series navigation"
+        >
+          <span class="font-semibold text-accent">
+            C++ Beginner Series — Part {seriesIndex + 1} of {SERIES.length}
+          </span>
+          {seriesPrev && (
+            <a
+              href={getPath(seriesPrev.id, seriesPrev.filePath)}
+              class="opacity-80 hover:text-accent hover:underline"
+            >
+              ← Previous: {seriesPrev.data.title}
+            </a>
+          )}
+          {seriesNext && (
+            <a
+              href={getPath(seriesNext.id, seriesNext.filePath)}
+              class="opacity-80 hover:text-accent hover:underline"
+            >
+              Next: {seriesNext.data.title} →
+            </a>
+          )}
+        </nav>
+      )
+    }
+
     <article
       id="article"
       class="app-prose mt-8 w-full max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
@@ -253,6 +333,25 @@ const nextPost =
       )
     }
     <!-- ===== End Email Opt-in ===== -->
+
+    <!-- In-article "read next" prompt: inserted before the first H2 by script below -->
+    {
+      readNext && (
+        <template id="read-next-template">
+          <div class="read-next not-prose my-6 rounded-lg border-l-4 border-accent bg-accent/5 px-4 py-3">
+            <span class="text-xs font-semibold tracking-wide uppercase opacity-60">
+              {readNextLabel}
+            </span>
+            <a
+              href={getPath(readNext.id, readNext.filePath)}
+              class="mt-1 block font-medium text-accent hover:underline"
+            >
+              {readNext.data.title}
+            </a>
+          </div>
+        </template>
+      )
+    }
 
     <!-- Mid-article opt-in: inserted before the middle H2 by script below -->
 {
@@ -546,8 +645,24 @@ const nextPost =
       target.parentNode.insertBefore(box, target);
     }
 
+    // Insert the "read next" prompt high in the article (before the first H2)
+    // so the next-click suggestion is visible without scrolling to the footer.
+    function insertReadNext() {
+      var article = document.getElementById("article");
+      var template = document.getElementById("read-next-template");
+      if (!article || !template) return;
+      if (article.querySelector(".read-next")) return;
+
+      var headings = article.querySelectorAll("h2");
+      if (headings.length < 2) return;
+      var target = headings[0];
+      var box = template.content.firstElementChild.cloneNode(true);
+      target.parentNode.insertBefore(box, target);
+    }
+
     function initOptins() {
       insertMidOptin();
+      insertReadNext();
       document.querySelectorAll(".post-optin-form").forEach(bindOptinForm);
     }
 
