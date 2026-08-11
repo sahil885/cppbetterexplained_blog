@@ -166,6 +166,48 @@ const allPosts = posts.map(({ data: { title }, id, filePath }) => ({
 
 const currentPostIndex = allPosts.findIndex(a => a.id === post.id);
 
+/* ========== Beginner series navigation ========== */
+
+// Core beginner path in teaching order. Uses the same id.includes() slug
+// matching as SOURCE_CODE_SLUGS above, and the same plain {id,title,filePath}
+// shape as the prev/next block below.
+const SERIES = [
+  "cpp-hello-world-explained",
+  "cpp-comments",
+  "cpp-variables-data-types",
+  "cpp-cin-user-input",
+  "cpp-conditionals-tutorial",
+  "cpp-loops-tutorial",
+  "cpp-nested-loops",
+  "cpp-break-continue",
+  "cpp-functions-tutorial",
+  "cpp-recursion-tutorial",
+  "cpp-arrays-tutorial",
+  "cpp-array-size",
+  "cpp-pass-array-to-function",
+  "cpp-string-handling",
+  "cpp-vector-tutorial",
+  "pointers-in-cpp",
+  "cpp-reference-vs-pointer",
+  "cpp-stack-vs-heap",
+  "memory-management-cpp",
+  "cpp-structs-explained",
+  "cpp-classes-and-objects",
+  "oop-in-cpp",
+  "virtual-functions-polymorphism-cpp",
+  "stl-containers-cpp",
+];
+
+const seriesIndex = SERIES.findIndex(slug => post.id.includes(slug));
+const seriesPrev =
+  seriesIndex > 0
+    ? allPosts.find(p => p.id.includes(SERIES[seriesIndex - 1]))
+    : null;
+const seriesNext =
+  seriesIndex !== -1 && seriesIndex < SERIES.length - 1
+    ? allPosts.find(p => p.id.includes(SERIES[seriesIndex + 1]))
+    : null;
+
 const prevPost = currentPostIndex !== 0 ? allPosts[currentPostIndex - 1] : null;
 const nextPost =
   currentPostIndex !== allPosts.length ? allPosts[currentPostIndex + 1] : null;
@@ -213,12 +255,59 @@ const nextPost =
       >
       <EditPost {hideEditPost} {post} class="max-sm:hidden" />
     </div>
+    {
+      seriesIndex !== -1 && (
+        <nav
+          class="mt-6 rounded-lg border border-border bg-card px-4 py-3 text-sm"
+          aria-label="Series navigation"
+        >
+          <span class="font-semibold text-accent">
+            C++ Beginner Series &middot; Part {seriesIndex + 1} of {SERIES.length}
+          </span>
+          <span class="mt-1 flex flex-wrap gap-x-4 gap-y-1">
+            {seriesPrev && (
+              <a
+                href={getPath(seriesPrev.id, seriesPrev.filePath)}
+                class="opacity-80 hover:text-accent hover:underline"
+              >
+                Previous: {seriesPrev.title}
+              </a>
+            )}
+            {seriesNext && (
+              <a
+                href={getPath(seriesNext.id, seriesNext.filePath)}
+                class="opacity-80 hover:text-accent hover:underline"
+              >
+                Next: {seriesNext.title}
+              </a>
+            )}
+          </span>
+        </nav>
+      )
+    }
+
     <article
       id="article"
       class="app-prose mt-8 w-full max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
     >
       <Content />
     </article>
+
+    {
+      seriesNext && (
+        <a
+          href={getPath(seriesNext.id, seriesNext.filePath)}
+          class="mt-8 block rounded-xl border border-accent/30 bg-accent/5 px-5 py-4 hover:border-accent"
+        >
+          <span class="text-xs font-semibold tracking-wide uppercase opacity-60">
+            Next lesson in the series
+          </span>
+          <span class="mt-1 block text-lg font-medium text-accent">
+            {seriesNext.title}
+          </span>
+        </a>
+      )
+    }
 
     <!-- ===== Email Opt-in (bottom of post) ===== -->
     {
