@@ -208,6 +208,8 @@ const seriesNext =
     ? allPosts.find(p => p.id.includes(SERIES[seriesIndex + 1]))
     : null;
 
+const seriesLabel = `C++ Beginner Series · Part ${seriesIndex + 1} of ${SERIES.length}`;
+
 const prevPost = currentPostIndex !== 0 ? allPosts[currentPostIndex - 1] : null;
 const nextPost =
   currentPostIndex !== allPosts.length ? allPosts[currentPostIndex + 1] : null;
@@ -261,9 +263,7 @@ const nextPost =
           class="mt-6 rounded-lg border border-border bg-card px-4 py-3 text-sm"
           aria-label="Series navigation"
         >
-          <span class="font-semibold text-accent">
-            C++ Beginner Series &middot; Part {seriesIndex + 1} of {SERIES.length}
-          </span>
+          <span class="font-semibold text-accent">{seriesLabel}</span>
           <span class="mt-1 flex flex-wrap gap-x-4 gap-y-1">
             {seriesPrev && (
               <a
