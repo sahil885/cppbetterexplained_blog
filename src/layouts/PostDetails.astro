@@ -596,6 +596,13 @@ const nextPost =
             submit.textContent = "Try again";
             return;
           }
+          try {
+            if (typeof window.gtag === "function") {
+              window.gtag("event", "optin_submit", {
+                location: form.dataset.download ? "source_code" : "article",
+              });
+            }
+          } catch (err) {}
           // Don't show the welcome mat to someone who just subscribed
           try { localStorage.setItem("wm_dismissed", String(Date.now())); } catch (err) {}
           form.style.display = "none";
