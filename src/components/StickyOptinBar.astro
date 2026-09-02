@@ -1,0 +1,236 @@
+---
+// StickyOptinBar.astro
+// Slim, dismissible bottom bar -> calls /api/subscribe -> redirects to tripwire.
+// Appears for engaged readers who never reach the in-article opt-in boxes.
+---
+
+<div
+  id="sob"
+  role="region"
+  aria-label="Free C++ checklist"
+  style="display:none;"
+>
+  <div id="sob-inner">
+    <p id="sob-copy">
+      <strong>Free:</strong> The 10 Mistakes Every C++ Beginner Makes
+    </p>
+    <form id="sob-form">
+      <input
+        type="email"
+        name="email"
+        id="sob-email"
+        placeholder="you@example.com"
+        required
+        autocomplete="email"
+        aria-label="Your email address"
+      />
+      <button type="submit" id="sob-submit">Send it to me</button>
+    </form>
+    <p id="sob-success" style="display:none;">
+      🎉 Check your inbox — it's on its way!
+    </p>
+    <button id="sob-close" aria-label="Dismiss">&times;</button>
+  </div>
+</div>
+
+<style>
+  #sob {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9990;
+    border-top: 1px solid var(--border);
+    background: var(--background);
+    box-shadow: 0 -4px 16px rgb(0 0 0 / 12%);
+    animation: sob-up 0.35s ease;
+  }
+  @keyframes sob-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  #sob-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0.7rem 2.5rem 0.7rem 1rem;
+  }
+  #sob-copy {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  #sob-form {
+    display: flex;
+    gap: 0.5rem;
+  }
+  #sob-email {
+    min-width: 0;
+    width: 14rem;
+    padding: 0.45rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    background: var(--background);
+    color: var(--foreground);
+    font-size: 0.85rem;
+  }
+  #sob-submit {
+    padding: 0.45rem 0.9rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  #sob-submit:hover {
+    opacity: 0.9;
+  }
+  #sob-success {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  #sob-close {
+    position: absolute;
+    top: 0.35rem;
+    right: 0.6rem;
+    border: 0;
+    background: none;
+    color: var(--foreground);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  #sob-close:hover {
+    opacity: 1;
+  }
+  @media (width <= 640px) {
+    #sob-email {
+      width: 9.5rem;
+    }
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    var KEY = "sob_dismissed";
+    var TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
+    var SCROLL_TRIGGER = 0.5;
+    var DELAY_MS = 60000;
+    var COOLDOWN_MS = 3 * 24 * 60 * 60 * 1000;
+
+    function suppressed() {
+      try {
+        var mine = localStorage.getItem(KEY);
+        if (mine && Date.now() - parseInt(mine, 10) < COOLDOWN_MS) return true;
+        // Don't stack on top of the welcome mat for the same visitor
+        var wm = document.getElementById("welcome-mat");
+        if (wm && wm.style.display !== "none") return true;
+        return false;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    function remember() {
+      try {
+        localStorage.setItem(KEY, String(Date.now()));
+      } catch (e) {}
+    }
+
+    function track(name) {
+      try {
+        if (typeof window.gtag === "function") {
+          window.gtag("event", name, { location: "sticky_bar" });
+        }
+      } catch (e) {}
+    }
+
+    function init() {
+      var bar = document.getElementById("sob");
+      if (!bar || bar.dataset.bound) return;
+      bar.dataset.bound = "1";
+
+      var form = document.getElementById("sob-form");
+      var success = document.getElementById("sob-success");
+      var submit = document.getElementById("sob-submit");
+      var shown = false;
+
+      function show() {
+        if (shown || suppressed()) return;
+        shown = true;
+        bar.style.display = "block";
+        track("optin_view");
+      }
+
+      document
+        .getElementById("sob-close")
+        .addEventListener("click", function () {
+          bar.style.display = "none";
+          remember();
+        });
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var email = document.getElementById("sob-email").value.trim();
+        submit.disabled = true;
+        submit.textContent = "Sending…";
+
+        fetch("/api/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: email, list: "checklist" }),
+          keepalive: true,
+        })
+          .then(function (res) {
+            if (!res.ok) {
+              submit.disabled = false;
+              submit.textContent = "Try again";
+              return;
+            }
+            track("optin_submit");
+            remember();
+            try {
+              localStorage.setItem("wm_dismissed", String(Date.now()));
+            } catch (err) {}
+            form.style.display = "none";
+            success.style.display = "block";
+            setTimeout(function () {
+              window.location.href = TRIPWIRE_URL;
+            }, 1200);
+          })
+          .catch(function () {
+            submit.disabled = false;
+            submit.textContent = "Try again";
+          });
+      });
+
+      if (suppressed()) return;
+
+      function onScroll() {
+        var max = document.documentElement.scrollHeight - window.innerHeight;
+        if (max > 0 && window.scrollY / max >= SCROLL_TRIGGER) {
+          show();
+          window.removeEventListener("scroll", onScroll);
+        }
+      }
+      window.addEventListener("scroll", onScroll, { passive: true });
+      setTimeout(show, DELAY_MS);
+    }
+
+    init();
+    document.addEventListener("astro:page-load", init);
+  })();
+</script>

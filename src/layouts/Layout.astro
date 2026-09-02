@@ -2,6 +2,7 @@
 import { ClientRouter } from "astro:transitions";
 import { SITE } from "@/config";
 import WelcomeMat from "@/components/WelcomeMat.astro";
+import StickyOptinBar from "@/components/StickyOptinBar.astro";
 import "@/styles/global.css";
 
 type Props = {
@@ -279,6 +280,7 @@ const structuredData = isArticle
 
     <!-- Welcome Mat email capture -->
     <WelcomeMat />
+    <StickyOptinBar />
     <!-- GA4 event tracking: book CTA clicks + email optins -->
     <script is:inline>
       document.addEventListener("click", function (e) {

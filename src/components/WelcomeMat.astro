@@ -160,8 +160,8 @@
     try {
       var ts = localStorage.getItem(STORAGE_KEY);
       if (!ts) return false;
-      // Show again after 7 days — someone who closed it once might subscribe later
-      return (Date.now() - parseInt(ts, 10)) < 7 * 24 * 60 * 60 * 1000;
+      // Show again after 3 days — someone who closed it once might subscribe later
+      return (Date.now() - parseInt(ts, 10)) < 3 * 24 * 60 * 60 * 1000;
     } catch(e) { return false; }
   }
   function markDismissed() {
