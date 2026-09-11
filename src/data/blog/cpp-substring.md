@@ -38,7 +38,7 @@ int main() {
 }
 ```
 
-Two things to internalise. First, positions start at **0**, so position 0 is the `P`. Second, the second number is a *length*, not an end position — `substr(0, 11)` means "11 characters starting at 0."
+Two things to internalise. First, positions start at **0**, so position 0 is the `P`. Second, the second number is a _length_, not an end position — `substr(0, 11)` means "11 characters starting at 0."
 
 ---
 
@@ -84,7 +84,7 @@ int main() {
 }
 ```
 
-`substr(0, at)` takes the characters *before* the `@` (a length of `at`), and `substr(at + 1)` takes everything after it. No characters are copied twice, and the original `email` is left unchanged.
+`substr(0, at)` takes the characters _before_ the `@` (a length of `at`), and `substr(at + 1)` takes everything after it. No characters are copied twice, and the original `email` is left unchanged.
 
 ---
 
@@ -113,18 +113,20 @@ This matters most when `pos` comes from `find()`, which returns `std::string::np
 
 ## Quick Reference
 
-| Goal | Code |
-|------|------|
-| Characters `len` starting at `pos` | `s.substr(pos, len)` |
-| Everything from `pos` to the end | `s.substr(pos)` |
-| The whole string (a copy) | `s.substr(0)` |
-| Slice after a found character | `s.substr(s.find(c) + 1)` |
-| Stay safe | check `pos <= s.length()` first |
+| Goal                               | Code                            |
+| ---------------------------------- | ------------------------------- |
+| Characters `len` starting at `pos` | `s.substr(pos, len)`            |
+| Everything from `pos` to the end   | `s.substr(pos)`                 |
+| The whole string (a copy)          | `s.substr(0)`                   |
+| Slice after a found character      | `s.substr(s.find(c) + 1)`       |
+| Stay safe                          | check `pos <= s.length()` first |
 
 ---
 
 ## Related Articles
 
+- [How to Replace a Substring in a C++ String](/posts/cpp-replace-substring/) — replace one occurrence or every occurrence.
+- [How to Trim Whitespace from a String in C++](/posts/cpp-trim-string/) — strip leading and trailing spaces with a copy-paste function.
 - [How to Learn C++ From Scratch: The Complete Roadmap](/learn-cpp/) — the full step-by-step learning path, in order, from your first program onward.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ String Handling](/posts/cpp-string-handling/) — the std::string basics

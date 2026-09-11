@@ -1,6 +1,7 @@
 ---
 title: "C++ Split String: How to Split a String by Delimiter (3 Ways)"
 description: "Learn how to split a string in C++ by space, by a character, or by a substring. Three clear methods using stringstream, getline, and find, with examples."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-06-09T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "strings", "tutorial"]
@@ -118,11 +119,11 @@ int main() {
 
 ## Which Method to Use
 
-| Your delimiter | Best method |
-|----------------|-------------|
-| Spaces / tabs | `stringstream >>` |
-| Single char (comma, `;`) | `getline` with delimiter |
-| Multi-char string (`::`, `", "`) | `find` + `substr` |
+| Your delimiter                   | Best method              |
+| -------------------------------- | ------------------------ |
+| Spaces / tabs                    | `stringstream >>`        |
+| Single char (comma, `;`)         | `getline` with delimiter |
+| Multi-char string (`::`, `", "`) | `find` + `substr`        |
 
 Start with the simplest method that fits your data. For most CSV-style and config parsing, the `getline` approach in Method 2 is all you need.
 
@@ -130,6 +131,8 @@ Start with the simplest method that fits your data. For most CSV-style and confi
 
 ## Related Articles
 
+- [How to Trim Whitespace from a String in C++](/posts/cpp-trim-string/) — strip leading and trailing spaces with a copy-paste function.
+- [How to Replace a Substring in a C++ String](/posts/cpp-replace-substring/) — replace one occurrence or every occurrence.
 - [C++ String Handling](/posts/cpp-string-handling/) — methods, substr, find, and more
 - [C++ stringstream](/posts/cpp-stringstream/) — the stream that powers splitting
 - [C++ getline](/posts/cpp-getline-string-input/) — reading lines and tokens

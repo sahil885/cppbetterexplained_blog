@@ -1,6 +1,7 @@
 ---
 title: "C++ vector reserve vs resize: What's the Difference?"
 description: "C++ vector reserve vs resize: reserve allocates capacity without adding elements, resize changes the size. Learn when to use each, with clear examples."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-07-29T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "STL", "vectors", "tutorial"]
@@ -26,7 +27,7 @@ featured: false
 Every vector tracks two numbers:
 
 - **Size** — how many elements it actually holds right now (`.size()`)
-- **Capacity** — how many elements it *could* hold before it needs to grab more memory (`.capacity()`)
+- **Capacity** — how many elements it _could_ hold before it needs to grab more memory (`.capacity()`)
 
 ```cpp
 #include <iostream>
@@ -131,20 +132,20 @@ Ask yourself what you actually want:
 - **"I want N elements I can index right now."** → use `resize`.
 - **"I'll `push_back` about N elements and want to avoid reallocations."** → use `reserve`.
 
-A common mistake is calling `reserve` and then indexing with `[]`, expecting elements to be there. They aren't. Equally, calling `resize` and then `push_back` gives you the zero-filled elements *plus* your pushed ones, which is usually not what you meant.
+A common mistake is calling `reserve` and then indexing with `[]`, expecting elements to be there. They aren't. Equally, calling `resize` and then `push_back` gives you the zero-filled elements _plus_ your pushed ones, which is usually not what you meant.
 
 ---
 
 ## Side-by-Side Summary
 
-| Aspect | `reserve(n)` | `resize(n)` |
-|--------|--------------|-------------|
-| Changes size()? | No | Yes |
-| Changes capacity? | Yes (grows it) | Only if needed |
-| Creates elements? | No | Yes (value-initialised) |
-| Can you index new slots? | No (UB) | Yes |
-| Main purpose | performance | change contents |
-| Pair it with | `push_back` | direct `[]` access |
+| Aspect                   | `reserve(n)`   | `resize(n)`             |
+| ------------------------ | -------------- | ----------------------- |
+| Changes size()?          | No             | Yes                     |
+| Changes capacity?        | Yes (grows it) | Only if needed          |
+| Creates elements?        | No             | Yes (value-initialised) |
+| Can you index new slots? | No (UB)        | Yes                     |
+| Main purpose             | performance    | change contents         |
+| Pair it with             | `push_back`    | direct `[]` access      |
 
 ---
 
@@ -156,6 +157,7 @@ Use `resize` when you need the elements to exist, and `reserve` when you just wa
 
 ## Related Articles
 
+- [How to Insert Into a Vector in C++](/posts/cpp-insert-into-vector/) — insert at any position, plus the iterator invalidation trap.
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — the complete guide to std::vector
 - [C++ Array vs Vector](/posts/cpp-array-vs-vector/) — when to pick each container
 - [C++ Print a Vector](/posts/cpp-print-vector/) — displaying vector contents

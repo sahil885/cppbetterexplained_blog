@@ -1,6 +1,7 @@
 ---
 title: "C++ Iterators Explained: How to Traverse STL Containers for Beginners"
 description: "Understand C++ iterators from scratch. Learn begin(), end(), iterator types, range-based for loops, and how iterators work with vectors, maps, and sets."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-06-01T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "STL", "tutorial"]
@@ -48,6 +49,7 @@ int main() {
 Output: `10 20 30 40 50`
 
 The three pieces:
+
 - `nums.begin()` — points to the first element (`10`)
 - `nums.end()` — points one past the last element (not valid to dereference)
 - `*it` — dereferences the iterator to get the value
@@ -255,13 +257,13 @@ The `begin()`/`end()` pairs tell algorithms which range of elements to operate o
 
 ## Iterator Types Summary
 
-| Iterator type      | What it can do                            |
-|--------------------|-------------------------------------------|
-| Input iterator     | Read elements, move forward once          |
-| Output iterator    | Write elements, move forward once         |
-| Forward iterator   | Read/write, move forward multiple times   |
-| Bidirectional      | Move forward and backward (`list`, `map`) |
-| Random access      | Jump to any position (`vector`, `deque`)  |
+| Iterator type    | What it can do                            |
+| ---------------- | ----------------------------------------- |
+| Input iterator   | Read elements, move forward once          |
+| Output iterator  | Write elements, move forward once         |
+| Forward iterator | Read/write, move forward multiple times   |
+| Bidirectional    | Move forward and backward (`list`, `map`) |
+| Random access    | Jump to any position (`vector`, `deque`)  |
 
 For most beginner work, you'll use bidirectional or random access iterators without thinking about the distinction.
 
@@ -269,6 +271,8 @@ For most beginner work, you'll use bidirectional or random access iterators with
 
 ## Related Articles
 
+- [How to Reverse a Vector in C++](/posts/cpp-reverse-vector/) — std::reverse, reverse iterators and looping backwards safely.
+- [How to Insert Into a Vector in C++](/posts/cpp-insert-into-vector/) — insert at any position, plus the iterator invalidation trap.
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/)
 - [C++ map and unordered_map Tutorial](/posts/cpp-map-unordered-map/)
 - [C++ std::set Tutorial](/posts/cpp-set-tutorial/)

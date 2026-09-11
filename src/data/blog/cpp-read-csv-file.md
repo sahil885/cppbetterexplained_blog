@@ -1,6 +1,7 @@
 ---
 title: "C++ Read CSV File: Parse Comma-Separated Data (with Examples)"
 description: "Learn how to read a CSV file in C++ with ifstream and getline. Parse rows into a vector, skip the header, and convert fields to numbers, with examples."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-06-09T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "file-handling", "tutorial"]
@@ -140,6 +141,7 @@ This simple parser splits on every comma, which breaks if a field itself contain
 
 ## Related Articles
 
+- [How to Read a File Line by Line in C++](/posts/cpp-read-file-line-by-line/) — the ifstream + getline pattern, done correctly.
 - [C++ Read File Line by Line](/posts/cpp-file-handling/) — fstream reading and writing
 - [C++ Split String](/posts/cpp-split-string/) — the splitting logic in depth
 - [C++ stringstream](/posts/cpp-stringstream/) — parsing fields out of a line

@@ -32,11 +32,11 @@ This article covers everything you need to know: reading files line by line, wri
 
 The `<fstream>` header gives you three classes:
 
-| Class | Purpose |
-|-------|---------|
+| Class      | Purpose                                 |
+| ---------- | --------------------------------------- |
 | `ifstream` | Input file stream — **read** from files |
 | `ofstream` | Output file stream — **write** to files |
-| `fstream` | Both reading and writing |
+| `fstream`  | Both reading and writing                |
 
 For most tasks, use `ifstream` or `ofstream`. Only use `fstream` when you genuinely need to both read and write the same file.
 
@@ -103,6 +103,7 @@ int main() {
 ```
 
 **Output:**
+
 ```
 Alice: 95
 Bob: 87
@@ -154,13 +155,13 @@ Now `scores.txt` will have four lines — the original three plus Diana's score.
 
 You can combine modes using the `|` operator:
 
-| Mode | Meaning |
-|------|---------|
-| `ios::in` | Open for reading |
-| `ios::out` | Open for writing (default for ofstream) |
-| `ios::app` | Append to end of file |
-| `ios::trunc` | Truncate (clear) file on open (default for ofstream) |
-| `ios::binary` | Open in binary mode |
+| Mode          | Meaning                                              |
+| ------------- | ---------------------------------------------------- |
+| `ios::in`     | Open for reading                                     |
+| `ios::out`    | Open for writing (default for ofstream)              |
+| `ios::app`    | Append to end of file                                |
+| `ios::trunc`  | Truncate (clear) file on open (default for ofstream) |
+| `ios::binary` | Open in binary mode                                  |
 
 ```cpp
 // Open for both reading and writing, without truncating
@@ -243,6 +244,7 @@ int main() {
 ```
 
 **Output:**
+
 ```
 --- Grade Record ---
 Alice: 92
@@ -301,6 +303,9 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+
+- [How to Read a File Line by Line in C++](/posts/cpp-read-file-line-by-line/) — the ifstream + getline pattern, done correctly.
+- [How to Append to a File in C++](/posts/cpp-append-to-file/) — add to a file instead of wiping it with std::ios::app.
 - [How to Learn C++ From Scratch: The Complete Roadmap](/learn-cpp/) — the full step-by-step learning path, in order, from your first program onward.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — understand the types you will be reading and writing to files.

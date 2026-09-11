@@ -1,6 +1,7 @@
 ---
 title: "C++ stringstream Tutorial: Parse and Build Strings Like a Pro"
 description: "Master C++ stringstream for beginners. Learn to parse strings, convert types, and build formatted output using the sstream header with clear examples."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-06-01T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "strings", "tutorial"]
@@ -8,7 +9,7 @@ faqSchema:
   - question: "What is stringstream in C++?"
     answer: "stringstream is a C++ class from the <sstream> header that lets you treat a string as a stream — reading from it with >> or writing to it with <<, exactly like you'd use cin and cout. It's useful for type conversion (string to int, int to string) and parsing space-separated data from a string."
   - question: "How do I convert a string to an int using stringstream?"
-    answer: "Create a stringstream from the string, then extract into an int: stringstream ss(\"42\"); int n; ss >> n; — after this, n equals 42. This is one of the classic uses of stringstream, though in C++11 and later you can also use std::stoi() for simple conversions."
+    answer: 'Create a stringstream from the string, then extract into an int: stringstream ss("42"); int n; ss >> n; — after this, n equals 42. This is one of the classic uses of stringstream, though in C++11 and later you can also use std::stoi() for simple conversions.'
   - question: "What is the difference between stringstream, istringstream, and ostringstream?"
     answer: "stringstream supports both reading and writing. istringstream is read-only (input from a string). ostringstream is write-only (build a string via output). For most beginner use cases, stringstream works fine for both directions. Use i/o variants when you want to be explicit about intent."
 draft: false
@@ -168,6 +169,7 @@ int main() {
 ```
 
 Output:
+
 ```
 the
 quick
@@ -240,6 +242,7 @@ Use `istringstream` when you're only reading, `ostringstream` when you're only w
 
 ## Related Articles
 
+- [How to Read a File Line by Line in C++](/posts/cpp-read-file-line-by-line/) — the ifstream + getline pattern, done correctly.
 - [C++ String Handling: Everything You Need to Know](/posts/cpp-string-handling/)
 - [C++ int to string Conversion: 4 Simple Methods](/posts/cpp-int-to-string/)
 - [C++ String to int Conversion](/posts/cpp-string-to-int/)

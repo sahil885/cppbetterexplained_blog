@@ -18,15 +18,13 @@ featured: false
 
 # C++ Vector Tutorial: The Complete Guide to std::vector for Beginners
 
-If you've been learning C++, you've probably heard that you should use `std::vector` instead of raw arrays. But what exactly *is* a vector, and how does it work?
+If you've been learning C++, you've probably heard that you should use `std::vector` instead of raw arrays. But what exactly _is_ a vector, and how does it work?
 
 By the end of this guide, you'll understand `std::vector` deeply — what it does, how to use it, when to use it, and the common mistakes to avoid. You'll also see plenty of real, runnable code examples at every step.
-
 
 ## Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jRXFJJN1Va4" title="Beginner's Guide to Vectors in C++: Everything You Need to Know" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## What Is std::vector?
 
@@ -279,7 +277,7 @@ std::cout << v.size();     // 3 — three elements stored
 std::cout << v.capacity(); // Often 4 — space for 4 elements allocated
 ```
 
-When you add an element that exceeds capacity, the vector automatically allocates a larger block of memory (typically doubling) and copies everything over. This is what makes `push_back` O(1) *amortized* — usually instant, occasionally slow during reallocation.
+When you add an element that exceeds capacity, the vector automatically allocates a larger block of memory (typically doubling) and copies everything over. This is what makes `push_back` O(1) _amortized_ — usually instant, occasionally slow during reallocation.
 
 ### Reserve capacity upfront: reserve()
 
@@ -574,15 +572,15 @@ int main() {
 
 ## Vector vs. Array: When to Use Each
 
-| Feature | std::vector | C-style array |
-|---|---|---|
-| Size | Dynamic (grows/shrinks) | Fixed at compile time |
-| Memory management | Automatic | Manual (for heap arrays) |
-| Bounds checking | Via `.at()` | None |
-| Works with STL algorithms | Yes | Needs extra work |
-| Pass to functions | Easy (by reference) | Decays to pointer (loses size) |
-| Performance | Nearly identical | Slightly faster in some edge cases |
-| Modern C++ best practice | **Yes — default choice** | Avoid unless required |
+| Feature                   | std::vector              | C-style array                      |
+| ------------------------- | ------------------------ | ---------------------------------- |
+| Size                      | Dynamic (grows/shrinks)  | Fixed at compile time              |
+| Memory management         | Automatic                | Manual (for heap arrays)           |
+| Bounds checking           | Via `.at()`              | None                               |
+| Works with STL algorithms | Yes                      | Needs extra work                   |
+| Pass to functions         | Easy (by reference)      | Decays to pointer (loses size)     |
+| Performance               | Nearly identical         | Slightly faster in some edge cases |
+| Modern C++ best practice  | **Yes — default choice** | Avoid unless required              |
 
 **Bottom line:** Use `std::vector` by default. Only use raw arrays when you have a specific reason (e.g., interfacing with a C library, stack-allocated fixed-size data where you're certain of the size, or performance-critical hot paths where profiling shows a difference).
 
@@ -666,29 +664,30 @@ if (!v.empty()) {
 
 ## Quick Reference: Most Used Vector Operations
 
-| Operation | Code | Time Complexity |
-|---|---|---|
-| Declare empty | `std::vector<int> v;` | O(1) |
-| Declare with values | `std::vector<int> v = {1, 2, 3};` | O(n) |
-| Add to end | `v.push_back(x);` | O(1) amortized |
-| Remove from end | `v.pop_back();` | O(1) |
-| Access by index | `v[i]` or `v.at(i)` | O(1) |
-| Get size | `v.size()` | O(1) |
-| Check if empty | `v.empty()` | O(1) |
-| First element | `v.front()` | O(1) |
-| Last element | `v.back()` | O(1) |
-| Clear all | `v.clear()` | O(n) |
-| Insert at position | `v.insert(v.begin() + i, x)` | O(n) |
-| Remove at position | `v.erase(v.begin() + i)` | O(n) |
-| Sort | `std::sort(v.begin(), v.end())` | O(n log n) |
-| Find element | `std::find(v.begin(), v.end(), x)` | O(n) |
-| Reserve capacity | `v.reserve(n)` | O(n) |
+| Operation           | Code                               | Time Complexity |
+| ------------------- | ---------------------------------- | --------------- |
+| Declare empty       | `std::vector<int> v;`              | O(1)            |
+| Declare with values | `std::vector<int> v = {1, 2, 3};`  | O(n)            |
+| Add to end          | `v.push_back(x);`                  | O(1) amortized  |
+| Remove from end     | `v.pop_back();`                    | O(1)            |
+| Access by index     | `v[i]` or `v.at(i)`                | O(1)            |
+| Get size            | `v.size()`                         | O(1)            |
+| Check if empty      | `v.empty()`                        | O(1)            |
+| First element       | `v.front()`                        | O(1)            |
+| Last element        | `v.back()`                         | O(1)            |
+| Clear all           | `v.clear()`                        | O(n)            |
+| Insert at position  | `v.insert(v.begin() + i, x)`       | O(n)            |
+| Remove at position  | `v.erase(v.begin() + i)`           | O(n)            |
+| Sort                | `std::sort(v.begin(), v.end())`    | O(n log n)      |
+| Find element        | `std::find(v.begin(), v.end(), x)` | O(n)            |
+| Reserve capacity    | `v.reserve(n)`                     | O(n)            |
 
 ## Conclusion: You Now Know std::vector
 
 `std::vector` is the workhorse of C++ programming. Once you're comfortable with it, you'll reach for it instinctively whenever you need a collection of items.
 
 Here's what you can now do:
+
 - Declare and initialize vectors in multiple ways
 - Add and remove elements safely
 - Access elements by index with and without bounds checking
@@ -709,6 +708,8 @@ If you're looking to go deeper with C++, the **C++ Better Explained Ebook** is p
 
 ## Related Articles
 
+- [How to Insert Into a Vector in C++](/posts/cpp-insert-into-vector/) — insert at any position, plus the iterator invalidation trap.
+- [How to Reverse a Vector in C++](/posts/cpp-reverse-vector/) — std::reverse, reverse iterators and looping backwards safely.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ STL Containers Explained: Choosing the Right Container for Every Situation](/posts/stl-containers-cpp/) — once you know vectors, explore when to use lists, maps, and sets instead.
