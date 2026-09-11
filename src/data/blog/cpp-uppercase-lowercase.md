@@ -1,6 +1,7 @@
 ---
 title: "Convert a String to Uppercase or Lowercase in C++"
 description: "Convert a C++ string to uppercase or lowercase with std::transform, toupper, and tolower. Full examples, a simple loop version, and the pitfalls to avoid."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-06-24T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "strings", "tutorial"]
@@ -85,7 +86,7 @@ int main() {
 }
 ```
 
-The `char&` (a reference) means we modify each character *in place*. Drop the `&` and you'd only change a copy, leaving the original string untouched — a subtle but common mistake.
+The `char&` (a reference) means we modify each character _in place_. Drop the `&` and you'd only change a copy, leaving the original string untouched — a subtle but common mistake.
 
 ---
 
@@ -97,18 +98,19 @@ You'll often see the "trick" of subtracting 32 from a character to capitalise it
 
 ## Quick Reference
 
-| Goal | Code |
-|------|------|
+| Goal                     | Code                                                       |
+| ------------------------ | ---------------------------------------------------------- |
 | Uppercase a whole string | `std::transform(s.begin(), s.end(), s.begin(), ::toupper)` |
 | Lowercase a whole string | `std::transform(s.begin(), s.end(), s.begin(), ::tolower)` |
-| Uppercase one character | `std::toupper(c)` |
-| Lowercase one character | `std::tolower(c)` |
-| Required headers | `<string>`, `<algorithm>`, `<cctype>` |
+| Uppercase one character  | `std::toupper(c)`                                          |
+| Lowercase one character  | `std::tolower(c)`                                          |
+| Required headers         | `<string>`, `<algorithm>`, `<cctype>`                      |
 
 ---
 
 ## Related Articles
 
+- [How to Trim Whitespace from a String in C++](/posts/cpp-trim-string/) — strip leading and trailing spaces with a copy-paste function.
 - [C++ String Handling](/posts/cpp-string-handling/) — the std::string essentials
 - [C++ Compare Strings](/posts/cpp-compare-strings/) — case-insensitive comparison made easy
 - [C++ char to int](/posts/cpp-char-to-int/) — working with individual characters

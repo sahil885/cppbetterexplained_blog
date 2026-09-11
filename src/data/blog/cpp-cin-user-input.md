@@ -1,6 +1,7 @@
 ---
 title: "C++ User Input: How to Use cin to Read Input"
 description: "Learn how to get user input in C++ using cin. Covers reading integers, strings, multiple values, input validation, and getline with clear beginner examples."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-05-14T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "input", "tutorial"]
@@ -306,20 +307,21 @@ The `while (cin >> num && num != 0)` checks two things: that the read succeeded,
 
 ## Quick Reference
 
-| Task | Code |
-|------|------|
-| Read an integer | `cin >> num;` |
-| Read a double | `cin >> price;` |
-| Read a single word | `cin >> word;` |
-| Read a full line | `getline(cin, line);` |
-| Read multiple values | `cin >> a >> b >> c;` |
-| Clear after bad input | `cin.clear(); cin.ignore(1000, '\n');` |
-| Fix cin + getline mixing | `cin.ignore();` between them |
+| Task                     | Code                                   |
+| ------------------------ | -------------------------------------- |
+| Read an integer          | `cin >> num;`                          |
+| Read a double            | `cin >> price;`                        |
+| Read a single word       | `cin >> word;`                         |
+| Read a full line         | `getline(cin, line);`                  |
+| Read multiple values     | `cin >> a >> b >> c;`                  |
+| Clear after bad input    | `cin.clear(); cin.ignore(1000, '\n');` |
+| Fix cin + getline mixing | `cin.ignore();` between them           |
 
 ---
 
 ## Related Articles
 
+- [C++ Input Validation: Handling Bad cin Input](/posts/cpp-input-validation/) — stop infinite loops when the user types letters.
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — the types you'll be storing input into
 - [C++ Loops Tutorial](/posts/cpp-loops-tutorial/) — combine with input for interactive programs
 - [C++ Conditionals Tutorial](/posts/cpp-conditionals-tutorial/) — act on what the user types

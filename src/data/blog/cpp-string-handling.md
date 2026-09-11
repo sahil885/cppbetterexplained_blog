@@ -4,7 +4,15 @@ description: "Master string handling in C++. Learn std::string operations, strin
 modDatetime: 2026-08-06T00:00:00Z
 pubDatetime: 2025-04-05T00:00:00Z
 author: "Sahil"
-tags: ["C++", "strings", "std::string", "string_view", "intermediate", "performance"]
+tags:
+  [
+    "C++",
+    "strings",
+    "std::string",
+    "string_view",
+    "intermediate",
+    "performance",
+  ]
 faqSchema:
   - question: "How do strings work in C++?"
     answer: "C++ strings are managed through std::string from the <string> header. Unlike C-style char arrays, std::string handles memory automatically, supports common operations like concatenation (+), comparison (==), and searching (find()). std::string_view provides a lightweight non-owning view for read-only access."
@@ -18,11 +26,9 @@ featured: false
 
 # C++ String Handling: std::string, string_view, and Performance Tips
 
-
 ## Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/28-IgRBRZ8o" title="String Manipulation in C++ Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## Introduction: Strings in C++ — A Brief History
 
@@ -183,7 +189,7 @@ std::string s2 = std::to_string(pi);        // "3.141590" (note: limited precisi
 
 **Note**: `std::to_string()` has limited precision for floating-point numbers. For more control, use `std::ostringstream` (shown later).
 
-## C-Style Strings (char*) vs std::string: When and Why
+## C-Style Strings (char\*) vs std::string: When and Why
 
 ### Why std::string is Better
 
@@ -330,6 +336,7 @@ for (int i = 0; i < 1000000; ++i) {
 **Why is this slow?**
 
 Each `+=` might trigger a reallocation:
+
 1. Allocate new memory (larger capacity)
 2. Copy existing characters
 3. Append new character
@@ -550,6 +557,7 @@ std::cout << str.size() << std::endl;  // Prints 5, not 4!
 **The harsh truth**: C++ doesn't have built-in Unicode support. Proper Unicode handling requires third-party libraries like ICU (International Components for Unicode).
 
 For most applications, just:
+
 1. Use UTF-8 encoding consistently
 2. Treat `std::string` as bytes, not characters
 3. Use a library if you need proper Unicode support
@@ -620,6 +628,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 ## Related Articles
 
+- [How to Trim Whitespace from a String in C++](/posts/cpp-trim-string/) — strip leading and trailing spaces with a copy-paste function.
+- [How to Replace a Substring in a C++ String](/posts/cpp-replace-substring/) — replace one occurrence or every occurrence.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [C++ STL Containers Explained: Choosing the Right Container for Every Situation](/posts/stl-containers-cpp/) — strings are one piece of the STL puzzle; learn how vectors, maps, and sets fit in.
 - [C++ Vector Tutorial: The Complete Guide to std::vector for Beginners](/posts/cpp-vector-tutorial/) — another essential STL type, explained from scratch with clear examples.

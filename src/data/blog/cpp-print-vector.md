@@ -1,6 +1,7 @@
 ---
 title: "How to Print a Vector in C++: 4 Clean Methods"
 description: "Learn how to print a vector in C++ four ways: the range-based for loop, an index loop, iterators, and a reusable template function that prints any vector."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-06-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "vectors", "tutorial"]
@@ -138,6 +139,7 @@ The outer loop hands you one row at a time; the inner loop prints it. The newlin
 
 ## Related Articles
 
+- [How to Reverse a Vector in C++](/posts/cpp-reverse-vector/) — std::reverse, reverse iterators and looping backwards safely.
 - [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — the complete guide to std::vector
 - [C++ Range-Based For Loop](/posts/cpp-range-based-for-loop/) — the modern way to loop

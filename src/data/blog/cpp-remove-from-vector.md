@@ -1,6 +1,7 @@
 ---
 title: "C++ Remove Element from Vector (and Remove Duplicates)"
 description: "Learn how to remove elements from a vector in C++ by index or by value with the erase-remove idiom, plus how to remove duplicates. Clear beginner examples."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-06-09T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "vector", "STL"]
@@ -45,7 +46,7 @@ Everything after the removed element shifts left by one, so removing from the mi
 
 ## Remove by Value: The Erase-Remove Idiom
 
-To delete *every* element equal to some value, the correct tool is the erase-remove idiom from `<algorithm>`:
+To delete _every_ element equal to some value, the correct tool is the erase-remove idiom from `<algorithm>`:
 
 ```cpp
 #include <iostream>
@@ -62,7 +63,7 @@ int main() {
 }
 ```
 
-This looks odd at first, so here's what happens: `std::remove` doesn't actually shrink the vector. It shifts all the elements you want to *keep* to the front and returns an iterator to the new logical end. `vector::erase` then chops off the leftover tail. Doing it in this two-part way removes all matches in a single efficient pass.
+This looks odd at first, so here's what happens: `std::remove` doesn't actually shrink the vector. It shifts all the elements you want to _keep_ to the front and returns an iterator to the new logical end. `vector::erase` then chops off the leftover tail. Doing it in this two-part way removes all matches in a single efficient pass.
 
 <div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
 
@@ -112,24 +113,25 @@ int main() {
 }
 ```
 
-`std::unique` only removes *adjacent* duplicates, which is why we sort first. If you need to preserve the original order, keep a `std::set` of values you've already seen and copy each new value into a result vector.
+`std::unique` only removes _adjacent_ duplicates, which is why we sort first. If you need to preserve the original order, keep a `std::set` of values you've already seen and copy each new value into a result vector.
 
 ---
 
 ## Quick Reference
 
-| Goal | Tool |
-|------|------|
-| Remove at index | `v.erase(v.begin() + i)` |
-| Remove last element | `v.pop_back()` |
-| Remove all equal to value | `erase` + `std::remove` |
-| Remove by condition | `erase` + `std::remove_if` |
-| Remove duplicates | `sort` + `unique` + `erase` |
+| Goal                      | Tool                        |
+| ------------------------- | --------------------------- |
+| Remove at index           | `v.erase(v.begin() + i)`    |
+| Remove last element       | `v.pop_back()`              |
+| Remove all equal to value | `erase` + `std::remove`     |
+| Remove by condition       | `erase` + `std::remove_if`  |
+| Remove duplicates         | `sort` + `unique` + `erase` |
 
 ---
 
 ## Related Articles
 
+- [How to Insert Into a Vector in C++](/posts/cpp-insert-into-vector/) — insert at any position, plus the iterator invalidation trap.
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — the complete guide to std::vector
 - [C++ Sort Algorithm](/posts/cpp-sort-algorithm/) — sorting before deduplicating
 - [C++ Iterators](/posts/cpp-iterators/) — what begin() and end() really are

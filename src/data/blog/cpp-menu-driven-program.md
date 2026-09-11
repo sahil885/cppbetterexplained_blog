@@ -1,6 +1,7 @@
 ---
 title: "Menu Driven Program in C++: Build a Clean Interactive Menu"
 description: "Learn to write a menu driven program in C++ with a do-while loop and a switch. Includes full working code plus how to handle invalid user input safely."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-08-25T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "programs", "loops", "tutorial"]
@@ -231,6 +232,7 @@ The switch-plus-functions pattern scales well up to about eight options. Beyond 
 
 ## Related Articles
 
+- [C++ Input Validation: Handling Bad cin Input](/posts/cpp-input-validation/) — stop infinite loops when the user types letters.
 - [C++ switch Statement Explained](/posts/cpp-switch-statement/)
 - [do-while Loop in C++](/posts/cpp-do-while-loop/)
 - [cin.ignore and Clearing the Input Buffer](/posts/cpp-cin-ignore-clear-buffer/)

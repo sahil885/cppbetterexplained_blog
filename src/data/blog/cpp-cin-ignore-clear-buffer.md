@@ -1,6 +1,7 @@
 ---
 title: "C++ cin.ignore(): Fix getline Skipping After cin >>"
 description: "Why getline is skipped after cin >> in C++, and how cin.ignore() clears the leftover newline. Fix the input buffer bug with clear, beginner-friendly examples."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-07-13T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "input", "tutorial"]
@@ -101,12 +102,12 @@ Now the program pauses for the name as expected. The call `std::cin.ignore(std::
 
 You only need `cin.ignore()` when a **formatted read** (`cin >>`) is followed by a **`getline`**. Here's the quick guide:
 
-| Sequence | Need cin.ignore()? |
-|----------|--------------------|
-| `cin >>` then `getline` | Yes — clear the newline |
-| `getline` then `getline` | No — getline consumes its own newline |
-| `cin >>` then `cin >>` | No — `>>` skips leading whitespace anyway |
-| `getline` then `cin >>` | No |
+| Sequence                 | Need cin.ignore()?                        |
+| ------------------------ | ----------------------------------------- |
+| `cin >>` then `getline`  | Yes — clear the newline                   |
+| `getline` then `getline` | No — getline consumes its own newline     |
+| `cin >>` then `cin >>`   | No — `>>` skips leading whitespace anyway |
+| `getline` then `cin >>`  | No                                        |
 
 The reason `getline` after `getline` is fine: `getline` reads **and discards** the newline that ends the line, so it never leaves one behind. Only `cin >>` leaves the newline stranded.
 
@@ -120,6 +121,7 @@ Whenever you mix `cin >> something` with a later `getline`, insert `std::cin.ign
 
 ## Related Articles
 
+- [C++ Input Validation: Handling Bad cin Input](/posts/cpp-input-validation/) — stop infinite loops when the user types letters.
 - [C++ User Input with cin](/posts/cpp-cin-user-input/) — the basics of reading input
 - [C++ getline for String Input](/posts/cpp-getline-string-input/) — reading whole lines with spaces
 - [C++ String Handling](/posts/cpp-string-handling/) — working with the text you read in

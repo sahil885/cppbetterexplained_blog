@@ -1,6 +1,7 @@
 ---
 title: "C++ getline: How to Read a Full Line of Input (With Spaces)"
 description: "Learn how to use std::getline in C++ to read strings with spaces. Fix the classic cin skips spaces problem and the getline after cin bug, with clear examples."
+modDatetime: 2026-09-11T00:00:00Z
 pubDatetime: 2026-06-03T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "input-output", "tutorial"]
@@ -125,11 +126,11 @@ That `ignore` call skips characters until it has thrown away a newline, clearing
 
 ## Quick Reference
 
-| Goal | Use |
-|------|-----|
-| Read a single word or number | `std::cin >> x;` |
+| Goal                         | Use                             |
+| ---------------------------- | ------------------------------- |
+| Read a single word or number | `std::cin >> x;`                |
 | Read a full line with spaces | `std::getline(std::cin, line);` |
-| getline right after cin >> | `std::cin.ignore(...)` first |
+| getline right after cin >>   | `std::cin.ignore(...)` first    |
 
 The takeaway: `cin >>` for tokens, `getline` for whole lines, and `cin.ignore` to bridge the two safely.
 
@@ -137,6 +138,8 @@ The takeaway: `cin >>` for tokens, `getline` for whole lines, and `cin.ignore` t
 
 ## Related Articles
 
+- [C++ Input Validation: Handling Bad cin Input](/posts/cpp-input-validation/) — stop infinite loops when the user types letters.
+- [How to Trim Whitespace from a String in C++](/posts/cpp-trim-string/) — strip leading and trailing spaces with a copy-paste function.
 - [C++ cin User Input](/posts/cpp-cin-user-input/) — the basics of reading input
 - [C++ String Handling](/posts/cpp-string-handling/) — working with the strings getline fills
 - [C++ String to int](/posts/cpp-string-to-int/) — converting input text to numbers
