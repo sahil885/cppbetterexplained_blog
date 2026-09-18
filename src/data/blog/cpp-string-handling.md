@@ -628,6 +628,8 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 ## Related Articles
 
+- [How to Remove a Character from a String in C++](/posts/cpp-remove-char-string/) — erase by index, by value, or by rule.
+- [C++ String Length: size() vs length() vs strlen()](/posts/cpp-string-length/) — which to use and the unsigned trap.
 - [How to Trim Whitespace from a String in C++](/posts/cpp-trim-string/) — strip leading and trailing spaces with a copy-paste function.
 - [How to Replace a Substring in a C++ String](/posts/cpp-replace-substring/) — replace one occurrence or every occurrence.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.

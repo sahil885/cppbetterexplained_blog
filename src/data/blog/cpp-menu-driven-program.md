@@ -232,6 +232,7 @@ The switch-plus-functions pattern scales well up to about eight options. Beyond 
 
 ## Related Articles
 
+- [cin vs getline: Why getline Gets Skipped](/posts/cpp-getline-vs-cin/) — the leftover-newline bug and two ways to fix it.
 - [C++ Input Validation: Handling Bad cin Input](/posts/cpp-input-validation/) — stop infinite loops when the user types letters.
 - [C++ switch Statement Explained](/posts/cpp-switch-statement/)
 - [do-while Loop in C++](/posts/cpp-do-while-loop/)

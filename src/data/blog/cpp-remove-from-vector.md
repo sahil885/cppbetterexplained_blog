@@ -131,6 +131,7 @@ int main() {
 
 ## Related Articles
 
+- [How to Remove a Character from a String in C++](/posts/cpp-remove-char-string/) — erase by index, by value, or by rule.
 - [How to Insert Into a Vector in C++](/posts/cpp-insert-into-vector/) — insert at any position, plus the iterator invalidation trap.
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — the complete guide to std::vector
 - [C++ Sort Algorithm](/posts/cpp-sort-algorithm/) — sorting before deduplicating

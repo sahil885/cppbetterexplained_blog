@@ -1,6 +1,7 @@
 ---
 title: "How to Convert String to int in C++: stoi, atoi, and stringstream"
 description: "Learn how to convert a string to int in C++ using stoi, atoi, and stringstream. Includes error handling, examples, and when to use each method safely."
+modDatetime: 2026-09-18T00:00:00Z
 pubDatetime: 2026-05-23T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "strings", "tutorial"]
@@ -161,10 +162,10 @@ if (ss >> n) {
 
 ## Which Method Should You Use?
 
-| Method | Works with | Error handling | Best for |
-|---|---|---|---|
-| `stoi` | `std::string` | Throws exceptions | Most cases in modern C++ |
-| `atoi` | `const char*` | Returns 0 silently | Legacy/C code |
+| Method         | Works with    | Error handling        | Best for                       |
+| -------------- | ------------- | --------------------- | ------------------------------ |
+| `stoi`         | `std::string` | Throws exceptions     | Most cases in modern C++       |
+| `atoi`         | `const char*` | Returns 0 silently    | Legacy/C code                  |
 | `stringstream` | `std::string` | Returns false on fail | Multiple conversions, any type |
 
 For beginner programs, use `stoi` and wrap it in a try/catch when working with user input. It's the safest and most readable option.
@@ -211,6 +212,7 @@ This is a pattern you'll use constantly when writing interactive C++ programs.
 
 ## Related Articles
 
+- [How to Check if a String Is a Number in C++](/posts/cpp-string-is-number/) — validate input before converting it.
 - [C++ int to String Conversion: to_string, stringstream, and More](/posts/cpp-int-to-string/)
 - [C++ String Handling: Everything a Beginner Needs to Know](/posts/cpp-string-handling/)
 - [C++ User Input with cin: Reading from the Keyboard](/posts/cpp-cin-user-input/)

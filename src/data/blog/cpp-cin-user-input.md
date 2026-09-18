@@ -321,6 +321,7 @@ The `while (cin >> num && num != 0)` checks two things: that the read succeeded,
 
 ## Related Articles
 
+- [cin vs getline: Why getline Gets Skipped](/posts/cpp-getline-vs-cin/) — the leftover-newline bug and two ways to fix it.
 - [C++ Input Validation: Handling Bad cin Input](/posts/cpp-input-validation/) — stop infinite loops when the user types letters.
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — the types you'll be storing input into
 - [C++ Loops Tutorial](/posts/cpp-loops-tutorial/) — combine with input for interactive programs

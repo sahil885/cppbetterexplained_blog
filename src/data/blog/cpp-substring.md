@@ -125,6 +125,7 @@ This matters most when `pos` comes from `find()`, which returns `std::string::np
 
 ## Related Articles
 
+- [C++ String Length: size() vs length() vs strlen()](/posts/cpp-string-length/) — which to use and the unsigned trap.
 - [How to Replace a Substring in a C++ String](/posts/cpp-replace-substring/) — replace one occurrence or every occurrence.
 - [How to Trim Whitespace from a String in C++](/posts/cpp-trim-string/) — strip leading and trailing spaces with a copy-paste function.
 - [How to Learn C++ From Scratch: The Complete Roadmap](/learn-cpp/) — the full step-by-step learning path, in order, from your first program onward.

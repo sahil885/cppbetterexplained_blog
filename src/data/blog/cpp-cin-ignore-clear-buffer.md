@@ -121,6 +121,7 @@ Whenever you mix `cin >> something` with a later `getline`, insert `std::cin.ign
 
 ## Related Articles
 
+- [cin vs getline: Why getline Gets Skipped](/posts/cpp-getline-vs-cin/) — the leftover-newline bug and two ways to fix it.
 - [C++ Input Validation: Handling Bad cin Input](/posts/cpp-input-validation/) — stop infinite loops when the user types letters.
 - [C++ User Input with cin](/posts/cpp-cin-user-input/) — the basics of reading input
 - [C++ getline for String Input](/posts/cpp-getline-string-input/) — reading whole lines with spaces
