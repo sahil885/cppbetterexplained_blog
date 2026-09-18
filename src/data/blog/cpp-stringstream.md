@@ -247,6 +247,7 @@ Use `istringstream` when you're only reading, `ostringstream` when you're only w
 - [C++ int to string Conversion: 4 Simple Methods](/posts/cpp-int-to-string/)
 - [C++ String to int Conversion](/posts/cpp-string-to-int/)
 - [C++ User Input with cin](/posts/cpp-cin-user-input/)
+- [How to Read Multiple Inputs on One Line in C++](/posts/cpp-read-multiple-inputs/) — stringstream's most common job
 
 ---
 

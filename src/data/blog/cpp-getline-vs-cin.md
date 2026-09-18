@@ -188,3 +188,4 @@ If you want input handling and the rest of the fundamentals explained properly r
 - [Using getline() for String Input](/posts/cpp-getline-string-input/) — getline on its own.
 - [C++ cin and User Input](/posts/cpp-cin-user-input/) — how extraction works.
 - [C++ stringstream Explained](/posts/cpp-stringstream/) — parsing lines after reading them.
+- [How to Read Multiple Inputs on One Line in C++](/posts/cpp-read-multiple-inputs/) — several values from one line

@@ -152,6 +152,7 @@ Use `size_t` whenever you're dealing with the size of something or indexing into
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — the container whose size() returns size_t
 - [C++ sizeof Operator](/posts/cpp-sizeof-operator/) — the operator that produces a size_t
 - [C++ Range-Based For Loop](/posts/cpp-range-based-for-loop/) — often the cleanest way to avoid index bugs
+- [INT_MAX and INT_MIN in C++](/posts/cpp-int-max-min/) — signed limits and where they bite
 
 ---
 

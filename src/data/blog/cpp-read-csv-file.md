@@ -148,6 +148,7 @@ This simple parser splits on every comma, which breaks if a field itself contain
 - [C++ stringstream](/posts/cpp-stringstream/) — parsing fields out of a line
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — storing rows and columns
 - [C++ String to int](/posts/cpp-string-to-int/) — converting fields to numbers
+- [How to Read Multiple Inputs on One Line in C++](/posts/cpp-read-multiple-inputs/) — the same parsing, one line at a time
 
 ---
 

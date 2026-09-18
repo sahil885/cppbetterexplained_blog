@@ -127,6 +127,8 @@ This is handy when you'll sort the same way repeatedly, but a lambda is more fle
 - [C++ Lambda Functions](/posts/cpp-lambda-functions/) — the comparator syntax
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — the container being sorted
 - [C++ Struct vs Class](/posts/cpp-struct-vs-class/) — when to use each
+- [C++ Vector of Pairs](/posts/cpp-vector-of-pairs/) — the lighter alternative to a struct
+- [How to Sort a Map by Value in C++](/posts/cpp-sort-map-by-value/) — the same comparator pattern
 
 ---
 

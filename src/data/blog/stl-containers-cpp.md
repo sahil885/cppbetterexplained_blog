@@ -611,4 +611,5 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ map and unordered_map Tutorial: Key-Value Storage Explained](/posts/cpp-map-unordered-map/) — a detailed guide to the two most-used associative containers — when to use each and how to use both.
 - [C++ String Handling: std::string, string_view, and Performance Tips](/posts/cpp-string-handling/) — strings behave like STL containers in many ways; understanding both makes you a stronger C++ developer.
 - [C++ Templates From Scratch: Generic Programming Explained Simply](/posts/cpp-templates-explained/) — the STL is built on templates; understanding templates helps you write your own generic containers.
+- [C++ Vector of Pairs](/posts/cpp-vector-of-pairs/) — a common container combination
 

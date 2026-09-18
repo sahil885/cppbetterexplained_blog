@@ -222,6 +222,7 @@ int main() {
 - [C++ Lambda Functions Explained: Closures, Captures, and std::function](/posts/cpp-lambda-functions/)
 - [C++ STL Containers Explained: Choosing the Right Container](/posts/stl-containers-cpp/)
 - [Merge Sort in C++: How It Works and How to Implement It](/posts/merge-sort-algorithm-cpp/)
+- [How to Sort a Map by Value in C++](/posts/cpp-sort-map-by-value/) — sorting what a map can't sort itself
 
 ---
 

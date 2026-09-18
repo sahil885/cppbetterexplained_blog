@@ -492,3 +492,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Vector Tutorial: The Complete Guide to std::vector for Beginners](/posts/cpp-vector-tutorial/) — vectors and maps are the two most-used STL containers; master both.
 - [C++ STL Containers Explained: Choosing the Right Container for Every Situation](/posts/stl-containers-cpp/) — a full comparison of all STL containers and when to use each.
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — iterating over maps and vectors uses the same loop patterns.
+- [How to Sort a Map by Value in C++](/posts/cpp-sort-map-by-value/) — getting a value-ordered view

@@ -6,9 +6,9 @@ author: "Sahil"
 tags: ["C++", "beginner", "data-types", "numbers", "tutorial"]
 faqSchema:
   - question: "What is INT_MAX in C++?"
-    answer: "INT_MAX is a macro from the climits header holding the largest value an int can store, which is 2147483647 on almost every modern system. INT_MIN holds the smallest, -2147483648. The modern equivalent is std::numeric_limits<int>::max()."
+    answer: "INT_MAX is a macro from the climits header holding the largest value an int can store, which is 2147483647 on almost every modern system. INT_MIN holds the smallest, -2147483648. The modern equivalent is std::numeric_limits max() for int."
   - question: "How do I find the maximum value of a type in C++?"
-    answer: "Include the limits header and call std::numeric_limits<T>::max() where T is your type. It works for int, long long, double, char, and any other arithmetic type, which makes it usable inside templates where a fixed macro would not be."
+    answer: "Include the limits header and call the max() member of std::numeric_limits for your type. It works for int, long long, double, char, and any other arithmetic type, which makes it usable inside templates where a fixed macro would not be."
   - question: "What happens when an int overflows in C++?"
     answer: "Signed integer overflow is undefined behaviour, so the compiler is allowed to do anything. In practice the value usually wraps around to the negative end, but optimisers may assume overflow cannot happen and remove your checks. Test before the operation instead of after."
 draft: false
@@ -48,6 +48,8 @@ double max:    1.79769e+308
 ```
 
 An `int` is 32 bits: one for the sign, 31 for the value. That gives 2³¹ − 1 = 2,147,483,647 as the maximum. The minimum is one further from zero because zero occupies a slot on the positive side.
+
+For the integer limits in detail — every value, the overflow rules and the `INT_MAX` vs `numeric_limits` choice — see [INT_MAX and INT_MIN in C++](/posts/cpp-int-max-min/). For the floating-point side, see [DBL_MAX: the maximum value of a double](/posts/cpp-double-max/).
 
 ---
 
@@ -209,11 +211,13 @@ If a value might exceed roughly two billion — factorials, file sizes in bytes,
 
 ## Related Articles
 
+- [INT_MAX and INT_MIN in C++](/posts/cpp-int-max-min/) — the integer limits in full.
+- [DBL_MAX: Maximum Value of a double in C++](/posts/cpp-double-max/) — the floating-point limits.
+- [How to Compare Floats in C++](/posts/cpp-float-comparison/) — why `==` fails and what to use instead.
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/)
 - [float vs double in C++](/posts/cpp-float-vs-double/)
 - [size_t in C++](/posts/cpp-size-t/)
 - [C++ Type Casting Explained](/posts/cpp-type-casting/)
-- [C++ Templates Explained](/posts/cpp-templates-explained/)
 
 ---
 

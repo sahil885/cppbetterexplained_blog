@@ -172,6 +172,7 @@ int main() {
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — int vs double, and why it matters
 - [C++ Math Functions](/posts/cpp-math-functions/) — round, floor, ceil, and more
 - [C++ Grade Calculator](/posts/cpp-grade-calculator/) — averages, where this trap bites
+- [How to Compare Floats in C++](/posts/cpp-float-comparison/) — the other classic numeric surprise
 
 ---
 
