@@ -1,6 +1,7 @@
 ---
 title: "How to Replace a Substring in a C++ String"
 description: "Replace text inside a C++ string: replace one occurrence, replace all occurrences with a loop, and use std::string::replace by position. Copy-paste code included."
+modDatetime: 2026-09-18T00:00:00Z
 pubDatetime: 2026-09-11T00:00:00Z
 author: "Sahil"
 tags: ["C++", "strings", "tutorial", "beginner"]
@@ -192,6 +193,7 @@ If you would rather understand strings and the STL than look up one function at 
 
 ## Related Articles
 
+- [How to Remove a Character from a String in C++](/posts/cpp-remove-char-string/) — erase by index, by value, or by rule.
 - [How to Trim Whitespace from a String in C++](/posts/cpp-trim-string/) — clean up input before replacing in it.
 - [How to Check if a String Contains a Substring](/posts/cpp-string-contains-substring/) — the find() call this builds on.
 - [C++ substr(): Extracting Substrings](/posts/cpp-substring/) — pulling text out instead of swapping it.

@@ -76,7 +76,7 @@ int main() {
 
 ## The Big Gotcha: Arrays Decay to Pointers
 
-Here's the trap. Both tricks above only work where the array was *declared*. The moment you pass an array into a function, it "decays" into a pointer to its first element — and the size information is gone:
+Here's the trap. Both tricks above only work where the array was _declared_. The moment you pass an array into a function, it "decays" into a pointer to its first element — and the size information is gone:
 
 ```cpp
 #include <iostream>
@@ -94,13 +94,13 @@ int main() {
 }
 ```
 
-In `main`, `sizeof` sees the real array and prints 6. Inside `printSize`, `sizeof(arr)` is the size of a *pointer* (8 bytes) divided by the size of an int (4 bytes), giving a meaningless 2. The fix is simple: pass the length as a second argument. This is exactly why `std::size` is safer — it refuses to compile on a decayed pointer instead of giving a wrong answer.
+In `main`, `sizeof` sees the real array and prints 6. Inside `printSize`, `sizeof(arr)` is the size of a _pointer_ (8 bytes) divided by the size of an int (4 bytes), giving a meaningless 2. The fix is simple: pass the length as a second argument. This is exactly why `std::size` is safer — it refuses to compile on a decayed pointer instead of giving a wrong answer.
 
 ---
 
 ## std::array Knows Its Own Size
 
-If you want a fixed-size array that *does* remember its length everywhere, use `std::array`. It behaves like a built-in array but carries a `.size()` method that always works:
+If you want a fixed-size array that _does_ remember its length everywhere, use `std::array`. It behaves like a built-in array but carries a `.size()` method that always works:
 
 ```cpp
 #include <iostream>
@@ -165,30 +165,31 @@ int total = rows * cols;                          // 15
 
 ## Which Method Should You Use?
 
-| You have | Get the length with | Works inside a function? |
-|---|---|---|
+| You have                      | Get the length with                                      | Works inside a function?           |
+| ----------------------------- | -------------------------------------------------------- | ---------------------------------- |
 | C-style array (`int arr[10]`) | `std::size(arr)` (C++17) or `sizeof(arr)/sizeof(arr[0])` | No — the array decays to a pointer |
-| `std::array<int, 10>` | `arr.size()` | Yes |
-| `std::vector<int>` | `vec.size()` | Yes |
-| 2D array (`int g[3][5]`) | `sizeof(g)/sizeof(g[0])` for rows | No |
-| C-string (`char s[]`) | `strlen(s)` for text length | Yes |
+| `std::array<int, 10>`         | `arr.size()`                                             | Yes                                |
+| `std::vector<int>`            | `vec.size()`                                             | Yes                                |
+| 2D array (`int g[3][5]`)      | `sizeof(g)/sizeof(g[0])` for rows                        | No                                 |
+| C-string (`char s[]`)         | `strlen(s)` for text length                              | Yes                                |
 
 The pattern: if the length has to survive being passed around, use [std::vector](/posts/cpp-vector-tutorial/) or [std::array](/posts/cpp-std-array/). Raw arrays only know their own size in the scope where they were declared.
 
 ## Quick Reference
 
-| Situation | How to get the size |
-|-----------|---------------------|
-| Stack array, same scope | `sizeof(a) / sizeof(a[0])` |
-| C++17 or later | `std::size(a)` |
-| Inside a function | pass the length as a parameter |
-| Need a resizable list | use `std::vector` and `.size()` |
-| Fixed size, but safer | use `std::array` and `.size()` |
+| Situation               | How to get the size             |
+| ----------------------- | ------------------------------- |
+| Stack array, same scope | `sizeof(a) / sizeof(a[0])`      |
+| C++17 or later          | `std::size(a)`                  |
+| Inside a function       | pass the length as a parameter  |
+| Need a resizable list   | use `std::vector` and `.size()` |
+| Fixed size, but safer   | use `std::array` and `.size()`  |
 
 ---
 
 ## Related Articles
 
+- [C++ String Length: size() vs length() vs strlen()](/posts/cpp-string-length/) — which to use and the unsigned trap.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — if you'd rather learn from one structured source than a hundred scattered tutorials, start here.
 - [How to Learn C++ From Scratch: The Complete Roadmap](/learn-cpp/) — the full step-by-step learning path, in order, from your first program onward.
 - [C++ Arrays Tutorial](/posts/cpp-arrays-tutorial/) — declaring and using arrays

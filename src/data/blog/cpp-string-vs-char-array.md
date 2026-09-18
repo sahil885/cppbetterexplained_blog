@@ -52,6 +52,7 @@ cout << strlen(str2); // 11
 ```
 
 **The problems with C-strings:**
+
 - Fixed size — you must allocate enough space manually
 - Buffer overflow if you write past the end — no protection
 - No automatic memory management
@@ -74,6 +75,7 @@ cout << name;            // Alice Smith!
 ```
 
 **What std::string gives you:**
+
 - Grows automatically as needed — no size to pre-declare
 - Knows its own length — no need to scan for `\0`
 - Operator overloading — `+`, `+=`, `==`, `<` work naturally
@@ -155,6 +157,7 @@ if (pos != string::npos) cout << "Found at position: " << pos;
 ## Converting Between Them
 
 **`std::string` → `char` array:**
+
 ```cpp
 string s = "Hello";
 
@@ -166,6 +169,7 @@ strcpy(buf, s.c_str());          // Copy into a char array
 ```
 
 **`char` array → `std::string`:**
+
 ```cpp
 char cstr[] = "Hello";
 string s = cstr;                 // Direct construction
@@ -177,12 +181,14 @@ string s2(cstr, 3);             // Take first 3 chars: "Hel"
 ## When to Use Each
 
 **Use `std::string` for:**
+
 - All general-purpose string handling in C++ code
 - Any code where you don't know the string length in advance
 - When you need operations like find, replace, split, format
 - Anywhere safety and readability matter
 
 **Use `char` arrays for:**
+
 - Interfacing with C APIs that require `const char*` or `char*`
 - Embedded/systems code where dynamic allocation is forbidden
 - Fixed-size buffers where performance is critical and size is known
@@ -201,6 +207,7 @@ FILE* f = fopen(filename.c_str(), "r");  // c_str() gives const char*
 ## Common Mistakes
 
 **Comparing C-strings with `==`:**
+
 ```cpp
 char a[] = "hello";
 char b[] = "hello";
@@ -209,6 +216,7 @@ if (a == b) { ... }  // Compares pointer addresses — almost always false!
 ```
 
 **Writing past the end of a char array:**
+
 ```cpp
 char buf[5];
 strcpy(buf, "Hello World");  // Buffer overflow — writes beyond buf!
@@ -216,6 +224,7 @@ strcpy(buf, "Hello World");  // Buffer overflow — writes beyond buf!
 ```
 
 **Returning a pointer to a local char array:**
+
 ```cpp
 const char* getDangerousString() {
     char local[] = "Hello";
@@ -232,16 +241,16 @@ string getSafeString() {
 
 ## Summary
 
-| Feature | `char` array | `std::string` |
-|---------|-------------|---------------|
-| Size | Fixed at compile time | Dynamic, grows automatically |
-| Length tracking | Manual (or `strlen`) | Automatic (`.length()`) |
-| Concatenation | `strcat` (error-prone) | `+` or `+=` (safe) |
-| Comparison | `strcmp` | `==`, `<`, `>` |
-| Copying | `strcpy` | `=` assignment |
-| Buffer overflow risk | Yes | No |
-| C API compatibility | Native | Via `.c_str()` |
-| Ease of use | Low | High |
+| Feature              | `char` array           | `std::string`                |
+| -------------------- | ---------------------- | ---------------------------- |
+| Size                 | Fixed at compile time  | Dynamic, grows automatically |
+| Length tracking      | Manual (or `strlen`)   | Automatic (`.length()`)      |
+| Concatenation        | `strcat` (error-prone) | `+` or `+=` (safe)           |
+| Comparison           | `strcmp`               | `==`, `<`, `>`               |
+| Copying              | `strcpy`               | `=` assignment               |
+| Buffer overflow risk | Yes                    | No                           |
+| C API compatibility  | Native                 | Via `.c_str()`               |
+| Ease of use          | Low                    | High                         |
 
 **Recommendation:** Use `std::string` for all new C++ code. It's safer, easier, and just as fast for most purposes.
 
@@ -249,6 +258,7 @@ string getSafeString() {
 
 ## Related Articles
 
+- [C++ String Length: size() vs length() vs strlen()](/posts/cpp-string-length/) — which to use and the unsigned trap.
 - [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ String Handling](/posts/cpp-string-handling/) — std::string methods, string_view, performance tips
 - [C++ int to string Conversion](/posts/cpp-int-to-string/) — converting numbers to strings

@@ -1,6 +1,7 @@
 ---
 title: "How to Trim Whitespace from a String in C++"
 description: "Trim leading and trailing whitespace from a C++ string. Copy-paste trim, ltrim and rtrim functions using find_first_not_of, plus a C++20 ranges version."
+modDatetime: 2026-09-18T00:00:00Z
 pubDatetime: 2026-09-11T00:00:00Z
 author: "Sahil"
 tags: ["C++", "strings", "tutorial", "beginner"]
@@ -181,6 +182,8 @@ If you want strings, vectors and the STL explained properly rather than looked u
 
 ## Related Articles
 
+- [How to Remove a Character from a String in C++](/posts/cpp-remove-char-string/) — erase by index, by value, or by rule.
+- [How to Check if a String Is a Number in C++](/posts/cpp-string-is-number/) — validate input before converting it.
 - [C++ String Handling: A Complete Guide](/posts/cpp-string-handling/) — the full picture on std::string.
 - [How to Split a String in C++](/posts/cpp-split-string/) — break a line into fields after trimming it.
 - [C++ substr(): Extracting Substrings](/posts/cpp-substring/) — the function trim is built on.

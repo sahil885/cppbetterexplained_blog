@@ -1,6 +1,7 @@
 ---
 title: "How to Append to a File in C++ (std::ios::app)"
 description: "Append text to an existing file in C++ with ofstream and std::ios::app. Learn app vs ate vs trunc, how to avoid overwriting your file, and how to log safely."
+modDatetime: 2026-09-18T00:00:00Z
 pubDatetime: 2026-09-11T00:00:00Z
 author: "Sahil"
 tags: ["C++", "file-handling", "tutorial", "beginner"]
@@ -179,6 +180,8 @@ If you want file handling and the rest of C++ explained properly rather than one
 
 ## Related Articles
 
+- [How to Write to a File in C++](/posts/cpp-write-to-file/) — ofstream, formatting and flushing explained.
+- [How to Get the Size of a File in C++](/posts/cpp-file-size/) — filesystem::file_size and the seekg fallback.
 - [C++ File Handling: Reading and Writing Files](/posts/cpp-file-handling/) — the complete ifstream and ofstream picture.
 - [How to Read a File Line by Line in C++](/posts/cpp-read-file-line-by-line/) — the reading side of the same job.
 - [How to Check if a File Exists in C++](/posts/cpp-check-if-file-exists/) — test before you open.

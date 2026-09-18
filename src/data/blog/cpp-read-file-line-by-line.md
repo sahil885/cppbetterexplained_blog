@@ -1,6 +1,7 @@
 ---
 title: "How to Read a File Line by Line in C++"
 description: "Read a text file line by line in C++ with ifstream and getline. Includes error handling, reading into a vector, parsing each line, and the common gotchas."
+modDatetime: 2026-09-18T00:00:00Z
 pubDatetime: 2026-09-11T00:00:00Z
 author: "Sahil"
 tags: ["C++", "file-handling", "tutorial", "beginner"]
@@ -198,6 +199,8 @@ If you want file handling, strings and the STL explained properly rather than pi
 
 ## Related Articles
 
+- [How to Write to a File in C++](/posts/cpp-write-to-file/) — ofstream, formatting and flushing explained.
+- [How to Get the Size of a File in C++](/posts/cpp-file-size/) — filesystem::file_size and the seekg fallback.
 - [C++ File Handling: Reading and Writing Files](/posts/cpp-file-handling/) — the complete ifstream and ofstream picture.
 - [How to Check if a File Exists in C++](/posts/cpp-check-if-file-exists/) — verify before you open.
 - [How to Read a CSV File in C++](/posts/cpp-read-csv-file/) — parsing comma-separated data line by line.

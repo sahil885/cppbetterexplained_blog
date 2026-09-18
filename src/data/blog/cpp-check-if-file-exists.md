@@ -112,6 +112,8 @@ Checking existence and then opening the file is technically two steps, and the f
 
 ## Related Articles
 
+- [How to Get the Size of a File in C++](/posts/cpp-file-size/) — filesystem::file_size and the seekg fallback.
+- [How to Write to a File in C++](/posts/cpp-write-to-file/) — ofstream, formatting and flushing explained.
 - [How to Append to a File in C++](/posts/cpp-append-to-file/) — add to a file instead of wiping it with std::ios::app.
 - [How to Read a File Line by Line in C++](/posts/cpp-read-file-line-by-line/) — the ifstream + getline pattern, done correctly.
 - [C++ Read File Line by Line](/posts/cpp-file-handling/) — opening and reading files

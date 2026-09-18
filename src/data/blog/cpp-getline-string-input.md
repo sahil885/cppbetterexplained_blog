@@ -138,6 +138,7 @@ The takeaway: `cin >>` for tokens, `getline` for whole lines, and `cin.ignore` t
 
 ## Related Articles
 
+- [cin vs getline: Why getline Gets Skipped](/posts/cpp-getline-vs-cin/) — the leftover-newline bug and two ways to fix it.
 - [C++ Input Validation: Handling Bad cin Input](/posts/cpp-input-validation/) — stop infinite loops when the user types letters.
 - [How to Trim Whitespace from a String in C++](/posts/cpp-trim-string/) — strip leading and trailing spaces with a copy-paste function.
 - [C++ cin User Input](/posts/cpp-cin-user-input/) — the basics of reading input

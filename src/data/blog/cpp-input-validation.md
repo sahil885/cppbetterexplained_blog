@@ -1,6 +1,7 @@
 ---
 title: "C++ Input Validation: Handling Bad cin Input Without Crashing"
 description: "Validate numeric input in C++ with cin.fail(), cin.clear() and cin.ignore(). Stop infinite loops when the user types letters, and build a reusable input function."
+modDatetime: 2026-09-18T00:00:00Z
 pubDatetime: 2026-09-11T00:00:00Z
 author: "Sahil"
 tags: ["C++", "input", "beginner", "tutorial"]
@@ -198,6 +199,8 @@ If you want input handling and the rest of the fundamentals explained properly r
 
 ## Related Articles
 
+- [How to Check if a String Is a Number in C++](/posts/cpp-string-is-number/) — validate input before converting it.
+- [cin vs getline: Why getline Gets Skipped](/posts/cpp-getline-vs-cin/) — the leftover-newline bug and two ways to fix it.
 - [cin.ignore() and Clearing the Input Buffer](/posts/cpp-cin-ignore-clear-buffer/) — the mechanics behind the fix.
 - [C++ cin and User Input](/posts/cpp-cin-user-input/) — how extraction works in the first place.
 - [Using getline() for String Input](/posts/cpp-getline-string-input/) — reading whole lines safely.

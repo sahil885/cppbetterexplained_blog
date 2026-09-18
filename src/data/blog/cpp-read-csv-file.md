@@ -141,6 +141,7 @@ This simple parser splits on every comma, which breaks if a field itself contain
 
 ## Related Articles
 
+- [How to Write to a File in C++](/posts/cpp-write-to-file/) — ofstream, formatting and flushing explained.
 - [How to Read a File Line by Line in C++](/posts/cpp-read-file-line-by-line/) — the ifstream + getline pattern, done correctly.
 - [C++ Read File Line by Line](/posts/cpp-file-handling/) — fstream reading and writing
 - [C++ Split String](/posts/cpp-split-string/) — the splitting logic in depth
