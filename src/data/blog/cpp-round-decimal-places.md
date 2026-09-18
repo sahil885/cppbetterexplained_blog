@@ -185,6 +185,7 @@ When in doubt, round at the **edges** of your program — when displaying or sav
 - [C++ Math Functions](/posts/cpp-math-functions/)
 - [Integer Division in C++](/posts/cpp-integer-division/)
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/)
+- [How to Compare Floats in C++](/posts/cpp-float-comparison/) — why rounded values still fail `==`
 
 ---
 

@@ -128,6 +128,7 @@ Whenever you mix `cin >> something` with a later `getline`, insert `std::cin.ign
 - [C++ String Handling](/posts/cpp-string-handling/) — working with the text you read in
 - [C++ stringstream Explained](/posts/cpp-stringstream/) — parsing mixed input safely
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — int vs string input
+- [How to Read Multiple Inputs on One Line in C++](/posts/cpp-read-multiple-inputs/) — where leftover newlines usually appear
 
 ---
 

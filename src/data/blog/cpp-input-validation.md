@@ -206,3 +206,4 @@ If you want input handling and the rest of the fundamentals explained properly r
 - [Using getline() for String Input](/posts/cpp-getline-string-input/) — reading whole lines safely.
 - [C++ Menu-Driven Programs](/posts/cpp-menu-driven-program/) — where input validation matters most.
 - [C++ Error Messages Explained](/posts/cpp-error-messages/) — decoding what the compiler tells you.
+- [How to Read Multiple Inputs on One Line in C++](/posts/cpp-read-multiple-inputs/) — validating several values at once

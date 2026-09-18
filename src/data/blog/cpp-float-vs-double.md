@@ -147,6 +147,8 @@ If you remember nothing else: **default to `double`, and only switch to `float` 
 - [C++ Math Functions](/posts/cpp-math-functions/) — sqrt, pow, and the rest of cmath
 - [C++ iomanip Formatting](/posts/cpp-iomanip-formatting/) — controlling how decimals print
 - [C++ Type Casting](/posts/cpp-type-casting/) — converting between numeric types safely
+- [How to Compare Floats in C++](/posts/cpp-float-comparison/) — why `==` fails on floating point
+- [DBL_MAX: Maximum Value of a double in C++](/posts/cpp-double-max/) — the limits of each type
 
 ---
 

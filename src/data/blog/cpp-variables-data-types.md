@@ -370,3 +370,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Type Casting Explained: static_cast, dynamic_cast, and More](/posts/cpp-type-casting/) — how to convert safely between data types once you know what the types are.
 - [C++ const vs constexpr: What's the Difference?](/posts/cpp-const-vs-constexpr/) — two ways to make a variable constant; learn which to use and when.
 - [C++ Stack vs Heap Memory: What's the Difference?](/posts/cpp-stack-vs-heap/) — where your variables actually live in memory, and why it matters.
+- [INT_MAX and INT_MIN in C++](/posts/cpp-int-max-min/) — the exact range of an int

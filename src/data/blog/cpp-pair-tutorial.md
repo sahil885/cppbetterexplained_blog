@@ -227,6 +227,8 @@ Use `pair` for quick internal groupings — especially map entries and return va
 - [C++ STL Containers Overview: vector, map, set, and More](/posts/stl-containers-cpp/)
 - [C++ Lambda Functions: Syntax, Captures, and Practical Examples](/posts/cpp-lambda-functions/)
 - [C++ Auto Keyword Explained: Type Deduction for Beginners](/posts/cpp-auto-keyword/)
+- [C++ Vector of Pairs](/posts/cpp-vector-of-pairs/) — storing and sorting many pairs
+- [How to Sort a Map by Value in C++](/posts/cpp-sort-map-by-value/) — pairs' most common real use
 
 ---
 

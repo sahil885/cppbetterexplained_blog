@@ -328,6 +328,7 @@ The `while (cin >> num && num != 0)` checks two things: that the read succeeded,
 - [C++ Conditionals Tutorial](/posts/cpp-conditionals-tutorial/) — act on what the user types
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — wrap your input logic in reusable functions
 - [C++ String Handling](/posts/cpp-string-handling/) — more on working with text in C++
+- [How to Read Multiple Inputs on One Line in C++](/posts/cpp-read-multiple-inputs/) — reading an unknown number of values
 
 ---
 

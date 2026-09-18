@@ -138,6 +138,7 @@ Start with the simplest method that fits your data. For most CSV-style and confi
 - [C++ getline](/posts/cpp-getline-string-input/) — reading lines and tokens
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — storing the split pieces
 - [C++ String to int](/posts/cpp-string-to-int/) — converting split fields to numbers
+- [How to Read Multiple Inputs on One Line in C++](/posts/cpp-read-multiple-inputs/) — splitting a line of input
 
 ---
 
