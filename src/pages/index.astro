@@ -3,20 +3,18 @@ import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import LinkButton from "@/components/LinkButton.astro";
-import Card from "@/components/Card.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
-import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
-import { SITE } from "@/config";
+import { getPath } from "@/utils/getPath";
+
+const TRIPWIRE = "https://start.cppbetterexplained.com/tw-sales-page";
+
 const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const totalPosts = sortedPosts.length;
+const postCount = Math.floor(totalPosts / 25) * 25;
 
-// Categorise posts for keyword-rich sections
 const beginnerSlugs = [
   "how-to-start-learning-cpp",
-  "what-is-cpp-used-for",
   "cpp-roadmap",
   "cpp-hello-world-explained",
   "cpp-variables-data-types",
@@ -25,160 +23,919 @@ const beginnerSlugs = [
   "cpp-classes-and-objects",
   "cpp-loops-tutorial",
   "cpp-conditionals-tutorial",
+  "pointers-in-cpp",
 ];
 const projectSlugs = [
   "blackjack-cpp-using-classes",
   "traffic-light-project",
   "lottery-program-cpp",
-  "merge-sort-algorithm-cpp",
+  "cpp-number-guessing-game",
+  "cpp-calculator-program",
+  "cpp-bank-account-program",
 ];
-const beginnerPosts = sortedPosts.filter(p =>
-  beginnerSlugs.some(s => p.id.includes(s))
-);
-const projectPosts = sortedPosts.filter(p =>
-  projectSlugs.some(s => p.id.includes(s))
-);
----
-<Layout hideAds title="Learn C++ for Beginners — Tutorials, Projects & Source Code | C++ Better Explained">
-  <Header />
-  <main id="main-content" data-layout="index" class="app-layout">
-    <h1 class="sr-only">C++ Tutorials, Projects and Source Code Explained Step by Step</h1>
 
-    <!-- Hero: funnel into the book -->
-    <section class="pt-12 pb-6 border-b border-border">
-      <div class="flex flex-col-reverse gap-8 sm:flex-row sm:items-center sm:justify-between">
-        <div class="flex-1">
-          <h2 class="text-3xl sm:text-4xl font-bold leading-tight">Learn C++ the Easy Way</h2>
-          <p class="mt-3 max-w-xl text-foreground/70">The beginner-friendly C++ book that makes pointers, memory, and OOP finally click — plus free step-by-step tutorials and real projects.</p>
-          <div class="mt-5">
-            <a href="https://start.cppbetterexplained.com/tw-sales-page" class="inline-block rounded-md bg-accent px-6 py-3 text-lg font-semibold text-background hover:opacity-90">Get the C++ Book — $19</a>
+const pick = (slugs: string[], limit: number) =>
+  slugs
+    .map(s => sortedPosts.find(p => p.id.includes(s)))
+    .filter((p): p is (typeof sortedPosts)[number] => Boolean(p))
+    .slice(0, limit);
+
+const beginnerPosts = pick(beginnerSlugs, 6);
+const projectPosts = pick(projectSlugs, 6);
+
+const usedIds = new Set([
+  ...beginnerPosts.map(p => p.id),
+  ...projectPosts.map(p => p.id),
+]);
+
+const featuredPosts = sortedPosts
+  .filter(p => p.data.featured && !usedIds.has(p.id))
+  .slice(0, 6);
+
+featuredPosts.forEach(p => usedIds.add(p.id));
+
+const recentPosts = sortedPosts.filter(p => !usedIds.has(p.id)).slice(0, 6);
+
+const quotes = [
+  {
+    text: "Better than my PhD lecturers.",
+    name: "Vidura Adikari",
+  },
+  {
+    text: "Your stuff is VERY digestible. I like how you explain this stuff, it's very down to earth and readable.",
+    name: "Calvin Pulliam",
+  },
+  {
+    text: "Concise, to the point and really comprehensible. Great for beginners in C++.",
+    name: "Khan Sami",
+  },
+];
+
+const bookQuotes = [
+  {
+    text: "The diagrams are what sets your book apart. Lines and lines of code mean nothing to someone who is a visual learner. Your diagrams make understanding much easier.",
+    name: "Michael Heenan",
+  },
+  {
+    text: "I always perceived learning C++ as very daunting and challenging, but I really liked how Sahil put things into pieces and goes straight to the point.",
+    name: "Boris Houenou",
+  },
+  {
+    text: "I have experience in many other languages. I do like the direct approach and feel this will be a good reference for beginning programmers.",
+    name: "Michael McFarren",
+  },
+];
+
+const pillars = [
+  {
+    icon: "◆",
+    title: "Analogies for Dummies",
+    body: "Every hard idea mapped onto something you already understand, so it lands the first time instead of the fifth.",
+  },
+  {
+    icon: "▤",
+    title: "Vivid Code Diagrams",
+    body: "Visual breakdowns that stick in your head, so you recall them under exam or interview pressure.",
+  },
+  {
+    icon: "◈",
+    title: "Logic Made Simple",
+    body: "The hard parts broken down to a level anyone can follow, without the university jargon.",
+  },
+];
+---
+
+<Layout
+  hideAds
+  title="Learn C++ for Beginners — Tutorials, Projects & Source Code | C++ Better Explained"
+>
+  <Header />
+  <main id="main-content" data-layout="index">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">{postCount}+ free C++ tutorials</p>
+          <h1 class="hero-title">
+            Learn C++ without the<br class="nb" />
+            <span class="hl">1,300-page textbook</span>
+          </h1>
+          <p class="hero-sub">
+            Plain-English tutorials, annotated projects and full source code —
+            for the parts of C++ that actually trip beginners up. Variables,
+            Control Structures, Pointers and OOP, explained so they finally
+            click.
+          </p>
+
+          <div class="optin-card">
+            <p class="optin-head">
+              Free: The 10 Mistakes Every C++ Beginner Makes
+            </p>
+            <p class="optin-sub">
+              A 1-page checklist of the traps that slow everyone down. Sent
+              straight to your inbox.
+            </p>
+            <form class="js-optin optin-form">
+              <input
+                type="email"
+                name="email"
+                required
+                autocomplete="email"
+                placeholder="your@email.com"
+                aria-label="Your email address"
+              />
+              <button type="submit">Send me the checklist</button>
+            </form>
+            <p class="optin-fine">No spam. Unsubscribe anytime.</p>
+            <p class="optin-done">Check your inbox — it's on its way.</p>
           </div>
-          <p class="mt-3 text-sm text-foreground/60">New to C++? <a href="/learn-cpp/" class="text-accent underline underline-offset-2 hover:opacity-80">Start with the free roadmap →</a></p>
+
+          <p class="hero-alt">
+            Ready to go deeper? <a href={TRIPWIRE}>Get the book — $19</a>
+          </p>
         </div>
-        <a
-          href="https://start.cppbetterexplained.com/tw-sales-page"
-          class="flex-none self-center sm:self-auto"
-          aria-label="Get the C++ Better Explained book — $19"
-        >
-          <img
-            src="/book-cover.jpg"
-            alt="C++ Better Explained — The Intuitive Beginner's Guide, by Sahil Bora"
-            width="200"
-            height="300"
-            loading="eager"
-            class="w-40 sm:w-52 h-auto rounded-lg shadow-xl ring-1 ring-black/5 transition-transform hover:-translate-y-1 hover:shadow-2xl"
-          />
-        </a>
+
+        <div class="hero-book">
+          <a href={TRIPWIRE} aria-label="C++ Better Explained book — $19">
+            <img
+              src="/book-cover.jpg"
+              alt="C++ Better Explained — The Intuitive Beginner's Guide, by Sahil Bora"
+              width="260"
+              height="390"
+              loading="eager"
+            />
+          </a>
+        </div>
       </div>
     </section>
 
-    {
-      featuredPosts.length > 0 && (
-        <section
-          id="featured"
-          class:list={[
-            "pt-12 pb-6",
-            { "border-b border-border": recentPosts.length > 0 },
-          ]}
-        >
-          <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
-          <ul>
-            {featuredPosts.map(data => (
-              <Card variant="h3" {...data} />
-            ))}
-          </ul>
-        </section>
-      )
-    }
+    <!-- ============ PROOF STRIP ============ -->
+    <section class="proof">
+      <div class="shell proof-grid">
+        {
+          quotes.map(q => (
+            <figure class="quote">
+              <blockquote>{q.text}</blockquote>
+              <figcaption>{q.name}</figcaption>
+            </figure>
+          ))
+        }
+      </div>
+    </section>
 
+    <!-- ============ START HERE ============ -->
     {
       beginnerPosts.length > 0 && (
-        <section id="beginner-tutorials" class="pt-12 pb-6 border-b border-border">
-          <h2 class="text-2xl font-semibold tracking-wide">C++ Beginner Tutorials</h2>
-          <p class="mt-2 mb-4 text-sm text-foreground/70">Start here if you're new to C++. These guides cover the fundamentals step by step.</p>
-          <ul>
-            {beginnerPosts.slice(0, SITE.postPerIndex).map(data => (
-              <Card variant="h3" {...data} />
-            ))}
-          </ul>
-          <div class="mt-4">
-            <LinkButton href="/posts/">
-              All Tutorials
-              <IconArrowRight class="inline-block rtl:-rotate-180" />
-            </LinkButton>
+        <section class="band">
+          <div class="shell">
+            <p class="eyebrow">Start here</p>
+            <h2 class="band-title">C++ fundamentals, step by step</h2>
+            <p class="band-sub">
+              New to C++? These cover the ground everything else builds on.
+            </p>
+            <div class="cards">
+              {beginnerPosts.map(p => (
+                <a class="card" href={getPath(p.id, p.filePath)}>
+                  <h3>{p.data.title}</h3>
+                  <p>{p.data.description}</p>
+                  <span class="card-go">Read guide →</span>
+                </a>
+              ))}
+            </div>
+            <a class="band-more" href="/learn-cpp/">
+              See the full learning roadmap →
+            </a>
           </div>
         </section>
       )
     }
 
-    <!-- Email capture: secondary route to the funnel, below the fold -->
-    <section id="checklist-optin" class="pt-12 pb-6 border-b border-border">
-      <div class="max-w-xl rounded-xl border border-accent/25 bg-accent/5 px-5 py-5">
-        <p class="font-semibold">📋 Free: The 10 Mistakes Every C++ Beginner Makes</p>
-        <p class="mt-1 text-sm text-foreground/70">A 1-page checklist of the traps that slow down every beginner — avoid them from day one.</p>
-        <form id="hero-optin-form" class="mt-3 flex flex-col sm:flex-row gap-3">
-          <input
-            type="email"
-            name="email"
-            required
-            autocomplete="email"
-            placeholder="your@email.com"
-            class="flex-1 min-w-0 px-4 py-2.5 rounded-lg border border-border bg-card text-foreground text-sm outline-none focus:border-accent transition-colors"
-          />
-          <button
-            type="submit"
-            id="hero-optin-submit"
-            class="px-5 py-2.5 rounded-lg bg-accent text-white font-semibold text-sm cursor-pointer whitespace-nowrap hover:opacity-90 transition-opacity disabled:opacity-50"
-          >
-            Send it to me →
-          </button>
-        </form>
-        <p class="mt-2 text-xs text-foreground/50">🔒 No spam. Unsubscribe anytime.</p>
-        <div id="hero-optin-success" class="hidden mt-3">
-          <p class="text-base font-semibold text-accent">🎉 Check your inbox — it's on its way!</p>
+    <!-- ============ THE BOOK ============ -->
+    <section class="book" id="book">
+      <div class="shell">
+        <div class="book-grid">
+          <div class="book-art">
+            <a href={TRIPWIRE} aria-label="Get the C++ Better Explained book">
+              <img
+                src="/book-cover.jpg"
+                alt="C++ Better Explained ebook cover"
+                width="300"
+                height="450"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div class="book-copy">
+            <p class="eyebrow">The book</p>
+            <h2 class="band-title">C++ Better Explained</h2>
+            <p class="book-lead">
+              87 pages that replace the 1,300-page textbook. Written for people
+              with no programming background, using analogies and diagrams
+              instead of jargon.
+            </p>
+            <ul class="pillars">
+              {
+                pillars.map(p => (
+                  <li>
+                    <span class="pill-icon" aria-hidden="true">
+                      {p.icon}
+                    </span>
+                    <div>
+                      <strong>{p.title}</strong>
+                      <span>{p.body}</span>
+                    </div>
+                  </li>
+                ))
+              }
+            </ul>
+            <div class="price-row">
+              <span class="price">$19</span>
+              <span class="price-was">$39</span>
+              <span class="price-note">instant download</span>
+            </div>
+            <a class="btn-buy" href={TRIPWIRE}>Get the book — $19</a>
+            <p class="guarantee">
+              30-day, no-questions-asked money-back guarantee.
+            </p>
+          </div>
+        </div>
+
+        <div class="book-quotes">
+          {
+            bookQuotes.map(q => (
+              <figure class="quote quote-lg">
+                <blockquote>{q.text}</blockquote>
+                <figcaption>{q.name}</figcaption>
+              </figure>
+            ))
+          }
         </div>
       </div>
     </section>
 
+    <!-- ============ PROJECTS ============ -->
     {
       projectPosts.length > 0 && (
-        <section id="cpp-projects" class="pt-12 pb-6 border-b border-border">
-          <h2 class="text-2xl font-semibold tracking-wide">C++ Project Guides</h2>
-          <p class="mt-2 mb-4 text-sm text-foreground/70">Learn by building. Fully annotated C++ projects you can read, run, and modify.</p>
-          <ul>
-            {projectPosts.map(data => (
-              <Card variant="h3" {...data} />
-            ))}
-          </ul>
+        <section class="band">
+          <div class="shell">
+            <p class="eyebrow">Build something</p>
+            <h2 class="band-title">Projects with full source code</h2>
+            <p class="band-sub">
+              Complete, annotated programs you can read, run and take apart.
+            </p>
+            <div class="cards">
+              {projectPosts.map(p => (
+                <a class="card" href={getPath(p.id, p.filePath)}>
+                  <h3>{p.data.title}</h3>
+                  <p>{p.data.description}</p>
+                  <span class="card-go">Build it →</span>
+                </a>
+              ))}
+            </div>
+          </div>
         </section>
       )
     }
 
+    <!-- ============ POPULAR ============ -->
+    {
+      featuredPosts.length > 0 && (
+        <section class="band band-alt">
+          <div class="shell">
+            <p class="eyebrow">Most read</p>
+            <h2 class="band-title">Popular guides</h2>
+            <div class="cards">
+              {featuredPosts.map(p => (
+                <a class="card" href={getPath(p.id, p.filePath)}>
+                  <h3>{p.data.title}</h3>
+                  <p>{p.data.description}</p>
+                  <span class="card-go">Read guide →</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    <!-- ============ RECENT ============ -->
     {
       recentPosts.length > 0 && (
-        <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">Advanced C++ Topics</h2>
-          <ul>
-            {recentPosts
-              .filter(p => !beginnerSlugs.some(s => p.id.includes(s)) && !projectSlugs.some(s => p.id.includes(s)))
-              .slice(0, SITE.postPerIndex)
-              .map(data => (
-                <Card variant="h3" {...data} />
+        <section class="band">
+          <div class="shell">
+            <p class="eyebrow">Fresh</p>
+            <h2 class="band-title">Recently published</h2>
+            <div class="cards">
+              {recentPosts.map(p => (
+                <a class="card" href={getPath(p.id, p.filePath)}>
+                  <h3>{p.data.title}</h3>
+                  <p>{p.data.description}</p>
+                  <span class="card-go">Read guide →</span>
+                </a>
               ))}
-          </ul>
+            </div>
+            <a class="band-more" href="/posts/">
+              Browse all {totalPosts} tutorials →
+            </a>
+          </div>
         </section>
       )
     }
 
-    <div class="my-8 text-center">
-      <LinkButton href="/posts/">
-        All Posts
-        <IconArrowRight class="inline-block rtl:-rotate-180" />
-      </LinkButton>
-    </div>
+    <!-- ============ AUTHOR + FINAL OPTIN ============ -->
+    <section class="closer">
+      <div class="shell closer-grid">
+        <div class="author">
+          <p class="eyebrow">Who writes this</p>
+          <h2 class="band-title">Sahil Bora</h2>
+          <p class="author-body">
+            Software engineer, author and creator of C++ Better Explained. I
+            spent ten years tutoring students who were told C++ was too hard,
+            and built this site so nobody has to learn it from a textbook that
+            assumes you already know it.
+          </p>
+          <p class="author-links">
+            <a href="/about/">More about me</a> ·
+            <a
+              href="https://www.youtube.com/@cbetterexplained"
+              rel="noopener"
+              target="_blank">YouTube channel</a
+            >
+          </p>
+        </div>
+
+        <div class="optin-card optin-card-end">
+          <p class="optin-head">Get the free beginner checklist</p>
+          <p class="optin-sub">
+            The 10 mistakes that slow down every C++ beginner — and how to avoid
+            them from day one.
+          </p>
+          <form class="js-optin optin-form">
+            <input
+              type="email"
+              name="email"
+              required
+              autocomplete="email"
+              placeholder="your@email.com"
+              aria-label="Your email address"
+            />
+            <button type="submit">Send it to me</button>
+          </form>
+          <p class="optin-fine">No spam. Unsubscribe anytime.</p>
+          <p class="optin-done">Check your inbox — it's on its way.</p>
+        </div>
+      </div>
+    </section>
   </main>
   <Footer />
 </Layout>
+
+<style>
+  /* ---------- layout primitives ---------- */
+  .shell {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 68rem;
+    padding-inline: 1.25rem;
+  }
+
+  .eyebrow {
+    margin: 0 0 0.6rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .band {
+    padding: 4rem 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .band-alt {
+    background: color-mix(in srgb, var(--muted) 26%, var(--background));
+  }
+
+  .band-title {
+    margin: 0;
+    font-size: clamp(1.6rem, 3.2vw, 2.1rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+  }
+
+  .band-sub {
+    margin: 0.7rem 0 0;
+    max-width: 38rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.72;
+  }
+
+  .band-more {
+    display: inline-block;
+    margin-top: 1.75rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .band-more:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  /* ---------- hero ---------- */
+  .hero {
+    padding: 3.5rem 0 3rem;
+    background:
+      radial-gradient(
+        ellipse 80% 60% at 15% 0%,
+        color-mix(in srgb, var(--accent) 11%, transparent),
+        transparent 70%
+      ),
+      var(--background);
+  }
+
+  .hero-grid {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    margin: 0;
+    font-size: clamp(2rem, 5.4vw, 3.1rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .hl {
+    color: var(--accent);
+  }
+
+  .nb {
+    display: none;
+  }
+
+  .hero-sub {
+    margin: 1.1rem 0 0;
+    max-width: 34rem;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    opacity: 0.78;
+  }
+
+  .hero-book {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-book img {
+    width: min(15rem, 62vw);
+    height: auto;
+    border-radius: 0.75rem;
+    box-shadow:
+      0 18px 40px -12px rgba(0, 0, 0, 0.42),
+      0 0 0 1px rgba(0, 0, 0, 0.05);
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .hero-book img:hover {
+    transform: translateY(-5px) rotate(-1deg);
+  }
+
+  .hero-alt {
+    margin: 1.25rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.68;
+  }
+
+  .hero-alt a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .hero-alt a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* ---------- optin ---------- */
+  .optin-card {
+    margin-top: 1.9rem;
+    max-width: 30rem;
+    border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent);
+    border-radius: 0.9rem;
+    background: color-mix(in srgb, var(--accent) 7%, var(--background));
+    padding: 1.35rem;
+  }
+
+  .optin-head {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .optin-sub {
+    margin: 0.4rem 0 0;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    opacity: 0.72;
+  }
+
+  .optin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 1rem;
+  }
+
+  .optin-form input {
+    min-width: 0;
+    flex: 1;
+    border: 1px solid var(--border);
+    border-radius: 0.6rem;
+    background: var(--background);
+    color: var(--foreground);
+    padding: 0.7rem 0.9rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.15s ease;
+  }
+
+  .optin-form input:focus {
+    border-color: var(--accent);
+  }
+
+  .optin-form button {
+    border: 0;
+    border-radius: 0.6rem;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: inherit;
+    white-space: nowrap;
+    transition: opacity 0.15s ease;
+  }
+
+  .optin-form button:hover:not(:disabled) {
+    opacity: 0.9;
+  }
+
+  .optin-form button:disabled {
+    opacity: 0.55;
+  }
+
+  .optin-fine {
+    margin: 0.7rem 0 0;
+    font-size: 0.76rem;
+    opacity: 0.55;
+  }
+
+  .optin-done {
+    display: none;
+    margin: 0.9rem 0 0;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  /* ---------- quotes ---------- */
+  .proof {
+    padding: 2.25rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: color-mix(in srgb, var(--muted) 26%, var(--background));
+  }
+
+  .proof-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .quote {
+    margin: 0;
+  }
+
+  .quote blockquote {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  .quote blockquote::before {
+    content: "“";
+  }
+
+  .quote blockquote::after {
+    content: "”";
+  }
+
+  .quote figcaption {
+    margin-top: 0.55rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  .quote-lg blockquote {
+    font-size: 0.92rem;
+  }
+
+  /* ---------- cards ---------- */
+  .cards {
+    display: grid;
+    gap: 1.1rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border);
+    border-radius: 0.85rem;
+    background: var(--background);
+    padding: 1.35rem;
+    text-decoration: none;
+    color: inherit;
+    transition:
+      transform 0.18s ease,
+      border-color 0.18s ease,
+      box-shadow 0.18s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+    box-shadow: 0 12px 26px -16px rgba(0, 0, 0, 0.45);
+  }
+
+  .card h3 {
+    margin: 0;
+    font-size: 1.03rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .card p {
+    margin: 0.55rem 0 0;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    opacity: 0.7;
+  }
+
+  .card-go {
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  /* ---------- book ---------- */
+  .book {
+    padding: 4.5rem 0;
+    border-top: 1px solid var(--border);
+    background: color-mix(in srgb, var(--accent) 6%, var(--background));
+  }
+
+  .book-grid {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .book-art {
+    display: flex;
+    justify-content: center;
+  }
+
+  .book-art img {
+    width: min(17rem, 68vw);
+    height: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 22px 48px -14px rgba(0, 0, 0, 0.45);
+  }
+
+  .book-lead {
+    margin: 0.8rem 0 0;
+    font-size: 1.02rem;
+    line-height: 1.65;
+    opacity: 0.8;
+  }
+
+  .pillars {
+    margin: 1.6rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .pillars li {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+  }
+
+  .pill-icon {
+    flex: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
+    background: color-mix(in srgb, var(--accent) 16%, transparent);
+    color: var(--accent);
+    font-size: 0.8rem;
+  }
+
+  .pillars strong {
+    display: block;
+    font-size: 0.95rem;
+  }
+
+  .pillars span:not(.pill-icon) {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    opacity: 0.7;
+  }
+
+  .price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin-top: 1.8rem;
+  }
+
+  .price {
+    font-size: 2.1rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .price-was {
+    font-size: 1.05rem;
+    text-decoration: line-through;
+    opacity: 0.45;
+  }
+
+  .price-note {
+    font-size: 0.82rem;
+    opacity: 0.6;
+  }
+
+  .btn-buy {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 0.65rem;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.85rem 1.8rem;
+    font-size: 1.02rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 24px -12px color-mix(in srgb, var(--accent) 80%, black);
+    transition:
+      transform 0.15s ease,
+      opacity 0.15s ease;
+  }
+
+  .btn-buy:hover {
+    transform: translateY(-2px);
+    opacity: 0.94;
+  }
+
+  .guarantee {
+    margin: 0.9rem 0 0;
+    font-size: 0.83rem;
+    opacity: 0.65;
+  }
+
+  .book-quotes {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding-top: 2.25rem;
+    border-top: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+    grid-template-columns: 1fr;
+  }
+
+  /* ---------- closer ---------- */
+  .closer {
+    padding: 4rem 0 4.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .closer-grid {
+    display: grid;
+    gap: 2.5rem;
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .author-body {
+    margin: 0.8rem 0 0;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    opacity: 0.78;
+  }
+
+  .author-links {
+    margin: 1rem 0 0;
+    font-size: 0.9rem;
+  }
+
+  .author-links a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .author-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .optin-card-end {
+    margin-top: 0;
+    max-width: none;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (min-width: 640px) {
+    .optin-form {
+      flex-direction: row;
+    }
+
+    .nb {
+      display: inline;
+    }
+
+    .proof-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .book-quotes {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .hero {
+      padding: 5rem 0 4rem;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1.35fr 1fr;
+      gap: 3.5rem;
+    }
+
+    .book-grid {
+      grid-template-columns: 1fr 1.45fr;
+      gap: 3.5rem;
+    }
+
+    .pillars {
+      gap: 1.15rem;
+    }
+
+    .closer-grid {
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+    }
+
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
+
 <script>
   document.addEventListener("astro:page-load", () => {
     const indexLayout = (document.querySelector("#main-content") as HTMLElement)
@@ -190,52 +947,66 @@ const projectPosts = sortedPosts.filter(p =>
 </script>
 
 <script is:inline>
-(function () {
-  var TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
+  (function () {
+    const TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
 
-  function initHeroOptin() {
-    var form = document.getElementById("hero-optin-form");
-    if (!form || form.dataset.bound) return;
-    form.dataset.bound = "1";
+    function bindOne(form) {
+      if (form.dataset.bound) return;
+      form.dataset.bound = "1";
 
-    var submit  = document.getElementById("hero-optin-submit");
-    var success = document.getElementById("hero-optin-success");
+      const card = form.parentElement;
+      const button = form.querySelector("button");
+      const done = card ? card.querySelector(".optin-done") : null;
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var email = form.querySelector("input[name=email]").value.trim();
-      submit.disabled = true;
-      submit.textContent = "Sending\u2026";
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const input = form.querySelector("input[name=email]");
+        const email = input ? input.value.trim() : "";
+        if (!email) return;
 
-      fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email, list: "checklist" }),
-        keepalive: true
-      })
-      .then(function (res) {
-        if (!res.ok) {
-          console.error("Subscribe error:", res.status);
-          submit.disabled = false;
-          submit.textContent = "Try again";
-          return;
+        button.disabled = true;
+        button.textContent = "Sending...";
+
+        if (typeof window.gtag === "function") {
+          window.gtag("event", "optin_submit", { location: "homepage" });
         }
-        try { localStorage.setItem("wm_dismissed", String(Date.now())); } catch (err) {}
-        form.style.display = "none";
-        if (success) success.classList.remove("hidden");
-        setTimeout(function () {
-          window.location.href = TRIPWIRE_URL;
-        }, 1200);
-      })
-      .catch(function (err) {
-        console.error("Subscribe network error:", err);
-        submit.disabled = false;
-        submit.textContent = "Try again";
-      });
-    });
-  }
 
-  initHeroOptin();
-  document.addEventListener("astro:page-load", initHeroOptin);
-})();
+        fetch("/api/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: email, list: "checklist" }),
+          keepalive: true,
+        })
+          .then(function (res) {
+            if (!res.ok) {
+              button.disabled = false;
+              button.textContent = "Try again";
+              return;
+            }
+            try {
+              localStorage.setItem("wm_dismissed", String(Date.now()));
+            } catch {
+              /* storage unavailable */
+            }
+            form.style.display = "none";
+            if (done) done.style.display = "block";
+            setTimeout(function () {
+              window.location.href = TRIPWIRE_URL;
+            }, 1200);
+          })
+          .catch(function () {
+            button.disabled = false;
+            button.textContent = "Try again";
+          });
+      });
+    }
+
+    function initOptins() {
+      const forms = document.querySelectorAll("form.js-optin");
+      for (let i = 0; i < forms.length; i++) bindOne(forms[i]);
+    }
+
+    initOptins();
+    document.addEventListener("astro:page-load", initOptins);
+  })();
 </script>
