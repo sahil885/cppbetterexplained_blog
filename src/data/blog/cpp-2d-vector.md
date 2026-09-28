@@ -233,6 +233,7 @@ int main() {
 - [C++ 2D Arrays: How to Declare, Initialize, and Iterate](/posts/cpp-2d-array/)
 - [C++ Arrays Tutorial: Store and Access Multiple Values](/posts/cpp-arrays-tutorial/)
 - [C++ STL Containers Explained: Choosing the Right Container](/posts/stl-containers-cpp/)
+- [How to Get the Size of a Vector in C++](/posts/cpp-vector-size/) — rows, columns and element counts
 
 ---
 

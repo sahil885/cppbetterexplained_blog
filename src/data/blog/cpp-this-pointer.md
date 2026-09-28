@@ -282,6 +282,7 @@ Marking a function `const` isn't just documentation. It changes the type of `thi
 - [The static Keyword in C++](/posts/cpp-static-keyword/) — why static functions have no `this`
 - [The const Keyword in C++](/posts/cpp-const-keyword/) — const member functions explained
 - [OOP in C++](/posts/oop-in-cpp/) — the bigger picture
+- [Getters and Setters in C++](/posts/cpp-getters-setters/) — member functions in practice
 
 ---
 

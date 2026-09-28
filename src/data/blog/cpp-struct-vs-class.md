@@ -197,6 +197,7 @@ When to make the choice: ask yourself "should the data be public by default, or 
 - [OOP in C++](/posts/oop-in-cpp/) — encapsulation, inheritance, and polymorphism
 - [C++ Enum Tutorial](/posts/cpp-enum-tutorial/) — another type-definition mechanism
 - [C++ Constructors and Destructors](/posts/cpp-constructors-destructors/) — object lifecycle
+- [Getters and Setters in C++](/posts/cpp-getters-setters/) — when encapsulation is worth the typing
 
 ---
 

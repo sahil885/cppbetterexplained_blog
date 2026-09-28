@@ -156,6 +156,7 @@ std::shared_ptr<Shape> b = std::make_shared<Circle>(5.0);  // works either way
 - [Constructors and Destructors in C++](/posts/cpp-constructors-destructors/)
 - [Smart Pointers in C++](/posts/smart-pointers-cpp/)
 - [The Rule of Three in C++](/posts/cpp-rule-of-three/)
+- [static_cast vs dynamic_cast in C++](/posts/cpp-static-cast-vs-dynamic-cast/) — why polymorphic types matter
 
 ---
 

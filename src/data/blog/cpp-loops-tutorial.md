@@ -427,3 +427,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ do-while Loop: How It Works and When to Use It](/posts/cpp-do-while-loop/) — a deeper look at the loop that always runs at least once.
 - [C++ Switch Statement: How It Works with Examples](/posts/cpp-switch-statement/) — a cleaner alternative to long if-else chains when branching on one value.
 - [C++ Ternary Operator: How to Use ? : in C++](/posts/cpp-ternary-operator/) — the one-line conditional for simple either/or choices.
+- [How to Break Out of a Nested Loop in C++](/posts/cpp-break-nested-loop/) — the nested-loop escape problem

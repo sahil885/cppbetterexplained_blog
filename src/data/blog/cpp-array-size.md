@@ -197,6 +197,7 @@ The pattern: if the length has to survive being passed around, use [std::vector]
 - [C++ Array vs Vector](/posts/cpp-array-vs-vector/) — when to switch to a vector
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — resizable lists that track their size
 - [C++ 2D Arrays](/posts/cpp-2d-array/) — sizing arrays with more than one dimension
+- [How to Get the Size of a Vector in C++](/posts/cpp-vector-size/) — the vector equivalent
 
 ---
 

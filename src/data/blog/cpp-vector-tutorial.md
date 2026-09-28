@@ -716,3 +716,4 @@ If you're looking to go deeper with C++, the **C++ Better Explained Ebook** is p
 - [Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks](/posts/memory-management-cpp/) — vectors manage heap memory under the hood; understanding memory makes you a better C++ developer.
 - [C++ String Handling: std::string, string_view, and Performance Tips](/posts/cpp-string-handling/) — strings and vectors are the two most common STL types — master both together.
 - [C++ Vector of Pairs](/posts/cpp-vector-of-pairs/) — storing two values per element
+- [How to Get the Size of a Vector in C++](/posts/cpp-vector-size/) — size, capacity and the unsigned trap

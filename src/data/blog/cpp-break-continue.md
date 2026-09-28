@@ -162,6 +162,7 @@ All three numbers print, because each `break` only leaves the `switch`. The loop
 - [C++ switch Statement](/posts/cpp-switch-statement/) — where break also appears
 - [C++ Range-Based For Loop](/posts/cpp-range-based-for-loop/) — the modern loop syntax
 - [C++ Conditionals Tutorial](/posts/cpp-conditionals-tutorial/) — the if tests that drive break and continue
+- [How to Break Out of a Nested Loop in C++](/posts/cpp-break-nested-loop/) — when one break isn't enough
 
 ---
 
