@@ -343,6 +343,24 @@ const nextPost =
     }
     <!-- ===== End Email Opt-in ===== -->
 
+    <!-- In-article ad units: inserted at spaced H2s by the script below -->
+{
+      !hideAds && (
+    <template id="in-article-ad-template">
+      <div class="in-article-ad not-prose my-8">
+        <ins
+          class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-2676272684727826"
+          data-ad-slot="4953849057"
+        />
+      </div>
+    </template>
+      )
+    }
+
     <!-- Mid-article opt-in: inserted before the middle H2 by script below -->
 {
       !hideMidOptin && (
@@ -642,8 +660,43 @@ const nextPost =
       target.parentNode.insertBefore(box, target);
     }
 
+    function insertInArticleAds() {
+      var article = document.getElementById("article");
+      var tpl = document.getElementById("in-article-ad-template");
+      if (!article || !tpl) return;
+      if (article.querySelector(".in-article-ad")) return;
+
+      var headings = article.querySelectorAll("h2");
+      var n = headings.length;
+      if (n < 4) return; // too short to carry three ads
+
+      var midIdx = Math.floor(n / 2); // reserved for the mid-article opt-in
+      var wanted = [1, Math.round(n * 0.55), n - 1];
+      var used = {};
+      var inserted = 0;
+
+      for (var i = 0; i < wanted.length; i++) {
+        var idx = wanted[i];
+        while (idx < n && (idx === midIdx || used[idx])) idx++;
+        if (idx <= 0 || idx >= n || used[idx]) continue;
+        used[idx] = 1;
+        var box = tpl.content.firstElementChild.cloneNode(true);
+        headings[idx].parentNode.insertBefore(box, headings[idx]);
+        inserted++;
+      }
+
+      for (var k = 0; k < inserted; k++) {
+        try {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+          /* adsbygoogle not available */
+        }
+      }
+    }
+
     function initOptins() {
       insertMidOptin();
+      insertInArticleAds();
       document.querySelectorAll(".post-optin-form").forEach(bindOptinForm);
     }
 
