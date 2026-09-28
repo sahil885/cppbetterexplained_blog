@@ -163,6 +163,7 @@ Use `resize` when you need the elements to exist, and `reserve` when you just wa
 - [C++ Print a Vector](/posts/cpp-print-vector/) — displaying vector contents
 - [C++ Remove from Vector](/posts/cpp-remove-from-vector/) — the erase-remove idiom
 - [C++ Pass Vector to Function](/posts/cpp-pass-vector-to-function/) — by value vs by reference
+- [How to Get the Size of a Vector in C++](/posts/cpp-vector-size/) — size() vs capacity() in practice
 
 ---
 

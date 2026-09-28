@@ -173,6 +173,7 @@ The rule of thumb: always use the most restrictive cast that works. `static_cast
 - [OOP in C++: Inheritance, Encapsulation, and Polymorphism Explained](/posts/oop-in-cpp/)
 - [Virtual Functions and Polymorphism in C++ Explained](/posts/virtual-functions-polymorphism-cpp/)
 - [C++ Templates Explained: Write Code That Works with Any Type](/posts/cpp-templates-explained/)
+- [static_cast vs dynamic_cast in C++](/posts/cpp-static-cast-vs-dynamic-cast/) — the two you'll actually choose between
 
 ---
 

@@ -234,6 +234,7 @@ int main() {
 - [C++ Classes and Objects: A Beginner's Guide to OOP](/posts/cpp-classes-and-objects/)
 - [Virtual Functions and Polymorphism in C++ Explained](/posts/virtual-functions-polymorphism-cpp/)
 - [C++ Constructors and Destructors Explained](/posts/cpp-constructors-destructors/)
+- [static_cast vs dynamic_cast in C++](/posts/cpp-static-cast-vs-dynamic-cast/) — safe downcasting
 
 ---
 

@@ -129,6 +129,7 @@ A quick tip: give your counters different names (`i`/`j` or `row`/`col`). Reusin
 - [C++ 2D Arrays](/posts/cpp-2d-array/) — store the grids your loops walk over
 - [C++ Arrays Tutorial](/posts/cpp-arrays-tutorial/) — the foundation for rows and columns
 - [C++ Conditionals Tutorial](/posts/cpp-conditionals-tutorial/) — add logic inside your loops
+- [How to Break Out of a Nested Loop in C++](/posts/cpp-break-nested-loop/) — escaping both loops at once
 
 ---
 

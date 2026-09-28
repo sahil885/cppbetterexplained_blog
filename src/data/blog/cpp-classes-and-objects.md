@@ -505,3 +505,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Copy Constructor: Deep Copy vs Shallow Copy Explained](/posts/cpp-copy-constructor/) — what happens when you copy an object, and how to control it with the Rule of Three.
 - [C++ Struct vs Class: What's the Difference?](/posts/cpp-struct-vs-class/) — structs and classes are nearly identical in C++; learn the one real difference and when to use each.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
+- [Getters and Setters in C++](/posts/cpp-getters-setters/) — controlling access to private members

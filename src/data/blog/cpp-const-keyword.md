@@ -164,6 +164,7 @@ Use `constexpr` for true constants like array sizes and mathematical values, and
 - [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/)
 - [C++ Classes and Objects: A Beginner's Guide to OOP](/posts/cpp-classes-and-objects/)
 - [C++ Reference vs Pointer: What's the Difference?](/posts/cpp-reference-vs-pointer/)
+- [Getters and Setters in C++](/posts/cpp-getters-setters/) — why getters should be const
 
 ---
 
