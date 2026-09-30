@@ -113,7 +113,7 @@ Bjarne Stroustrup created C++. This book is his introduction to programming usin
 
 What makes it good for beginners: Stroustrup is an exceptional teacher, and the book's progression is thoughtful. It doesn't assume programming experience.
 
-What to know: the 3rd edition (2024) is about half the length of the previous one, at 656 pages, and uses C++20 and C++23. Its graphics chapters now use Qt, which you'll need to install separately — skip those at first if setup gets in the way and focus on the core content.
+What to know: the 3rd edition (2024) is about half the length of the previous one, at 656 pages, and uses C++20 and C++23. Its graphics chapters now use Qt, which you'll need to install separately — skip those at first if setup gets in the way and focus on the core content. See the [full PPP review](/posts/programming-principles-and-practice-review/), or the [C++ Primer vs PPP comparison](/posts/cpp-primer-vs-programming-principles-and-practice/) if you're choosing between the two.
 
 **"Beginning C++23" by Ivor Horton and Peter Van Weert**
 
@@ -280,3 +280,5 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — a structured step-by-step path from your first program to OOP and pointers.
 - [C++ Roadmap 2026: What to Learn and In What Order](/posts/cpp-roadmap/) — the complete learning roadmap with stage-by-stage guidance and timelines.
 - [What Is C++ Used For? Real-World Applications Explained](/posts/what-is-cpp-used-for/) — understand the real-world domains where C++ is used before you commit to learning it.
+- [Programming: Principles and Practice Using C++ Review](/posts/programming-principles-and-practice-review/) — Stroustrup's beginner textbook, reviewed honestly.
+- [C++ Primer vs Programming: Principles and Practice](/posts/cpp-primer-vs-programming-principles-and-practice/) — which to read first.
