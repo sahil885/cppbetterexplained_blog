@@ -103,7 +103,7 @@ These are useful, but they're conveniences layered on the C++11 foundation — n
 
 ## What to Read Instead (or First)
 
-**If you've never programmed at all:** Bjarne Stroustrup's *Programming: Principles and Practice Using C++*. The 3rd edition (2024) is written primarily for people who have never programmed, uses C++20 and C++23, and at 656 pages is about half the size of the previous edition. It's designed for a classroom pace, so it rewards steady weekly work.
+**If you've never programmed at all:** Bjarne Stroustrup's *Programming: Principles and Practice Using C++*. The 3rd edition (2024) is written primarily for people who have never programmed, uses C++20 and C++23, and at 656 pages is about half the size of the previous edition. It's designed for a classroom pace, so it rewards steady weekly work. Full review: [Programming: Principles and Practice Using C++](/posts/programming-principles-and-practice-review/), or see the [side-by-side comparison](/posts/cpp-primer-vs-programming-principles-and-practice/).
 
 **If you want free:** [learncpp.com](https://www.learncpp.com/) is the most complete free C++ tutorial available and is kept current with recent standards.
 
@@ -144,3 +144,5 @@ If you want the concepts that make C++ hard — pointers, memory, OOP — explai
 - [Can You Learn C++ on Your Own?](/posts/learn-cpp-on-your-own/) — self-study that actually works.
 - [C++ Book vs Course vs YouTube](/posts/cpp-book-vs-course-vs-youtube/) — choosing a learning format.
 - [Is C++ Hard to Learn?](/posts/is-cpp-hard-to-learn/) — what makes it hard, and what doesn't.
+- [Programming: Principles and Practice Using C++ Review](/posts/programming-principles-and-practice-review/) — Stroustrup's beginner textbook, reviewed honestly.
+- [C++ Primer vs Programming: Principles and Practice](/posts/cpp-primer-vs-programming-principles-and-practice/) — which to read first.
