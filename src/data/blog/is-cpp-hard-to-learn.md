@@ -117,3 +117,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — job demand, salaries, and who should skip it.
 - [Can You Learn C++ on Your Own? A Self-Taught Guide](/posts/learn-cpp-on-your-own/) — the realistic self-taught path, in order.
 - [How Long Does It Take to Learn C++?](/posts/how-long-to-learn-cpp/) — realistic timelines per stage.
+- [Is C++ Primer Good for Beginners?](/posts/is-cpp-primer-good-for-beginners/) — picking a first book that won't stall you

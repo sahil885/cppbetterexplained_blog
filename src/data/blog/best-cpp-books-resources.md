@@ -1,7 +1,7 @@
 ---
 title: "Best C++ Books and Resources for Beginners in 2026"
 description: "The best C++ books for beginners in 2026, ranked and reviewed honestly — plus the free courses and resources actually worth your time to learn C++ faster."
-modDatetime: 2026-07-27T00:00:00Z
+modDatetime: 2026-09-30T00:00:00Z
 pubDatetime: 2026-04-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "resources", "books", "learning"]
@@ -105,7 +105,7 @@ This is the most comprehensive beginner-to-intermediate book on C++. It's long (
 
 What makes it good for beginners: it explains the "why," not just the "how." You don't just learn that `const` exists — you understand why you'd use it and what happens when you don't.
 
-What to know: it's long and takes weeks to get through properly. Don't try to rush it.
+What to know: it's long and takes weeks to get through properly. Don't try to rush it. A 6th edition has been listed for years, but the publisher still shows it as not for sale, so the 5th edition is the one you'll get. See the [full C++ Primer review](/posts/is-cpp-primer-good-for-beginners/) for who it suits and who should start elsewhere.
 
 **"Programming: Principles and Practice Using C++" by Bjarne Stroustrup**
 
@@ -113,7 +113,7 @@ Bjarne Stroustrup created C++. This book is his introduction to programming usin
 
 What makes it good for beginners: Stroustrup is an exceptional teacher, and the book's progression is thoughtful. It doesn't assume programming experience.
 
-What to know: it's also long, and some of the graphical examples use a library that's harder to set up on modern systems. Skip those sections if needed and focus on the core content.
+What to know: the 3rd edition (2024) is about half the length of the previous one, at 656 pages, and uses C++20 and C++23. Its graphics chapters now use Qt, which you'll need to install separately — skip those at first if setup gets in the way and focus on the core content.
 
 **"Beginning C++23" by Ivor Horton and Peter Van Weert**
 
@@ -274,6 +274,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ---
 
 ## Related Articles
+- [Is C++ Primer Good for Beginners? An Honest Review](/posts/is-cpp-primer-good-for-beginners/)
 - [C++ Book vs Course vs YouTube: Which Actually Works?](/posts/cpp-book-vs-course-vs-youtube/) — how to pick a primary learning resource and avoid tutorial drift.
 - [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — job demand, salaries, and who should skip it.
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — a structured step-by-step path from your first program to OOP and pointers.
