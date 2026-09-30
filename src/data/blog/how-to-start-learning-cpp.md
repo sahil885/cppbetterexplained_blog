@@ -311,3 +311,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Projects for Beginners: 4 Guided Projects with Full Source Code](/posts/cpp-beginner-projects/) — once you know the basics, build something real.
 - [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/) — when you're ready for the concept everyone finds scary.
 - [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — a realistic, goal-based timeline from your first program to job-ready.
+- [Is C++ Primer Good for Beginners?](/posts/is-cpp-primer-good-for-beginners/) — an honest review before you buy

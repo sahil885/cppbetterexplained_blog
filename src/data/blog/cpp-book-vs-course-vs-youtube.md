@@ -113,3 +113,4 @@ If the "one structured backbone" approach sounds right and you want it to be sho
 - [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — what to expect from each stage.
 - [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — if you are still deciding whether to commit.
 - [Is C++ Hard to Learn? An Honest Answer for Beginners](/posts/is-cpp-hard-to-learn/) — what makes it difficult and how to get past it.
+- [Is C++ Primer Good for Beginners?](/posts/is-cpp-primer-good-for-beginners/) — the most-recommended book, reviewed honestly
