@@ -31,9 +31,15 @@ Here's the clear version.
 
 Let's unpack why, and how to decide for your situation.
 
-<div class="inline-cta">Already leaning toward C++? The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you from your very first program to pointers and OOP in 87 plain-English pages — just $19.</div>
-
-## The Myth: "You Must Learn C Before C++"
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">Starting with C++?</p>
+    <h3>C++ Better Explained</h3>
+    <p>The beginner book built around plain-English mental models — pointers, memory and OOP finally click. 87 focused pages instead of a 1,000-page textbook.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>## The Myth: "You Must Learn C Before C++"
 
 The most persistent piece of advice in this debate is that C is a prerequisite for C++. It usually comes from older programmers who learned that way decades ago.
 

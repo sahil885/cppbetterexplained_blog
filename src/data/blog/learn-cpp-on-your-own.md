@@ -17,6 +17,7 @@ faqSchema:
     answer: "Start with the basics of a program's structure, then variables and data types, conditionals, loops, functions, arrays, and strings. Then move to pointers and memory, then classes and object-oriented programming, then the STL. Learning in this order matters, because each stage depends on the one before it."
   - question: "Is it harder to learn C++ without a teacher?"
     answer: "The main thing you lose is someone telling you what to learn next and correcting your misunderstandings early. You can replace both: use a structured resource for sequencing, and build projects that fail loudly so mistakes surface quickly. Communities like r/cpp_questions can fill the gap when you are truly stuck."
+hideAds: true
 ---
 
 # Can You Learn C++ on Your Own?
@@ -35,7 +36,15 @@ Self-learners are not short on information — there is more free C++ material o
 
 Both are replaceable. Sequencing comes from following one structured resource instead of grazing across many. Correction comes from writing code that fails loudly, and from asking specific questions when you are stuck. Once you solve those two things, self-teaching C++ is entirely tractable.
 
-<div class="inline-cta"><strong>Want the sequencing solved for you?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is one structured path through the fundamentals in plain English — 87 pages, just $19.</div>
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">Learning on your own?</p>
+    <h3>C++ Better Explained</h3>
+    <p>Self-study stalls on the concepts with nobody to explain them. This book covers pointers, memory and OOP in 87 plain-English pages built for exactly that.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>
 
 ## The Self-Taught Order That Works
 

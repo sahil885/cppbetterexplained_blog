@@ -18,6 +18,7 @@ faqSchema:
     answer: "Most beginners struggle most with pointers and memory management — the idea that you're directly responsible for allocating and freeing memory. Understanding how the stack and heap work, and what a pointer actually is, is the biggest conceptual hurdle. Once that clicks, the rest of C++ becomes much more approachable."
   - question: "Is C++ harder than Python?"
     answer: "Yes. C++ has stricter syntax, requires explicit memory management, has a more complex compiler toolchain, and exposes you to lower-level concepts like pointers and references. Python hides most of this complexity. However, C++ gives you far more control and performance in return for that complexity."
+hideAds: true
 ---
 
 # Is C++ Hard to Learn? An Honest Answer for Beginners
@@ -37,6 +38,16 @@ Compared to Python or JavaScript, C++ has a steeper learning curve. There's no g
 **The toolchain is more complex.** In Python you just run `python script.py`. In C++ you need a compiler, you need to understand compilation vs. linking, and build errors can look cryptic until you learn to read them.
 
 **Pointers.** Pointers are variables that store memory addresses rather than values. They're powerful, they're fundamental to how C++ works, and they confuse nearly every beginner. We've written [a full guide to C++ pointers](/posts/pointers-in-cpp/) specifically to fix this.
+
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">Make the hard parts click</p>
+    <h3>C++ Better Explained</h3>
+    <p>Memory, pointers and the compilation model are what make C++ feel hard. This book explains exactly those, in 87 plain-English pages with analogies and diagrams.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>
 
 ## What Makes C++ Manageable
 

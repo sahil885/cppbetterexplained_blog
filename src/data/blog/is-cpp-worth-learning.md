@@ -17,6 +17,7 @@ faqSchema:
     answer: "Often yes. C++ teaches you what Python hides: memory, pointers, the stack and heap, and what actually happens when code runs. Many developers report that learning C++ made them better at every other language, because they finally understood the machine underneath."
   - question: "Should I learn C++ or Python first?"
     answer: "Python is easier to start with and gets you productive faster. C++ is harder early but teaches fundamentals more deeply and opens doors Python cannot. If you have a specific goal like game or embedded development, start with C++. If you just want to learn programming, start with Python and add C++ later."
+hideAds: true
 ---
 
 # Is C++ Worth Learning in 2026?
@@ -39,7 +40,15 @@ More telling than rankings is where the code lives:
 
 That last point matters more than most beginners realise. The AI boom did not replace C++ — it increased demand for people who can make inference fast.
 
-<div class="inline-cta"><strong>Ready to start?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you from zero to writing real C++ in 87 pages of plain-English explanations — just $19.</div>
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">Decided to learn it?</p>
+    <h3>C++ Better Explained</h3>
+    <p>The beginner book built around plain-English mental models — pointers, memory and OOP finally click. 87 focused pages instead of a 1,000-page textbook.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>
 
 ## What C++ Developers Earn
 
