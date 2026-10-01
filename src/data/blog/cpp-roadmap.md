@@ -14,6 +14,7 @@ faqSchema:
     answer: "Yes, but C++ has a steeper learning curve than Python or JavaScript. Beginners should start with the basics — variables, loops, and functions — before tackling pointers and memory management. Following a structured roadmap and building small projects along the way makes the learning process much more manageable."
 draft: false
 featured: false
+hideAds: true
 ---
 
 # C++ Roadmap 2026: What to Learn and In What Order
@@ -26,9 +27,15 @@ Each stage includes what to learn, roughly how long it takes, and what to build 
 
 ---
 
-<div class="inline-cta"><strong>Short on time?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> packs everything you need into 87 pages of plain-English explanations, analogies, and code diagrams — just $19.</div>
-
-## Stage 0: Set Up Your Environment (Day 1)
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">Get through Stage 1 faster</p>
+    <h3>C++ Better Explained</h3>
+    <p>The fundamentals stage is where most people stall. This book covers pointers, memory and OOP in 87 plain-English pages with analogies and diagrams.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>## Stage 0: Set Up Your Environment (Day 1)
 
 Before you write a single line of code, get your tools in place. A broken environment is responsible for more beginner dropouts than anything else.
 

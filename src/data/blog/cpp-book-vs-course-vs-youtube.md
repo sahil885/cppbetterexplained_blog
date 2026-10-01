@@ -17,6 +17,7 @@ faqSchema:
     answer: "You can learn C++ for free with quality resources like learncpp.com. Paid resources are worth it when they save you time and stop you drifting between tutorials. A focused beginner book at under $30 is a low-risk way to get a structured path; expensive courses only pay off if you actually finish them."
   - question: "Why do so many people quit learning C++?"
     answer: "Usually not because C++ is too hard, but because there is no clear path. Without a defined order, learners bounce between tutorials, repeat the basics, never reach pointers or memory, and eventually lose momentum. A single structured resource followed to the end solves most of this."
+hideAds: true
 ---
 
 # C++ Book vs Course vs YouTube: Which Actually Works?
@@ -35,7 +36,15 @@ A typical path looks like this: watch a few videos on variables, follow a differ
 
 Drift happens when there is no defined path and no finish line. Every format on this list can either prevent that or make it worse.
 
-<div class="inline-cta"><strong>Want the short path?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is a single structured route through the fundamentals — 87 pages, plain English, just $19.</div>
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">If you choose a book</p>
+    <h3>C++ Better Explained</h3>
+    <p>The beginner book built around plain-English mental models — pointers, memory and OOP finally click. 87 focused pages instead of a 1,000-page textbook.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>
 
 ## Option 1: Books
 

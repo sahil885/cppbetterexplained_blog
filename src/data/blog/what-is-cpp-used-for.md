@@ -14,6 +14,7 @@ faqSchema:
     answer: "If you are starting fresh for systems programming, Rust offers memory safety without a garbage collector. If you want to work on games, existing C++ codebases, or embedded systems where C++ is the industry standard, C++ is the practical choice. Most C++ developers benefit from learning both over time."
 draft: false
 featured: false
+hideAds: true
 ---
 
 # What Is C++ Used For? Real-World Applications Explained
@@ -39,6 +40,16 @@ C++ is used wherever software needs to be **fast**, **close to the hardware**, o
 - Scientific and engineering simulations
 
 Let's dig into the big ones.
+
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">Ready to start?</p>
+    <h3>C++ Better Explained</h3>
+    <p>The beginner book built around plain-English mental models — pointers, memory and OOP finally click. 87 focused pages instead of a 1,000-page textbook.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>
 
 ## Game Development
 

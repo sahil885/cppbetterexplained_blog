@@ -14,6 +14,7 @@ faqSchema:
     answer: "With consistent daily practice, you can reach an entry-level employable standard in 12-18 months. This requires covering the language fundamentals, data structures and algorithms, OOP design, and completing several portfolio projects. C++ roles are competitive so strong fundamentals and practical projects matter."
 draft: false
 featured: false
+hideAds: true
 ---
 
 # How to Start Learning C++ in 2026: A Complete Beginner's Roadmap
@@ -24,9 +25,15 @@ Here's the truth: C++ isn't hard — it's just taught badly. Most tutorials thro
 
 This guide is different. You'll get a clear, structured path from absolute zero to writing real C++ programs, with honest advice on what actually matters and what to skip as a beginner.
 
-<div class="inline-cta"><strong>Short on time?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> packs everything you need into 87 pages of plain-English explanations, analogies, and code diagrams — just $19.</div>
-
-## Why Learn C++ in 2026?
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">Start here</p>
+    <h3>C++ Better Explained</h3>
+    <p>The beginner book built around plain-English mental models — pointers, memory and OOP finally click. 87 focused pages instead of a 1,000-page textbook.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>## Why Learn C++ in 2026?
 
 Before you invest months learning a language, it's worth knowing why C++ is still worth it in 2026.
 

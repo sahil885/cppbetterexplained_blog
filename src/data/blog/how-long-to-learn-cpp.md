@@ -18,6 +18,7 @@ faqSchema:
     answer: "Yes. C++ takes longer to learn than Python because you manage memory manually, the compiler is stricter, and the toolchain is more complex. Where a beginner might be productive in Python in a few weeks, C++ usually takes a few months to reach the same level of comfort — but it rewards you with far more control and performance."
   - question: "Do I need to learn C before C++?"
     answer: "No. You do not need to learn C before C++. C++ is its own modern language, and starting directly with C++ is the faster path for most beginners. Learning C first is only worth it if you specifically need C for embedded systems or a particular course."
+hideAds: true
 ---
 
 # How Long Does It Take to Learn C++? An Honest Timeline
@@ -30,9 +31,15 @@ Here's the honest version, without the hype.
 
 That's the short answer. The rest of this guide breaks down what each stage actually looks like, the factors that speed you up or slow you down, and a realistic weekly plan you can follow.
 
-<div class="inline-cta"><strong>Short on time?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> packs everything you need into 87 pages of plain-English explanations, analogies, and code diagrams — just $19.</div>
-
-## Quick Answer: Timeline by Goal
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">Want to cut the learning curve?</p>
+    <h3>C++ Better Explained</h3>
+    <p>The fundamentals take 2–3 months. This book covers the parts that slow most beginners down — pointers, memory and OOP — in 87 plain-English pages, so you spend that time building instead of stuck.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>## Quick Answer: Timeline by Goal
 
 Different goals mean different timelines. Here's roughly what to expect with consistent practice:
 
