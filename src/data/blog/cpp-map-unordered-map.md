@@ -190,6 +190,8 @@ std::cout << ages.empty();  // false (0)
 
 ---
 
+<div class="inline-cta"><strong>Shaky on the fundamentals underneath this?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers pointers, memory and OOP in 87 plain-English pages, with diagrams. Just $19.</div>
+
 ## std::unordered_map
 
 `std::unordered_map` is the hash-based associative container. It does not keep keys sorted. Internally it uses a hash table, which gives it average O(1) lookup and insertion — faster than `std::map`'s O(log n).

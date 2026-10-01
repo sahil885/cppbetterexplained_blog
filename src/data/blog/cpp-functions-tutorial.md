@@ -160,6 +160,8 @@ int main() {
 
 ---
 
+<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## Parameters: Pass by Value vs. Pass by Reference
 
 How C++ passes data to functions is one of the most important concepts to understand, because it determines whether the function can modify the caller's variables.

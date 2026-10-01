@@ -122,6 +122,8 @@ The name convention is `FILENAME_H` in uppercase. The first time `math.h` is inc
 
 ---
 
+<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## `#pragma once` (The Simpler Alternative)
 
 ```cpp

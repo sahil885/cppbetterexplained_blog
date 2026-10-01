@@ -174,6 +174,8 @@ inline int square(int x) { return x * x; }
 
 ---
 
+<div class="inline-cta"><strong>Want the why behind the syntax?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the concepts this cheat sheet summarises — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## Pointers and References
 
 ```cpp

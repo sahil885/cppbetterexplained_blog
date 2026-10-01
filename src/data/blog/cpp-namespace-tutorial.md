@@ -89,6 +89,8 @@ int main() {
 
 ---
 
+<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## Why `using namespace std` Is Controversial
 
 It's convenient for small programs, but it has real downsides:

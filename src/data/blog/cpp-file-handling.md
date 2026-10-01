@@ -127,6 +127,8 @@ The `>>` operator reads whitespace-delimited tokens, so it is useful for reading
 
 ---
 
+<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## Appending to a File
 
 By default, `ofstream` overwrites the file. To add to the end without destroying existing content, use `ios::app`:

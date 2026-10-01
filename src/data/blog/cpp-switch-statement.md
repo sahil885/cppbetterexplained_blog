@@ -118,6 +118,8 @@ This is almost always a bug. Always add `break` unless you have a deliberate rea
 
 ---
 
+<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## The default Case
 
 `default` catches any value that does not match a named case. It is optional but strongly recommended — without it, unmatched values silently do nothing:

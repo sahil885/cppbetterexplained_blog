@@ -94,6 +94,8 @@ You should see `Hello, World!` printed in the terminal. You're up and running.
 
 ---
 
+<div class="inline-cta"><strong>Just getting started?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you through the fundamentals once your compiler works — with pointers, memory and OOP explained properly — in 87 plain-English pages. Just $19.</div>
+
 ## Setup on Mac
 
 ### Step 1: Install the Compiler (Xcode Command Line Tools)

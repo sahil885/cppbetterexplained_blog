@@ -105,6 +105,8 @@ int main() {
 
 ---
 
+<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## Line 4: `std::cout << "Hello, World!" << std::endl;`
 
 This is the actual work — printing text to the screen. It's also the most symbol-dense line, so let's unpack every part.
