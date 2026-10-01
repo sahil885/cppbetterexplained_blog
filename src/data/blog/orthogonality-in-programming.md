@@ -35,6 +35,8 @@ Software borrows the term to describe the same idea. **In an orthogonal design, 
 
 The concept was popularized for programmers by Andrew Hunt and David Thomas in _The Pragmatic Programmer_, where they describe two orthogonal components as ones where "changes in one do not affect any of the others."
 
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the concepts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## A Concrete Example
 
 Imagine a car. The steering wheel controls direction. The accelerator controls speed. These two controls are orthogonal — you can turn while going any speed, and speed up while pointing in any direction. They don't interfere.

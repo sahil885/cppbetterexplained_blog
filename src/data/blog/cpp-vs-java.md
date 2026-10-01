@@ -40,6 +40,8 @@ The fundamental difference between C++ and Java comes down to **control vs. conv
 
 **Java is fast enough for most things.** The JVM's JIT (Just-In-Time) compiler optimises code at runtime, and for typical business applications, the performance difference is imperceptible. Where Java struggles is in latency-sensitive applications — garbage collection pauses can cause unpredictable delays.
 
+<div class="inline-cta"><strong>Decided on C++?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is the beginner guide to the parts of C++ that Java hides from you — pointers and memory — in 87 plain-English pages. Just $19.</div>
+
 ## Memory Management
 
 This is the biggest practical difference for day-to-day coding.

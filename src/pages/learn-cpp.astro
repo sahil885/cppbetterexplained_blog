@@ -10,6 +10,7 @@ const canonicalURL = new URL("/learn-cpp/", SITE.website);
 ---
 
 <Layout
+  hideAds
   title={title}
   description={description}
   canonicalURL={canonicalURL}
@@ -1171,11 +1172,23 @@ const canonicalURL = new URL("/learn-cpp/", SITE.website);
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email }),
+        body: JSON.stringify({ email: email, list: "checklist" }),
+        keepalive: true,
       });
       if (res.ok) {
         msg.textContent = "You're in! Check your inbox for the checklist.";
         form.reset();
+        if (typeof window.gtag === "function") {
+          window.gtag("event", "optin_submit", { location: "learn_cpp" });
+        }
+        try {
+          localStorage.setItem("wm_dismissed", String(Date.now()));
+        } catch {
+          /* storage unavailable */
+        }
+        setTimeout(function () {
+          window.location.href = "https://start.cppbetterexplained.com/tw-sales-page";
+        }, 1200);
       } else {
         msg.textContent = "Something went wrong — please try again.";
       }

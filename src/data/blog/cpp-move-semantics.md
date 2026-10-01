@@ -162,6 +162,8 @@ When creating `c`, the `Buffer(200)` temporary is an rvalue — C++ picks the mo
 
 ---
 
+<div class="inline-cta"><strong>Shaky on the fundamentals underneath this?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers pointers, memory and OOP in 87 plain-English pages, with diagrams. Just $19.</div>
+
 ## The Move Constructor
 
 The move constructor follows this pattern:

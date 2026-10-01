@@ -100,6 +100,8 @@ int main() {
 
 ---
 
+<div class="inline-cta"><strong>Building your first programs?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the concepts behind them — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## Version 3: With Functions
 
 Splitting the calculation into a function makes the code easier to test and extend:

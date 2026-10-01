@@ -6,7 +6,7 @@ import LinkButton from "@/components/LinkButton.astro";
 import { SITE } from "@/config";
 ---
 
-<Layout title={`404 Not Found | ${SITE.title}`}>
+<Layout hideAds title={`404 Not Found | ${SITE.title}`}>
   <Header />
 
   <main
@@ -23,6 +23,45 @@ import { SITE } from "@/config";
       >
         Go back home
       </LinkButton>
+      <p class="mt-2 text-sm opacity-75">
+        Or pick up where most readers start:
+      </p>
+      <ul class="mt-2 space-y-1 text-center">
+        <li>
+          <a class="text-accent underline" href="/learn-cpp/"
+            >The C++ learning roadmap</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-accent underline"
+            href="/posts/best-cpp-books-resources/"
+            >Best C++ books for beginners</a
+          >
+        </li>
+        <li>
+          <a class="text-accent underline" href="/posts/">All tutorials</a>
+        </li>
+      </ul>
+      <div class="featured-book mt-8 max-w-xl text-left">
+        <img
+          src="/book-cover.jpg"
+          alt="C++ Better Explained ebook cover"
+          width="150"
+          height="225"
+          loading="lazy"
+        />
+        <div>
+          <p class="fb-eyebrow">Learning C++?</p>
+          <p class="text-lg font-semibold">C++ Better Explained</p>
+          <p>Pointers, memory and OOP explained in 87 plain-English pages.</p>
+          <a
+            class="fb-cta"
+            href="https://start.cppbetterexplained.com/tw-sales-page"
+            >Get the Book — $19 →</a
+          >
+        </div>
+      </div>
     </div>
   </main>
 

@@ -149,6 +149,8 @@ s[0] = 'H';             // Fine
 
 ---
 
+<div class="inline-cta"><strong>Most segfaults are pointer and memory mistakes.</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains how memory actually works, with diagrams, in 87 plain-English pages. Just $19.</div>
+
 ## How to Find a Segfault
 
 ### AddressSanitizer (Best Option)

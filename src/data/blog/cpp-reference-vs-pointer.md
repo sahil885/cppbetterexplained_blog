@@ -109,6 +109,8 @@ cout << &ref;  // Same address — they're the same object
 
 ---
 
+<div class="inline-cta"><strong>Pointers still fuzzy?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains pointers and references with diagrams and plain-English analogies, in 87 pages. Just $19.</div>
+
 ## Using References in Function Parameters
 
 This is the most common use of references — passing by reference to avoid copying and to allow modification:

@@ -151,6 +151,8 @@ std::cout << false << std::endl;  // prints: false
 
 When to use it: flags, conditions, on/off states, any yes/no decision.
 
+<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## Declaring Variables: The Rules
 
 **Every variable needs a type and a name:**

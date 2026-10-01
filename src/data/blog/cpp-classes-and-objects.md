@@ -165,6 +165,8 @@ This is called **encapsulation** — hiding the internal details and exposing on
 
 ---
 
+<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## Constructors: Initializing Objects
 
 In the examples so far, you had to set each field manually after creating the object. A **constructor** solves this — it's a special function that runs automatically when an object is created.

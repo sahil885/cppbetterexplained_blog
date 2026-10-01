@@ -23,12 +23,6 @@ If you want to fast-track your learning, I wrote [**C++ Better Explained: The Bo
 
 ---
 
-## The Online Course
-
-The [**C++ Better Explained Online Course**](https://start.cppbetterexplained.com/mentorship) goes deeper, with video lessons, exercises, and direct support. It's designed for people who want structured learning with accountability — not just articles to read.
-
----
-
 ## Get in Touch
 
 Have a question, suggestion, or just want to say hi? Email me at **sahilbora885@gmail.com**

@@ -155,6 +155,8 @@ if (x == 10) {  // Correct: compares x to 10
 
 ---
 
+<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+
 ## Logical Operators
 
 Combine multiple conditions with logical operators:
