@@ -280,6 +280,8 @@ If `A.h` includes `B.h` and `B.h` includes `A.h`, you have a circular dependency
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — declarations vs definitions
 - [C++ Classes and Objects](/posts/cpp-classes-and-objects/) — class definitions live in headers
 - [C++ Error Messages Explained](/posts/cpp-error-messages/) — fixing "undefined reference" and "redefinition" errors
+- [using namespace std in C++](/posts/cpp-using-namespace-std/) — what it does and why it's discouraged.
+- [Fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/) — the six usual causes.
 
 ---
 

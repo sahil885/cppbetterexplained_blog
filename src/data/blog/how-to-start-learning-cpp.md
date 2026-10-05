@@ -320,3 +320,5 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — a realistic, goal-based timeline from your first program to job-ready.
 - [Is C++ Primer Good for Beginners?](/posts/is-cpp-primer-good-for-beginners/) — an honest review before you buy
 - [C++ Primer vs Programming: Principles and Practice](/posts/cpp-primer-vs-programming-principles-and-practice/) — which to read first.
+- [Online C++ Compilers](/posts/cpp-online-compiler/) — run C++ in your browser, no install.
+- [How to Open and Run a .cpp File](/posts/how-to-run-cpp-file/) — compiling and running on your own machine.

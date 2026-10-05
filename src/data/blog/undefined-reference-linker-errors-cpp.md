@@ -648,4 +648,6 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [Debugging C++ with GDB: A Practical Step-by-Step Guide](/posts/debugging-cpp-gdb/) — after fixing linker errors, learn GDB to tackle runtime bugs with the same systematic approach.
 - [Breakdown of a Simple C++ Program Step by Step](/posts/breakdown-simple-cpp-program/) — understanding the compilation and linking pipeline prevents most undefined reference errors.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — build errors and compilation questions appear regularly in C++ technical interviews.
+- [Fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/) — the six usual causes.
+- [How to Open and Run a .cpp File](/posts/how-to-run-cpp-file/) — compiling and running on your own machine.
 

@@ -36,7 +36,7 @@ If you just want to experiment before committing to a local setup, use an online
 - **[onlinegdb.com](https://www.onlinegdb.com/online_c++_compiler)** — full compiler with debugger, no account needed
 - **[godbolt.org](https://godbolt.org/)** — shows you assembly output alongside your C++ code, great for learning
 
-These are fine for learning and small snippets. When you're ready to build real projects, come back and do the local setup below.
+These are fine for learning and small snippets. When you're ready to build real projects, come back and do the local setup below. For a side-by-side comparison of the options, see [the best online C++ compilers](/posts/cpp-online-compiler/).
 
 ---
 
@@ -225,6 +225,8 @@ Adding `-Wall -Wextra` is particularly valuable when learning — the compiler w
 ## Next Steps
 
 Now that your environment is working, the logical next step is understanding exactly what every line of that Hello World program means. The [C++ Hello World explained line by line](/posts/cpp-hello-world-explained/) breaks it down completely.
+
+Already have a `.cpp` file you need to run? See [how to open and run a .cpp file](/posts/how-to-run-cpp-file/).
 
 Or if you want the full structured path from here, follow the [C++ learning roadmap →](/learn-cpp/)
 

@@ -171,6 +171,7 @@ int main() {
 - [C++ Classes and Objects: A Beginner's Guide to OOP](/posts/cpp-classes-and-objects/)
 - [C++ Static Keyword Explained: Static Variables and Functions](/posts/cpp-static-keyword/)
 - [C++ Header Files Explained: Declarations, Definitions, and Include Guards](/posts/cpp-header-files/)
+- [using namespace std in C++](/posts/cpp-using-namespace-std/) — what it does and why it's discouraged.
 
 ---
 

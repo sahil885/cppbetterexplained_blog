@@ -118,6 +118,9 @@ If a header file has `using namespace std;`, every `.cpp` file that includes tha
 
 ---
 
+
+The full story, with the collisions it causes and the alternatives: [using namespace std in C++](/posts/cpp-using-namespace-std/).
+
 ## Selectively Using Names
 
 Instead of pulling in all of `std`, you can import just what you need:
@@ -269,6 +272,7 @@ namespace MyLib {
 - [C++ Header Files](/posts/cpp-header-files/) — why you should never put `using namespace std` in headers
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — functions and scope
 - [C++ Static Keyword](/posts/cpp-static-keyword/) — static vs anonymous namespaces
+- [using namespace std in C++](/posts/cpp-using-namespace-std/) — what it does and why it's discouraged.
 
 ---
 
