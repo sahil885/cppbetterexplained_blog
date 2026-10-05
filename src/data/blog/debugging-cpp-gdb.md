@@ -17,6 +17,8 @@ featured: false
 
 # Debugging C++ with GDB: A Practical Step-by-Step Guide
 
+> **Looking for OnlineGDB, the online C++ compiler?** This page is about the GDB *debugger*. To compile and run C++ in your browser, see [the best online C++ compilers](/posts/cpp-online-compiler/).
+
 ## Introduction: Why Debugging Skill Separates Good Developers from Great Ones
 
 Debugging is an art form. A program that crashes with a cryptic error message, a memory leak that only manifests under load, a segmentation fault that vanishes when you add print statements—these are the battles that separate developers who struggle from those who thrive.
@@ -510,4 +512,5 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [How to Fix Undefined Reference Errors in C++ (Linker Errors Explained)](/posts/undefined-reference-linker-errors-cpp/) — linker errors are among the most confusing bugs in C++; learn to fix them systematically.
 - [Breakdown of a Simple C++ Program Step by Step](/posts/breakdown-simple-cpp-program/) — understanding the compilation pipeline helps you debug faster.
 - [Exception Handling in C++: Best Practices for Writing Robust, Error-Free Code](/posts/exception-handling-cpp/) — combine GDB debugging skills with exception handling to write bulletproof C++ code.
+- [Online C++ Compilers](/posts/cpp-online-compiler/) — run C++ in your browser, no install.
 

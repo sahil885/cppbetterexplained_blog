@@ -520,3 +520,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Conditionals Tutorial: if, else, and switch Explained](/posts/cpp-conditionals-tutorial/) — conditional logic lives inside functions; learn how to branch based on inputs.
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — loops and functions are used together constantly; wrapping a loop in a function is a core pattern.
 - [C++ Arrays Tutorial: Store and Access Multiple Values](/posts/cpp-arrays-tutorial/) — passing arrays to functions is the next important concept to learn.
+- [Fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/) — the six usual causes.

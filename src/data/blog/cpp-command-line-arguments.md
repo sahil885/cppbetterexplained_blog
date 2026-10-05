@@ -310,3 +310,4 @@ Want every C++ concept explained this clearly, in order, from the ground up?
 - [C++ String to int Conversion: stoi, atoi, and stringstream](/posts/cpp-string-to-int/) — turn argument text into numbers safely.
 - [C++ Vector Tutorial: The Complete Guide to std::vector](/posts/cpp-vector-tutorial/) — store and process a collection of arguments.
 - [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the full structured learning path.
+- [How to Open and Run a .cpp File](/posts/how-to-run-cpp-file/) — compiling and running on your own machine.

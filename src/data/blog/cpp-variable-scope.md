@@ -241,6 +241,7 @@ You get a global's lifetime with a local's visibility — often exactly what som
 - [The static Keyword in C++](/posts/cpp-static-keyword/)
 - [C++ Scope Resolution Operator](/posts/cpp-scope-resolution-operator/)
 - [const vs constexpr in C++](/posts/cpp-const-vs-constexpr/)
+- [Fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/) — the six usual causes.
 
 ---
 

@@ -320,3 +320,5 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — bookmark this for whenever you need a fast reminder on syntax.
 - [C++ Namespace Tutorial: using namespace std Explained](/posts/cpp-namespace-tutorial/) — "using namespace std" appears in every Hello World; learn exactly what it does and when to avoid it.
 - [C++ File Handling: Reading and Writing Files with fstream](/posts/cpp-file-handling/) — once you can print to the screen, the next step is reading and writing files with fstream.
+- [How to Open and Run a .cpp File](/posts/how-to-run-cpp-file/) — compiling and running on your own machine.
+- [using namespace std in C++](/posts/cpp-using-namespace-std/) — what it does and why it's discouraged.

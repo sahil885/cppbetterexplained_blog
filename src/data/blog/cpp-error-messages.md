@@ -93,6 +93,9 @@ Variables declared inside `{}` only exist inside those braces. Declare `x` befor
 
 ---
 
+
+Full walkthrough of every cause: [how to fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/).
+
 ## 'undefined reference to'
 
 **What it means**: This is a **linker** error, not a compiler error. The difference matters. The compiler found a declaration (a promise that something exists) but the linker couldn't find the actual implementation.
@@ -331,6 +334,7 @@ Fix: check pointer validity before dereferencing, check array bounds, and use to
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — understanding function declarations vs definitions
 - [C++ Pointers](/posts/pointers-in-cpp/) — understanding pointers to prevent segfaults
 - [Exception Handling in C++](/posts/exception-handling-cpp/) — handling runtime errors gracefully
+- [Fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/) — the six usual causes.
 
 ---
 
