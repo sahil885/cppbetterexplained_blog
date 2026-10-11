@@ -224,3 +224,4 @@ Scope, declarations and headers are the foundation everything else builds on. Th
 - [using namespace std in C++](/posts/cpp-using-namespace-std/) — the missing-`std::` problem in depth.
 - [Undefined Reference Errors](/posts/undefined-reference-linker-errors-cpp/) — when it compiles but won't link.
 - [Header Files in C++](/posts/cpp-header-files/) — sharing declarations between files.
+- [How to Fix Expected ';' Errors](/posts/cpp-expected-semicolon/) — the other error every beginner hits.

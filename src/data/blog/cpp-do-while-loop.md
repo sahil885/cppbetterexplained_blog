@@ -30,7 +30,7 @@ do {
 //         ^--- note the semicolon — required!
 ```
 
-Don't forget the semicolon after the closing `while (condition)`. Forgetting it is the #1 syntax mistake with `do-while`.
+Don't forget the semicolon after the closing `while (condition)`. Forgetting it is the #1 syntax mistake with `do-while`, and it causes an [expected ';' error](/posts/cpp-expected-semicolon/).
 
 ---
 

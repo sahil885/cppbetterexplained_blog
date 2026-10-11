@@ -141,6 +141,7 @@ Forgetting the `n <= 1` check is the classic bug — without it, 1 is wrongly re
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — writing reusable helpers like isPrime
 - [C++ Math Functions](/posts/cpp-math-functions/) — sqrt, pow, and the cmath library
 - [C++ cin User Input](/posts/cpp-cin-user-input/) — reading numbers from the keyboard
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

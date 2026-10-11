@@ -284,6 +284,7 @@ Once it runs, these each teach something new:
 - [enum class vs enum in C++](/posts/cpp-enum-class-vs-enum/)
 - [C++ cin.ignore and Clearing the Input Buffer](/posts/cpp-cin-ignore-clear-buffer/)
 - [C++ Beginner Projects](/posts/cpp-beginner-projects/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

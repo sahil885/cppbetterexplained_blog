@@ -239,6 +239,7 @@ The switch-plus-functions pattern scales well up to about eight options. Beyond 
 - [cin.ignore and Clearing the Input Buffer](/posts/cpp-cin-ignore-clear-buffer/)
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/)
 - [Calculator Program in C++](/posts/cpp-calculator-program/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

@@ -231,6 +231,7 @@ Learn selection sort because it teaches the nested-loop pattern cleanly and beca
 - [C++ Sort Algorithm](/posts/cpp-sort-algorithm/) — what to actually use in real code
 - [Finding Max and Min in C++](/posts/cpp-find-max-min/) — the inner loop, on its own
 - [C++ Nested Loops](/posts/cpp-nested-loops/) — the pattern this algorithm is built on
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

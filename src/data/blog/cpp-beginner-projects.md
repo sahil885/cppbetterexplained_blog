@@ -45,6 +45,8 @@ For each project, the approach is:
 
 Don't just read — type the code yourself. Even copying code by hand forces your brain to process it differently than skimming.
 
+If these feel like too big a jump, start with the shorter exercises in [C++ programs for beginners](/posts/cpp-programs-for-beginners/) — 40+ small programs, from even-or-odd to tic tac toe.
+
 ---
 
 <div class="inline-cta"><strong>Building your first programs?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the concepts behind them — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
@@ -127,3 +129,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 
 - [Can You Learn C++ on Your Own? A Self-Taught Guide](/posts/learn-cpp-on-your-own/) — the realistic self-taught path, in order.
 - [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — job demand, salaries, and who should skip it.
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest.

@@ -543,6 +543,7 @@ If you enjoyed this project, here are some more to try:
 - [C++ Traffic Light Project](/posts/traffic-light-project/) — another full project using C++ classes with bitwise operators and command-line arguments.
 - [How to Create a Lottery Program in C++](/posts/lottery-program-cpp/) — a beginner-friendly project using arrays, loops, and random number generation.
 - [Merge Sort Algorithm in C++](/posts/merge-sort-algorithm-cpp/) — go deeper on algorithms and sorting, a key skill for writing efficient C++ code.
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest.
 
 ---
 

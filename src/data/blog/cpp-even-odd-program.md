@@ -139,6 +139,7 @@ This is slightly faster, but `% 2` is just as efficient on modern compilers and 
 - [C++ cin User Input](/posts/cpp-cin-user-input/) — reading values from the keyboard
 - [C++ Ternary Operator](/posts/cpp-ternary-operator/) — the one-line if/else
 - [C++ Prime Number Program](/posts/cpp-prime-number-program/) — another classic beginner build
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

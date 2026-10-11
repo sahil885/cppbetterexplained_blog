@@ -278,6 +278,7 @@ int main() {
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — using vectors to store scores
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — organizing code into functions
 - [C++ Calculator Program](/posts/cpp-calculator-program/) — another beginner project
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

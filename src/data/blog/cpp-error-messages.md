@@ -194,6 +194,8 @@ Other causes:
 - Mismatched braces causing the parser to lose track of where statements end
 - A typo that causes the parser to misinterpret the code structure
 
+Full walkthrough of every cause, with the exact GCC, Clang and Visual Studio messages: [how to fix expected ';' errors](/posts/cpp-expected-semicolon/).
+
 <div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
 
 ---
@@ -335,6 +337,7 @@ Fix: check pointer validity before dereferencing, check array bounds, and use to
 - [C++ Pointers](/posts/pointers-in-cpp/) — understanding pointers to prevent segfaults
 - [Exception Handling in C++](/posts/exception-handling-cpp/) — handling runtime errors gracefully
 - [Fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/) — the six usual causes.
+- [Fix expected ';' errors](/posts/cpp-expected-semicolon/) — every cause, for every compiler.
 
 ---
 

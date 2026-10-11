@@ -253,6 +253,7 @@ Number two is the natural next step, and it is what turns this from a class exer
 - [Constructors and Destructors in C++](/posts/cpp-constructors-destructors/)
 - [Inheritance in C++](/posts/cpp-inheritance/)
 - [Blackjack in C++ Using Classes](/posts/blackjack-cpp-using-classes/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

@@ -225,6 +225,7 @@ For a beginner, start with the iterative approach. Once you're comfortable with 
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/)
 - [C++ Loops Tutorial: for, while, and do-while](/posts/cpp-loops-tutorial/)
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

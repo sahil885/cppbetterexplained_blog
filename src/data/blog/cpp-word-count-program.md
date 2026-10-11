@@ -229,6 +229,7 @@ All four are worth reading once, because the `inWord` flag pattern in Method 2 s
 - [Count Vowels in a String in C++](/posts/cpp-count-vowels-string/)
 - [Using getline for String Input](/posts/cpp-getline-string-input/)
 - [map vs unordered_map in C++](/posts/cpp-map-unordered-map/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

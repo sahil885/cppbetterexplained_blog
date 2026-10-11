@@ -139,6 +139,7 @@ The most frequent bug is checking only `year % 4 == 0` and forgetting the centur
 - [Even or Odd Program in C++](/posts/cpp-even-odd-program/) — the simplest modulo check
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — packaging logic like isLeapYear
 - [C++ User Input with cin](/posts/cpp-cin-user-input/) — reading the year from the keyboard
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

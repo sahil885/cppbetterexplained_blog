@@ -128,6 +128,7 @@ The number-one bug is **checking 3 or 5 before 15** — you'll never see `FizzBu
 - [C++ Loops Tutorial](/posts/cpp-loops-tutorial/) — for and while loops in depth
 - [C++ Even or Odd Program](/posts/cpp-even-odd-program/) — another modulo classic
 - [C++ Ternary Operator](/posts/cpp-ternary-operator/) — tidy up small conditionals
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

@@ -200,6 +200,7 @@ Want to keep building with C++? Here are some related tutorials:
 - [Blackjack C++ Using Classes](/posts/blackjack-cpp-using-classes/) — build a complete card game using C++ classes, a great companion to this project.
 - [How to Create a Lottery Program in C++](/posts/lottery-program-cpp/) — another beginner-friendly project using arrays and random number generation.
 - [Breakdown of a Simple C++ Program](/posts/breakdown-simple-cpp-program/) — a great starting point if you want to understand the fundamentals of every line of C++ code.
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest.
 
 ---
 

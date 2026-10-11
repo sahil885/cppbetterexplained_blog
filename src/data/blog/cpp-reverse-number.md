@@ -127,6 +127,7 @@ The "peel a digit, shrink the number" loop is a building block. Swap the `revers
 - [Integer Division in C++](/posts/cpp-integer-division/) — why number / 10 drops a digit
 - [Palindrome Program in C++](/posts/cpp-palindrome-program/) — reverse and compare
 - [C++ Loops Tutorial](/posts/cpp-loops-tutorial/) — while loops in depth
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

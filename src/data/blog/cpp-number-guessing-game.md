@@ -151,6 +151,7 @@ One small project, five fundamentals: random number generation, while and do-whi
 - [C++ Conditionals Tutorial: if, else, and switch Explained](/posts/cpp-conditionals-tutorial/)
 - [C++ User Input with cin: Reading from the Keyboard](/posts/cpp-cin-user-input/)
 - [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

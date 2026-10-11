@@ -136,6 +136,7 @@ This nests the digit-sum loop inside an outer loop that keeps feeding the result
 - [C++ Recursion Tutorial](/posts/cpp-recursion-tutorial/) — the base case and recursive step
 - [Integer Division in C++](/posts/cpp-integer-division/) — why number / 10 drops a digit
 - [C++ Loops Tutorial](/posts/cpp-loops-tutorial/) — while loops explained
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

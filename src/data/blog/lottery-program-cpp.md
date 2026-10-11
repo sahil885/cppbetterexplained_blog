@@ -202,6 +202,7 @@ Ready to try more C++ projects? Here are some great next steps:
 - [Blackjack C++ Using Classes](/posts/blackjack-cpp-using-classes/) — level up your project skills by building a full card game with object-oriented design.
 - [C++ Traffic Light Project](/posts/traffic-light-project/) — another fun project using C++ classes and bitwise operators.
 - [Breakdown of a Simple C++ Program](/posts/breakdown-simple-cpp-program/) — go back to basics and make sure you understand every line of a C++ program.
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest.
 
 ---
 

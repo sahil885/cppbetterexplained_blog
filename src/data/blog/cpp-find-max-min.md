@@ -165,6 +165,7 @@ This is exactly what `std::max_element` does internally. In real code, prefer th
 - [Sum of Array Elements in C++](/posts/cpp-sum-of-array-elements/) — the sibling task to finding extremes
 - [C++ Iterators Explained](/posts/cpp-iterators/) — why max_element returns an iterator
 - [C++ Conditionals Tutorial](/posts/cpp-conditionals-tutorial/) — the if behind the by-hand version
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

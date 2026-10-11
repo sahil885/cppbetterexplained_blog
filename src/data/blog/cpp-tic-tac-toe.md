@@ -339,6 +339,7 @@ Number 4 is the one that will teach you the most — it's your first real game A
 - [How to Clear the cin Buffer](/posts/cpp-cin-ignore-clear-buffer/) — handling bad input properly
 - [C++ Ternary Operator](/posts/cpp-ternary-operator/) — the one-line player switch
 - [C++ Beginner Projects](/posts/cpp-beginner-projects/) — what to build next
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

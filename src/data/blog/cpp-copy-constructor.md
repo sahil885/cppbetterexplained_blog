@@ -84,6 +84,8 @@ int main() {
 
 The compiler copies the `name` pointer — the address — not the data it points to. Now `p1.name` and `p2.name` point to the same block of heap memory. When either object is destroyed, the memory is freed; when the second destructor runs, it tries to free already-freed memory. This is undefined behaviour and often causes a crash.
 
+To see it happen — and which standard types copy deeply and which don't — read [shallow copy vs deep copy in C++](/posts/cpp-shallow-vs-deep-copy/).
+
 ---
 
 ## Writing a Deep Copy Constructor
@@ -219,6 +221,7 @@ int main() {
 - [Memory Management in C++: Heap vs Stack, new/delete, and Memory Leaks](/posts/memory-management-cpp/)
 - [Smart Pointers in Modern C++: unique_ptr, shared_ptr, and weak_ptr](/posts/smart-pointers-cpp/)
 - [C++ Move Semantics Explained: rvalue References, std::move, and Performance](/posts/cpp-move-semantics/)
+- [Shallow Copy vs Deep Copy in C++ (With Examples)](/posts/cpp-shallow-vs-deep-copy/)
 
 ---
 

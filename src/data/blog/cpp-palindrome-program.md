@@ -124,6 +124,7 @@ Case sensitivity trips people up: `"Radar"` fails a naive check because `'R'` an
 - [C++ Conditionals Tutorial](/posts/cpp-conditionals-tutorial/) — making decisions with if
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — writing reusable checks
 - [C++ Sort Algorithm](/posts/cpp-sort-algorithm/) — more std::algorithm tools
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

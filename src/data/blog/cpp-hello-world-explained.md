@@ -173,7 +173,7 @@ std::cout << "Line 2" << "\n";       // newline only (usually fine)
 
 ### The `;` Semicolon
 
-C++ statements end with a semicolon. This is how the compiler knows where one instruction ends and the next begins. Forgetting a semicolon is one of the most common beginner errors — the compiler error will mention the *next* line rather than the line with the missing semicolon, which confuses people at first.
+C++ statements end with a semicolon. This is how the compiler knows where one instruction ends and the next begins. Forgetting a semicolon is one of the most common beginner errors — the compiler error will mention the *next* line rather than the line with the missing semicolon, which confuses people at first. See [how to fix expected ';' errors](/posts/cpp-expected-semicolon/) for every version of the message.
 
 ---
 

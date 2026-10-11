@@ -267,6 +267,7 @@ if (cin.fail()) {
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — organising the calculator into functions
 - [C++ User Input with cin](/posts/cpp-cin-user-input/) — reading keyboard input
 - [C++ Grade Calculator](/posts/cpp-grade-calculator/) — another beginner project to build
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

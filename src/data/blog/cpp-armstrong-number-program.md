@@ -215,6 +215,7 @@ Use `long long` for `sum` too. Signed integer overflow is undefined behaviour, n
 - [C++ Prime Number Program](/posts/cpp-prime-number-program/)
 - [C++ Exponents: Why ^ Isn't Power and How to Use pow()](/posts/cpp-exponent-power/)
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

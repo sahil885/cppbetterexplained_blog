@@ -245,3 +245,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Projects for Beginners: 4 Guided Projects with Full Source Code](/posts/cpp-beginner-projects/) — apply what you've learned by building real programs.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — sorting algorithms appear regularly in C++ technical interviews.
 - [Learn C++ from Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the full structured path from first program to advanced topics.
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest.

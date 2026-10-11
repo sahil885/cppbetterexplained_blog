@@ -143,6 +143,7 @@ For small fixed powers like squares and cubes, plain multiplication is both fast
 - [C++ Bitwise Operators](/posts/cpp-bitwise-operators/) — what ^ really means
 - [C++ Type Casting Explained](/posts/cpp-type-casting/) — converting double results to int
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — double vs int precision
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

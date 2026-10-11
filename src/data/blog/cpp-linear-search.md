@@ -195,6 +195,7 @@ The `else return -1;` fires on the very first mismatch, so the function only eve
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/)
 - [How to Find an Element in a Vector in C++ (std::find)](/posts/cpp-find-in-vector/)
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

@@ -210,6 +210,7 @@ English treats `y` as a vowel in *rhythm* and a consonant in *yellow*, and no si
 - [C++ Switch Statement](/posts/cpp-switch-statement/)
 - [C++ Lambda Functions](/posts/cpp-lambda-functions/)
 - [C++ Uppercase and Lowercase Conversion](/posts/cpp-uppercase-lowercase/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 
