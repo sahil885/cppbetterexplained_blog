@@ -64,7 +64,7 @@ int main() {
 
 This program crashes. Why? The compiler's default copy just copies the **pointer**, so `a.data` and `b.data` point at the *same* memory. When both objects are destroyed, `delete[]` runs twice on that one block — a "double free" that corrupts the heap.
 
-This is called a **shallow copy**. What we need is a **deep copy**: each object gets its own independent memory.
+This is called a **shallow copy**. What we need is a **deep copy**: each object gets its own independent memory. See [shallow copy vs deep copy](/posts/cpp-shallow-vs-deep-copy/) for a side-by-side comparison.
 
 ---
 
@@ -178,6 +178,7 @@ If you find yourself writing a destructor because your class owns something raw,
 - [Smart Pointers in C++](/posts/smart-pointers-cpp/) — the modern way to own resources safely
 - [C++ Move Semantics](/posts/cpp-move-semantics/) — the moves that turn Three into Five
 - [Memory Management in C++](/posts/memory-management-cpp/) — new, delete, and why copies matter
+- [Shallow Copy vs Deep Copy](/posts/cpp-shallow-vs-deep-copy/) — the difference, with examples
 
 ---
 

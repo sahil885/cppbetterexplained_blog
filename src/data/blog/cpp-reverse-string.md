@@ -149,6 +149,7 @@ Use `std::reverse` in real code, the two-pointer version in interviews when aske
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/)
 - [C++ Recursion Tutorial: How Recursive Functions Work](/posts/cpp-recursion-tutorial/)
 - [C++ Iterators Explained: How to Traverse STL Containers for Beginners](/posts/cpp-iterators/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

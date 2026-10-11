@@ -126,4 +126,5 @@ If the hardest part of self-teaching is knowing what to learn next, that is exac
 - [C++ Book vs Course vs YouTube: Which Actually Works?](/posts/cpp-book-vs-course-vs-youtube/) — choosing your primary resource.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — ranked honestly, free options included.
 - [C++ Projects for Beginners](/posts/cpp-beginner-projects/) — guided projects with full source code.
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ small practice programs, easiest to hardest.
 - [Is C++ Primer Good for Beginners?](/posts/is-cpp-primer-good-for-beginners/) — whether the classic textbook suits self-study

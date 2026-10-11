@@ -271,7 +271,7 @@ Box b2 = b1;       // Copy constructor
 Box b3(b1);        // Also copy constructor
 ```
 
-If you don't define a copy constructor, the compiler generates one that copies member-by-member (a "shallow copy"). For classes that own heap memory, shallow copy is dangerous — both objects point to the same memory, so one destructor frees what the other still uses.
+If you don't define a copy constructor, the compiler generates one that copies member-by-member (a "shallow copy"). For classes that own heap memory, shallow copy is dangerous — both objects point to the same memory, so one destructor frees what the other still uses. Here's [the difference between shallow and deep copy](/posts/cpp-shallow-vs-deep-copy/), with examples.
 
 ---
 

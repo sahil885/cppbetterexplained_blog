@@ -251,6 +251,7 @@ Notice this version never builds a second matrix at all — it just **prints** i
 - [2D Vectors in C++](/posts/cpp-2d-vector/)
 - [Nested Loops in C++](/posts/cpp-nested-loops/)
 - [How to Swap Two Numbers in C++](/posts/cpp-swap-two-numbers/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

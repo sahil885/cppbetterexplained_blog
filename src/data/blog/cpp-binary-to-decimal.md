@@ -211,6 +211,7 @@ Write the loop once so you understand what the library is doing. Then use `std::
 - [C++ char to int Conversion: The Right Way (and the Trap)](/posts/cpp-char-to-int/)
 - [C++ stringstream Tutorial: Parse and Build Strings Like a Pro](/posts/cpp-stringstream/)
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

@@ -280,6 +280,6 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ## Related Articles
 - [C++ Conditionals Tutorial: if, else, and switch Explained](/posts/cpp-conditionals-tutorial/) — covers if/else alongside switch for a complete picture of C++ branching.
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — the natural next topic after mastering conditionals.
-- [C++ Enums: How to Use enum and enum class](/posts/cpp-enums-explained/) — switch and enums work together beautifully — learn enums here.
+- [C++ Enum Tutorial: enum and enum class Explained](/posts/cpp-enum-tutorial/) — switch and enums work together beautifully — learn enums here.
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — organise your switch logic into clean, reusable functions.
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — a handy reference covering switch syntax alongside all other C++ basics.

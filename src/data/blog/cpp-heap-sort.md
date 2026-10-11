@@ -220,6 +220,7 @@ For real code, just use `std::sort`. It uses introsort, which starts with quick 
 - [C++ priority_queue: A Beginner's Guide](/posts/cpp-priority-queue/)
 - [Selection Sort in C++](/posts/cpp-selection-sort/)
 - [How to Use std::sort in C++](/posts/cpp-sort-algorithm/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

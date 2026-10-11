@@ -149,6 +149,7 @@ Without the cast, `sum / n` would truncate the result. (That's a common gotcha c
 - [C++ Range-Based For Loop](/posts/cpp-range-based-for-loop/) — the modern way to loop
 - [Integer Division in C++](/posts/cpp-integer-division/) — why the average needs a cast
 - [Find the Maximum and Minimum in C++](/posts/cpp-find-max-min/) — the sibling task to summing
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

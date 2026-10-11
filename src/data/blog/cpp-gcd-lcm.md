@@ -130,6 +130,7 @@ For real projects, prefer the standard versions — they're tested, handle edge 
 - [C++ Modulo Operator (%)](/posts/cpp-modulo-operator/) — the remainder that powers Euclid's method
 - [C++ Math Functions](/posts/cpp-math-functions/) — more numeric tools in the standard library
 - [Prime Number Program in C++](/posts/cpp-prime-number-program/) — another number-theory classic
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

@@ -103,6 +103,7 @@ Factorials explode in size. A plain `int` can only hold up to `12!` (479,001,600
 - [C++ Loops Tutorial](/posts/cpp-loops-tutorial/) — for and while loops in depth
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — defining and calling functions
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — choosing int vs long long
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

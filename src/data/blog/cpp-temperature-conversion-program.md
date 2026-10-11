@@ -236,6 +236,7 @@ Three details worth noticing:
 - [The switch Statement in C++](/posts/cpp-switch-statement/)
 - [Build a Menu-Driven Program in C++](/posts/cpp-menu-driven-program/)
 - [C++ Beginner Projects to Build](/posts/cpp-beginner-projects/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

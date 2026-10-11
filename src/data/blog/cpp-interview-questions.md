@@ -720,6 +720,8 @@ MyClass(const MyClass& other) {  // Copy constructor
 }
 ```
 
+For worked examples, including which standard types copy deeply, see [shallow copy vs deep copy in C++](/posts/cpp-shallow-vs-deep-copy/).
+
 ### 31. What are the Rule of Three, Rule of Five, and Rule of Zero?
 
 **Rule of Three**: If you define a destructor, copy constructor, or copy assignment operator, you should define all three.

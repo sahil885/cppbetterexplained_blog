@@ -219,6 +219,7 @@ That last row matters more than beginners expect. If you're searching an unsorte
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — the container used throughout this guide
 - [How to Find an Element in a Vector](/posts/cpp-find-in-vector/) — std::find for unsorted data
 - [Merge Sort in C++](/posts/merge-sort-algorithm-cpp/) — another divide-and-conquer algorithm
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

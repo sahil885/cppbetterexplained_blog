@@ -116,6 +116,7 @@ You'll often see the "trick" of subtracting 32 from a character to capitalise it
 - [C++ char to int](/posts/cpp-char-to-int/) — working with individual characters
 - [C++ String Contains a Substring](/posts/cpp-string-contains-substring/) — searching inside text
 - [C++ Range-Based For Loop](/posts/cpp-range-based-for-loop/) — the loop used above
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

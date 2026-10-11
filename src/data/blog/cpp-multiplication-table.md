@@ -139,6 +139,7 @@ Master this and you've genuinely understood loops — the workhorse of every C++
 - [C++ User Input with cin](/posts/cpp-cin-user-input/) — reading from the keyboard
 - [C++ Output Formatting with iomanip](/posts/cpp-iomanip-formatting/) — setw, setprecision, and more
 - [FizzBuzz in C++](/posts/cpp-fizzbuzz/) — another classic loop exercise
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

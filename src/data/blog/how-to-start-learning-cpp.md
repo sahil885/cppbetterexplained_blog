@@ -316,6 +316,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ Conditionals Tutorial: if, else, and switch Explained](/posts/cpp-conditionals-tutorial/) — make your program make decisions; the natural second step after variables.
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — repeat code efficiently; essential for almost every real program.
 - [C++ Projects for Beginners: 4 Guided Projects with Full Source Code](/posts/cpp-beginner-projects/) — once you know the basics, build something real.
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/) — small practice programs, easiest to hardest.
 - [How to Use Pointers in C++: A Complete Beginner's Guide](/posts/pointers-in-cpp/) — when you're ready for the concept everyone finds scary.
 - [How Long Does It Take to Learn C++? An Honest Timeline](/posts/how-long-to-learn-cpp/) — a realistic, goal-based timeline from your first program to job-ready.
 - [Is C++ Primer Good for Beginners?](/posts/is-cpp-primer-good-for-beginners/) — an honest review before you buy

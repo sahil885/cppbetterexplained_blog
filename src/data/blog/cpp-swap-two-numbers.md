@@ -120,6 +120,7 @@ For everyday code, reach for `std::swap` — it's clear, safe, and works on ever
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — the basics of storing values
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — parameters and arguments
 - [C++ Sort Algorithm](/posts/cpp-sort-algorithm/) — where swapping powers sorting
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest
 
 ---
 

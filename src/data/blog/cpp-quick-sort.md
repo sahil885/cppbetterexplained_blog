@@ -180,6 +180,7 @@ Write quick sort by hand to understand it. Reach for `std::sort` when you need t
 - [Selection Sort in C++](/posts/cpp-selection-sort/)
 - [Recursion in C++](/posts/cpp-recursion-tutorial/)
 - [std::sort in C++](/posts/cpp-sort-algorithm/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

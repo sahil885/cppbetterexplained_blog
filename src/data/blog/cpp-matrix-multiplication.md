@@ -219,6 +219,7 @@ The triple loop is **O(m × n × p)** — for two 1000×1000 matrices that's a b
 - [C++ Multidimensional Arrays](/posts/cpp-multidimensional-array/)
 - [C++ 2D Vector: How to Create and Use a Vector of Vectors](/posts/cpp-2d-vector/)
 - [How to Pass an Array to a Function in C++](/posts/cpp-pass-array-to-function/)
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/)
 
 ---
 

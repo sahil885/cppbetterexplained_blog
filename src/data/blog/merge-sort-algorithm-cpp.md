@@ -197,6 +197,7 @@ If you found this useful, here are some related posts to explore next:
 - [Breakdown of a Simple C++ Program Step by Step](/posts/breakdown-simple-cpp-program/) — start here if you're new to C++ and want to understand the fundamentals before diving into algorithms.
 - [Blackjack C++ Using Classes](/posts/blackjack-cpp-using-classes/) — see how C++ classes, sorting, and game logic all come together in a complete real-world project.
 - [C++ Traffic Light Project](/posts/traffic-light-project/) — another great project that shows C++ classes and bitwise operators in action.
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest.
 
 ---
 

@@ -415,6 +415,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [Is C++ Hard to Learn? An Honest Answer for Beginners](/posts/is-cpp-hard-to-learn/) — honest expectations on the learning curve before you start.
 - [How to Set Up C++: Install a Compiler and Write Your First Program](/posts/cpp-setup-guide/) — the first practical step: get your environment working.
 - [C++ Projects for Beginners: 4 Guided Projects with Full Source Code](/posts/cpp-beginner-projects/) — once you have the basics, apply them with guided real projects.
+- [C++ Programs for Beginners: 40+ Examples With Full Code](/posts/cpp-programs-for-beginners/) — small practice programs for every stage of the roadmap.
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — bookmark this and keep it open while you work through the roadmap.
 - [What Is C++ Used For? Real-World Applications Explained](/posts/what-is-cpp-used-for/) — understand where C++ fits in the real world before you commit to learning it.
 - [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — the first real concept to master, explained clearly.

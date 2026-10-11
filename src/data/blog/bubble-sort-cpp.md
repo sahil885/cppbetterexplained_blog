@@ -225,3 +225,4 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 - [C++ STL Containers Explained](/posts/stl-containers-cpp/) — the containers you will use alongside sorting algorithms.
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — sorting algorithms are a staple of C++ technical interviews.
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — includes std::sort and algorithm usage.
+- [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ more example programs, easiest to hardest.
