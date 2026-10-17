@@ -50,6 +50,8 @@ int main() {
 }
 ```
 
+Leave the brackets off when you call it: `average(scores[], n)` fails with `expected primary-expression before ']' token` — see [how to fix that error](/posts/cpp-expected-primary-expression/).
+
 Notice we pass `n`, the number of elements, as a second argument. That's not optional bookkeeping — it's required, and here's why.
 
 ---
