@@ -401,6 +401,15 @@ Parameters are also local to the function. They stop existing when the function 
 
 ## Common Mistakes
 
+**Writing the types when you call a function:**
+
+```cpp
+int sum = add(int x, int y);  // ❌ error: expected primary-expression before 'int'
+int total = add(x, y);        // ✅ just the values
+```
+
+Types belong in the definition, not the call. See [how to fix 'expected primary-expression'](/posts/cpp-expected-primary-expression/).
+
 **Forgetting to return a value:**
 
 ```cpp

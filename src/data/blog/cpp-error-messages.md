@@ -317,15 +317,17 @@ Fix: check pointer validity before dereferencing, check array bounds, and use to
 
 | Error message | Likely cause |
 |--------------|-------------|
-| `was not declared in this scope` | Missing `#include`, typo, or wrong scope |
-| `undefined reference to` | Linker can't find implementation |
+| `was not declared in this scope` | Missing `#include`, typo, or wrong scope ([full fix](/posts/cpp-not-declared-in-this-scope/)) |
+| `undefined reference to` | Linker can't find implementation ([full fix](/posts/undefined-reference-linker-errors-cpp/)) |
 | `no matching function for call to` | Wrong argument types/count |
-| `expected ';' before` | Missing semicolon on previous line |
+| `expected ';' before` | Missing semicolon on previous line ([full fix](/posts/cpp-expected-semicolon/)) |
+| `expected primary-expression before` | A type or empty `[]` where a value belongs ([full fix](/posts/cpp-expected-primary-expression/)) |
 | `cannot convert` | Type mismatch |
 | `redefinition of` | Defined twice, missing include guards |
 | `control reaches end of non-void function` | Missing return in some code path |
 | `use of uninitialized variable` | Variable used before assignment |
-| Segmentation fault | Bad memory access at runtime |
+| Segmentation fault | Bad memory access at runtime ([full fix](/posts/cpp-segmentation-fault/)) |
+| `vector subscript out of range` | Index past the end of a vector ([full fix](/posts/cpp-vector-subscript-out-of-range/)) |
 
 ---
 
@@ -338,6 +340,8 @@ Fix: check pointer validity before dereferencing, check array bounds, and use to
 - [Exception Handling in C++](/posts/exception-handling-cpp/) — handling runtime errors gracefully
 - [Fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/) — the six usual causes.
 - [Fix expected ';' errors](/posts/cpp-expected-semicolon/) — every cause, for every compiler.
+- [Fix 'expected primary-expression before'](/posts/cpp-expected-primary-expression/) — when a value is missing.
+- [Fix 'vector subscript out of range'](/posts/cpp-vector-subscript-out-of-range/) — when an index runs past the end.
 
 ---
 

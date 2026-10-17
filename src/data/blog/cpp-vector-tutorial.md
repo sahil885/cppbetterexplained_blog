@@ -598,6 +598,8 @@ if (5 < v.size()) {
 }
 ```
 
+For every cause of this bug and how to track it down, see [how to fix 'vector subscript out of range'](/posts/cpp-vector-subscript-out-of-range/).
+
 ### Mistake 2: Modifying a vector while iterating over it
 
 ```cpp

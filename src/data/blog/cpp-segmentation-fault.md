@@ -79,6 +79,8 @@ vector<int> v = {1, 2, 3, 4, 5};
 cout << v.at(10);  // Throws exception instead of silently reading garbage
 ```
 
+In Visual Studio, the same bug with a vector shows up as `vector subscript out of range` — see [how to fix it](/posts/cpp-vector-subscript-out-of-range/).
+
 ---
 
 ### 3. Stack Overflow (Infinite Recursion)

@@ -47,7 +47,7 @@ These are fine for learning and small snippets. When you're ready to build real 
 Windows doesn't come with a C++ compiler. The most straightforward option for beginners is **MinGW-w64**, which gives you `g++` (the GCC compiler for Windows).
 
 1. Go to [winlibs.com](https://winlibs.com/) and download the latest **GCC** release for Windows (choose the `x86_64` UCRT version, `.zip` format)
-2. Extract the zip to `C:\mingw64`
+2. Extract the zip to `C:\`. It contains a `mingw64` folder, so you end up with `C:\mingw64\bin\g++.exe`
 3. Add `C:\mingw64\bin` to your system PATH:
    - Search for "Environment Variables" in the Start menu
    - Click "Environment Variables"
@@ -59,13 +59,15 @@ Windows doesn't come with a C++ compiler. The most straightforward option for be
 ```
 g++ --version
 ```
-You should see something like `g++ (GCC) 13.x.x`.
+You should see the GCC version number. If you get `'g++' is not recognized` instead, close and reopen the terminal, then see [how to fix 'g++ is not recognized'](/posts/cpp-g-plus-plus-not-recognized/).
 
 ### Step 2: Install VS Code
 
 1. Download [VS Code](https://code.visualstudio.com/) and install it
 2. Open VS Code, go to Extensions (`Ctrl+Shift+X`), search for **C/C++** and install the Microsoft extension
 3. Optionally install **C/C++ Extension Pack** for extra features
+
+If VS Code later underlines `#include <iostream>` in red, see [how to fix '#include errors detected'](/posts/cpp-vscode-include-errors/).
 
 ### Step 3: Write and Run Your First Program
 

@@ -101,7 +101,7 @@ g++ main.cpp utils.cpp -o app
 3. Open the folder containing your `.cpp` file (**File → Open Folder**).
 4. Open the file and use the run (play) button the extension adds in the top-right corner.
 
-Under the hood, VS Code runs the same `g++` command as Method 1.
+Under the hood, VS Code runs the same `g++` command as Method 1. If VS Code underlines your `#include` lines in red, see [how to fix '#include errors detected'](/posts/cpp-vscode-include-errors/).
 
 ## Method 3: Visual Studio (Windows)
 
@@ -118,7 +118,7 @@ Paste the code into an online compiler such as OnlineGDB and press Run. It's the
 ## Common Errors and Fixes
 
 **`'g++' is not recognized as an internal or external command`** (Windows)
-Windows can't find the compiler. Either it isn't installed, or its `bin` folder isn't on your PATH. Install MinGW-w64, add its `bin` folder to PATH, then **open a new terminal** — old windows don't pick up the change.
+Windows can't find the compiler. Either it isn't installed, or its `bin` folder isn't on your PATH. Install MinGW-w64, add its `bin` folder to PATH, then **open a new terminal** — old windows don't pick up the change. Full walkthrough: [how to fix 'g++ is not recognized'](/posts/cpp-g-plus-plus-not-recognized/).
 
 **`command not found: g++`** (Mac)
 Install Apple's command line tools:
