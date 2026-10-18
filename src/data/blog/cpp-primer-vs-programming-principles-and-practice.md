@@ -26,6 +26,16 @@ faqSchema:
 
 ---
 
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">Not ready for a big textbook?</p>
+    <h3>C++ Better Explained</h3>
+    <p>Both of these books are long. This one is short: pointers, memory and OOP explained for true beginners, in 87 plain-English pages with diagrams.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>
+
 ## Side by Side
 
 | | C++ Primer | Programming: Principles and Practice |

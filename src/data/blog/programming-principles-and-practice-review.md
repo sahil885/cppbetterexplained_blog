@@ -26,6 +26,16 @@ faqSchema:
 
 ---
 
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">Want a shorter start?</p>
+    <h3>C++ Better Explained</h3>
+    <p>Programming: Principles and Practice is thorough, and long. If you'd rather start small, this book explains pointers, memory and OOP for true beginners, in 87 plain-English pages with diagrams.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>
+
 ## What the Book Is
 
 *Programming: Principles and Practice Using C++* — usually shortened to PPP — is by **Bjarne Stroustrup**, the designer and original implementer of C++. The current edition is the **3rd, published by Addison-Wesley in April 2024**, at 656 pages.

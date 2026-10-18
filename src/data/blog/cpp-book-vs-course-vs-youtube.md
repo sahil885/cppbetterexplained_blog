@@ -56,6 +56,8 @@ A good book gives you one consistent voice, a deliberate order, and material you
 
 **Pick a book that matches your level, not the one with the biggest reputation.** For beginners that means something focused and finishable, not comprehensive. A book you finish beats a better book you abandon on page 90.
 
+Weighing up the two classic textbooks? These honest reviews cover who each one suits: [Is C++ Primer good for beginners?](/posts/is-cpp-primer-good-for-beginners/), the [Programming: Principles and Practice review](/posts/programming-principles-and-practice-review/), and [C++ Primer vs Programming: Principles and Practice](/posts/cpp-primer-vs-programming-principles-and-practice/).
+
 ## Option 2: Online Video Courses
 
 **Best for:** structure, momentum, and people who learn better by watching someone type.

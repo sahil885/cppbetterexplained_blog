@@ -128,3 +128,5 @@ If the hardest part of self-teaching is knowing what to learn next, that is exac
 - [C++ Projects for Beginners](/posts/cpp-beginner-projects/) — guided projects with full source code.
 - [C++ Programs for Beginners](/posts/cpp-programs-for-beginners/) — 40+ small practice programs, easiest to hardest.
 - [Is C++ Primer Good for Beginners?](/posts/is-cpp-primer-good-for-beginners/) — whether the classic textbook suits self-study
+- [Programming: Principles and Practice Review](/posts/programming-principles-and-practice-review/) — Stroustrup's textbook for learning to program from zero
+- [C++ Primer vs Programming: Principles and Practice](/posts/cpp-primer-vs-programming-principles-and-practice/) — which of the two to pick
