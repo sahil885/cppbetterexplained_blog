@@ -531,7 +531,7 @@ const canonicalURL = new URL("/learn-cpp/", SITE.website);
     <div class="mb-12 rounded-lg border border-accent/30 bg-accent/5 p-6">
       <h2 class="text-xl font-semibold mb-2">Want to go deeper, faster?</h2>
       <p class="text-foreground/70 mb-4">If you're looking to go deeper with C++, the <strong>C++ Better Explained Ebook</strong> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just <strong>$19</strong>.</p>
-      <a href="https://start.cppbetterexplained.com/tw-sales-page" class="inline-block rounded-md bg-accent px-5 py-2.5 font-semibold text-background hover:opacity-90">👉 Get the C++ Better Explained Ebook — $19</a>
+      <a href="https://start.cppbetterexplained.com/tw-sales-page" data-placement="book_box" class="inline-block rounded-md bg-accent px-5 py-2.5 font-semibold text-background hover:opacity-90">👉 Get the C++ Better Explained Ebook — $19</a>
     </div>
 
     <!-- Stage 3 -->
@@ -1178,17 +1178,19 @@ const canonicalURL = new URL("/learn-cpp/", SITE.website);
       if (res.ok) {
         msg.textContent = "You're in! Check your inbox for the checklist.";
         form.reset();
-        if (typeof window.gtag === "function") {
-          window.gtag("event", "optin_submit", { location: "learn_cpp" });
-        }
         try {
           localStorage.setItem("wm_dismissed", String(Date.now()));
         } catch {
           /* storage unavailable */
         }
-        setTimeout(function () {
+        const goToOffer = () => {
           window.location.href = "https://start.cppbetterexplained.com/tw-sales-page";
-        }, 1200);
+        };
+        if (typeof window.cbeTrack === "function") {
+          window.cbeTrack("optin_submit", { location: "learn_cpp" }, goToOffer, 1200);
+        } else {
+          setTimeout(goToOffer, 1200);
+        }
       } else {
         msg.textContent = "Something went wrong — please try again.";
       }

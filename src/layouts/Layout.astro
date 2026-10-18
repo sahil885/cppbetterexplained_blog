@@ -103,6 +103,39 @@ const structuredData = isArticle
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-PGXR22EZL6');
+
+      // Send a GA4 event. If `next` is given (a redirect or navigation), run it
+      // once GA confirms the hit, or after 1 second at most. `minDelayMs` keeps a
+      // success message on screen for at least that long before `next` runs.
+      window.cbeTrack = function (name, params, next, minDelayMs) {
+        const payload = Object.assign({}, params, { transport_type: "beacon" });
+        if (typeof next !== "function") {
+          gtag("event", name, payload);
+          return;
+        }
+        let sent = false;
+        let waited = !minDelayMs;
+        let done = false;
+        const finish = () => {
+          if (done || !sent || !waited) return;
+          done = true;
+          next();
+        };
+        const markSent = () => {
+          sent = true;
+          finish();
+        };
+        payload.event_callback = markSent;
+        payload.event_timeout = 1000;
+        setTimeout(markSent, 1000);
+        if (minDelayMs) {
+          setTimeout(() => {
+            waited = true;
+            finish();
+          }, minDelayMs);
+        }
+        gtag("event", name, payload);
+      };
     </script>
 
     <meta charset="UTF-8" />
@@ -281,32 +314,81 @@ const structuredData = isArticle
     <!-- Welcome Mat email capture -->
     <WelcomeMat />
     <StickyOptinBar />
-    <!-- GA4 event tracking: book CTA clicks + email optins -->
+    <!-- GA4: one site-wide listener for every link to the sales page.
+         Opt-in forms send their own optin_submit (with a location) after a
+         successful signup, so there is no global submit listener. -->
     <script is:inline>
-      document.addEventListener("click", function (e) {
-        var a = e.target && e.target.closest ? e.target.closest('a[href*="start.cppbetterexplained.com"]') : null;
-        if (a && typeof gtag === "function") {
-          gtag("event", "book_cta_click", {
-            link_url: a.getAttribute("href"),
+      (() => {
+        if (window.cbeClickTrackingBound) return;
+        window.cbeClickTrackingBound = true;
+
+        // placement: an explicit data-placement wins; older Markdown patterns are
+        // recognised by their markup; anything else is "other".
+        const placementFor = link => {
+          const tagged = link.closest("[data-placement]");
+          if (tagged) return tagged.getAttribute("data-placement");
+          if (link.closest(".featured-book")) return "book_box";
+          if (link.closest(".inline-cta")) return "early_link";
+          if (link.closest("table")) return "comparison_table";
+          const article = link.closest("#article");
+          if (article) {
+            let block = link;
+            while (block.parentElement && block.parentElement !== article) {
+              block = block.parentElement;
+            }
+            for (let el = block; el; el = el.previousElementSibling) {
+              if (el.tagName === "H2") {
+                return /^take your c\+\+ further/i.test(el.textContent.trim())
+                  ? "end_cta"
+                  : "other";
+              }
+            }
+          }
+          return "other";
+        };
+
+        const textFor = link => {
+          const img = link.querySelector("img");
+          const text =
+            link.textContent.trim() ||
+            link.getAttribute("aria-label") ||
+            (img && img.getAttribute("alt")) ||
+            "";
+          return text.replace(/\s+/g, " ").trim().slice(0, 100);
+        };
+
+        const track = (e, allowHold) => {
+          const link =
+            e.target instanceof Element
+              ? e.target.closest('a[href*="start.cppbetterexplained.com"]')
+              : null;
+          if (!link || typeof window.cbeTrack !== "function") return;
+          const params = {
+            placement: placementFor(link),
+            link_text: textFor(link),
+            link_url: link.href,
             page_path: location.pathname,
-          });
-        }
-      });
-      document.addEventListener("submit", function (e) {
-        var f = e.target;
-        if (
-          f &&
-          f.tagName === "FORM" &&
-          typeof gtag === "function" &&
-          (/optin|wm-form/.test(f.id || "") ||
-            (f.classList && f.classList.contains("post-optin-form")))
-        ) {
-          gtag("event", "optin_submit", {
-            form_id: f.id || "post-optin-" + (f.dataset.list || "checklist"),
-            page_path: location.pathname,
-          });
-        }
-      });
+          };
+          const sameTab = !link.target || link.target === "_self";
+          const plainClick =
+            e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey;
+          if (allowHold && sameTab && plainClick && !e.defaultPrevented) {
+            // Hold the navigation until GA has the event (1 second at most).
+            e.preventDefault();
+            window.cbeTrack("book_cta_click", params, () => {
+              window.location.href = link.href;
+            });
+          } else {
+            window.cbeTrack("book_cta_click", params);
+          }
+        };
+
+        document.addEventListener("click", e => track(e, true));
+        // Middle-click opens a new tab without firing "click".
+        document.addEventListener("auxclick", e => {
+          if (e.button === 1) track(e, false);
+        });
+      })();
     </script>
 
   </body>

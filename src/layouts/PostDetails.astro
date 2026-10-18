@@ -614,13 +614,6 @@ const nextPost =
             submit.textContent = "Try again";
             return;
           }
-          try {
-            if (typeof window.gtag === "function") {
-              window.gtag("event", "optin_submit", {
-                location: form.dataset.download ? "source_code" : "article",
-              });
-            }
-          } catch (err) {}
           // Don't show the welcome mat to someone who just subscribed
           try { localStorage.setItem("wm_dismissed", String(Date.now())); } catch (err) {}
           form.style.display = "none";
@@ -634,9 +627,23 @@ const nextPost =
             a.click();
             a.remove();
           }
-          setTimeout(function () {
+          // One optin_submit per signup. Forms can set data-location; otherwise
+          // the mid-article and bottom forms report their own positions.
+          let optinLocation = form.dataset.location;
+          if (!optinLocation) {
+            if (form.dataset.download) optinLocation = "source_code";
+            else if (form.closest(".mid-optin")) optinLocation = "post_mid";
+            else optinLocation = "post_bottom";
+          }
+          const minDelay = form.dataset.download ? 2000 : 1200;
+          const goToOffer = () => {
             window.location.href = TRIPWIRE_URL;
-          }, form.dataset.download ? 2000 : 1200);
+          };
+          if (typeof window.cbeTrack === "function") {
+            window.cbeTrack("optin_submit", { location: optinLocation }, goToOffer, minDelay);
+          } else {
+            setTimeout(goToOffer, minDelay);
+          }
         })
         .catch(function (err) {
           console.error("Subscribe network error:", err);

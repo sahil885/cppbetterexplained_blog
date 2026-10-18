@@ -200,16 +200,20 @@
               submit.textContent = "Try again";
               return;
             }
-            track("optin_submit");
             remember();
             try {
               localStorage.setItem("wm_dismissed", String(Date.now()));
             } catch (err) {}
             form.style.display = "none";
             success.style.display = "block";
-            setTimeout(function () {
+            const goToOffer = () => {
               window.location.href = TRIPWIRE_URL;
-            }, 1200);
+            };
+            if (typeof window.cbeTrack === "function") {
+              window.cbeTrack("optin_submit", { location: "sticky_bar" }, goToOffer, 1200);
+            } else {
+              setTimeout(goToOffer, 1200);
+            }
           })
           .catch(function () {
             submit.disabled = false;
