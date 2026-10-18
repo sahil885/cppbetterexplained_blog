@@ -1,1 +1,50 @@
-{"trailingSlash": true}
+{
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-implement-insertion-sort-in-cpp",
+      "destination": "/posts/insertion-sort-cpp/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-implement-insertion-sort-in-cpp/",
+      "destination": "/posts/insertion-sort-cpp/",
+      "statusCode": 301
+    },
+    {
+      "source": "/understanding-and-breaking-down-pointers",
+      "destination": "/posts/pointers-in-cpp/",
+      "statusCode": 301
+    },
+    {
+      "source": "/understanding-and-breaking-down-pointers/",
+      "destination": "/posts/pointers-in-cpp/",
+      "statusCode": 301
+    },
+    {
+      "source": "/copy-constructor-with-example",
+      "destination": "/posts/cpp-copy-constructor/",
+      "statusCode": 301
+    },
+    {
+      "source": "/copy-constructor-with-example/",
+      "destination": "/posts/cpp-copy-constructor/",
+      "statusCode": 301
+    }
+  ]
+}
