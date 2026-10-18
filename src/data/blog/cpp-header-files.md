@@ -270,6 +270,8 @@ int square(int x);
 **Circular includes:**
 If `A.h` includes `B.h` and `B.h` includes `A.h`, you have a circular dependency. Fix with forward declarations or restructuring.
 
+**Using a class before its header is included:** the compiler reports `does not name a type`. See [how to fix 'does not name a type'](/posts/cpp-does-not-name-a-type/).
+
 ---
 
 ## Related Articles

@@ -78,6 +78,8 @@ public:
 Point p;  // Calls default constructor — x=0, y=0
 ```
 
+If a class only has constructors that take arguments, `Point p;` fails with `no matching function for call to 'Point::Point()'`. See [how to fix it](/posts/cpp-no-matching-function-for-call/).
+
 ### Parameterized Constructor
 
 Takes arguments to initialize the object with specific values:

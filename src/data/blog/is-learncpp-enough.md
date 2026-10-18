@@ -4,7 +4,7 @@ description: "Is learncpp.com enough to learn C++? What the free tutorial covers
 pubDatetime: 2026-10-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "learning", "beginner", "resources"]
-draft: true
+draft: false
 featured: false
 hideAds: true
 faqSchema:
@@ -98,7 +98,7 @@ More detail in our reviews of [C++ Primer](/posts/is-cpp-primer-good-for-beginne
 
 - **Never programmed, patient, and want free?** Work through learncpp.com and build small programs as you go. You may not need anything else.
 - **Want a quicker way into pointers, memory and OOP first?** A short book can get you over those humps, then learncpp.com fills in the breadth.
-- **Already program in another language?** You can move faster through learncpp.com, or start with a shorter overview — see [the best C++ books and resources](/posts/best-cpp-books-resources/).
+- **Already program in another language?** You can move faster through learncpp.com, or start with a shorter overview such as [A Tour of C++](/posts/a-tour-of-cpp-review/). More options in [the best C++ books and resources](/posts/best-cpp-books-resources/).
 
 ---
 

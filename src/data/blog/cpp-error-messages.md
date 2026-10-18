@@ -179,6 +179,8 @@ modify("literal");  // Error: can't bind temp to non-const ref
 
 Fix: either make the parameter `const string&` if you don't need to modify it, or pass a variable instead.
 
+Full walkthrough of every cause, with GCC, Clang and Visual Studio messages: [how to fix 'no matching function for call to'](/posts/cpp-no-matching-function-for-call/).
+
 ---
 
 ## 'expected ';' before'
@@ -321,9 +323,11 @@ Fix: check pointer validity before dereferencing, check array bounds, and use to
 |--------------|-------------|
 | `was not declared in this scope` | Missing `#include`, typo, or wrong scope ([full fix](/posts/cpp-not-declared-in-this-scope/)) |
 | `undefined reference to` | Linker can't find implementation ([full fix](/posts/undefined-reference-linker-errors-cpp/)) |
-| `no matching function for call to` | Wrong argument types/count |
+| `no matching function for call to` | Wrong argument types/count ([full fix](/posts/cpp-no-matching-function-for-call/)) |
 | `expected ';' before` | Missing semicolon on previous line ([full fix](/posts/cpp-expected-semicolon/)) |
 | `expected primary-expression before` | A type or empty `[]` where a value belongs ([full fix](/posts/cpp-expected-primary-expression/)) |
+| `does not name a type` | A type used before it's declared, or code outside a function ([full fix](/posts/cpp-does-not-name-a-type/)) |
+| `stray '\342' in program` | Curly quotes or dashes pasted into code ([full fix](/posts/cpp-stray-in-program/)) |
 | `cannot convert` | Type mismatch |
 | `redefinition of` | Defined twice, missing include guards |
 | `control reaches end of non-void function` | Missing return in some code path |
@@ -344,6 +348,9 @@ Fix: check pointer validity before dereferencing, check array bounds, and use to
 - [Fix expected ';' errors](/posts/cpp-expected-semicolon/) — every cause, for every compiler.
 - [Fix 'expected primary-expression before'](/posts/cpp-expected-primary-expression/) — when a value is missing.
 - [Fix 'vector subscript out of range'](/posts/cpp-vector-subscript-out-of-range/) — when an index runs past the end.
+- [Fix 'does not name a type'](/posts/cpp-does-not-name-a-type/) — when the compiler doesn't know a type yet.
+- [Fix 'no matching function for call to'](/posts/cpp-no-matching-function-for-call/) — when no version of a function fits.
+- [Fix 'stray \342 in program'](/posts/cpp-stray-in-program/) — curly quotes and hidden characters.
 
 ---
 

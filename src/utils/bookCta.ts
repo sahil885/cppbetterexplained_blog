@@ -101,7 +101,7 @@ export function renderBookCta(
     );
   }
   const copy = COPY[topic];
-  const button = `<a class="book-cta-btn" href="${BOOK_URL}">Get the book — $19</a>`;
+  const button = `<a class="book-cta-btn" href="${BOOK_URL}" data-google-vignette="false">Get the book — $19</a>`;
 
   if (placement === "end_cta") {
     return [

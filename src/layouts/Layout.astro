@@ -383,6 +383,18 @@ const structuredData = isArticle
           }
         };
 
+        // AdSense vignettes (full-screen ads) can fire when a link is clicked.
+        // Keep them off links to the sales page (Google's documented opt-out).
+        const optOutOfVignettes = () => {
+          document
+            .querySelectorAll(
+              'a[href*="start.cppbetterexplained.com"]:not([data-google-vignette])'
+            )
+            .forEach(link => link.setAttribute("data-google-vignette", "false"));
+        };
+        optOutOfVignettes();
+        document.addEventListener("astro:page-load", optOutOfVignettes);
+
         document.addEventListener("click", e => track(e, true));
         // Middle-click opens a new tab without firing "click".
         document.addEventListener("auxclick", e => {
