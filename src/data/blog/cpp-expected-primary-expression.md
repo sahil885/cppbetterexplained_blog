@@ -6,6 +6,7 @@ author: "Sahil"
 tags: ["C++", "beginner", "errors", "debugging"]
 draft: false
 featured: false
+hideMidOptin: true
 faqSchema:
   - question: "What does expected primary-expression before mean in C++?"
     answer: "The compiler needed a value, such as a variable, a number or a function call, and found something else. The token after the word before shows where it went wrong: a type name like int, an empty ], or the end of the statement."
@@ -28,6 +29,8 @@ The same mistake gets different wording on each compiler:
 | GCC (g++, MinGW, Code::Blocks) | `expected primary-expression before 'int'` |
 | Clang (Xcode, macOS) | `expected expression`, or `expected '(' for function-style cast or type construction` |
 | Visual Studio | `C2144: syntax error: 'int' should be preceded by ')'`, or `C2059: syntax error` |
+
+<!-- optin-quick error="expected primary-expression" -->
 
 ---
 

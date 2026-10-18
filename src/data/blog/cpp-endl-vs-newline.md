@@ -4,6 +4,7 @@ description: "Learn the real difference between std::endl and \\n in C++. Unders
 pubDatetime: 2026-06-03T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "input-output", "tutorial"]
+hideMidOptin: true
 faqSchema:
   - question: "What is the difference between endl and \\n in C++?"
     answer: "Both move output to a new line, but std::endl also flushes the output buffer, forcing everything to be written immediately. The \\n character only inserts a newline without flushing, which makes it faster in loops."
@@ -18,6 +19,8 @@ featured: false
 # C++ endl vs \n: What's the Difference
 
 Almost every C++ program prints output, and you'll quickly meet two ways to end a line: `std::endl` and the `\n` character. They look interchangeable, and usually produce the same visible result — but there's an important difference under the hood that affects performance.
+
+<!-- optin-quick hook="Small details like endl vs \n are easy to miss when you're starting out." -->
 
 ---
 

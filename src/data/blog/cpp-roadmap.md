@@ -409,6 +409,9 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ## Related Articles
 - [Can You Learn C++ on Your Own? A Self-Taught Guide](/posts/learn-cpp-on-your-own/) — the realistic self-taught path, in order.
 - [Is C++ Worth Learning in 2026? An Honest Answer](/posts/is-cpp-worth-learning/) — job demand, salaries, and who should skip it.
+- [Is C++ Primer Good for Beginners?](/posts/is-cpp-primer-good-for-beginners/) — an honest review of the classic textbook.
+- [Programming: Principles and Practice Review](/posts/programming-principles-and-practice-review/) — Stroustrup's book for learning to program from zero.
+- [C++ Primer vs Programming: Principles and Practice](/posts/cpp-primer-vs-programming-principles-and-practice/) — which of the two big textbooks to pick.
 - [Best C++ Books and Resources for Beginners in 2026](/posts/best-cpp-books-resources/) — the best C++ books for beginners, ranked honestly, plus the free resources that are actually worth your time.
 - [How to Learn C++ From Scratch: The Complete Beginner Roadmap](/learn-cpp/) — the interactive version of this roadmap with numbered steps, direct links to every tutorial, and a built-in learning path.
 - [How to Start Learning C++ in 2026: A Complete Beginner's Roadmap](/posts/how-to-start-learning-cpp/) — the more practical companion to this roadmap, with step-by-step first-week guidance.

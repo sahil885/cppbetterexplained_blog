@@ -6,6 +6,7 @@ author: "Sahil"
 tags: ["C++", "beginner", "errors", "debugging"]
 draft: false
 featured: false
+hideMidOptin: true
 faqSchema:
   - question: "What does expected ';' before mean in C++?"
     answer: "The compiler reached a point where a statement or declaration should already have ended with a semicolon. The semicolon is almost always missing from the end of the line just above the error, or just before the token named in the message."
@@ -31,6 +32,8 @@ Every compiler words it a little differently:
 | Visual Studio (when you build) | `C2143: syntax error: missing ';' before 'return'` |
 
 They all mean the same thing. Below are the eight usual causes, the exact message each one produces, and the fix.
+
+<!-- optin-quick error="expected ';'" -->
 
 ---
 

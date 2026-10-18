@@ -165,7 +165,7 @@ This is called **encapsulation** — hiding the internal details and exposing on
 
 ---
 
-<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+<!-- book-cta topic="oop" placement="mid_article" -->
 
 ## Constructors: Initializing Objects
 
@@ -472,8 +472,6 @@ int main() {
 
 **Abstraction** — expose a simple interface while hiding complexity (the `SavingsAccount` user doesn't need to know how `applyInterest` calculates — just that it does).
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
-
 ## Summary
 
 A **class** is a blueprint that bundles data (member variables) and behavior (member functions) together. An **object** is an instance of a class. Key concepts:
@@ -491,9 +489,7 @@ Classes take time to fully absorb. Build something with them — a student grade
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
-
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="oop" placement="end_cta" -->
 
 ---
 

@@ -32,11 +32,9 @@ faqSchema:
 
 If you're learning C++, you've probably heard that pointers are the most confusing topic for beginners. And honestly? There's a reason. Pointers aren't taught well in most tutorials because instructors jump straight into syntax without building the mental model first. This article changes that. By the time you finish reading, pointers won't just make sense—they'll feel obvious.
 
-
 ## Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rq6UsIdOXPs" title="Understanding C++ Pointers: A Beginner's Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## Why Pointers Confuse Beginners (And Why You Need to Learn Them)
 
@@ -152,6 +150,8 @@ std::string* sptr;  // Pointer to string
 MyClass* objptr;    // Pointer to custom class
 ```
 
+<!-- book-cta topic="pointers" placement="mid_article" -->
+
 ## Null Pointers: The Special Case
 
 What if you declare a pointer but don't initialize it?
@@ -221,8 +221,6 @@ Use references when you want:
 - Function parameters that modify the caller's data
 
 For beginners: **Prefer references whenever possible, and use pointers only when you specifically need pointer behavior.**
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
 
 ## Pointer Arithmetic: Moving Through Memory
 
@@ -393,9 +391,7 @@ The next step is practice. Write small programs that create pointers, pass them 
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
-
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="pointers" placement="end_cta" -->
 
 ---
 

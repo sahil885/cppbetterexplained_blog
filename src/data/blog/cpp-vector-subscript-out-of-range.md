@@ -6,6 +6,7 @@ author: "Sahil"
 tags: ["C++", "beginner", "errors", "vectors"]
 draft: false
 featured: false
+hideMidOptin: true
 faqSchema:
   - question: "What does vector subscript out of range mean?"
     answer: "Your program used an index that does not exist in the vector. Valid indexes run from 0 to size() minus 1, so a 5-element vector has no element 5, and an empty vector has no elements at all. Visual Studio's Debug build stops the program when this happens."
@@ -31,6 +32,8 @@ What you see depends on your compiler and on how you accessed the element:
 | GCC, using `[]` | Often **nothing** — a garbage value, or a crash with `Segmentation fault` |
 
 That last row is the dangerous one: the same bug that stops Visual Studio can run silently with GCC.
+
+<!-- optin-quick error="vector subscript out of range" -->
 
 ---
 

@@ -4,6 +4,7 @@ description: "A C++ segmentation fault means your program touched memory it shou
 pubDatetime: 2026-05-16T00:00:00Z
 author: "Sahil"
 tags: ["C++", "debugging", "pointers", "errors", "tutorial"]
+hideMidOptin: true
 faqSchema:
   - question: "What is a segmentation fault in C++?"
     answer: "A segmentation fault (segfault) is a runtime error that occurs when a program tries to access memory it doesn't own — such as dereferencing a null pointer, reading past the end of an array, or accessing freed memory. The OS detects the illegal memory access and terminates the program."
@@ -22,6 +23,8 @@ A segmentation fault (often shortened to "segfault") is one of the most common r
 This happens when your program tries to access memory it doesn't own. The operating system catches this and terminates your program immediately.
 
 This guide explains the most common causes, how to find them, and how to fix them.
+
+<!-- optin-quick error="Segmentation fault" -->
 
 ---
 

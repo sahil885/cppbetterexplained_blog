@@ -26,6 +26,16 @@ faqSchema:
 
 ---
 
+<div class="featured-book">
+  <img src="/book-cover.jpg" alt="C++ Better Explained ebook cover" width="150" height="225" loading="lazy" onerror="this.style.display='none'" />
+  <div>
+    <p class="fb-eyebrow">Brand new to programming?</p>
+    <h3>C++ Better Explained</h3>
+    <p>C++ Primer assumes you've programmed before. If you haven't, start smaller: this book explains pointers, memory and OOP for true beginners, in 87 plain-English pages with diagrams.</p>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+  </div>
+</div>
+
 ## What C++ Primer Is
 
 C++ Primer is by Stanley Lippman, Josée Lajoie and Barbara Moo, published by Addison-Wesley. It's one of the most frequently recommended C++ books, and for good reason: it is careful, thorough and precise.

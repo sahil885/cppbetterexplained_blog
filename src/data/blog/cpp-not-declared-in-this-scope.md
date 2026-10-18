@@ -6,6 +6,7 @@ author: "Sahil"
 tags: ["C++", "beginner", "errors", "debugging"]
 draft: false
 featured: false
+hideMidOptin: true
 faqSchema:
   - question: "What does 'was not declared in this scope' mean in C++?"
     answer: "The compiler reached a name it has not seen declared at that point in the code. The usual causes are a typo, a missing #include, a missing std:: prefix, using a variable outside the block it was declared in, or calling a function before it is declared."
@@ -32,6 +33,8 @@ The same error under other compilers:
 | GCC (g++) | `'x' was not declared in this scope` |
 | Clang | `use of undeclared identifier 'x'` |
 | Visual Studio | `C2065: 'x': undeclared identifier` / `C3861: identifier not found` |
+
+<!-- optin-quick error="was not declared in this scope" -->
 
 ---
 
