@@ -129,7 +129,7 @@ Once you know the basics, Scott Meyers' books are how you learn to write *good* 
 
 **"A Tour of C++" by Bjarne Stroustrup**
 
-A concise overview of modern C++ from the language's creator. Not for beginners — you need to already understand the basics — but for someone who knows C++ fundamentals and wants to understand modern idiomatic C++. It's short enough to read in a weekend.
+A concise overview of modern C++ from the language's creator. Not for beginners — you need to already understand the basics — but for someone who knows C++ fundamentals and wants to understand modern idiomatic C++. It's short enough to read in a weekend. Full review: [A Tour of C++ — is it good for beginners?](/posts/a-tour-of-cpp-review/)
 
 ---
 
@@ -141,9 +141,9 @@ The single best free resource for learning C++ on the internet. It's comprehensi
 
 Structure: it's organized like a textbook, with chapters that build on each other. You can work through it front to back. Each chapter has examples and exercises.
 
-The only downside: it doesn't have built-in exercises or a coding environment, so you'll need to write and run code locally as you read.
+The only downside: there's no built-in coding environment, so you'll need to write and run code locally as you read.
 
-**Use this if:** you want a free, structured learning path that covers everything properly.
+**Use this if:** you want a free, structured learning path that covers everything properly. More in [is learncpp.com enough to learn C++?](/posts/is-learncpp-enough/)
 
 ### cppreference.com
 
@@ -223,7 +223,7 @@ Some resources are popular but not good starting points for beginners.
 
 **"The C++ Programming Language" by Bjarne Stroustrup (the big one)**
 
-This is the comprehensive reference written by the language's creator. It's encyclopedic and authoritative. It is not a learning resource — it's a reference. Reading it cover-to-cover as a beginner is like learning to drive by reading the automotive engineering manual. Use "Programming: Principles and Practice" instead.
+This is the comprehensive reference written by the language's creator. It's encyclopedic and authoritative. It is not a learning resource — it's a reference. Reading it cover-to-cover as a beginner is like learning to drive by reading the automotive engineering manual. Use "Programming: Principles and Practice" instead. More in [is The C++ Programming Language good for beginners?](/posts/the-cpp-programming-language-review/)
 
 **Outdated tutorials that don't use modern C++**
 

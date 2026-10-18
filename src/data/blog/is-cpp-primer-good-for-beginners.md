@@ -121,7 +121,7 @@ These are useful, but they're conveniences layered on the C++11 foundation — n
 
 ## A Note on Similar Titles
 
-**C++ Primer Plus is a different book.** It's by Stephen Prata; the current 6th edition is from 2011, covers C++11, and runs to around 1,440 pages. The names are close enough that people order the wrong one — check the author before you buy.
+**C++ Primer Plus is a different book.** It's by Stephen Prata; the current 6th edition is from 2011, covers C++11, and runs to around 1,440 pages. The names are close enough that people order the wrong one — check the author before you buy. See [C++ Primer vs C++ Primer Plus](/posts/cpp-primer-vs-cpp-primer-plus/) for a side-by-side comparison.
 
 **A Tour of C++ is not a beginner shortcut.** At 254 pages it looks like a lighter alternative, but Stroustrup describes it as a tour for people who already know C++ or are experienced programmers.
 

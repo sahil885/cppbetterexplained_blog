@@ -4,7 +4,7 @@ description: "An honest review of Stroustrup's A Tour of C++, 3rd edition: what 
 pubDatetime: 2026-10-18T00:00:00Z
 author: "Sahil"
 tags: ["C++", "books", "learning", "review"]
-draft: true
+draft: false
 featured: false
 hideAds: true
 faqSchema:
@@ -98,6 +98,8 @@ If you're new to programming, Stroustrup himself points you to another of his bo
 | Written for | Experienced programmers | People who have never programmed | Programmers who want the complete language |
 | C++ standard | C++20 | C++20 and C++23 | C++11 |
 
+Wondering about the big one? See [is The C++ Programming Language good for beginners?](/posts/the-cpp-programming-language-review/)
+
 ## The Verdict
 
 For an experienced programmer, *A Tour of C++* is one of the best C++ books you can buy: short, modern and written by the person who designed the language. For a beginner it's the wrong first book. That's no criticism of the book; it simply wasn't written for you yet. Learn the fundamentals first, and keep it on your list for later.
@@ -116,4 +118,4 @@ For an experienced programmer, *A Tour of C++* is one of the best C++ books you 
 - [Programming: Principles and Practice Review](/posts/programming-principles-and-practice-review/) — Stroustrup's beginner book.
 - [Is C++ Primer Good for Beginners?](/posts/is-cpp-primer-good-for-beginners/) — the other classic textbook.
 - [C++ Primer vs Programming: Principles and Practice](/posts/cpp-primer-vs-programming-principles-and-practice/) — which of the two to pick.
-- [C++ Book vs Course vs YouTube](/posts/cpp-book-vs-course-vs-youtube/) — choosing your main resource.
+- [Is The C++ Programming Language Good for Beginners?](/posts/the-cpp-programming-language-review/) — Stroustrup's complete reference.
