@@ -356,3 +356,4 @@ Syntax errors stop being scary once you understand what the compiler is actually
 - [Header Files in C++](/posts/cpp-header-files/) — where many hidden missing semicolons live.
 - [C++ Loops Tutorial](/posts/cpp-loops-tutorial/) — for, while and do-while syntax.
 - [How to Fix 'expected primary-expression before'](/posts/cpp-expected-primary-expression/) — when a value is missing.
+- [How to Fix stray '\342' in program](/posts/cpp-stray-in-program/) — when pasted code hides odd characters.

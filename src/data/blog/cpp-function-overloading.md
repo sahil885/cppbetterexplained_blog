@@ -153,10 +153,12 @@ Use overloading when the logic is different. Use defaults when the logic is the 
 void show(int x) {}
 void show(double x) {}
 
-show(3.0f);  // float — ambiguous! Not clearly int or double
+show(5L);  // long — ambiguous: converting to int and to double rank the same
 ```
 
-Fix it by being explicit: `show((double)3.0f)` or `show(3.0)`.
+Fix it by being explicit: `show(static_cast<int>(5L))` or `show(5)`.
+
+**Calling with arguments no version accepts:** the error is `no matching function for call to`. See [how to fix it](/posts/cpp-no-matching-function-for-call/).
 
 **Overloading across scopes:** If one overload is in a different namespace or class, the rules get more complex. For beginners, keep all overloads in the same scope.
 
