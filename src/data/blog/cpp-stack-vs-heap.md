@@ -102,6 +102,8 @@ The crucial difference: stack memory is cleaned up automatically. Heap memory is
 
 ---
 
+<!-- book-cta topic="memory" placement="mid_article" -->
+
 ## Memory Leaks
 
 A memory leak occurs when heap memory is allocated but never freed:
@@ -152,8 +154,6 @@ Leaks are hard to spot because the program appears to work — it just gradually
 - Size is determined at runtime
 - You need more memory than the stack allows
 - Multiple parts of the program need to share ownership
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
 
 ---
 
@@ -231,6 +231,4 @@ Stack starts at a high address and grows toward lower addresses. The heap starts
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
-
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="memory" placement="end_cta" -->

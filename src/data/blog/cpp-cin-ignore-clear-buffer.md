@@ -57,8 +57,6 @@ Now `std::getline` runs. Its job is to read up to the next newline. It looks at 
 
 The short version: `cin >>` leaves a newline behind, and `getline` chokes on it.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
-
 ---
 
 ## The Fix: cin.ignore()
@@ -91,6 +89,8 @@ int main() {
 Now the program pauses for the name as expected. The call `std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n')` means "discard characters until you've thrown away a newline, or up to a huge maximum count." It wipes the buffer clean so `getline` starts fresh.
 
 ---
+
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
 
 ## What the Two Arguments Mean
 
@@ -134,6 +134,4 @@ Whenever you mix `cin >> something` with a later `getline`, insert `std::cin.ign
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
-
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="fundamentals" placement="end_cta" -->

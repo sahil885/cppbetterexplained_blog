@@ -137,7 +137,7 @@ int main() {
 
 This pattern is elegant: the function signals "I'm giving you ownership of this resource" by returning a `unique_ptr`. The caller knows they're responsible for the lifetime, and the compiler enforces it automatically.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<!-- book-cta topic="memory" placement="mid_article" -->
 
 ## shared_ptr: Shared Ownership
 
@@ -437,9 +437,7 @@ If you're still writing C++ code with `new` and `delete`, you're living in the p
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
-
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="memory" placement="end_cta" -->
 
 ---
 

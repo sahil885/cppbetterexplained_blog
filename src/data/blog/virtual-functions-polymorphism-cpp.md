@@ -17,11 +17,9 @@ featured: false
 
 # Virtual Functions and Polymorphism in C++: How Runtime Dispatch Actually Works
 
-
 ## Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/977NMIuEdKA" title="What is Polymorphism in Programming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## Introduction: What Is Polymorphism and Why Should You Care?
 
@@ -384,7 +382,7 @@ int main() {
 
 A class with at least one pure virtual function is **abstract**—you cannot instantiate it directly. This is powerful for defining interfaces that derived classes must implement.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<!-- book-cta topic="oop" placement="mid_article" -->
 
 ## Virtual Destructors: Why Forgetting Them Causes Bugs
 
@@ -838,9 +836,7 @@ Virtual functions represent one of C++'s greatest strengths. Master them, and yo
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
-
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="oop" placement="end_cta" -->
 
 ---
 

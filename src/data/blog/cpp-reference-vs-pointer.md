@@ -178,8 +178,6 @@ print(bigString);  // const ref version: no copy made
 - You need pointer arithmetic (e.g., iterating over an array)
 - Interfacing with C APIs that use pointers
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
-
 ---
 
 ## Practical Example: Swap Function
@@ -232,6 +230,4 @@ swapRef(x, y);  // Pass variables directly — cleaner
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
-
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="pointers" placement="end_cta" -->

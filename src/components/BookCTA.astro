@@ -1,0 +1,15 @@
+---
+// Topic-matched book call to action for .astro pages. Markdown posts use the
+// <!-- book-cta topic="..." placement="..." --> marker instead; both render the
+// same HTML from src/utils/bookCta.ts.
+import { renderBookCta, type BookTopic, type Placement } from "@/utils/bookCta";
+
+export interface Props {
+  topic: BookTopic;
+  placement?: Placement;
+}
+
+const { topic, placement = "mid_article" } = Astro.props;
+---
+
+<Fragment set:html={renderBookCta(topic, placement)} />

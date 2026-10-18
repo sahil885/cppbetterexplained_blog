@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
+import remarkBookCta from "./src/utils/remarkBookCta";
 import tailwindcss from "@tailwindcss/vite";
 import { SITE } from "./src/config";
 
@@ -34,6 +35,7 @@ export default defineConfig({
     remarkPlugins: [
       remarkToc,
       [remarkCollapse, { test: "Table of contents" }],
+      remarkBookCta,
     ],
     shikiConfig: {
       themes: { light: "min-light", dark: "night-owl" },

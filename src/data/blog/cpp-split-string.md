@@ -81,7 +81,7 @@ int main() {
 
 `std::getline(ss, item, ',')` reads characters until it hits a comma, stores everything before it in `item`, and discards the comma. Looping until it returns false walks through the whole string. Pulling this into a reusable `split` function keeps your code clean — this is the workhorse method you'll use most.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
 
 ---
 
@@ -144,6 +144,4 @@ Start with the simplest method that fits your data. For most CSV-style and confi
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
-
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="fundamentals" placement="end_cta" -->

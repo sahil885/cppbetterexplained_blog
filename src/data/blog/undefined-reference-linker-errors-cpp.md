@@ -107,7 +107,7 @@ Think of it like filling in a phone book. If someone calls `square()`, you look 
 
 ---
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<!-- book-cta topic="compiling" placement="mid_article" -->
 
 ## What Causes "Undefined Reference to X"? Seven Common Causes
 
@@ -502,8 +502,6 @@ int main() {
 
 ---
 
-<div class="inline-cta">Once the compile-and-link model clicks, these errors stop being scary. The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> teaches the whole build process from scratch — just $19.</div>
-
 ## How to Compile Correctly With g++ (Common Flags Explained)
 
 Here are the most important g++ flags for avoiding linker errors:
@@ -638,9 +636,7 @@ You now have the knowledge to diagnose and fix any "undefined reference" error. 
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
-
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="compiling" placement="end_cta" -->
 
 ---
 

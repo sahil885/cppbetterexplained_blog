@@ -472,8 +472,6 @@ void processFile() {
 
 Keep critical sections as short as possible.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
-
 ## Summary
 
 C++ concurrency starts with `std::thread` for running code in parallel. The core challenge is protecting shared data — use `std::mutex` with `std::lock_guard` (never raw `lock()`/`unlock()`). Use `std::condition_variable` for thread coordination when one thread needs to wait for another. For simple shared counters and flags, `std::atomic` is faster and simpler than a mutex.
@@ -484,9 +482,7 @@ The golden rule: if multiple threads touch the same data and any of them writes,
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
-
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="memory" placement="end_cta" -->
 
 ---
 

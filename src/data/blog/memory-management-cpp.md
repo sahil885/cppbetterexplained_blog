@@ -17,11 +17,9 @@ featured: false
 
 # Memory Management in C++: Heap vs Stack, new/delete, and How to Prevent Memory Leaks
 
-
 ## Video Walkthrough
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V2_qfensOwE" title="Stack Vs Heap Memory in C++ - Simple Explanation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## Introduction: Why Memory Management is C++'s Superpower AND Its Biggest Trap
 
@@ -241,7 +239,7 @@ Even if you delete at the end, an early return or exception can cause a leak.
 
 ---
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<!-- book-cta topic="memory" placement="mid_article" -->
 
 ## How to Detect Memory Leaks: Valgrind and AddressSanitizer
 
@@ -505,9 +503,7 @@ The power to control exactly how your program uses memory is why C++ is still th
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
-
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="memory" placement="end_cta" -->
 
 ---
 
