@@ -6,6 +6,7 @@ author: "Sahil"
 tags: ["C++", "beginner", "setup", "errors"]
 draft: false
 featured: false
+hideMidOptin: true
 faqSchema:
   - question: "What does 'g++' is not recognized as an internal or external command mean?"
     answer: "Windows searched every folder on your PATH for g++.exe and did not find it. Either no C++ compiler is installed, or the folder that contains g++.exe has not been added to PATH."
@@ -33,6 +34,8 @@ In PowerShell — the default terminal inside VS Code on Windows — it's longer
 ```
 g++ : The term 'g++' is not recognized as the name of a cmdlet, function, script file, or operable program.
 ```
+
+<!-- optin-quick error="'g++' is not recognized" -->
 
 ---
 

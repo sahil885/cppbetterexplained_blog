@@ -138,7 +138,7 @@ export function renderQuickOptin(attrs: { error?: string; hook?: string }): stri
   return [
     `<div class="quick-optin not-prose my-8 rounded-xl border border-accent/30 bg-accent/5 px-5 py-6 text-center">`,
     `<p class="text-lg font-bold text-accent mb-1">${hook}</p>`,
-    `<p class="text-sm opacity-75 mb-4 max-w-md mx-auto">Get the free 1-page checklist: <strong>The 10 Mistakes Every C++ Beginner Makes (And How to Avoid Them)</strong>.</p>`,
+    `<p class="text-sm opacity-75 mb-4 max-w-md mx-auto"><strong>Free 1-page checklist: The 10 Mistakes Every C++ Beginner Makes.</strong> It shows the exact traps that slow down every C++ beginner, so you can avoid them from day one.</p>`,
     `<form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list="checklist" data-location="inline_quick_answer">`,
     `<input type="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Email address" class="flex-1 min-w-0 px-4 py-2.5 rounded-lg border border-border bg-card text-foreground text-sm outline-none focus:border-accent transition-colors" />`,
     `<button type="submit" class="px-5 py-2.5 rounded-lg bg-accent text-white font-semibold text-sm cursor-pointer whitespace-nowrap hover:opacity-90 transition-opacity disabled:opacity-50">Send it to me →</button>`,

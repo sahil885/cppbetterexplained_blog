@@ -5,6 +5,7 @@ modDatetime: 2026-08-01T00:00:00Z
 pubDatetime: 2026-05-14T00:00:00Z
 author: "Sahil"
 tags: ["C++", "beginner", "debugging", "errors", "tutorial"]
+hideMidOptin: true
 faqSchema:
   - question: "What does 'undeclared identifier' mean in C++?"
     answer: "It means you're using a variable, function, or type that hasn't been declared before the point where you're using it. Common causes: typo in the name, forgot to include a header, or using a variable outside its scope."
@@ -93,8 +94,9 @@ Variables declared inside `{}` only exist inside those braces. Declare `x` befor
 
 ---
 
-
 Full walkthrough of every cause: [how to fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/).
+
+<!-- optin-quick hook="Fighting compiler errors? Every beginner does." -->
 
 ## 'undefined reference to'
 

@@ -6,6 +6,7 @@ author: "Sahil"
 tags: ["C++", "beginner", "setup", "errors"]
 draft: false
 featured: false
+hideMidOptin: true
 faqSchema:
   - question: "What does #include errors detected. Please update your includePath mean?"
     answer: "The C/C++ extension's IntelliSense cannot find the header files your code includes, usually because no compiler is installed or the extension does not know which compiler to use. It is an editor problem, so your code may still compile."
@@ -27,6 +28,8 @@ You'll usually see these two together, with a red squiggle under `#include <iost
 #include errors detected. Please update your includePath. Squiggles are disabled for this translation unit
 cannot open source file "iostream"
 ```
+
+<!-- optin-quick error="#include errors detected" -->
 
 ---
 
