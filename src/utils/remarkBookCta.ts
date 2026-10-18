@@ -38,7 +38,10 @@ export default function remarkBookCta() {
           const attrs = parseAttrs(match[2]);
           node.value =
             match[1] === "book-cta"
-              ? renderBookCta(attrs.topic ?? "", attrs.placement ?? "mid_article")
+              ? renderBookCta(
+                  attrs.topic ?? "",
+                  attrs.placement ?? "mid_article"
+                )
               : renderQuickOptin(attrs);
         }
       }

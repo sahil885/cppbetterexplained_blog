@@ -86,7 +86,10 @@ export function isPlacement(value: string): value is Placement {
 
 /** HTML for a topic-matched book call to action. Throws on unknown values so a
  *  typo in a post's marker fails the build instead of shipping silently. */
-export function renderBookCta(topic: string, placement = "mid_article"): string {
+export function renderBookCta(
+  topic: string,
+  placement = "mid_article"
+): string {
   if (!isBookTopic(topic)) {
     throw new Error(
       `book-cta: unknown topic "${topic}". Use one of: ${BOOK_TOPICS.join(", ")}`
@@ -124,14 +127,19 @@ export function renderBookCta(topic: string, placement = "mid_article"): string 
 /** Inline checklist opt-in for quick-answer and error posts (Phase 3). Reuses
  *  the in-post opt-in form, so it posts to /api/subscribe with the existing
  *  "checklist" list and is handled by the form script in PostDetails.astro. */
-export function renderQuickOptin(attrs: { error?: string; hook?: string }): string {
+export function renderQuickOptin(attrs: {
+  error?: string;
+  hook?: string;
+}): string {
   // TODO(Sahil): the checklist's 10 mistakes aren't in this repo, so the hook
   // doesn't claim this error is one of them. If it is, switch to:
   // "Hit this one? Here are 9 more traps like it, as a free 1-page checklist."
   let hook = attrs.hook;
   if (!hook) {
     if (!attrs.error) {
-      throw new Error('optin-quick: needs an error="..." or hook="..." attribute');
+      throw new Error(
+        'optin-quick: needs an error="..." or hook="..." attribute'
+      );
     }
     hook = `Hit “${attrs.error}”? It's a classic beginner trap, and there are others like it.`;
   }
