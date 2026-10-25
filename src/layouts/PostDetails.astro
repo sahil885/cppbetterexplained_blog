@@ -318,7 +318,7 @@ const nextPost =
       <p class="text-sm opacity-75 mb-5 max-w-md mx-auto">
         {optin.subtext}
       </p>
-      <form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list={optin.list} data-download={optin.download}>
+      <form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list={optin.list} data-download={optin.download} data-location={isProject ? "source_code" : "post_bottom"}>
         <input
           type="email"
           name="email"
@@ -368,7 +368,7 @@ const nextPost =
       <div class="mid-optin not-prose my-8 rounded-xl border border-accent/30 bg-accent/5 px-5 py-6 text-center">
         <h3 class="text-lg font-bold text-accent mb-1">{optin.icon} {optin.heading}</h3>
         <p class="text-sm opacity-75 mb-4 max-w-md mx-auto">{optin.subtext}</p>
-        <form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list={optin.list} data-download={optin.download}>
+        <form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list={optin.list} data-download={optin.download} data-location={isProject ? "source_code" : "post_mid"}>
           <input
             type="email"
             name="email"
@@ -584,10 +584,8 @@ const nextPost =
     window.scrollTo({ left: 0, top: 0, behavior: "instant" })
   );
 
-  /* ===== Email Opt-in Forms (bottom + mid-article) ===== */
+  /* ===== Email Opt-in Forms (quick answer, mid-article, end of post) ===== */
   (function () {
-    var TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
-
     function bindOptinForm(form) {
       if (!form || form.dataset.bound) return;
       form.dataset.bound = "1";
@@ -618,31 +616,28 @@ const nextPost =
           try { localStorage.setItem("wm_dismissed", String(Date.now())); } catch (err) {}
           form.style.display = "none";
           if (success) success.classList.remove("hidden");
-          // Project posts: start the source-code zip download immediately
+          // One optin_submit per signup, with the form's data-location:
+          // inline_quick_answer, post_mid, post_bottom or source_code.
           if (form.dataset.download) {
+            // Project posts: start the source-code zip download, then go to
+            // the offer after 2 s so the download gets going first.
             var a = document.createElement("a");
             a.href = form.dataset.download;
             a.setAttribute("download", "");
             document.body.appendChild(a);
             a.click();
             a.remove();
-          }
-          // One optin_submit per signup. Forms can set data-location; otherwise
-          // the mid-article and bottom forms report their own positions.
-          let optinLocation = form.dataset.location;
-          if (!optinLocation) {
-            if (form.dataset.download) optinLocation = "source_code";
-            else if (form.closest(".mid-optin")) optinLocation = "post_mid";
-            else optinLocation = "post_bottom";
-          }
-          const minDelay = form.dataset.download ? 2000 : 1200;
-          const goToOffer = () => {
-            window.location.href = TRIPWIRE_URL;
-          };
-          if (typeof window.cbeTrack === "function") {
-            window.cbeTrack("optin_submit", { location: optinLocation }, goToOffer, minDelay);
+            window.cbeOptinSuccess({
+              location: form.dataset.location,
+              delayMs: 2000,
+            });
           } else {
-            setTimeout(goToOffer, minDelay);
+            // Checklist boxes do what the popup does: "You're in!
+            // Redirecting…", a "No thanks" link, then the offer.
+            window.cbeOptinSuccess({
+              location: form.dataset.location,
+              message: success && success.querySelector("p"),
+            });
           }
         })
         .catch(function (err) {

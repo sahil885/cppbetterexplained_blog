@@ -948,8 +948,6 @@ const pillars = [
 
 <script is:inline>
   (function () {
-    const TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
-
     function bindOne(form) {
       if (form.dataset.bound) return;
       form.dataset.bound = "1";
@@ -986,15 +984,12 @@ const pillars = [
             }
             form.style.display = "none";
             if (done) done.style.display = "block";
-            const goToOffer = () => {
-              window.location.href = TRIPWIRE_URL;
-            };
-            const optinLocation = form.dataset.location || "homepage";
-            if (typeof window.cbeTrack === "function") {
-              window.cbeTrack("optin_submit", { location: optinLocation }, goToOffer, 1200);
-            } else {
-              setTimeout(goToOffer, 1200);
-            }
+            // Same as the popup: "You're in! Redirecting…", a "No thanks"
+            // link, then the offer (Layout.astro).
+            window.cbeOptinSuccess({
+              location: form.dataset.location || "homepage",
+              message: done,
+            });
           })
           .catch(function () {
             button.disabled = false;

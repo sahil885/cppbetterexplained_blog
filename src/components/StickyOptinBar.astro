@@ -116,6 +116,9 @@
   #sob-close:hover {
     opacity: 1;
   }
+  #sob-inner :global(.optin-skip) {
+    margin-top: 0;
+  }
   @media (width <= 640px) {
     #sob-email {
       width: 9.5rem;
@@ -126,7 +129,6 @@
 <script is:inline>
   (function () {
     var KEY = "sob_dismissed";
-    var TRIPWIRE_URL = "https://start.cppbetterexplained.com/tw-sales-page";
     var SCROLL_TRIGGER = 0.5;
     var DELAY_MS = 60000;
     var COOLDOWN_MS = 3 * 24 * 60 * 60 * 1000;
@@ -206,14 +208,9 @@
             } catch (err) {}
             form.style.display = "none";
             success.style.display = "block";
-            const goToOffer = () => {
-              window.location.href = TRIPWIRE_URL;
-            };
-            if (typeof window.cbeTrack === "function") {
-              window.cbeTrack("optin_submit", { location: "sticky_bar" }, goToOffer, 1200);
-            } else {
-              setTimeout(goToOffer, 1200);
-            }
+            // Same as the popup: "You're in! Redirecting…", a "No thanks"
+            // link, then the offer (Layout.astro).
+            window.cbeOptinSuccess({ location: "sticky_bar", message: success });
           })
           .catch(function () {
             submit.disabled = false;

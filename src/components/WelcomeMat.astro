@@ -2,6 +2,9 @@
 // WelcomeMat.astro
 // Full-screen welcome mat -> calls Sender.net API directly -> redirects to tripwire.
 // Shows only once per browser using localStorage.
+// The after-sign-up message, delay and redirect are shared with the other
+// opt-in forms (src/utils/optinSuccess.ts, window.cbeOptinSuccess in Layout).
+import { OPTIN_SUCCESS_MESSAGE, OPTIN_SKIP_LABEL } from "@/utils/optinSuccess";
 ---
 
 <div id="welcome-mat" aria-modal="true" role="dialog" aria-labelledby="wm-heading" style="display:none;">
@@ -29,9 +32,9 @@
     </form>
     <div id="wm-success" style="display:none;">
       <div id="wm-success-icon">🎉</div>
-      <p id="wm-success-msg">You're in! Redirecting you to a special offer...</p>
+      <p id="wm-success-msg">{OPTIN_SUCCESS_MESSAGE}</p>
     </div>
-    <button id="wm-skip">No thanks, I'll just browse</button>
+    <button id="wm-skip">{OPTIN_SKIP_LABEL}</button>
   </div>
 </div>
 
@@ -152,7 +155,6 @@
 <script is:inline>
 (function () {
   var STORAGE_KEY      = "wm_dismissed";
-  var TRIPWIRE_URL     = "https://start.cppbetterexplained.com/tw-sales-page";
   var SCROLL_TRIGGER   = 0.35;   // show after 35% scroll depth (engaged reader)
   var FALLBACK_MS      = 45000;  // fallback for visitors who never scroll
 
@@ -241,14 +243,9 @@
         markDismissed();
         form.style.display = "none";
         success.style.display = "block";
-        const goToOffer = () => {
-          window.location.href = TRIPWIRE_URL;
-        };
-        if (typeof window.cbeTrack === "function") {
-          window.cbeTrack("optin_submit", { location: "popup" }, goToOffer, 1200);
-        } else {
-          setTimeout(goToOffer, 1200);
-        }
+        // Shared step (Layout.astro): optin_submit, then the offer after the
+        // usual delay. The popup keeps its own message and "No thanks" button.
+        window.cbeOptinSuccess({ location: "popup" });
       })
       .catch(function (err) {
         console.error("Subscribe network error:", err);
