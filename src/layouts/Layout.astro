@@ -3,6 +3,12 @@ import { ClientRouter } from "astro:transitions";
 import { SITE } from "@/config";
 import WelcomeMat from "@/components/WelcomeMat.astro";
 import StickyOptinBar from "@/components/StickyOptinBar.astro";
+import {
+  OPTIN_OFFER_URL,
+  OPTIN_REDIRECT_DELAY_MS,
+  OPTIN_SUCCESS_MESSAGE,
+  OPTIN_SKIP_LABEL,
+} from "@/utils/optinSuccess";
 import "@/styles/global.css";
 
 type Props = {
@@ -307,6 +313,61 @@ const structuredData = isArticle
         ></script>
       )
     }
+
+    <!-- Shared after-sign-up step for every opt-in form -->
+    <script
+      is:inline
+      define:vars={{
+        OFFER_URL: OPTIN_OFFER_URL,
+        DELAY_MS: OPTIN_REDIRECT_DELAY_MS,
+        MESSAGE: OPTIN_SUCCESS_MESSAGE,
+        SKIP_LABEL: OPTIN_SKIP_LABEL,
+      }}
+    >
+      // After a successful sign-up, every opt-in form calls this so it behaves
+      // like the welcome-mat popup: send optin_submit with the form's own
+      // location (the GA "Opt in location"), keep the success message up for
+      // DELAY_MS, then go to the offer. Values: src/utils/optinSuccess.ts.
+      //   location  required, e.g. "post_bottom"
+      //   message   optional element holding the form's success text. It gets
+      //             the popup's message plus a "No thanks, I'll just browse"
+      //             link; the link cancels the redirect and puts the form's
+      //             own "Check your inbox" text back.
+      //   delayMs   optional, defaults to DELAY_MS
+      // Returns a function that cancels the redirect.
+      window.cbeOptinSuccess = function (opts) {
+        const o = opts || {};
+        const delay = o.delayMs || DELAY_MS;
+        const msg = o.message;
+        let cancelled = false;
+        if (msg) {
+          const confirmation = msg.textContent.trim();
+          msg.textContent = "\uD83C\uDF89 " + MESSAGE;
+          const skip = document.createElement("button");
+          skip.type = "button";
+          skip.className = "optin-skip";
+          skip.textContent = SKIP_LABEL;
+          skip.addEventListener("click", () => {
+            cancelled = true;
+            msg.textContent = confirmation;
+            skip.remove();
+          });
+          msg.after(skip);
+        }
+        const goToOffer = () => {
+          if (!cancelled) window.location.href = OFFER_URL;
+        };
+        const params = { location: o.location || "other" };
+        if (typeof window.cbeTrack === "function") {
+          window.cbeTrack("optin_submit", params, goToOffer, delay);
+        } else {
+          setTimeout(goToOffer, delay);
+        }
+        return () => {
+          cancelled = true;
+        };
+      };
+    </script>
   </head>
   <body>
     <slot />
