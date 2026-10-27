@@ -199,6 +199,7 @@ If you want classes, objects and OOP explained properly rather than pieced toget
 
 - [C++ Classes and Objects](/posts/cpp-classes-and-objects/) — the foundation this builds on.
 - [The const Keyword in C++](/posts/cpp-const-keyword/) — why const getters matter.
+- [How to Fix 'lvalue required as left operand of assignment'](/posts/cpp-lvalue-required-left-operand/) — what happens if you assign to a getter.
 - [struct vs class in C++](/posts/cpp-struct-vs-class/) — when to skip encapsulation.
 - [C++ this Pointer](/posts/cpp-this-pointer/) — what member functions operate on.
 - [C++ Bank Account Program](/posts/cpp-bank-account-program/) — encapsulation in a real project.

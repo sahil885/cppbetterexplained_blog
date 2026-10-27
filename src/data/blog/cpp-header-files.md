@@ -272,6 +272,8 @@ If `A.h` includes `B.h` and `B.h` includes `A.h`, you have a circular dependency
 
 **Using a class before its header is included:** the compiler reports `does not name a type`. See [how to fix 'does not name a type'](/posts/cpp-does-not-name-a-type/).
 
+**A missing `}` in a header:** the error shows up in the `.cpp` file that includes it, as `expected '}' at end of input`. See [how to find the missing brace](/posts/cpp-expected-brace-at-end-of-input/).
+
 ---
 
 ## Related Articles

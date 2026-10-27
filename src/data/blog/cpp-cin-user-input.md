@@ -276,6 +276,9 @@ Use `cin >> word` for single words; use `getline(cin, line)` for whole sentences
 **Forgetting `cin.ignore()` between `cin >>` and `getline`**  
 Always add it when mixing the two.
 
+**Using `scanf` in Visual Studio**  
+Visual Studio flags `scanf` with C4996 ("This function or variable may be unsafe"), and with SDL checks on it won't build. Use `cin` instead; see [how to fix C4996](/posts/cpp-c4996-function-may-be-unsafe/).
+
 <div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
 
 ---
@@ -324,6 +327,7 @@ The `while (cin >> num && num != 0)` checks two things: that the read succeeded,
 ## Related Articles
 
 - [cin vs getline: Why getline Gets Skipped](/posts/cpp-getline-vs-cin/) — the leftover-newline bug and two ways to fix it.
+- [How to Fix C4996 in Visual Studio](/posts/cpp-c4996-function-may-be-unsafe/) — why scanf is flagged as unsafe.
 - [C++ Input Validation: Handling Bad cin Input](/posts/cpp-input-validation/) — stop infinite loops when the user types letters.
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — the types you'll be storing input into
 - [C++ Loops Tutorial](/posts/cpp-loops-tutorial/) — combine with input for interactive programs

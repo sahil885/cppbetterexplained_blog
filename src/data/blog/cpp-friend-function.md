@@ -32,7 +32,7 @@ Temperature t(23.5);
 std::cout << t;   // we want this to work
 ```
 
-To make that work, you need to overload `operator<<`. But here's the catch: the left operand is `std::cout`, not your object. That means the overload **cannot be a member function of `Temperature`** — member functions always take the object on the left.
+To make that work, you need to overload `operator<<`. But here's the catch: the left operand is `std::cout`, not your object. That means the overload **cannot be a member function of `Temperature`** — member functions always take the object on the left. Write it as a member anyway and `std::cout << t` fails with [`no match for 'operator<<'`](/posts/cpp-no-match-for-operator/).
 
 So it has to be a free function. But a free function can't read `Temperature`'s private data. That's exactly the gap `friend` fills.
 
@@ -235,6 +235,7 @@ A friend function is an outside function that the class explicitly invites in. B
 ## Related Articles
 
 - [C++ Operator Overloading](/posts/cpp-operator-overloading/) — the main place friends show up
+- [How to Fix 'no match for operator<<'](/posts/cpp-no-match-for-operator/) — the error you get when operator<< isn't set up right
 - [C++ Classes and Objects](/posts/cpp-classes-and-objects/) — public, private, and access control
 - [struct vs class in C++](/posts/cpp-struct-vs-class/) — default access differences
 - [OOP in C++](/posts/oop-in-cpp/) — encapsulation in context

@@ -223,6 +223,8 @@ strcpy(buf, "Hello World");  // Buffer overflow — writes beyond buf!
 // Use std::string instead, or check size first
 ```
 
+This is why Visual Studio flags `strcpy` and `strcat` with warning C4996. See [how to fix C4996 'This function or variable may be unsafe'](/posts/cpp-c4996-function-may-be-unsafe/).
+
 **Returning a pointer to a local char array:**
 
 ```cpp
@@ -259,6 +261,7 @@ string getSafeString() {
 ## Related Articles
 
 - [C++ String Length: size() vs length() vs strlen()](/posts/cpp-string-length/) — which to use and the unsigned trap.
+- [How to Fix C4996 in Visual Studio](/posts/cpp-c4996-function-may-be-unsafe/) — when strcpy or scanf won't compile.
 - [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ String Handling](/posts/cpp-string-handling/) — std::string methods, string_view, performance tips
 - [C++ int to string Conversion](/posts/cpp-int-to-string/) — converting numbers to strings

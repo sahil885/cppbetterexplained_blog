@@ -118,6 +118,8 @@ std::cout << n << "\n";
 
 The explicit `static_cast` is a feature, not a chore — it documents "yes, I really want the integer here."
 
+Leave the cast out and `std::cout << c` won't compile: the error is [`no match for 'operator<<'`](/posts/cpp-no-match-for-operator/).
+
 ---
 
 ## Choosing the Underlying Type

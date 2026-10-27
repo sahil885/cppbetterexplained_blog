@@ -307,6 +307,7 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ## Related Articles
 
 - [How to Write to a File in C++](/posts/cpp-write-to-file/) — ofstream, formatting and flushing explained.
+- [How to Fix C4996 in Visual Studio](/posts/cpp-c4996-function-may-be-unsafe/) — why fopen is flagged, and the ifstream alternative.
 - [How to Get the Size of a File in C++](/posts/cpp-file-size/) — filesystem::file_size and the seekg fallback.
 - [How to Read a File Line by Line in C++](/posts/cpp-read-file-line-by-line/) — the ifstream + getline pattern, done correctly.
 - [How to Append to a File in C++](/posts/cpp-append-to-file/) — add to a file instead of wiping it with std::ios::app.

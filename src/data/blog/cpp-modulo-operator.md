@@ -59,6 +59,8 @@ int main() {
 
 Swap the `2` for any number and you can check "every 3rd item," "is this a multiple of 10," and so on. This pattern shows up constantly in loops.
 
+Watch the double equals sign. `if (n % 2 = 0)` won't compile: it gives the [lvalue required as left operand of assignment](/posts/cpp-lvalue-required-left-operand/) error.
+
 <div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
 
 ---
@@ -136,6 +138,7 @@ The same idea cycles through array indices, rotates colors, or loops an animatio
 ## Related Articles
 
 - [C++ Even or Odd Program](/posts/cpp-even-odd-program/) — modulo in action
+- [How to Fix 'lvalue required as left operand of assignment'](/posts/cpp-lvalue-required-left-operand/) — when `=` sneaks in where `==` belongs
 - [C++ Math Functions](/posts/cpp-math-functions/) — fmod, pow, sqrt, and more
 - [C++ Bitwise Operators](/posts/cpp-bitwise-operators/) — another fast way to test even/odd
 - [C++ Loops Tutorial](/posts/cpp-loops-tutorial/) — where modulo shines

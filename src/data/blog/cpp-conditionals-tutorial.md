@@ -153,6 +153,8 @@ if (x == 10) {  // Correct: compares x to 10
 }
 ```
 
+When the left side isn't a plain variable, as in `if (n % 2 = 0)`, the same slip is a compile error instead. See [lvalue required as left operand of assignment](/posts/cpp-lvalue-required-left-operand/).
+
 ---
 
 <div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
@@ -425,4 +427,6 @@ If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](http
 ## Related Articles
 - [C++ Variables and Data Types: A Complete Beginner's Guide](/posts/cpp-variables-data-types/) — you compare variables in conditionals; understand them first.
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — conditionals and loops are often used together; learn both.
+- [Fix 'lvalue required as left operand of assignment'](/posts/cpp-lvalue-required-left-operand/) — the error `=` instead of `==` can cause.
+- [Fix expected '}' at end of input](/posts/cpp-expected-brace-at-end-of-input/) — when an if or else block is missing its closing brace.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — wrap conditional logic in functions to keep code clean and reusable.
