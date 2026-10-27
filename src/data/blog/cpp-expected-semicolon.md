@@ -275,7 +275,7 @@ GCC:    error: a function-definition is not allowed here before '{' token
 Clang:  error: function definition is not allowed here
 ```
 
-**Fix:** add the missing `}` at the end of `main`. Clicking just after an opening brace highlights its partner in most editors, which makes the missing one easy to find.
+**Fix:** add the missing `}` at the end of `main`. Clicking just after an opening brace highlights its partner in most editors, which makes the missing one easy to find. For other missing-brace messages, see [how to fix expected '}' at end of input](/posts/cpp-expected-brace-at-end-of-input/).
 
 ## Semicolons That Shouldn't Be There
 
@@ -357,3 +357,4 @@ Syntax errors stop being scary once you understand what the compiler is actually
 - [C++ Loops Tutorial](/posts/cpp-loops-tutorial/) — for, while and do-while syntax.
 - [How to Fix 'expected primary-expression before'](/posts/cpp-expected-primary-expression/) — when a value is missing.
 - [How to Fix stray '\342' in program](/posts/cpp-stray-in-program/) — when pasted code hides odd characters.
+- [How to Fix Expected '}' at End of Input](/posts/cpp-expected-brace-at-end-of-input/) — when a brace is missing instead.

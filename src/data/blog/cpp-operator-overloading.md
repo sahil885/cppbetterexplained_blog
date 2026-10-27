@@ -144,6 +144,8 @@ int main() {
 
 Returning `os` (the stream) is important — it's what allows chaining: `cout << a << b << c`.
 
+If `cout << v` still gives `no match for 'operator<<'`, the usual culprits are an operator written as a member function instead of a friend, or a missing `const` on the second parameter. See [how to fix 'no match for operator<<'](/posts/cpp-no-match-for-operator/).
+
 ---
 
 ## Overloading += and Other Compound Assignments
@@ -317,6 +319,7 @@ If you define `==`, also define `!=`. If you define `<`, consider defining `>`, 
 ## Related Articles
 
 - [C++ Classes and Objects](/posts/cpp-classes-and-objects/) — understand classes before overloading their operators
+- [How to Fix 'no match for operator<<'](/posts/cpp-no-match-for-operator/) — when printing your object won't compile
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — operator overloading is just function overloading with special names
 - [C++ Pass by Value and Reference](/posts/cpp-pass-by-value-reference/) — essential for understanding operator parameter types
 - [OOP in C++](/posts/oop-in-cpp/) — operator overloading in the broader context of object-oriented design

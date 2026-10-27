@@ -20,6 +20,8 @@ featured: false
 
 You can't just write `std::cout << myVector` — C++ has no built-in way to print a whole vector at once. Instead you loop over the elements and print them yourself. Here are four clean ways to do it, from the beginner favorite to a reusable helper.
 
+Try it anyway and the compiler stops with `no match for 'operator<<'`. That error has other causes too, such as printing your own class or an `enum class`; see [how to fix 'no match for operator<<'](/posts/cpp-no-match-for-operator/).
+
 ---
 
 ## Method 1: Range-Based For Loop (Recommended)
@@ -139,6 +141,7 @@ The outer loop hands you one row at a time; the inner loop prints it. The newlin
 
 ## Related Articles
 
+- [How to Fix 'no match for operator<<'](/posts/cpp-no-match-for-operator/) — the error `std::cout << myVector` gives, and its other causes.
 - [How to Reverse a Vector in C++](/posts/cpp-reverse-vector/) — std::reverse, reverse iterators and looping backwards safely.
 - [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — the complete guide to std::vector

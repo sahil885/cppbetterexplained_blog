@@ -328,6 +328,10 @@ Fix: check pointer validity before dereferencing, check array bounds, and use to
 | `expected primary-expression before` | A type or empty `[]` where a value belongs ([full fix](/posts/cpp-expected-primary-expression/)) |
 | `does not name a type` | A type used before it's declared, or code outside a function ([full fix](/posts/cpp-does-not-name-a-type/)) |
 | `stray '\342' in program` | Curly quotes or dashes pasted into code ([full fix](/posts/cpp-stray-in-program/)) |
+| `no match for 'operator<<'` | Printing a type with no output operator ([full fix](/posts/cpp-no-match-for-operator/)) |
+| `lvalue required as left operand of assignment` | `=` instead of `==`, or a value on the left of `=` ([full fix](/posts/cpp-lvalue-required-left-operand/)) |
+| `expected '}' at end of input` | A `{` that never got its closing `}` ([full fix](/posts/cpp-expected-brace-at-end-of-input/)) |
+| `C4996: ... may be unsafe` (Visual Studio) | `scanf`, `strcpy` or `fopen` flagged by Visual Studio ([full fix](/posts/cpp-c4996-function-may-be-unsafe/)) |
 | `cannot convert` | Type mismatch |
 | `redefinition of` | Defined twice, missing include guards |
 | `control reaches end of non-void function` | Missing return in some code path |
@@ -351,6 +355,10 @@ Fix: check pointer validity before dereferencing, check array bounds, and use to
 - [Fix 'does not name a type'](/posts/cpp-does-not-name-a-type/) — when the compiler doesn't know a type yet.
 - [Fix 'no matching function for call to'](/posts/cpp-no-matching-function-for-call/) — when no version of a function fits.
 - [Fix 'stray \342 in program'](/posts/cpp-stray-in-program/) — curly quotes and hidden characters.
+- [Fix 'no match for operator<<'](/posts/cpp-no-match-for-operator/) — when C++ can't print your type.
+- [Fix 'lvalue required as left operand of assignment'](/posts/cpp-lvalue-required-left-operand/) — `=` where `==` belongs.
+- [Fix expected '}' at end of input](/posts/cpp-expected-brace-at-end-of-input/) — finding a missing brace.
+- [Fix C4996 'This function or variable may be unsafe'](/posts/cpp-c4996-function-may-be-unsafe/) — Visual Studio and scanf, strcpy, fopen.
 
 ---
 
