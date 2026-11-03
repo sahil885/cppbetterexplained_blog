@@ -339,7 +339,7 @@ const nextPost =
           <span class="mt-1 flex flex-wrap gap-x-4 gap-y-1">
             {errorPrev && (
               <a
-                href={getPath(errorPrev.id, errorPrev.filePath)}
+                href={`${getPath(errorPrev.id, errorPrev.filePath)}/`}
                 class="opacity-80 hover:text-accent hover:underline"
               >
                 Previous: {errorPrev.title}
@@ -347,7 +347,7 @@ const nextPost =
             )}
             {errorNext && (
               <a
-                href={getPath(errorNext.id, errorNext.filePath)}
+                href={`${getPath(errorNext.id, errorNext.filePath)}/`}
                 class="opacity-80 hover:text-accent hover:underline"
               >
                 Next: {errorNext.title}
@@ -387,7 +387,7 @@ const nextPost =
     {
       errorIndex !== -1 && (
         <a
-          href={errorNext ? getPath(errorNext.id, errorNext.filePath) : ERROR_HUB}
+          href={errorNext ? `${getPath(errorNext.id, errorNext.filePath)}/` : ERROR_HUB}
           class="mt-8 block rounded-xl border border-accent/30 bg-accent/5 px-5 py-4 hover:border-accent"
         >
           <span class="text-xs font-semibold tracking-wide uppercase opacity-60">
