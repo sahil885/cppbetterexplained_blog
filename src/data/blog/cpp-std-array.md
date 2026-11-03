@@ -37,7 +37,7 @@ int main() {
 }
 ```
 
-The type is `std::array<ElementType, Count>`. Here it's an array of 5 `int`s. That `5` is part of the type — the size is fixed at compile time and can never change.
+The type is `std::array<ElementType, Count>`. Here it's an array of 5 `int`s. That `5` is part of the type — the size is fixed at compile time and can never change. Put a normal variable there and it won't compile; see [expression must have a constant value](/posts/cpp-expression-must-have-constant-value/) for the fix.
 
 ---
 

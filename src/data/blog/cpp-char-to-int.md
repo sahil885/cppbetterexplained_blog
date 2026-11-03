@@ -135,6 +135,7 @@ Adding `'0'` is the mirror image of subtracting it. This pairs nicely with build
 - [How to Convert String to int in C++](/posts/cpp-string-to-int/) — stoi, atoi, and stringstream
 - [C++ int to string Conversion](/posts/cpp-int-to-string/) — every method explained
 - [C++ Type Casting Explained](/posts/cpp-type-casting/) — static_cast and friends
+- [How to Fix 'invalid conversion from const char* to char'](/posts/cpp-invalid-conversion/) — when double quotes are used for a char
 - [C++ String vs char array](/posts/cpp-string-vs-char-array/) — when to use each
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — how char really works
 

@@ -254,6 +254,9 @@ The most common switch mistake. Always add break at the end of each case unless 
 **Using non-integer types:**
 You cannot switch on `std::string` or `float`. For strings, use `if-else` or a `std::map`.
 
+**Using a variable as a case label:**
+Each `case` needs a value the compiler knows in advance. `case quit:` with `int quit = 3;` won't compile; make it `const int quit = 3;`. See [expression must have a constant value](/posts/cpp-expression-must-have-constant-value/).
+
 **Declaring variables inside cases:**
 If you need to declare a variable inside a case, wrap the case body in braces:
 

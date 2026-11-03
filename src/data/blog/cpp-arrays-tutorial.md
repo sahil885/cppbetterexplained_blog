@@ -465,6 +465,8 @@ int scores[n];  // variable-length arrays: not standard in C++
 // Fix: use std::vector<int> scores(n);
 ```
 
+In Visual Studio this is the `expression must have a constant value` error. See [how to fix it](/posts/cpp-expression-must-have-constant-value/).
+
 <div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
 
 ## Summary

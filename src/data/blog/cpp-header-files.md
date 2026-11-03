@@ -257,6 +257,8 @@ int square(int x) { return x * x; }
 inline int square(int x) { return x * x; }
 ```
 
+Without `inline`, the build fails with `multiple definition of 'square(int)'` and `collect2: error: ld returned 1 exit status`. See [how to fix it](/posts/cpp-ld-returned-1-exit-status/).
+
 **Missing include guards:**
 ```cpp
 // BAD — no protection against multiple inclusion

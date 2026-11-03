@@ -275,6 +275,8 @@ int* ptr = x;  // Wrong! x is an int, not an address
 ptr = &x;      // Correct
 ```
 
+The compiler catches this one: g++ reports `invalid conversion from 'int' to 'int*'`. See [how to fix 'invalid conversion' errors](/posts/cpp-invalid-conversion/) for this and similar type mismatches.
+
 ### Mistake 3: Not Dereferencing When You Need To
 
 ```cpp

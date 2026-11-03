@@ -97,6 +97,8 @@ int main() {
 4. Multiple catch blocks handle different exceptions
 5. Control resumes after the catch block (or exits if uncaught)
 
+If nothing catches an exception, the program stops with a message like `terminate called after throwing an instance of 'std::runtime_error'`. See [how to fix that message](/posts/cpp-terminate-called-after-throwing/).
+
 ```cpp
 try {
     // Some code

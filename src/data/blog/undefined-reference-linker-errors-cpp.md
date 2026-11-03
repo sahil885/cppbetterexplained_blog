@@ -392,7 +392,7 @@ Breaking this down:
 - **`/tmp/cczZxP1P.o`** : The error is in this object file
 - **`In function `main'`** : The error was detected while processing `main()`
 - **`main.cpp:(.text+0x15)`** : The error is in `main.cpp` at offset 0x15
-- **`collect2: error: ld returned 1 exit status`** : The linker (`ld`) failed
+- **`collect2: error: ld returned 1 exit status`** : The linker (`ld`) failed. This line never gives the reason itself ([more on this line](/posts/cpp-ld-returned-1-exit-status/))
 
 The key information is the function name: `foo()`. Now you know to look for why `foo()` wasn't linked.
 
@@ -646,4 +646,5 @@ You now have the knowledge to diagnose and fix any "undefined reference" error. 
 - [Top 50 C++ Interview Questions and Answers](/posts/cpp-interview-questions/) — build errors and compilation questions appear regularly in C++ technical interviews.
 - [Fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/) — the six usual causes.
 - [How to Open and Run a .cpp File](/posts/how-to-run-cpp-file/) — compiling and running on your own machine.
+- [How to Fix 'collect2: error: ld returned 1 exit status'](/posts/cpp-ld-returned-1-exit-status/) — multiple definitions, a missing main, and a locked .exe.
 
