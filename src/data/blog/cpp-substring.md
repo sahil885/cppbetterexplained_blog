@@ -90,7 +90,7 @@ int main() {
 
 ## Avoiding the out_of_range Error
 
-There's one crash to watch for. If the starting position is **larger than the string's length**, `substr()` throws a `std::out_of_range` exception and your program stops. A quick length check keeps you safe:
+There's one crash to watch for. If the starting position is **larger than the string's length**, `substr()` throws a `std::out_of_range` exception and your program stops with [terminate called after throwing an instance of 'std::out_of_range'](/posts/cpp-terminate-called-after-throwing/). A quick length check keeps you safe:
 
 ```cpp
 #include <iostream>

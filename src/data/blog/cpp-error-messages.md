@@ -139,6 +139,8 @@ g++ main.cpp -o myprogram -lpthread  # Link thread library
 
 For a deeper look at linker errors, see the dedicated [Undefined Reference Linker Errors](/posts/undefined-reference-linker-errors-cpp/) article.
 
+If the output ends with `collect2: error: ld returned 1 exit status`, see [what that line means](/posts/cpp-ld-returned-1-exit-status/), including `multiple definition` and `Permission denied`.
+
 ---
 
 ## 'no matching function for call to'
@@ -222,6 +224,8 @@ int* p = d;  // Error: cannot convert 'double' to 'int*'
 int n = (int)3.14;  // Explicit cast
 string s = to_string(42);  // Correct way to convert int to string
 ```
+
+Full walkthrough of every cause, with the exact GCC, Clang and Visual Studio messages: [how to fix 'invalid conversion' errors](/posts/cpp-invalid-conversion/).
 
 ---
 
@@ -315,6 +319,8 @@ Common causes:
 
 Fix: check pointer validity before dereferencing, check array bounds, and use tools like Valgrind or AddressSanitizer (`-fsanitize=address` compiler flag) to find memory errors.
 
+Another way a program can stop at runtime is `terminate called after throwing an instance of '...'`: an exception that nothing caught. See [how to fix it](/posts/cpp-terminate-called-after-throwing/).
+
 ---
 
 ## Quick Error Reference
@@ -332,12 +338,15 @@ Fix: check pointer validity before dereferencing, check array bounds, and use to
 | `lvalue required as left operand of assignment` | `=` instead of `==`, or a value on the left of `=` ([full fix](/posts/cpp-lvalue-required-left-operand/)) |
 | `expected '}' at end of input` | A `{` that never got its closing `}` ([full fix](/posts/cpp-expected-brace-at-end-of-input/)) |
 | `C4996: ... may be unsafe` (Visual Studio) | `scanf`, `strcpy` or `fopen` flagged by Visual Studio ([full fix](/posts/cpp-c4996-function-may-be-unsafe/)) |
-| `cannot convert` | Type mismatch |
+| `expression must have a constant value` (Visual Studio) | A variable used as an array size or `case` label ([full fix](/posts/cpp-expression-must-have-constant-value/)) |
+| `collect2: error: ld returned 1 exit status` | The linker failed; the reason is on the line above ([full fix](/posts/cpp-ld-returned-1-exit-status/)) |
+| `cannot convert` / `invalid conversion from` | The wrong type, such as text in double quotes for a `char` ([full fix](/posts/cpp-invalid-conversion/)) |
 | `redefinition of` | Defined twice, missing include guards |
 | `control reaches end of non-void function` | Missing return in some code path |
 | `use of uninitialized variable` | Variable used before assignment |
 | Segmentation fault | Bad memory access at runtime ([full fix](/posts/cpp-segmentation-fault/)) |
 | `vector subscript out of range` | Index past the end of a vector ([full fix](/posts/cpp-vector-subscript-out-of-range/)) |
+| `terminate called after throwing an instance of` | An exception that nothing caught ([full fix](/posts/cpp-terminate-called-after-throwing/)) |
 
 ---
 
@@ -359,6 +368,10 @@ Fix: check pointer validity before dereferencing, check array bounds, and use to
 - [Fix 'lvalue required as left operand of assignment'](/posts/cpp-lvalue-required-left-operand/) — `=` where `==` belongs.
 - [Fix expected '}' at end of input](/posts/cpp-expected-brace-at-end-of-input/) — finding a missing brace.
 - [Fix C4996 'This function or variable may be unsafe'](/posts/cpp-c4996-function-may-be-unsafe/) — Visual Studio and scanf, strcpy, fopen.
+- [Fix 'invalid conversion from const char* to char'](/posts/cpp-invalid-conversion/) — wrong types, quotes, and pointers.
+- [Fix 'expression must have a constant value'](/posts/cpp-expression-must-have-constant-value/) — array sizes, case labels and std::array.
+- [Fix 'collect2: error: ld returned 1 exit status'](/posts/cpp-ld-returned-1-exit-status/) — reading the linker's real error.
+- [Fix 'terminate called after throwing an instance of'](/posts/cpp-terminate-called-after-throwing/) — uncaught exceptions at runtime.
 
 ---
 

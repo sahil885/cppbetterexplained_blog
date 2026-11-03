@@ -138,7 +138,7 @@ int main() {
 }
 ```
 
-`invalid_argument` fires when the string doesn't contain a number at all. `out_of_range` fires when the number is too big to fit in the target type.
+`invalid_argument` fires when the string doesn't contain a number at all. `out_of_range` fires when the number is too big to fit in the target type. If nothing catches them, the program stops with `terminate called after throwing an instance of 'std::invalid_argument'`; see [what that message means](/posts/cpp-terminate-called-after-throwing/).
 
 This is particularly important when reading user input — users don't always type what you expect.
 
@@ -301,6 +301,9 @@ string s = "Number: " + to_string(n);  // Correct
 
 **Overflow with stoi for large numbers**  
 `stoi("99999999999")` throws `out_of_range` because the number doesn't fit in an `int`. Use `stoll()` for large values.
+
+**Assigning an int straight to a string**  
+`string s = 95;` won't compile, and `s = 42;` compiles but stores the character `*` (character code 42). Use `to_string()`. See [how to fix 'invalid conversion' errors](/posts/cpp-invalid-conversion/).
 
 ---
 

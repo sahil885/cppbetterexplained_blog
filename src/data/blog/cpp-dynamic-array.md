@@ -31,7 +31,7 @@ std::cin >> n;
 int scores[n];   // ✗ not standard C++
 ```
 
-You may be surprised that this *compiles* on g++ and clang. It's a compiler extension called a variable-length array, borrowed from C. MSVC rejects it, and it isn't in the C++ standard, so code that relies on it isn't portable. Don't build habits on it.
+You may be surprised that this *compiles* on g++ and clang. It's a compiler extension called a variable-length array, borrowed from C. MSVC rejects it, and it isn't in the C++ standard, so code that relies on it isn't portable. Don't build habits on it. In Visual Studio the message is `expression must have a constant value`; see [how to fix that error](/posts/cpp-expression-must-have-constant-value/).
 
 The array size in a regular declaration must be a **compile-time constant**, because the compiler needs to know exactly how many bytes to reserve on the stack before your program ever runs. See [stack vs heap](/posts/cpp-stack-vs-heap/) for why that restriction exists.
 
@@ -199,6 +199,7 @@ So why learn `new[]` at all? Because you'll read older code that uses it, becaus
 - [Memory Management in C++](/posts/memory-management-cpp/)
 - [new vs malloc in C++](/posts/cpp-new-vs-malloc/)
 - [Stack vs Heap in C++](/posts/cpp-stack-vs-heap/)
+- [How to Fix 'expression must have a constant value'](/posts/cpp-expression-must-have-constant-value/)
 - [C++ vector Tutorial for Beginners](/posts/cpp-vector-tutorial/)
 - [Smart Pointers in C++](/posts/smart-pointers-cpp/)
 

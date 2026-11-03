@@ -62,7 +62,7 @@ Several C++ features require compile-time constants:
 
 **Array sizes:**
 ```cpp
-const int n = 5;       // May or may not work as array size (implementation-defined for local const int)
+const int n = 5;       // Also works: n is set from a constant
 constexpr int m = 5;   // Always works
 
 int arr[m];            // Fine — m is a compile-time constant
@@ -207,6 +207,7 @@ The practical rule: if the value is a true constant that the compiler can know (
 - [C++ Enum Tutorial](/posts/cpp-enum-tutorial/) — enums and constexpr work together well
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — constexpr functions
 - [C++ Templates Explained](/posts/cpp-templates-explained/) — templates use compile-time constants heavily
+- [How to Fix 'expression must have a constant value'](/posts/cpp-expression-must-have-constant-value/) — the error when an array size or case label isn't a compile-time constant
 
 ---
 

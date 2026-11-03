@@ -70,6 +70,8 @@ int main() {
 
 This prints: `Not a valid number: stoi`
 
+Without the `try`, the same input stops the program with `terminate called after throwing an instance of 'std::invalid_argument'`. See [how to fix that message](/posts/cpp-terminate-called-after-throwing/).
+
 `stoi` also has a second parameter that tells you how many characters were consumed, which is useful for parsing:
 
 ```cpp
@@ -217,6 +219,7 @@ This is a pattern you'll use constantly when writing interactive C++ programs.
 - [C++ String Handling: Everything a Beginner Needs to Know](/posts/cpp-string-handling/)
 - [C++ User Input with cin: Reading from the Keyboard](/posts/cpp-cin-user-input/)
 - [C++ Error Messages Explained: What They Mean and How to Fix Them](/posts/cpp-error-messages/)
+- [How to Fix 'invalid conversion' Errors in C++](/posts/cpp-invalid-conversion/) — what happens if you assign a string straight to an int
 
 ---
 

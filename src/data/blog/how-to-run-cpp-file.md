@@ -136,6 +136,9 @@ The program ran and finished. Run it from a terminal instead of double-clicking 
 **`undefined reference to ...`**
 Usually a missing `.cpp` file in the compile command, or a declared-but-never-defined function. See [undefined reference errors](/posts/undefined-reference-linker-errors-cpp/).
 
+**`collect2: error: ld returned 1 exit status`**
+The linker failed, and the reason is on the line above it. On Windows, `Permission denied` there means the program is still running, so close it first. See [how to fix ld returned 1 exit status](/posts/cpp-ld-returned-1-exit-status/).
+
 ## Quick Reference
 
 | Goal | Command or action |

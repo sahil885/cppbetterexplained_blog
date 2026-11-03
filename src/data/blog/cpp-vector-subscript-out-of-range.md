@@ -248,6 +248,7 @@ Out-of-range errors stop being mysterious once you can picture how a vector sits
 
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — how vectors work, from the start.
 - [Segmentation Fault in C++](/posts/cpp-segmentation-fault/) — the crash an out-of-range index often turns into.
+- [How to Fix 'terminate called after throwing an instance of'](/posts/cpp-terminate-called-after-throwing/) — what `.at()` and other uncaught exceptions print.
 - [Range-Based For Loops in C++](/posts/cpp-range-based-for-loop/) — loops that can't go out of range.
 - [How to Remove Elements From a Vector](/posts/cpp-remove-from-vector/) — erasing without breaking your loop.
 - [C++ Error Messages Explained](/posts/cpp-error-messages/) — the other errors beginners hit most.

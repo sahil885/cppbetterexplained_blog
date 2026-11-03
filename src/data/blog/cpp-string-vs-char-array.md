@@ -262,6 +262,7 @@ string getSafeString() {
 
 - [C++ String Length: size() vs length() vs strlen()](/posts/cpp-string-length/) — which to use and the unsigned trap.
 - [How to Fix C4996 in Visual Studio](/posts/cpp-c4996-function-may-be-unsafe/) — when strcpy or scanf won't compile.
+- [How to Fix 'invalid conversion' Errors](/posts/cpp-invalid-conversion/) — including `char* name = "Sam"`, which Visual Studio rejects.
 - [C++ Array Length: How to Get the Size of an Array](/posts/cpp-array-size/) — the sizeof trick, std::size, and why an array forgets its length inside a function.
 - [C++ String Handling](/posts/cpp-string-handling/) — std::string methods, string_view, performance tips
 - [C++ int to string Conversion](/posts/cpp-int-to-string/) — converting numbers to strings

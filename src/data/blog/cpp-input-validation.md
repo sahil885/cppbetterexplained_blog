@@ -200,6 +200,7 @@ If you want input handling and the rest of the fundamentals explained properly r
 ## Related Articles
 
 - [How to Check if a String Is a Number in C++](/posts/cpp-string-is-number/) — validate input before converting it.
+- [How to Fix 'terminate called after throwing an instance of'](/posts/cpp-terminate-called-after-throwing/) — when `std::stoi` gets text that isn't a number.
 - [cin vs getline: Why getline Gets Skipped](/posts/cpp-getline-vs-cin/) — the leftover-newline bug and two ways to fix it.
 - [cin.ignore() and Clearing the Input Buffer](/posts/cpp-cin-ignore-clear-buffer/) — the mechanics behind the fix.
 - [C++ cin and User Input](/posts/cpp-cin-user-input/) — how extraction works in the first place.
