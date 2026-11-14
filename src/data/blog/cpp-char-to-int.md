@@ -57,7 +57,7 @@ int main() {
 
 This works because the digit characters `'0'` through `'9'` sit in consecutive order in ASCII. `'0'` is 48, so subtracting it shifts any digit down to its true value. It's the single most useful char trick in C++.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="containers" placement="mid_article" -->
 
 ---
 
@@ -143,6 +143,4 @@ Adding `'0'` is the mirror image of subtracting it. This pairs nicely with build
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="containers" placement="end_cta" -->

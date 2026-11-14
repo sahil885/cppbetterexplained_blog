@@ -52,6 +52,8 @@ To see the setting: **Project** > **Properties** > **Configuration Properties** 
 
 Turning SDL checks off only turns the error back into a warning, and `/sdl` adds other safety checks you'd lose too. Fixing the code is the better choice.
 
+<!-- book-cta topic="memory" placement="mid_article" -->
+
 ## Fix 1: Use the C++ Way (Best)
 
 For the functions beginners meet most often, C++ has a replacement that Visual Studio doesn't flag.
@@ -143,8 +145,6 @@ int main() {
 ```
 
 More in [file handling in C++](/posts/cpp-file-handling/).
-
-<!-- book-cta topic="memory" placement="mid_article" -->
 
 ## Fix 2: Use the _s Version
 

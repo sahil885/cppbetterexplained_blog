@@ -120,6 +120,8 @@ Department: Engineering
 
 `Manager` calls `Employee(n, i)` in its initializer list to set up the base portion of the object.
 
+<!-- book-cta topic="oop" placement="mid_article" -->
+
 ---
 
 ## Access Specifiers: What Gets Inherited?
@@ -153,8 +155,6 @@ public:
     }
 };
 ```
-
-<!-- book-cta topic="oop" placement="mid_article" -->
 
 ---
 

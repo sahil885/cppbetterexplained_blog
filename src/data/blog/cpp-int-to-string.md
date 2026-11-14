@@ -82,6 +82,8 @@ It stops at the first non-numeric character:
 int n = stoi("42abc");  // n = 42, stops at 'a'
 ```
 
+<!-- book-cta topic="containers" placement="mid_article" -->
+
 ---
 
 ## The stoi Family
@@ -157,8 +159,6 @@ int n = atoi(s);  // 42
 The problem: when `atoi()` fails, it returns 0 — the same as successfully parsing `"0"`. You can't tell success from failure.
 
 `stoi()` throws exceptions on failure, so you always know when something went wrong. Use `stoi()` in all new code.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -332,6 +332,4 @@ string s = "Number: " + to_string(n);  // Correct
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="containers" placement="end_cta" -->

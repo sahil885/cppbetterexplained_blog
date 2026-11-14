@@ -83,7 +83,7 @@ The destructor is not virtual, so the compiler resolves it **at compile time**, 
 
 The C++ standard doesn't just call this a leak, incidentally — deleting a derived object through a base pointer with a non-virtual destructor is *undefined behaviour*. It usually manifests as a leak, but you have no guarantee of what it does.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="memory" placement="mid_article" -->
 
 ---
 
@@ -162,6 +162,4 @@ std::shared_ptr<Shape> b = std::make_shared<Circle>(5.0);  // works either way
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="memory" placement="end_cta" -->

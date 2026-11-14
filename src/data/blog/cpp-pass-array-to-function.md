@@ -54,6 +54,8 @@ Leave the brackets off when you call it: `average(scores[], n)` fails with `expe
 
 Notice we pass `n`, the number of elements, as a second argument. That's not optional bookkeeping — it's required, and here's why.
 
+<!-- book-cta topic="pointers" placement="mid_article" -->
+
 ---
 
 ## Why You Must Pass the Length
@@ -61,8 +63,6 @@ Notice we pass `n`, the number of elements, as a second argument. That's not opt
 When an array is passed to a function, it **decays** into a pointer to its first element. The function never receives the array's length, so a trick like `sizeof(arr) / sizeof(arr[0])` would *not* work inside the function — it would measure the pointer, not the array.
 
 That's the reason for the extra `int n`. Without it, your loop has no idea where the array ends, and reading past the end is a common source of crashes and garbage values. Pass the length and your loop always stops in the right place.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 

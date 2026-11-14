@@ -95,6 +95,8 @@ int add(int a, int b) {
 
 A spelling difference between the declaration and the body causes the same error, because to the linker they're two different functions. [Undefined reference errors](/posts/undefined-reference-linker-errors-cpp/) covers more causes, such as missing libraries and templates.
 
+<!-- book-cta topic="compiling" placement="mid_article" -->
+
 ## Cause 2: A .cpp File That Wasn't Compiled
 
 Say your project has three files:
@@ -154,8 +156,6 @@ g++ main.cpp util.cpp -o app
 ```
 
 In VS Code this catches a lot of people. The build task it creates compiles only the file you have open (`${file}` in `tasks.json`). [VS Code's own guide](https://code.visualstudio.com/docs/cpp/config-mingw) shows how to replace it with `${workspaceFolder}/*.cpp` to build every `.cpp` file in the folder. See [how to run a .cpp file](/posts/how-to-run-cpp-file/) for building from the command line.
-
-<!-- book-cta topic="compiling" placement="mid_article" -->
 
 ## Cause 3: No main Function (or "undefined reference to WinMain")
 

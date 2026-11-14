@@ -64,7 +64,7 @@ int main() {
 
 Using `std::size_t` for `i` matches the type that `size()` returns, which avoids a common compiler warning. Reach for this when the position matters, not just the value.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="containers" placement="mid_article" -->
 
 ---
 
@@ -154,6 +154,4 @@ The outer loop hands you one row at a time; the inner loop prints it. The newlin
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="containers" placement="end_cta" -->

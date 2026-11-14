@@ -81,6 +81,8 @@ When the compiler sees `v1 + v2`, it translates it to `v1.operator+(v2)`. The me
 
 The `const` at the end of the signature means this operator doesn't modify the object. The parameter is `const Vector2D&` — a const reference to avoid copying.
 
+<!-- book-cta topic="oop" placement="mid_article" -->
+
 ---
 
 ## Overloading ==
@@ -184,8 +186,6 @@ Vector2D operator+(Vector2D lhs, const Vector2D& rhs) {
     return lhs;
 }
 ```
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -328,6 +328,4 @@ If you define `==`, also define `!=`. If you define `<`, consider defining `>`, 
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="oop" placement="end_cta" -->

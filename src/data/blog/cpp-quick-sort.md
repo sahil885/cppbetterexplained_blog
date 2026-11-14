@@ -60,6 +60,8 @@ Take `[7, 2, 9, 4, 5]` with pivot `5`:
 
 The `5` is now home. Everything left of it is smaller, everything right is larger.
 
+<!-- book-cta topic="programs" placement="mid_article" -->
+
 ---
 
 ## The Full Program
@@ -115,8 +117,6 @@ Output:
 ```
 
 Two details worth noticing. `quickSort` takes the vector **by reference** (`std::vector<int>&`) so the swaps affect the caller's data instead of a copy — see [pass by value vs reference](/posts/cpp-pass-by-value-reference/) if that distinction is still fuzzy. And the recursion excludes index `p` entirely, because the pivot is already correct.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -186,6 +186,4 @@ Write quick sort by hand to understand it. Reach for `std::sort` when you need t
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="programs" placement="end_cta" -->

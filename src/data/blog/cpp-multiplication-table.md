@@ -71,6 +71,8 @@ int main() {
 
 Now the program works for any number the user types. This tiny change — reading input instead of fixing the value — is what turns a snippet into a real, reusable program.
 
+<!-- book-cta topic="programs" placement="mid_article" -->
+
 ---
 
 ## Making the Output Line Up
@@ -93,8 +95,6 @@ int main() {
 ```
 
 `std::setw(3)` reserves three character slots for the result, so `24` and `120` still end in the same column. Neat output makes your programs feel polished.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -145,6 +145,4 @@ Master this and you've genuinely understood loops — the workhorse of every C++
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="programs" placement="end_cta" -->

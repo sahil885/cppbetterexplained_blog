@@ -63,6 +63,8 @@ MSVC:   error C4430: missing type specifier - int assumed. Note: C++ does not su
 
 **Fix:** move the class above the code that uses it. In a bigger program, put the class in a header file and `#include` it at the top. See [header files in C++](/posts/cpp-header-files/).
 
+<!-- book-cta topic="compiling" placement="mid_article" -->
+
 ## Cause 2: A Statement Outside Any Function
 
 This one surprises beginners because the name clearly *is* declared:
@@ -108,8 +110,6 @@ Clang:  error: unknown type name 'string'
 GCC's suggestion (`stdin`) is a red herring. `string` lives in the `std` namespace.
 
 **Fix:** write `std::string`, or add `using std::string;` near the top. See [using namespace std](/posts/cpp-using-namespace-std/) for the trade-offs.
-
-<!-- book-cta topic="compiling" placement="mid_article" -->
 
 ## Cause 4: A Missing #include
 

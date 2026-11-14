@@ -68,7 +68,7 @@ Calling `system()` isn't a function call in the ordinary sense. Your program ask
 
 For a menu that refreshes when the user presses a key, nobody will notice. For a game loop redrawing 30 times a second, you'll see visible flicker and stutter. That's the real reason experienced C++ programmers wince at `system("cls")`, not snobbery.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
 
 ---
 
@@ -206,6 +206,4 @@ The honest summary: clearing the screen is a terminal feature that C++ borrows, 
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="fundamentals" placement="end_cta" -->

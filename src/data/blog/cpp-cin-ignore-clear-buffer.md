@@ -57,6 +57,8 @@ Now `std::getline` runs. Its job is to read up to the next newline. It looks at 
 
 The short version: `cin >>` leaves a newline behind, and `getline` chokes on it.
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ---
 
 ## The Fix: cin.ignore()
@@ -89,8 +91,6 @@ int main() {
 Now the program pauses for the name as expected. The call `std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n')` means "discard characters until you've thrown away a newline, or up to a huge maximum count." It wipes the buffer clean so `getline` starts fresh.
 
 ---
-
-<!-- book-cta topic="fundamentals" placement="mid_article" -->
 
 ## What the Two Arguments Mean
 

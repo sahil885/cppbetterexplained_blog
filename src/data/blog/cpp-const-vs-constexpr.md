@@ -54,6 +54,8 @@ constexpr int z = n;      // Error! n is runtime — not compile-time
 
 If you try to initialize a `constexpr` with a runtime value, the compiler gives an error. This is the guarantee: `constexpr` values are always available at compile time.
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ---
 
 ## Why Compile-Time Constants Matter
@@ -166,8 +168,6 @@ constexpr int KB = 1024;
 constexpr int MB = 1024 * KB;
 ```
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
-
 ---
 
 ## `consteval` (C++20): Always at Compile Time
@@ -213,6 +213,4 @@ The practical rule: if the value is a true constant that the compiler can know (
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="fundamentals" placement="end_cta" -->

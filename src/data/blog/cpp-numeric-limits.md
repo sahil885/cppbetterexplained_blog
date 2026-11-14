@@ -80,6 +80,8 @@ T findMax(const std::vector<T>& values) {
 
 There's no macro that can do that. See [C++ templates explained](/posts/cpp-templates-explained/) for why generic code needs this.
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ---
 
 ## min() vs lowest(): The Floating-Point Gotcha
@@ -109,8 +111,6 @@ double low: -1.79769e+308
 For floating-point types, `min()` means the **smallest positive value**, not the most negative one. If you initialise a "find the maximum" loop with `numeric_limits<double>::min()`, every negative input will fail to beat your starting value and you'll get a wrong answer.
 
 **Use `lowest()` when you want the most negative value.** It does the right thing for both integers and floats.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -223,6 +223,4 @@ If a value might exceed roughly two billion — factorials, file sizes in bytes,
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="fundamentals" placement="end_cta" -->

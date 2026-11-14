@@ -51,6 +51,8 @@ int main() {
 
 We start the loop at 2 because multiplying by 1 changes nothing. Using `unsigned long long` instead of `int` lets us reach much larger results before overflowing. This loop version is efficient because it uses constant memory no matter how large `n` is.
 
+<!-- book-cta topic="programs" placement="mid_article" -->
+
 ---
 
 ## Method 2: Using Recursion
@@ -72,8 +74,6 @@ int main() {
 ```
 
 The base case `n <= 1` is essential. Without it, the function would call itself forever and crash with a stack overflow. Each call waits for the smaller call to finish, then multiplies the result by `n` on the way back up.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -109,6 +109,4 @@ Factorials explode in size. A plain `int` can only hold up to `12!` (479,001,600
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="programs" placement="end_cta" -->

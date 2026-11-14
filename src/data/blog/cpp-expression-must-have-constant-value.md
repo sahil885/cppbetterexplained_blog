@@ -100,6 +100,8 @@ Last score: 30
 
 A vector gets its memory from the heap while the program runs, so its size can come from anywhere. The rest of the code doesn't change: `scores[i]` works just as it did with the array. See the [vector tutorial](/posts/cpp-vector-tutorial/) and [dynamic arrays](/posts/cpp-dynamic-array/) for more.
 
+<!-- book-cta topic="memory" placement="mid_article" -->
+
 ## Why g++ Lets You Do It
 
 GCC supports **variable length arrays** (VLAs), a feature from C, as an extension to C++. They aren't part of standard C++, which is why Visual Studio rejects them. Compile with `-pedantic` and g++ says so:
@@ -109,8 +111,6 @@ warning: ISO C++ forbids variable length array 'scores' [-Wvla]
 ```
 
 VLAs are risky even where they compile. They live on the stack, which is small, so a big number from the user can crash the program. Use `std::vector` even when your compiler accepts a VLA. [Stack vs heap](/posts/cpp-stack-vs-heap/) explains the difference.
-
-<!-- book-cta topic="memory" placement="mid_article" -->
 
 ## Cause 2: A Global Array Sized by a Normal Variable
 

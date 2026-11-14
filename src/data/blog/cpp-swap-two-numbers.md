@@ -63,7 +63,7 @@ int main() {
 
 This is the recommended way in real code. It's clear, works on strings, vectors, and custom types, and the compiler optimizes it well. Why reinvent something the standard library already does safely?
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="programs" placement="mid_article" -->
 
 ---
 
@@ -126,6 +126,4 @@ For everyday code, reach for `std::swap` — it's clear, safe, and works on ever
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="programs" placement="end_cta" -->

@@ -124,6 +124,8 @@ Max is 5 years old
 
 Each object has its own separate data. `dog1.name` is different from `dog2.name`. They're separate things, just created from the same blueprint.
 
+<!-- book-cta topic="oop" placement="mid_article" -->
+
 ---
 
 ## Declaring and Defining a Class in C++
@@ -414,8 +416,6 @@ Dog(string n, int a) : name(n), age(a) {}
 The initializer list initializes directly, avoiding unnecessary temporary objects.
 
 ---
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -742,9 +742,7 @@ Master these, and you're ready to build real C++ programs.
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="oop" placement="end_cta" -->
 
 ---
 

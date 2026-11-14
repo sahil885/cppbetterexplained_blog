@@ -87,6 +87,8 @@ public:
 
 For `int` and `double`, the difference is negligible. For `std::string` and other class types, the initializer list avoids a wasted default construction plus an assignment — it constructs the object once, correctly, from the start.
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ---
 
 ## When You MUST Use an Initializer List
@@ -139,8 +141,6 @@ int main() {
     return 0;
 }
 ```
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ### 3. Member Objects With No Default Constructor
 
@@ -209,6 +209,4 @@ Use an initializer list whenever you can — it's more efficient and it's the on
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="fundamentals" placement="end_cta" -->

@@ -66,6 +66,8 @@ This program crashes. Why? The compiler's default copy just copies the **pointer
 
 This is called a **shallow copy**. What we need is a **deep copy**: each object gets its own independent memory. See [shallow copy vs deep copy](/posts/cpp-shallow-vs-deep-copy/) for a side-by-side comparison.
 
+<!-- book-cta topic="memory" placement="mid_article" -->
+
 ---
 
 ## The Fix: Implement All Three
@@ -116,8 +118,6 @@ int main() {
 ```
 
 Now `a` and `b` each own separate memory, so both destructors run safely. This is why the rule bundles the three together: they all deal with the same underlying question — *how is this resource copied and released?* Fixing one without the others leaves a hole.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -184,6 +184,4 @@ If you find yourself writing a destructor because your class owns something raw,
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="memory" placement="end_cta" -->

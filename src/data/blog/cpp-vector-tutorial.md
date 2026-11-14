@@ -183,6 +183,8 @@ scores.clear(); // Removes all elements
 // scores.size() == 0
 ```
 
+<!-- book-cta topic="containers" placement="mid_article" -->
+
 ## Accessing Elements
 
 ### Access by index with [ ]
@@ -303,8 +305,6 @@ std::vector<int> numbers(1000, 0); // 1000 elements
 numbers.clear();                    // 0 elements, but capacity still 1000
 numbers.shrink_to_fit();           // Now capacity matches size (0)
 ```
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## Iterating Through a Vector
 

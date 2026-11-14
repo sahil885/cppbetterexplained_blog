@@ -98,6 +98,8 @@ Full walkthrough of every cause: [how to fix 'was not declared in this scope'](/
 
 <!-- optin-quick hook="Fighting compiler errors? Every beginner does." -->
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ## 'undefined reference to'
 
 **What it means**: This is a **linker** error, not a compiler error. The difference matters. The compiler found a declaration (a promise that something exists) but the linker couldn't find the actual implementation.
@@ -201,8 +203,6 @@ Other causes:
 - A typo that causes the parser to misinterpret the code structure
 
 Full walkthrough of every cause, with the exact GCC, Clang and Visual Studio messages: [how to fix expected ';' errors](/posts/cpp-expected-semicolon/).
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -377,6 +377,4 @@ Another way a program can stop at runtime is `terminate called after throwing an
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="fundamentals" placement="end_cta" -->

@@ -167,7 +167,7 @@ cout << r.area();  // 15
 
 The class version protects `width` and `height` from external modification. The struct version exposes them freely.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="oop" placement="mid_article" -->
 
 ---
 
@@ -205,6 +205,4 @@ When to make the choice: ask yourself "should the data be public by default, or 
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="oop" placement="end_cta" -->
