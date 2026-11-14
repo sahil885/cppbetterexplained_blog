@@ -67,7 +67,7 @@ Let's sort `{5, 3, 8, 1, 2}`:
 
 ---
 
-<div class="inline-cta"><strong>Building your first programs?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the concepts behind them — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Building your first programs?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the concepts behind them — pointers, memory and OOP — in 87 plain-English pages. Just $27.</div>
 
 ## C++ Implementation
 
@@ -213,9 +213,9 @@ std::sort(arr.begin(), arr.end());
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

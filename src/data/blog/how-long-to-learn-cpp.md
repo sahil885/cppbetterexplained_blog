@@ -37,7 +37,7 @@ That's the short answer. The rest of this guide breaks down what each stage actu
     <p class="fb-eyebrow">Want to cut the learning curve?</p>
     <h3>C++ Better Explained</h3>
     <p>The fundamentals take 2–3 months. This book covers the parts that slow most beginners down — pointers, memory and OOP — in 87 plain-English pages, so you spend that time building instead of stuck.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>## Quick Answer: Timeline by Goal
 
@@ -93,7 +93,7 @@ Two people can start on the same day and be months apart by summer. The differen
 - **Only reading**, never typing the code yourself.
 - **Studying irregularly** — a marathon session once a week is far less effective than a little each day.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## A Realistic Weekly Study Plan
 
@@ -132,7 +132,7 @@ If you want that structure, start with the [complete C++ learning roadmap](/lear
 
 And if you want the whole journey explained in one place, the way it should have been the first time:
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ## Summary
 

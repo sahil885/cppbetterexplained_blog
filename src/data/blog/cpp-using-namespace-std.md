@@ -61,7 +61,7 @@ int main() {
 
 Same program, less typing. That's the whole appeal — and it's why so many tutorials use it.
 
-<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $27.</div>
 
 ## The Problem: Name Collisions
 
@@ -163,9 +163,9 @@ For portable alternatives to `clrscr()`, see [how to clear the console screen in
 
 ## Take Your C++ Further
 
-If you want namespaces, headers and the rest of the fundamentals explained properly rather than pieced together from forum answers, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers them in plain English. Just **$19**.
+If you want namespaces, headers and the rest of the fundamentals explained properly rather than pieced together from forum answers, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers them in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

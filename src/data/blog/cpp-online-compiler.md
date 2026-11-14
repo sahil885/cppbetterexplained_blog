@@ -48,7 +48,7 @@ All four were up and running when this guide was written. Here's when to reach f
 
 **[Wandbox](https://wandbox.org/)** — a no-frills compiler with a standard-input box and a long list of compiler versions.
 
-<div class="inline-cta"><strong>Got C++ running?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you through the fundamentals next — with pointers, memory and OOP explained properly — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Got C++ running?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you through the fundamentals next — with pointers, memory and OOP explained properly — in 87 plain-English pages. Just $27.</div>
 
 ## Try It: A Program That Reads Input
 
@@ -130,9 +130,9 @@ The step-by-step version for each is in the [C++ setup guide](/posts/cpp-setup-g
 
 ## Take Your C++ Further
 
-Once your code runs, the next hurdle is understanding it — especially pointers, memory and OOP. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains them in plain English with diagrams. Just **$19**.
+Once your code runs, the next hurdle is understanding it — especially pointers, memory and OOP. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains them in plain English with diagrams. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

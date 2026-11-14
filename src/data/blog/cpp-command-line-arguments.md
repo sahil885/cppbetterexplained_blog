@@ -169,7 +169,7 @@ int main(int argc, char* argv[])
 
 Two good practices are bundled in here: printing a **usage message** that uses `argv[0]` (so it shows the real program name), and **returning a non-zero exit code** to signal failure. Writing errors to `std::cerr` rather than `std::cout` is also the conventional choice for diagnostics.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## Converting Arguments to Numbers
 
@@ -300,7 +300,7 @@ Command line arguments let your C++ programs take input at launch through `main(
 
 Want every C++ concept explained this clearly, in order, from the ground up?
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ## Related Guides
 

@@ -89,7 +89,7 @@ int main() {
 
 This is the pattern worth memorising. Reading the line first means the console buffer is fully consumed, and parsing happens on a string you control — so nothing is left behind to break later reads.
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers input, strings and the STL in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers input, strings and the STL in plain English — 87 pages, just $27.</div>
 
 ## Reading Comma-Separated Values
 
@@ -204,9 +204,9 @@ After the loop, `ss.eof()` is true only if the whole line parsed cleanly. If par
 
 ## Take Your C++ Further
 
-If you want input handling and the rest of the fundamentals explained properly rather than pieced together, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$19**.
+If you want input handling and the rest of the fundamentals explained properly rather than pieced together, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

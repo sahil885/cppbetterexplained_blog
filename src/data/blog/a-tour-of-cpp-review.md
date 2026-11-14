@@ -32,7 +32,7 @@ faqSchema:
     <p class="fb-eyebrow">New to programming?</p>
     <h3>C++ Better Explained</h3>
     <p>A Tour of C++ assumes you already program. If you don't yet, this short book explains pointers, memory and OOP for true beginners, in 87 plain-English pages with diagrams.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>
 

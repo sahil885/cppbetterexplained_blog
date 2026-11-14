@@ -71,7 +71,7 @@ If it prints a path, `g++` is installed *and* on PATH, so skip to [Step 4](#step
 - **Found it?** Note down the folder it's in and go to Step 3.
 - **Not anywhere?** There's no compiler yet. Go to Step 2.
 
-<div class="inline-cta"><strong>Just getting set up?</strong> Once your compiler works, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you through the fundamentals — with pointers, memory and OOP explained properly — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Just getting set up?</strong> Once your compiler works, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you through the fundamentals — with pointers, memory and OOP explained properly — in 87 plain-English pages. Just $27.</div>
 
 ## Step 2: Install a Compiler (If You Don't Have One)
 
@@ -172,9 +172,9 @@ Getting the same error for `gcc`, `gdb` or `mingw32-make`? Same cause, same fix 
 
 ## Take Your C++ Further
 
-Getting a compiler working is the hardest part of day one. Once it runs, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** takes you through the fundamentals in plain English, then the parts that trip beginners up most — pointers, memory and OOP. Just **$19**.
+Getting a compiler working is the hardest part of day one. Once it runs, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** takes you through the fundamentals in plain English, then the parts that trip beginners up most — pointers, memory and OOP. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

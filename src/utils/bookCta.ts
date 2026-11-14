@@ -3,7 +3,7 @@
 //       <!-- book-cta topic="memory" placement="mid_article" -->
 //   - .astro pages, via <BookCTA topic="memory" placement="mid_article" />
 //
-// Claims allowed in this copy (already on the site): 87 pages, $19, plain
+// Claims allowed in this copy (already on the site): 87 pages, $27, plain
 // English, analogies and diagrams, the 30-day money-back guarantee, and that the
 // book covers pointers, memory, OOP and how C++ code gets compiled.
 // Don't add anything else here without checking it against the book.
@@ -101,7 +101,7 @@ export function renderBookCta(
     );
   }
   const copy = COPY[topic];
-  const button = `<a class="book-cta-btn" href="${BOOK_URL}" data-google-vignette="false">Get the book — $19</a>`;
+  const button = `<a class="book-cta-btn" href="${BOOK_URL}" data-google-vignette="false">Get the book — $27</a>`;
 
   if (placement === "end_cta") {
     return [

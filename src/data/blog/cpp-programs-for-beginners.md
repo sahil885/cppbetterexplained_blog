@@ -84,7 +84,7 @@ int main() {
 
 If those three made sense, you're ready for the list. If any of them didn't, start with [C++ Hello World explained](/posts/cpp-hello-world-explained/) and the [loops tutorial](/posts/cpp-loops-tutorial/).
 
-<div class="inline-cta"><strong>Practising the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the concepts behind these programs — and the parts that trip most beginners up, like pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Practising the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the concepts behind these programs — and the parts that trip most beginners up, like pointers, memory and OOP — in 87 plain-English pages. Just $27.</div>
 
 ## 1. Starter Programs
 
@@ -187,9 +187,9 @@ Half an hour a day is enough. Consistency beats long weekend sessions.
 
 ## Take Your C++ Further
 
-These programs teach you to *write* C++. If you want the concepts underneath explained properly — especially pointers, memory and OOP, which the later programs lean on — the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers them in plain English. Just **$19**.
+These programs teach you to *write* C++. If you want the concepts underneath explained properly — especially pointers, memory and OOP, which the later programs lean on — the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers them in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

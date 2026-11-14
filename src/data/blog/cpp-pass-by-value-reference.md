@@ -154,7 +154,7 @@ Const reference is the standard way to pass strings, vectors, and custom objects
 
 ---
 
-<div class="inline-cta">Pointers and references are where most C++ beginners get stuck. The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> walks through them with diagrams and plain-English mental models — just $19.</div>
+<div class="inline-cta">Pointers and references are where most C++ beginners get stuck. The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> walks through them with diagrams and plain-English mental models — just $27.</div>
 
 ## Practical Example: Swap Two Numbers
 

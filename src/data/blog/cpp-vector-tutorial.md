@@ -304,7 +304,7 @@ numbers.clear();                    // 0 elements, but capacity still 1000
 numbers.shrink_to_fit();           // Now capacity matches size (0)
 ```
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## Iterating Through a Vector
 
@@ -706,7 +706,7 @@ The next step is practice. Try building a small project — a grade calculator, 
 
 If you're looking to go deeper with C++, the **C++ Better Explained Ebook** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. It covers vectors, pointers, OOP, and the entire language with the same intuitive, beginner-first approach used in this guide.
 
-**Just $19.** 👉 [Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)
+**Just $27.** 👉 [Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)
 
 ## Related Articles
 

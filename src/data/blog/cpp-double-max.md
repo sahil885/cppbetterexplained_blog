@@ -83,7 +83,7 @@ Use `lowest()`, added in C++11 precisely to fix this:
 double largest = std::numeric_limits<double>::lowest();   // -1.8e308
 ```
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers types, memory and the STL in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers types, memory and the STL in plain English — 87 pages, just $27.</div>
 
 ## float and long double
 
@@ -172,9 +172,9 @@ std::cout << sizeof(double)                         << '\n';  // 8 bytes
 
 ## Take Your C++ Further
 
-If you want types, precision and the rest of the fundamentals explained properly, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers them in plain English. Just **$19**.
+If you want types, precision and the rest of the fundamentals explained properly, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers them in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

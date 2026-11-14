@@ -42,7 +42,7 @@ Drift happens when there is no defined path and no finish line. Every format on 
     <p class="fb-eyebrow">If you choose a book</p>
     <h3>C++ Better Explained</h3>
     <p>The beginner book built around plain-English mental models — pointers, memory and OOP finally click. 87 focused pages instead of a 1,000-page textbook.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>
 
@@ -111,9 +111,9 @@ If you want the free route, it genuinely exists and it is good — the full brea
 
 ## Take Your C++ Further
 
-If the "one structured backbone" approach sounds right and you want it to be short rather than a 1,300-page reference, that is exactly what the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is: 87 pages that take you from your first program through pointers, memory, and OOP in plain English, with the analogies and diagrams that make the hard parts click. Just **$19**.
+If the "one structured backbone" approach sounds right and you want it to be short rather than a 1,300-page reference, that is exactly what the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is: 87 pages that take you from your first program through pointers, memory, and OOP in plain English, with the analogies and diagrams that make the hard parts click. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

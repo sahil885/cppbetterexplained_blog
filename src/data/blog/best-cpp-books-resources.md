@@ -33,7 +33,7 @@ This list is different. It's opinionated, ranked by usefulness for actual beginn
     <p class="fb-eyebrow">#1 pick for beginners</p>
     <h3>C++ Better Explained</h3>
     <p>The beginner book built around plain-English mental models — pointers, memory, OOP, and the compilation model finally click. 87 focused pages instead of a 1,300-page reference you'll never finish.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>
 
@@ -52,7 +52,7 @@ This list is different. It's opinionated, ranked by usefulness for actual beginn
 
 | Book | Best for | Level | Price | Verdict |
 |------|----------|-------|-------|---------|
-| **[C++ Better Explained](https://start.cppbetterexplained.com/tw-sales-page)** | Understanding *why* the code works, not just syntax | Beginner | $19 | Best starting point for beginners |
+| **[C++ Better Explained](https://start.cppbetterexplained.com/tw-sales-page)** | Understanding *why* the code works, not just syntax | Beginner | $27 | Best starting point for beginners |
 | C++ Primer | A thorough, structured foundation | Beginner–Intermediate | Paid | Best comprehensive textbook |
 | Programming: Principles and Practice | Learning to think like a programmer | Beginner | Paid | Best university-style intro |
 | A Tour of C++ | A fast tour of modern C++ | Intermediate | Paid | Best quick modern overview |
@@ -67,7 +67,7 @@ The rest of this list breaks down every option — books, courses, practice plat
 
 ---
 
-<div class="inline-cta"><strong>Short on time?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> packs everything you need into 87 pages of plain-English explanations, analogies, and code diagrams — just $19.</div>
+<div class="inline-cta"><strong>Short on time?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> packs everything you need into 87 pages of plain-English explanations, analogies, and code diagrams — just $27.</div>
 
 ## How to Use This List
 
@@ -95,7 +95,7 @@ What makes it different from the books below: it's written specifically for peop
 
 **Use this if:** you're starting from scratch, you've tried other resources and felt lost, or you want to build genuine understanding rather than just copying patterns.
 
-👉 **[Get C++ Better Explained — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get C++ Better Explained — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 
@@ -255,7 +255,7 @@ If you want a simple, effective combination:
 
 That's all you need. The risk with C++ learning isn't a shortage of resources — it's getting overwhelmed by too many and bouncing between them without making real progress. Commit to one path and work through it.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## Summary
 
@@ -267,9 +267,9 @@ Pick one main resource. Use it consistently. Write code every day. That combinat
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

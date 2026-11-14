@@ -75,7 +75,7 @@ int main() {
 
 `return` leaves every loop in the function, however deep. This is usually the right answer: searching is its own job, so it deserves its own function, and the code reads better afterwards.
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers loops, functions and control flow in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers loops, functions and control flow in plain English — 87 pages, just $27.</div>
 
 ## Option 2: A Flag
 
@@ -179,9 +179,9 @@ To skip to the next outer iteration, `break` out of the inner loop instead — t
 
 ## Take Your C++ Further
 
-If you want loops, functions and control flow explained properly rather than pieced together, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$19**.
+If you want loops, functions and control flow explained properly rather than pieced together, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

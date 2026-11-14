@@ -80,7 +80,7 @@ Two details make this correct rather than subtly broken:
 - **`s.find(target, pos)`** resumes the search from where you left off instead of scanning from the start each time.
 - **`pos += replacement.length()`** steps past the text you just inserted.
 
-<div class="inline-cta"><strong>Want the full picture?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains strings, vectors and the STL in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Want the full picture?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains strings, vectors and the STL in plain English — 87 pages, just $27.</div>
 
 ## The Infinite Loop Trap
 
@@ -185,9 +185,9 @@ Rebuilding the lowercase copy each pass keeps the two strings aligned when the r
 
 ## Take Your C++ Further
 
-If you would rather understand strings and the STL than look up one function at a time, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** walks through the fundamentals in plain English. Just **$19**.
+If you would rather understand strings and the STL than look up one function at a time, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** walks through the fundamentals in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

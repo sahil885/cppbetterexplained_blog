@@ -63,7 +63,7 @@ int main() {
 
 Run it three times and you get six lines, not two. The file is created automatically if it does not exist yet.
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers file handling, strings and the STL in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers file handling, strings and the STL in plain English — 87 pages, just $27.</div>
 
 ## app vs ate vs trunc
 
@@ -172,9 +172,9 @@ The stream stays in a failed state once something goes wrong, so a single check 
 
 ## Take Your C++ Further
 
-If you want file handling and the rest of C++ explained properly rather than one snippet at a time, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$19**.
+If you want file handling and the rest of C++ explained properly rather than one snippet at a time, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

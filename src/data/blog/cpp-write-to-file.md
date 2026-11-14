@@ -77,7 +77,7 @@ std::ofstream file("log.txt", std::ios::app);     // keeps it, adds to the end
 
 The default mode truncates the file to zero length the moment it opens — before you have written anything. If you want to add to an existing file, see [appending to a file with std::ios::app](/posts/cpp-append-to-file/).
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers file handling, strings and the STL in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers file handling, strings and the STL in plain English — 87 pages, just $27.</div>
 
 ## Writing Numbers and Formatting
 
@@ -199,9 +199,9 @@ Once a stream enters a failed state it stays there, so a single check after a ba
 
 ## Take Your C++ Further
 
-If you want file handling and the rest of the fundamentals explained properly rather than pieced together, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$19**.
+If you want file handling and the rest of the fundamentals explained properly rather than pieced together, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

@@ -96,7 +96,7 @@ int main() {
 
 A [range-based for loop](/posts/cpp-range-based-for-loop/) can't go out of range, so use it whenever you don't need the index.
 
-<div class="inline-cta"><strong>Learning C++ from scratch?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the fundamentals — and the parts that trip most beginners up, like pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Learning C++ from scratch?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the fundamentals — and the parts that trip most beginners up, like pointers, memory and OOP — in 87 plain-English pages. Just $27.</div>
 
 ## Cause 2: Indexing an Empty Vector
 
@@ -238,9 +238,9 @@ For older standards and more options, see [how to remove elements from a vector]
 
 ## Take Your C++ Further
 
-Out-of-range errors stop being mysterious once you can picture how a vector sits in memory. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains the fundamentals in plain English, then the parts that really trip beginners up — pointers, memory and OOP. Just **$19**.
+Out-of-range errors stop being mysterious once you can picture how a vector sits in memory. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains the fundamentals in plain English, then the parts that really trip beginners up — pointers, memory and OOP. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

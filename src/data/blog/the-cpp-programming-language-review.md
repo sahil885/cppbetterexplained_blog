@@ -32,7 +32,7 @@ faqSchema:
     <p class="fb-eyebrow">Want something you can finish?</p>
     <h3>C++ Better Explained</h3>
     <p>The C++ Programming Language runs to 1,360 pages and assumes you already program. This book explains pointers, memory and OOP for true beginners, in 87 plain-English pages with diagrams.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>
 

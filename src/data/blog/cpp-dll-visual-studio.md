@@ -111,7 +111,7 @@ Choose **Build > Build Solution** (or press **Ctrl+Shift+B**). When it succeeds,
 
 Hold on to both. You'll use the `.lib` when compiling the client, and the `.dll` when running it.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## Step 5: Create a Program That Uses the DLL
 
@@ -195,7 +195,7 @@ Once that loop clicks, you can package anything — math routines, file utilitie
 
 Want to strengthen the fundamentals that DLLs build on, like functions, headers, and how compilation and linking actually work? That's exactly what this site is for:
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ## Watch the Video Tutorial
 

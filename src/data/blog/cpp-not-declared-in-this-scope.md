@@ -80,7 +80,7 @@ int main() {
 | `sort`, `find`, `max`, `min` | `<algorithm>` |
 | `setw`, `setprecision` | `<iomanip>` |
 
-<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains scope, headers and the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Working through the fundamentals?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains scope, headers and the parts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $27.</div>
 
 ## Cause 3: A Missing std::
 
@@ -214,9 +214,9 @@ If it compiles but then fails with *undefined reference*, the declaration is fin
 
 ## Take Your C++ Further
 
-Scope, declarations and headers are the foundation everything else builds on. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains them — and pointers, memory and OOP — in plain English. Just **$19**.
+Scope, declarations and headers are the foundation everything else builds on. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains them — and pointers, memory and OOP — in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

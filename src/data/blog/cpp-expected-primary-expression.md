@@ -73,7 +73,7 @@ MSVC:   error C2144: syntax error: 'int' should be preceded by ')'
 
 The types are already known from the function's definition, so the call only needs the values. More on this in the [functions tutorial](/posts/cpp-functions-tutorial/).
 
-<div class="inline-cta"><strong>Learning C++ from scratch?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the fundamentals — and the parts that trip most beginners up, like pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Learning C++ from scratch?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the fundamentals — and the parts that trip most beginners up, like pointers, memory and OOP — in 87 plain-English pages. Just $27.</div>
 
 ## Cause 2: Passing an Array With Empty Brackets
 
@@ -234,9 +234,9 @@ Always fix the **first** error and recompile — one of these can trigger severa
 
 ## Take Your C++ Further
 
-Errors like this come from the difference between *declaring* things and *using* them — the idea that makes functions, arrays and classes click. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains it all in plain English, including the parts that trip beginners up most: pointers, memory and OOP. Just **$19**.
+Errors like this come from the difference between *declaring* things and *using* them — the idea that makes functions, arrays and classes click. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains it all in plain English, including the parts that trip beginners up most: pointers, memory and OOP. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

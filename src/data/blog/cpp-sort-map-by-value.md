@@ -74,7 +74,7 @@ Dan: 95
 
 Three steps, and the middle one is the only part that changes between problems. The vector's range constructor does the copying, because `std::map`'s iterators yield `std::pair<const Key, Value>` — which converts cleanly to `std::pair<Key, Value>`.
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the STL, containers and algorithms in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the STL, containers and algorithms in plain English — 87 pages, just $27.</div>
 
 ## Descending Order
 
@@ -212,9 +212,9 @@ Note `++freq[word]` — accessing a missing key in a `std::map` default-construc
 
 ## Take Your C++ Further
 
-If you want the STL explained properly rather than pieced together from Stack Overflow answers, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$19**.
+If you want the STL explained properly rather than pieced together from Stack Overflow answers, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

@@ -82,7 +82,7 @@ std::vector<Score> scores;        // scores[0].name — self-documenting
 
 Use pairs for genuinely anonymous two-value groupings; use structs when the fields have meaning worth naming. Sorting a vector of structs is covered in [sorting a vector of structs](/posts/cpp-sort-vector-of-structs/).
 
-<div class="inline-cta"><strong>Want the STL explained properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers vectors, pairs and containers in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Want the STL explained properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers vectors, pairs and containers in plain English — 87 pages, just $27.</div>
 
 ## Iterating Cleanly with Structured Bindings
 
@@ -199,9 +199,9 @@ Copying a map into a vector is the standard way to sort map entries by value, si
 
 ## Take Your C++ Further
 
-If you want vectors, pairs and the STL explained properly instead of looked up piecemeal, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$19**.
+If you want vectors, pairs and the STL explained properly instead of looked up piecemeal, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

@@ -35,7 +35,7 @@ Software borrows the term to describe the same idea. **In an orthogonal design, 
 
 The concept was popularized for programmers by Andrew Hunt and David Thomas in _The Pragmatic Programmer_, where they describe two orthogonal components as ones where "changes in one do not affect any of the others."
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the concepts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers the concepts that trip most beginners up — pointers, memory and OOP — in 87 plain-English pages. Just $27.</div>
 
 ## A Concrete Example
 
@@ -128,6 +128,6 @@ Get that habit right, and you'll spend far less time afraid of your own codebase
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**

@@ -86,7 +86,7 @@ void printPlayer(const Player& p) {
 
 Passing large objects by `const&` is standard practice, so a non-const getter makes your class awkward to use. See [the const keyword in C++](/posts/cpp-const-keyword/).
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains classes, objects and OOP in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains classes, objects and OOP in plain English — 87 pages, just $27.</div>
 
 ## Return by Value or by Reference?
 
@@ -189,9 +189,9 @@ The middle one is most common in modern C++ and the standard library leans that 
 
 ## Take Your C++ Further
 
-If you want classes, objects and OOP explained properly rather than pieced together, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$19**.
+If you want classes, objects and OOP explained properly rather than pieced together, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 
