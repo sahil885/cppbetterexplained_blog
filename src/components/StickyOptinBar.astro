@@ -87,6 +87,24 @@ import { BOOK_URL } from "@/utils/bookCta";
   #sob-close:hover {
     opacity: 1;
   }
+  /* When AdSense shows its anchor ad along the bottom edge, the bar moves to
+     the top edge so the ad doesn't cover it (see place() below). */
+  #sob.sob-top {
+    top: 0;
+    bottom: auto;
+    border-top: 0;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 4px 16px rgb(0 0 0 / 12%);
+    animation-name: sob-down;
+  }
+  @keyframes sob-down {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
   @media (width <= 640px) {
     .sob-more {
       display: none;
@@ -116,6 +134,20 @@ import { BOOK_URL } from "@/utils/bookCta";
       return !!wm && wm.style.display !== "none";
     }
 
+    // AdSense's anchor ad is fixed to the top or bottom edge with the highest
+    // z-index there is, so it covers anything else on that edge. Returns
+    // "bottom", "top" or "" for where an anchor ad is showing right now.
+    function anchorAdEdge() {
+      var ads = document.querySelectorAll("ins.adsbygoogle[data-anchor-status]");
+      for (var i = 0; i < ads.length; i++) {
+        var r = ads[i].getBoundingClientRect();
+        if (r.height < 20 || r.width < 100) continue;
+        if (r.bottom >= window.innerHeight - 2) return "bottom";
+        if (r.top <= 2) return "top";
+      }
+      return "";
+    }
+
     function init() {
       var bar = document.getElementById("sob");
       if (!bar || bar.dataset.bound) return;
@@ -124,18 +156,28 @@ import { BOOK_URL } from "@/utils/bookCta";
 
       var shown = false;
       var due = false;
+      var placer = null;
 
       function show() {
         if (shown || dismissed()) return;
         if (popupOpen()) return; // tryShow runs again once it's closed
         shown = true;
+        place();
         bar.style.display = "block";
         cleanup();
+        // Anchor ads load late and readers can collapse them, so keep the
+        // bar on the free edge for as long as it is showing.
+        placer = setInterval(place, 1000);
         try {
           if (typeof window.gtag === "function") {
             window.gtag("event", "book_bar_view", { placement: "sticky_bar" });
           }
         } catch (e) {}
+      }
+
+      // Sit on the bottom edge unless an anchor ad is there.
+      function place() {
+        bar.classList.toggle("sob-top", anchorAdEdge() === "bottom");
       }
 
       function tryShow() {
@@ -168,12 +210,20 @@ import { BOOK_URL } from "@/utils/bookCta";
       window.addEventListener("scroll", onScroll, { passive: true });
       document.addEventListener("click", onClick);
       // Leaving this page: stop this page's timer and listeners.
-      document.addEventListener("astro:before-swap", cleanup, { once: true });
+      document.addEventListener(
+        "astro:before-swap",
+        function () {
+          cleanup();
+          clearInterval(placer);
+        },
+        { once: true }
+      );
 
       document
         .getElementById("sob-close")
         .addEventListener("click", function () {
           bar.style.display = "none";
+          clearInterval(placer);
           try {
             localStorage.setItem(KEY, String(Date.now()));
           } catch (e) {}
