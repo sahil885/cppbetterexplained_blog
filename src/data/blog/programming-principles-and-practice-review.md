@@ -32,7 +32,7 @@ faqSchema:
     <p class="fb-eyebrow">Want a shorter start?</p>
     <h3>C++ Better Explained</h3>
     <p>Programming: Principles and Practice is thorough, and long. If you'd rather start small, this book explains pointers, memory and OOP for true beginners, in 87 plain-English pages with diagrams.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>
 
@@ -87,7 +87,7 @@ Stroustrup anticipates this. His support page provides a `PPP.h` header for the 
 
 The graphics chapters have a second requirement: you need to install **Qt** to run them. It's fine to skip those on a first pass.
 
-<div class="inline-cta"><strong>Want pointers, memory and OOP to click before you start a 656-page textbook?</strong> <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained</a> covers the concepts that stall most beginners in 87 plain-English pages — $19.</div>
+<div class="inline-cta"><strong>Want pointers, memory and OOP to click before you start a 656-page textbook?</strong> <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained</a> covers the concepts that stall most beginners in 87 plain-English pages — $27.</div>
 
 ## What It Does Well
 
@@ -148,9 +148,9 @@ PPP is one of the best books ever written for learning to program with C++. It's
 
 ## Take Your C++ Further
 
-If you want the concepts that make C++ hard — pointers, memory, OOP — explained in plain English before or alongside a full textbook, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is 87 pages built for exactly that. Just **$19**.
+If you want the concepts that make C++ hard — pointers, memory, OOP — explained in plain English before or alongside a full textbook, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is 87 pages built for exactly that. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

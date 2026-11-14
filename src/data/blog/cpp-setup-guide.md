@@ -96,7 +96,7 @@ You should see `Hello, World!` printed in the terminal. You're up and running.
 
 ---
 
-<div class="inline-cta"><strong>Just getting started?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you through the fundamentals once your compiler works — with pointers, memory and OOP explained properly — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Just getting started?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you through the fundamentals once your compiler works — with pointers, memory and OOP explained properly — in 87 plain-English pages. Just $27.</div>
 
 ## Setup on Mac
 
@@ -236,6 +236,6 @@ Or if you want the full structured path from here, follow the [C++ learning road
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**

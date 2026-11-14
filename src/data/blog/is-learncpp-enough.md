@@ -32,7 +32,7 @@ faqSchema:
     <p class="fb-eyebrow">Want a shorter first pass?</p>
     <h3>C++ Better Explained</h3>
     <p>learncpp.com is thorough and free. If you'd like the hard parts first — pointers, memory and OOP — in 87 plain-English pages with diagrams, this book is built for true beginners.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>
 
@@ -87,7 +87,7 @@ None of these is a flaw in the site. They're what happens when anyone learns C++
 
 | | learncpp.com | C++ Primer (5th ed.) | Programming: Principles and Practice (3rd ed.) | C++ Better Explained |
 |---|---|---|---|---|
-| Cost | Free | Paid | Paid | $19 |
+| Cost | Free | Paid | Paid | $27 |
 | Length | Hundreds of lessons | Just under 1,000 pages | 656 pages | 87 pages |
 | Assumes you've programmed before? | No | Yes | No | No |
 | Best for | A complete free path | A precise, thorough reference | Learning to program, from C++'s creator | A short, plain-English start on the hard parts |

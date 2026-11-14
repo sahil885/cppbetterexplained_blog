@@ -45,7 +45,7 @@ Compared to Python or JavaScript, C++ has a steeper learning curve. There's no g
     <p class="fb-eyebrow">Make the hard parts click</p>
     <h3>C++ Better Explained</h3>
     <p>Memory, pointers and the compilation model are what make C++ feel hard. This book explains exactly those, in 87 plain-English pages with analogies and diagrams.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>
 
@@ -119,9 +119,9 @@ The people who succeed with C++ aren't necessarily smarter. They're the ones who
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ## Related Guides
 

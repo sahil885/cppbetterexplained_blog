@@ -118,7 +118,7 @@ Clang:  error: expected ';' after return statement
 
 **Fix:** `return a + b;`
 
-<div class="inline-cta"><strong>Learning C++ from scratch?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the fundamentals — and the parts that trip most beginners up, like pointers, memory and OOP — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Learning C++ from scratch?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains the fundamentals — and the parts that trip most beginners up, like pointers, memory and OOP — in 87 plain-English pages. Just $27.</div>
 
 ## Cause 4: A Missing Semicolon After a Class or Struct
 
@@ -342,9 +342,9 @@ For the other errors beginners hit most, see [C++ error messages explained](/pos
 
 ## Take Your C++ Further
 
-Syntax errors stop being scary once you understand what the compiler is actually reading. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains the fundamentals in plain English, then the parts that really trip beginners up — pointers, memory and OOP. Just **$19**.
+Syntax errors stop being scary once you understand what the compiler is actually reading. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains the fundamentals in plain English, then the parts that really trip beginners up — pointers, memory and OOP. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

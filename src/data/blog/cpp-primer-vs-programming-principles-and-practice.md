@@ -32,7 +32,7 @@ faqSchema:
     <p class="fb-eyebrow">Not ready for a big textbook?</p>
     <h3>C++ Better Explained</h3>
     <p>Both of these books are long. This one is short: pointers, memory and OOP explained for true beginners, in 87 plain-English pages with diagrams.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>
 
@@ -82,7 +82,7 @@ Both lines do the same thing. The newer one is shorter and harder to get wrong �
 
 How much does it matter? Less than you'd think for a first book. C++11 is the foundation modern C++ is built on, and the later additions are easy to pick up once that foundation is solid. But if you want to learn current idioms from day one, PPP has the edge.
 
-<div class="inline-cta"><strong>Not sure you want to commit to either yet?</strong> <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained</a> covers pointers, memory and OOP — the concepts that stall most beginners — in 87 plain-English pages. $19.</div>
+<div class="inline-cta"><strong>Not sure you want to commit to either yet?</strong> <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained</a> covers pointers, memory and OOP — the concepts that stall most beginners — in 87 plain-English pages. $27.</div>
 
 ## Choose C++ Primer If...
 
@@ -138,9 +138,9 @@ Pick the one that matches where you're starting from, not the one with the bette
 
 ## Take Your C++ Further
 
-If a 656- or 1,000-page textbook feels like too big a first step, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** makes the concepts behind both books click in 87 plain-English pages. Just **$19**.
+If a 656- or 1,000-page textbook feels like too big a first step, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** makes the concepts behind both books click in 87 plain-English pages. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

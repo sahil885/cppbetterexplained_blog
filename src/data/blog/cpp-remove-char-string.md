@@ -85,7 +85,7 @@ int main() {
 
 It looks strange until you see what each half does.
 
-<div class="inline-cta"><strong>Want the STL explained properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers strings, algorithms and containers in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Want the STL explained properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers strings, algorithms and containers in plain English — 87 pages, just $27.</div>
 
 ## Why std::remove Does Not Remove
 
@@ -180,9 +180,9 @@ See [removing elements from a vector](/posts/cpp-remove-from-vector/) for the co
 
 ## Take Your C++ Further
 
-If you want strings and the STL explained properly instead of assembled from snippets, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$19**.
+If you want strings and the STL explained properly instead of assembled from snippets, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

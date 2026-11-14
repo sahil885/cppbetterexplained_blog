@@ -37,7 +37,7 @@ Let's unpack why, and how to decide for your situation.
     <p class="fb-eyebrow">Starting with C++?</p>
     <h3>C++ Better Explained</h3>
     <p>The beginner book built around plain-English mental models — pointers, memory and OOP finally click. 87 focused pages instead of a 1,000-page textbook.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>## The Myth: "You Must Learn C Before C++"
 
@@ -81,7 +81,7 @@ The right answer depends almost entirely on what you want to build. Find yoursel
 
 The takeaway: C is _smaller_, but smaller doesn't mean easier to do real work in — you simply have to build more by hand. C++ has more to learn, but its modern features make everyday programming more comfortable once you're past the basics.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## What About "C++ Is Just Harder"?
 
@@ -109,7 +109,7 @@ Should you learn C or C++ first? For the vast majority of beginners, **start wit
 
 Don't get stuck on this decision. Pick the one that matches your goal, and start writing code today.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ## Related Guides
 

@@ -56,7 +56,7 @@ VS Code is an editor. It doesn't come with a C++ compiler, and IntelliSense need
 
 After installing, **quit VS Code completely and reopen it** so it picks up the new compiler.
 
-<div class="inline-cta"><strong>Just getting set up?</strong> Once your editor works, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you through the fundamentals — with pointers, memory and OOP explained properly — in 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Just getting set up?</strong> Once your editor works, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you through the fundamentals — with pointers, memory and OOP explained properly — in 87 plain-English pages. Just $27.</div>
 
 ## Step 2: Point the C/C++ Extension at Your Compiler
 
@@ -135,9 +135,9 @@ Visual Studio (the full IDE, not VS Code) shows `E1696 cannot open source file "
 
 ## Take Your C++ Further
 
-Once VS Code is happy, the real learning starts. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** takes you through the fundamentals in plain English, then the parts that trip beginners up most — pointers, memory and OOP. Just **$19**.
+Once VS Code is happy, the real learning starts. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** takes you through the fundamentals in plain English, then the parts that trip beginners up most — pointers, memory and OOP. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

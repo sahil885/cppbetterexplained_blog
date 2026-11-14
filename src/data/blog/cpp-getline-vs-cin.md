@@ -69,7 +69,7 @@ When you type `25` and press Enter, the buffer holds:
 
 `getline` then reads from the buffer until it finds a newline. There is one waiting immediately, so it reads zero characters, stores an empty string, consumes the newline, and returns successfully. No error, no pause — just an empty name.
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers input, strings and the STL in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers input, strings and the STL in plain English — 87 pages, just $27.</div>
 
 ## Fix 1: Ignore the Leftover Newline
 
@@ -175,9 +175,9 @@ The loop also ends naturally at end of input, which is Ctrl+D on Linux and macOS
 
 ## Take Your C++ Further
 
-If you want input handling and the rest of the fundamentals explained properly rather than patched together from forum answers, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$19**.
+If you want input handling and the rest of the fundamentals explained properly rather than patched together from forum answers, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

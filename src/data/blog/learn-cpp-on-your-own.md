@@ -42,7 +42,7 @@ Both are replaceable. Sequencing comes from following one structured resource in
     <p class="fb-eyebrow">Learning on your own?</p>
     <h3>C++ Better Explained</h3>
     <p>Self-study stalls on the concepts with nobody to explain them. This book covers pointers, memory and OOP in 87 plain-English pages built for exactly that.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>
 
@@ -112,9 +112,9 @@ That is the whole method. It is not complicated — it is just consistent.
 
 ## Take Your C++ Further
 
-If the hardest part of self-teaching is knowing what to learn next, that is exactly the problem the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** solves. One path, in order, in plain English — from your first program through pointers, memory, and OOP, with the analogies and diagrams that make the hard parts finally make sense. Just **$19**.
+If the hardest part of self-teaching is knowing what to learn next, that is exactly the problem the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** solves. One path, in order, in plain English — from your first program through pointers, memory, and OOP, with the analogies and diagrams that make the hard parts finally make sense. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

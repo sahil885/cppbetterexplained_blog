@@ -109,7 +109,7 @@ Aborted
 
 Freeing the same memory twice is **undefined behaviour**. Here the program aborted; on another system it might crash elsewhere, corrupt data silently, or appear to work until one day it doesn't. A shallow copy also causes **dangling pointers**: if `a` is destroyed first, `b.scores` points to memory that no longer belongs to the program.
 
-<div class="inline-cta"><strong>Pointers and memory still fuzzy?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains pointers, memory and OOP with pictures you can keep in your head, across 87 plain-English pages. Just $19.</div>
+<div class="inline-cta"><strong>Pointers and memory still fuzzy?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains pointers, memory and OOP with pictures you can keep in your head, across 87 plain-English pages. Just $27.</div>
 
 ## A Deep Copy in Action
 
@@ -294,9 +294,9 @@ If you're asked "what's the difference between a shallow copy and a deep copy?":
 
 ## Take Your C++ Further
 
-Shallow and deep copies only make sense once pointers and memory click. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains pointers, memory and OOP in plain English, with pictures you can keep in your head. Just **$19**.
+Shallow and deep copies only make sense once pointers and memory click. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains pointers, memory and OOP in plain English, with pictures you can keep in your head. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

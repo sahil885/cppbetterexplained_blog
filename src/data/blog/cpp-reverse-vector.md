@@ -65,7 +65,7 @@ std::reverse_copy(v.begin(), v.end(), r.begin());
 
 Note the destination must already be big enough — this is why the constructor version is usually nicer.
 
-<div class="inline-cta"><strong>Want the STL explained properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers vectors, iterators and algorithms in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Want the STL explained properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers vectors, iterators and algorithms in plain English — 87 pages, just $27.</div>
 
 ## Loop Backwards Without Reversing
 
@@ -155,9 +155,9 @@ l.reverse();     // list has its own member version — use it
 
 ## Take Your C++ Further
 
-If you want vectors, iterators and the STL explained properly rather than one function at a time, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$19**.
+If you want vectors, iterators and the STL explained properly rather than one function at a time, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

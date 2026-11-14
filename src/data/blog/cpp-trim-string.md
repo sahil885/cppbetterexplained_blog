@@ -62,7 +62,7 @@ That is the whole job. The rest of this article explains why it works and the tr
 
 The practical consequence: every C++ codebase ends up with its own small trim helper. Put the one above in a utility header and stop rewriting it.
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers strings, vectors and the STL in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers strings, vectors and the STL in plain English — 87 pages, just $27.</div>
 
 ## How find_first_not_of Actually Works
 
@@ -174,9 +174,9 @@ std::cout << s;   // abcd
 
 ## Take Your C++ Further
 
-If you want strings, vectors and the STL explained properly rather than looked up one function at a time, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English with diagrams and runnable examples. Just **$19**.
+If you want strings, vectors and the STL explained properly rather than looked up one function at a time, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English with diagrams and runnable examples. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

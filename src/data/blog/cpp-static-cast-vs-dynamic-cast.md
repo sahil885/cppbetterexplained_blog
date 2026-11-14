@@ -87,7 +87,7 @@ public:
 
 If you're deleting derived objects through a base pointer you need that virtual destructor regardless — see [virtual destructors in C++](/posts/cpp-virtual-destructor/).
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers inheritance, polymorphism and casting in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers inheritance, polymorphism and casting in plain English — 87 pages, just $27.</div>
 
 ## Casting References Throws Instead
 
@@ -174,9 +174,9 @@ That's the whole point of polymorphism — see [virtual functions and polymorphi
 
 ## Take Your C++ Further
 
-If you want inheritance, polymorphism and casting explained properly rather than pieced together, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$19**.
+If you want inheritance, polymorphism and casting explained properly rather than pieced together, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

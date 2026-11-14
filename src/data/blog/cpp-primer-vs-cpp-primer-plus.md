@@ -32,7 +32,7 @@ faqSchema:
     <p class="fb-eyebrow">Both are long</p>
     <h3>C++ Better Explained</h3>
     <p>C++ Primer is just under 1,000 pages and C++ Primer Plus is 1,440. If you'd rather start small, this book explains pointers, memory and OOP for true beginners, in 87 plain-English pages with diagrams.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>
 

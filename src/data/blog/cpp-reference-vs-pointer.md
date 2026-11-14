@@ -109,7 +109,7 @@ cout << &ref;  // Same address — they're the same object
 
 ---
 
-<div class="inline-cta"><strong>Pointers still fuzzy?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains pointers and references with diagrams and plain-English analogies, in 87 pages. Just $19.</div>
+<div class="inline-cta"><strong>Pointers still fuzzy?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> explains pointers and references with diagrams and plain-English analogies, in 87 pages. Just $27.</div>
 
 ## Using References in Function Parameters
 

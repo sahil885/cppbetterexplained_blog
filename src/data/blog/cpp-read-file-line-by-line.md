@@ -62,7 +62,7 @@ if (!file.is_open()) {          // same thing as if (!file)
 
 Relative paths are resolved from the directory you **run** the program in, not where the source file lives — which explains most mysterious open failures inside IDEs.
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers file handling, strings and the STL in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers file handling, strings and the STL in plain English — 87 pages, just $27.</div>
 
 ## Never Use while (!file.eof())
 
@@ -191,9 +191,9 @@ No. `ifstream` closes itself when it goes out of scope, which is the whole point
 
 ## Take Your C++ Further
 
-If you want file handling, strings and the STL explained properly rather than pieced together from snippets, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$19**.
+If you want file handling, strings and the STL explained properly rather than pieced together from snippets, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

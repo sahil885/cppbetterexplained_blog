@@ -73,7 +73,7 @@ if (ec) {
 
 This is the version I would reach for in real code — a missing file is an ordinary situation, not an exceptional one.
 
-<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers file handling, strings and the STL in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Learning C++ properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers file handling, strings and the STL in plain English — 87 pages, just $27.</div>
 
 ## The Pre-C++17 Way: seekg and tellg
 
@@ -192,9 +192,9 @@ Allocating once up front is much faster than appending line by line for large fi
 
 ## Take Your C++ Further
 
-If you want file handling and the rest of the fundamentals explained properly rather than gathered from snippets, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$19**.
+If you want file handling and the rest of the fundamentals explained properly rather than gathered from snippets, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers it in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

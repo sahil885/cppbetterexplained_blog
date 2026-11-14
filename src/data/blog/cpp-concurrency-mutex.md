@@ -150,7 +150,7 @@ If both threads read the same value before either writes, one increment is lost.
 
 ---
 
-<div class="inline-cta"><strong>Shaky on the fundamentals underneath this?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers pointers, memory and OOP in 87 plain-English pages, with diagrams. Just $19.</div>
+<div class="inline-cta"><strong>Shaky on the fundamentals underneath this?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers pointers, memory and OOP in 87 plain-English pages, with diagrams. Just $27.</div>
 
 ## std::mutex: Protecting Shared Data
 

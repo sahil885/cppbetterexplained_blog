@@ -190,7 +190,7 @@ std::cout << ages.empty();  // false (0)
 
 ---
 
-<div class="inline-cta"><strong>Shaky on the fundamentals underneath this?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers pointers, memory and OOP in 87 plain-English pages, with diagrams. Just $19.</div>
+<div class="inline-cta"><strong>Shaky on the fundamentals underneath this?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers pointers, memory and OOP in 87 plain-English pages, with diagrams. Just $27.</div>
 
 ## std::unordered_map
 
@@ -472,7 +472,7 @@ for (const auto& [k, v] : m) {
 | Size | `m.size()` | Same |
 | Clear | `m.clear()` | Same |
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $19.</div>
+<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## Summary
 
@@ -484,9 +484,9 @@ The interface is nearly identical for both. Use `find()` instead of `operator[]`
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$19**.
+If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

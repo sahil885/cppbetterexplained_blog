@@ -56,7 +56,7 @@ Prefer `push_back` for appending — it is clearer and avoids constructing an it
 
 **Inserting at the front is O(n).** Every element must shift one place. Doing it in a loop over `n` items is O(n²), which is fine for 100 elements and painful for 100,000. If you need cheap front insertion, use [std::deque](/posts/cpp-deque/).
 
-<div class="inline-cta"><strong>Want the STL explained properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers vectors, iterators and containers in plain English — 87 pages, just $19.</div>
+<div class="inline-cta"><strong>Want the STL explained properly?</strong> The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> covers vectors, iterators and containers in plain English — 87 pages, just $27.</div>
 
 ## Insert Multiple Copies
 
@@ -167,9 +167,9 @@ for (int i = 0; i < 1000; ++i) {
 
 ## Take Your C++ Further
 
-If you want vectors, iterators and the STL explained properly instead of looked up function by function, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$19**.
+If you want vectors, iterators and the STL explained properly instead of looked up function by function, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** covers the fundamentals in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

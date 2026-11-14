@@ -32,7 +32,7 @@ faqSchema:
     <p class="fb-eyebrow">Brand new to programming?</p>
     <h3>C++ Better Explained</h3>
     <p>C++ Primer assumes you've programmed before. If you haven't, start smaller: this book explains pointers, memory and OOP for true beginners, in 87 plain-English pages with diagrams.</p>
-    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $19 →</a>
+    <a class="fb-cta" href="https://start.cppbetterexplained.com/tw-sales-page">Get the Book — $27 →</a>
   </div>
 </div>
 
@@ -89,7 +89,7 @@ These are useful, but they're conveniences layered on the C++11 foundation — n
 
 **It lasts.** Once you know C++, it stays useful as a reference for years.
 
-<div class="inline-cta"><strong>Want the hard parts to click before you open a 1,000-page book?</strong> <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained</a> covers pointers, memory and OOP in 87 plain-English pages — $19.</div>
+<div class="inline-cta"><strong>Want the hard parts to click before you open a 1,000-page book?</strong> <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained</a> covers pointers, memory and OOP in 87 plain-English pages — $27.</div>
 
 ## Where Beginners Struggle
 
@@ -141,9 +141,9 @@ C++ Primer is a very good book. It just isn't a good *first* book for most peopl
 
 ## Take Your C++ Further
 
-If you want the concepts that make C++ hard — pointers, memory, OOP — explained in plain English before you tackle a 1,000-page reference, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is 87 pages built for exactly that. Just **$19**.
+If you want the concepts that make C++ hard — pointers, memory, OOP — explained in plain English before you tackle a 1,000-page reference, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is 87 pages built for exactly that. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 

@@ -53,7 +53,7 @@ It's plain text, so anything that edits text will open it:
 
 Opening it in any of these won't run anything. For that, keep reading.
 
-<div class="inline-cta"><strong>Just getting started?</strong> Once your first program runs, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you through the fundamentals in 87 plain-English pages — with pointers, memory and OOP explained properly. Just $19.</div>
+<div class="inline-cta"><strong>Just getting started?</strong> Once your first program runs, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> takes you through the fundamentals in 87 plain-English pages — with pointers, memory and OOP explained properly. Just $27.</div>
 
 ## Method 1: Compile and Run from the Command Line
 
@@ -155,9 +155,9 @@ The linker failed, and the reason is on the line above it. On Windows, `Permissi
 
 ## Take Your C++ Further
 
-Getting code to run is step one. Understanding it — pointers, memory and OOP especially — is where most beginners stall. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains them in plain English. Just **$19**.
+Getting code to run is step one. Understanding it — pointers, memory and OOP especially — is where most beginners stall. The **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** explains them in plain English. Just **$27**.
 
-👉 **[Get the C++ Better Explained Ebook — $19](https://start.cppbetterexplained.com/tw-sales-page)**
+👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
 
 ---
 
