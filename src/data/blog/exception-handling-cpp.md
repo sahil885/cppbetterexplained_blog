@@ -165,6 +165,8 @@ int main() {
 }
 ```
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ## Catching by Reference — Always Do This
 
 Always catch exceptions by **const reference**, never by value:
@@ -348,8 +350,6 @@ Caught: Error at level 3!
 6. Exception caught at main level
 
 **Critical insight**: Destructors run during stack unwinding. This is why RAII (Resource Acquisition Is Initialization) works so well with exceptions — your resources are automatically cleaned up.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## Exception Safety Guarantees: Levels of Commitment
 
@@ -835,9 +835,7 @@ The best code is robust code. Whether you achieve that with exceptions or error 
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="fundamentals" placement="end_cta" -->
 
 ---
 

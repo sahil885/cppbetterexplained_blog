@@ -85,6 +85,8 @@ int main() {
 
 With C++23, `std::println` from `<print>` can print a whole vector: `std::println("{}", scores);` prints `[90, 85, 77]`. It needs a recent compiler. In our tests it worked with GCC 15, Clang 21 and the latest MSVC with `/std:c++latest`, but GCC 14 rejected it. For more options, see [how to print a vector](/posts/cpp-print-vector/).
 
+<!-- book-cta topic="oop" placement="mid_article" -->
+
 ## Cause 2: Printing Your Own Struct or Class
 
 ```cpp
@@ -138,8 +140,6 @@ Three details matter:
 3. It **returns the stream**, so you can keep chaining, as in `std::cout << p << '\n'`.
 
 Causes 3 and 4 are what happens when the first two go wrong. For the full picture, see [operator overloading](/posts/cpp-operator-overloading/).
-
-<!-- book-cta topic="oop" placement="mid_article" -->
 
 ## Cause 3: operator<< Written as a Member Function
 

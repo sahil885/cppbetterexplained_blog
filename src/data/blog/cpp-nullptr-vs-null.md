@@ -38,6 +38,8 @@ int* p = NULL;
 
 the compiler really sees `int* p = 0;`. That works for assigning pointers, but it creates a hidden problem: `NULL` is fundamentally an integer, not a pointer. Most of the time you never notice, until function overloading enters the picture.
 
+<!-- book-cta topic="pointers" placement="mid_article" -->
+
 ---
 
 ## A Real Bug NULL Causes
@@ -55,8 +57,6 @@ Now you call `process(NULL)` intending to use the pointer version. This goes wro
 - If `NULL` is defined as a compiler builtin (common on modern GCC and Clang), the call becomes **ambiguous** and fails to compile, because `NULL` matches both overloads equally.
 
 Either way, `process(NULL)` is a trap: it's a wrong call or an outright error, and which one you get isn't even portable across compilers. This is exactly the mess `nullptr` was created to fix.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -125,6 +125,4 @@ The rule is simple: in any C++11 or newer code, always write `nullptr`. It says 
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="pointers" placement="end_cta" -->

@@ -64,6 +64,8 @@ std::cout << sizeof(x++);  // prints the size; x is STILL 5 afterward
 
 The `x++` is never evaluated — only its *type* is inspected. Good to know so it never surprises you.
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ---
 
 ## Counting the Elements in an Array
@@ -86,8 +88,6 @@ int main() {
 ```
 
 The formula `sizeof(arr) / sizeof(arr[0])` is worth memorizing. It's the traditional way to loop over a raw array without hard-coding the length.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -177,6 +177,4 @@ You rarely need to worry about padding as a beginner — just know that `sizeof(
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="fundamentals" placement="end_cta" -->

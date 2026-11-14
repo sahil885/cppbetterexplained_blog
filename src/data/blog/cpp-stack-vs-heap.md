@@ -75,6 +75,8 @@ delete[] arr;             // Free array heap memory — note [] for arrays
 - **Flexible lifetime**: persists until you explicitly free it (or the program ends)
 - **Slower**: involves bookkeeping to track allocations
 
+<!-- book-cta topic="memory" placement="mid_article" -->
+
 ---
 
 ## Side-by-Side Comparison
@@ -101,8 +103,6 @@ void heapExample() {
 The crucial difference: stack memory is cleaned up automatically. Heap memory is not — if you lose the pointer without freeing the memory, it leaks.
 
 ---
-
-<!-- book-cta topic="memory" placement="mid_article" -->
 
 ## Memory Leaks
 

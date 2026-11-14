@@ -79,6 +79,8 @@ Three things to notice:
 - The definition outside has **no `Temperature::` prefix** and **no `friend` keyword**. Those only appear in the declaration.
 - The function returns `std::ostream&` so that chaining works: `std::cout << a << b`.
 
+<!-- book-cta topic="oop" placement="mid_article" -->
+
 ---
 
 ## Friend Functions for Binary Operators
@@ -131,8 +133,6 @@ a == b? no
 ```
 
 You *could* write `operator+` as a member function. But then the two operands are treated asymmetrically — the left one is the object, the right one is a parameter. As a free friend function, both sides are plain parameters, which reads better and behaves more predictably with implicit conversions.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -245,6 +245,4 @@ A friend function is an outside function that the class explicitly invites in. B
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="oop" placement="end_cta" -->

@@ -70,7 +70,7 @@ int main() {
 
 This is efficient because a reference is just an alias for the existing object — nothing gets copied — and it's safe because the compiler guarantees the function only reads. This pattern is so common it's the default way to pass strings, vectors, and class objects in C++. For the full picture, see [pass by value vs reference](/posts/cpp-pass-by-value-reference/).
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
 
 ---
 
@@ -170,6 +170,4 @@ Use `constexpr` for true constants like array sizes and mathematical values, and
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="fundamentals" placement="end_cta" -->

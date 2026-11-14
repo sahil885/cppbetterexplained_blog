@@ -160,6 +160,8 @@ import { OPTIN_SUCCESS_MESSAGE, OPTIN_SKIP_LABEL } from "@/utils/optinSuccess";
 
   function isDismissed() {
     try {
+      // Already on the list: never show the checklist popup again.
+      if (localStorage.getItem("cbe_subscribed") === "1") return true;
       var ts = localStorage.getItem(STORAGE_KEY);
       if (!ts) return false;
       // Show again after 3 days — someone who closed it once might subscribe later

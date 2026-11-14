@@ -54,6 +54,8 @@ You can also write a multi-line comment using block syntax:
 
 Anything between `/*` and `*/` is treated as a comment and ignored by the compiler.
 
+<!-- book-cta topic="compiling" placement="mid_article" -->
+
 ---
 
 ## Line 2: The Include Directive
@@ -89,8 +91,6 @@ This is the entry point of every C++ program. Without it, the program will not s
 The `int` at the front means the function returns an integer value when it finishes. This return value tells the operating system whether the program ended successfully.
 
 ---
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## Line 6: The Opening Brace
 

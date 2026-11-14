@@ -79,7 +79,7 @@ double fahrenheit = celsius * 9.0 / 5.0 + 32.0;   // ✓ always correct
 
 That single decimal point is the difference between a working program and a mystifying one. [Integer division in C++](/posts/cpp-integer-division/) covers more places this bites, and [float vs double](/posts/cpp-float-vs-double/) explains why we use `double` rather than `float`.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="programs" placement="mid_article" -->
 
 ---
 
@@ -242,6 +242,4 @@ Three details worth noticing:
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="programs" placement="end_cta" -->

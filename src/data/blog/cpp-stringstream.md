@@ -74,6 +74,8 @@ int main() {
 
 Think of `ss` like a scratch pad where you can mix strings and numbers freely, then grab the result as a single string.
 
+<!-- book-cta topic="containers" placement="mid_article" -->
+
 ---
 
 ## Use Case 2: Converting String to Number
@@ -133,8 +135,6 @@ int main() {
 ```
 
 The `>>` operator automatically skips whitespace and extracts each token into the right type. This is far cleaner than manual string splitting.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -253,6 +253,4 @@ Use `istringstream` when you're only reading, `ostringstream` when you're only w
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="containers" placement="end_cta" -->

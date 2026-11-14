@@ -103,7 +103,7 @@ int main() {
 
 Note the two different comparators: `sort` needs a **less-than**, `unique` needs an **equality**. Passing `<` to `unique` is a common bug that silently produces wrong results. If [lambdas](/posts/cpp-lambda-functions/) are unfamiliar, they're just inline functions written where you need them.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="containers" placement="mid_article" -->
 
 ---
 
@@ -198,6 +198,4 @@ One last reminder: if your vector is already sorted, **skip the sort**. Calling 
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="containers" placement="end_cta" -->

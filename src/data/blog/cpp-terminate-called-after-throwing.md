@@ -100,6 +100,8 @@ terminate called after throwing an instance of 'std::out_of_range'
 
 Check `start <= word.size()` before calling `substr`. More in [how to get a substring](/posts/cpp-substring/).
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ## Cause 2: std::stoi With Text That Isn't a Number
 
 ```cpp
@@ -152,8 +154,6 @@ That's not a number
 ```
 
 With `"99999999999"`, the same program prints `That number is too big`. If you only catch `std::invalid_argument`, a number that's too big still ends the program, because nothing catches `std::out_of_range`. See [string to int](/posts/cpp-string-to-int/) and [input validation](/posts/cpp-input-validation/) for more ways to handle user input.
-
-<!-- book-cta topic="fundamentals" placement="mid_article" -->
 
 ## Cause 3: A Vector With a Negative Size
 

@@ -114,6 +114,12 @@ const structuredData = isArticle
       // once GA confirms the hit, or after 1 second at most. `minDelayMs` keeps a
       // success message on screen for at least that long before `next` runs.
       window.cbeTrack = function (name, params, next, minDelayMs) {
+        // Every opt-in form reports its sign-up through here, so this is the
+        // one place that remembers the reader as a subscriber (see the
+        // cbe-subscribed script below).
+        if (name === "optin_submit") {
+          try { localStorage.setItem("cbe_subscribed", "1"); } catch (e) {}
+        }
         const payload = Object.assign({}, params, { transport_type: "beacon" });
         if (typeof next !== "function") {
           gtag("event", name, payload);
@@ -275,6 +281,28 @@ const structuredData = isArticle
     }
 
     <ClientRouter />
+
+    <!-- Readers who have signed up for the checklist are remembered for good
+         (cbe_subscribed in localStorage, set in cbeTrack). They no longer see
+         the checklist popup or the checklist boxes in posts; the book boxes
+         and the book bar stay. The class is set on a fresh page load only, so
+         the "check your inbox" message stays visible right after a sign-up. -->
+    <script is:inline>
+      (function () {
+        function apply() {
+          try {
+            if (localStorage.getItem("cbe_subscribed") === "1") {
+              document.documentElement.classList.add("cbe-subscribed");
+            }
+          } catch (e) {}
+        }
+        apply();
+        document.addEventListener("astro:after-swap", apply);
+      })();
+    </script>
+    <style is:inline>
+      .cbe-subscribed .cbe-checklist-optin { display: none !important; }
+    </style>
 
     <!-- Minimal inline script to prevent FOUC -->
     <script is:inline>

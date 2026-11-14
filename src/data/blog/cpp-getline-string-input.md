@@ -62,7 +62,7 @@ int main() {
 
 Now `John Smith` comes through complete. `getline` takes two arguments: the input stream (`std::cin`) and the string to fill. It reads the whole line, throws away the trailing newline, and stops.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="containers" placement="mid_article" -->
 
 ---
 
@@ -151,6 +151,4 @@ The takeaway: `cin >>` for tokens, `getline` for whole lines, and `cin.ignore` t
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="containers" placement="end_cta" -->

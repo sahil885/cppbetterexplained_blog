@@ -95,6 +95,8 @@ So treat the note as a starting point. Begin at the brace it names and check eac
     }
 ```
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ## Cause 2: A Missing } Before else
 
 When the missing brace is just before an `else`, GCC gives a more specific message:
@@ -158,8 +160,6 @@ MSVC:   main.cpp(6): error C2601: 'main': local function definitions are illegal
 C++ doesn't allow one function to be defined inside another, so the first error is about `main`, not about the missing brace. Whenever you see "function-definition is not allowed here", check the function **above** it for a missing `}`.
 
 **Fix:** add the `}` at the end of `greet()`.
-
-<!-- book-cta topic="fundamentals" placement="mid_article" -->
 
 ## Cause 4: A Class Missing Its Closing Brace
 

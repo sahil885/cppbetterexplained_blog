@@ -53,6 +53,8 @@ The trade-off is that the DLL has to be present and findable when the program ru
 
 Visual Studio generates the project with a couple of helper files (a precompiled header, `pch.h` / `pch.cpp`). You don't need to touch those for now.
 
+<!-- book-cta topic="compiling" placement="mid_article" -->
+
 ## Step 2: Add a Header That Exports Your Function
 
 A DLL is only useful if other programs can see its functions. You make a function visible — or _exported_ — using `__declspec(dllexport)`.
@@ -110,8 +112,6 @@ Choose **Build > Build Solution** (or press **Ctrl+Shift+B**). When it succeeds,
 - **`MathLibrary.lib`** — the _import library_. This is **not** a static library; it's a small file that tells the linker how to connect a client program to the functions inside the DLL.
 
 Hold on to both. You'll use the `.lib` when compiling the client, and the `.dll` when running it.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## Step 5: Create a Program That Uses the DLL
 

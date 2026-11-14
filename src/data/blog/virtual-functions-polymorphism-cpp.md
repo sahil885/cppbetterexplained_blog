@@ -194,6 +194,8 @@ Employee Bob destroyed
 3. **Can call base class version**: Use `BaseClass::functionName()` to explicitly call the parent version
 4. **Non-virtual functions are not polymorphic**: They use compile-time binding
 
+<!-- book-cta topic="oop" placement="mid_article" -->
+
 ## Runtime Dispatch: How C++ Knows Which Function to Call
 
 This is where the magic happens. When you call a virtual function through a base class pointer or reference, C++ must somehow decide *at runtime* which version to call.
@@ -381,8 +383,6 @@ int main() {
 ```
 
 A class with at least one pure virtual function is **abstract**—you cannot instantiate it directly. This is powerful for defining interfaces that derived classes must implement.
-
-<!-- book-cta topic="oop" placement="mid_article" -->
 
 ## Virtual Destructors: Why Forgetting Them Causes Bugs
 

@@ -79,6 +79,8 @@ A
 
 If you wanted more than one character, use `std::string grade = "A+";` instead.
 
+<!-- book-cta topic="pointers" placement="mid_article" -->
+
 ## Cause 2: A Number in Quotes
 
 ```cpp
@@ -137,8 +139,6 @@ int main() {
 ```
 
 If the text isn't a number, `std::stoi` throws an exception, and the program stops with [terminate called after throwing](/posts/cpp-terminate-called-after-throwing/) unless you catch it. See [string to int](/posts/cpp-string-to-int/) for safer ways to handle bad input.
-
-<!-- book-cta topic="pointers" placement="mid_article" -->
 
 ## Cause 4: An int Used as a std::string
 

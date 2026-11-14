@@ -86,6 +86,8 @@ Output:
 0 0 9
 ```
 
+<!-- book-cta topic="containers" placement="mid_article" -->
+
 ---
 
 ## Using Range-Based for Loops
@@ -153,8 +155,6 @@ int main() {
 ```
 
 You can also start with an empty outer vector and fill it entirely at runtime — useful when you don't know the dimensions until the program runs.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -239,6 +239,4 @@ int main() {
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="containers" placement="end_cta" -->

@@ -117,6 +117,8 @@ Rectangle r2(5, 3);   // 5x3
 Rectangle r3(4);      // 4x4 square
 ```
 
+<!-- book-cta topic="memory" placement="mid_article" -->
+
 ---
 
 ## Initializer Lists
@@ -238,8 +240,6 @@ void saveData() {
 
 This pattern — acquiring a resource in the constructor and releasing it in the destructor — is called **RAII** (Resource Acquisition Is Initialization). It's how `std::vector`, `std::string`, and smart pointers work.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
-
 ---
 
 ## Copy Constructor
@@ -323,6 +323,4 @@ Timer t3;            // 0:00:00
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="memory" placement="end_cta" -->

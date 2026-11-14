@@ -75,6 +75,8 @@ You get:
 
 And `argc` is `3` — three slots total. That's why `argc` is always at least `1`.
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ## Printing Every Argument
 
 The simplest useful program just echoes back what it was given. You loop from `0` to `argc - 1`:
@@ -168,8 +170,6 @@ int main(int argc, char* argv[])
 ```
 
 Two good practices are bundled in here: printing a **usage message** that uses `argv[0]` (so it shows the real program name), and **returning a non-zero exit code** to signal failure. Writing errors to `std::cerr` rather than `std::cout` is also the conventional choice for diagnostics.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## Converting Arguments to Numbers
 

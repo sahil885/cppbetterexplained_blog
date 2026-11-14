@@ -16,6 +16,8 @@ export const BOOK_TOPICS = [
   "oop",
   "compiling",
   "fundamentals",
+  "containers",
+  "programs",
 ] as const;
 export type BookTopic = (typeof BOOK_TOPICS)[number];
 
@@ -31,6 +33,7 @@ export const PLACEMENTS = [
   "homepage_hero",
   "homepage_book",
   "comparison_table",
+  "sticky_bar",
   "other",
 ] as const;
 export type Placement = (typeof PLACEMENTS)[number];
@@ -73,6 +76,21 @@ const COPY: Record<BookTopic, TopicCopy> = {
     midBody:
       "C++ Better Explained covers the core of C++ in plain English, with analogies and code diagrams, including the parts that trip beginners up most: pointers, memory and OOP.",
     end: "If you'd like the fundamentals explained in one place, C++ Better Explained covers them in 87 plain-English pages, with analogies and code diagrams, including the parts that trip beginners up most: pointers, memory and OOP.",
+  },
+  // Arrays, strings, vectors and the other containers. The copy doesn't claim
+  // the book teaches containers: it points at what sits underneath them.
+  containers: {
+    midLead: "Curious what's happening underneath?",
+    midBody:
+      "Arrays, strings and vectors make much more sense once you understand pointers and memory. C++ Better Explained explains both with diagrams and plain-English analogies.",
+    end: "Arrays, strings and vectors are easier to use well once you know what's underneath them: pointers and memory. C++ Better Explained explains both, and OOP, in 87 plain-English pages with diagrams and analogies.",
+  },
+  // Practice programs, small projects and algorithm walkthroughs.
+  programs: {
+    midLead: "Ready for the step after small programs?",
+    midBody:
+      "The jump from exercises like this to real projects is pointers, memory and OOP. C++ Better Explained covers all three in plain English, with analogies and code diagrams.",
+    end: "Small programs like this one are the right way to practise. The next step is the part most beginners get stuck on: pointers, memory and OOP. C++ Better Explained covers all three in 87 plain-English pages, with analogies and code diagrams.",
   },
 };
 
@@ -144,7 +162,7 @@ export function renderQuickOptin(attrs: {
     hook = `Hit “${attrs.error}”? It's a classic beginner trap, and there are others like it.`;
   }
   return [
-    `<div class="quick-optin not-prose my-8 rounded-xl border border-accent/30 bg-accent/5 px-5 py-6 text-center">`,
+    `<div class="quick-optin cbe-checklist-optin not-prose my-8 rounded-xl border border-accent/30 bg-accent/5 px-5 py-6 text-center">`,
     `<p class="text-lg font-bold text-accent mb-1">${hook}</p>`,
     `<p class="text-sm opacity-75 mb-4 max-w-md mx-auto"><strong>Free 1-page checklist: The 10 Mistakes Every C++ Beginner Makes.</strong> It shows the exact traps that slow down every C++ beginner, so you can avoid them from day one.</p>`,
     `<form class="post-optin-form flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" data-list="checklist" data-location="inline_quick_answer">`,

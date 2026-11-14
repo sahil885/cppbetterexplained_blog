@@ -88,6 +88,8 @@ The stack follows a **LIFO (Last In, First Out)** principle. Variables are freed
 
 This is where the heap comes in.
 
+<!-- book-cta topic="memory" placement="mid_article" -->
+
 ---
 
 ## How Heap Memory Works: Dynamic Allocation and Why We Need It
@@ -238,8 +240,6 @@ void leakyFunction() {
 Even if you delete at the end, an early return or exception can cause a leak.
 
 ---
-
-<!-- book-cta topic="memory" placement="mid_article" -->
 
 ## How to Detect Memory Leaks: Valgrind and AddressSanitizer
 

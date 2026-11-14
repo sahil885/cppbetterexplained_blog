@@ -67,6 +67,8 @@ This is all fine and good. But what if you need to know the actual address? Or w
 
 A **pointer** is simply a variable that holds a memory address instead of regular data.
 
+<!-- book-cta topic="pointers" placement="mid_article" -->
+
 ## What Is a Pointer? The Real Definition
 
 A pointer is a variable that stores a memory address. That's it. It points to where data is stored in memory.
@@ -149,8 +151,6 @@ char* cptr;         // Pointer to char
 std::string* sptr;  // Pointer to string
 MyClass* objptr;    // Pointer to custom class
 ```
-
-<!-- book-cta topic="pointers" placement="mid_article" -->
 
 ## Null Pointers: The Special Case
 

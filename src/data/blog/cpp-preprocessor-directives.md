@@ -71,6 +71,8 @@ int main() {
 
 Without those two includes, the compiler has never heard of `std::cout` or `std::string` and the build fails. Including a header is how you tell the compiler these things exist.
 
+<!-- book-cta topic="compiling" placement="mid_article" -->
+
 ---
 
 ## `#define`: Blind Text Replacement
@@ -124,8 +126,6 @@ GOOD_SQUARE(2 + 3) = 25
 `BAD_SQUARE(2 + 3)` expands to `2 + 3 * 2 + 3`, which is 11 by operator precedence. The macro didn't compute anything — it pasted text, and normal precedence rules did the rest. Wrapping every parameter and the whole body in parentheses fixes it.
 
 This is the fundamental hazard of macros: they look like functions but obey none of the rules functions obey.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -308,6 +308,4 @@ These are genuinely useful for logging — `__FILE__` and `__LINE__` let an erro
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="compiling" placement="end_cta" -->

@@ -87,6 +87,8 @@ even
 
 There's more on `%` in [the modulo operator](/posts/cpp-modulo-operator/), and on conditions in the [conditionals tutorial](/posts/cpp-conditionals-tutorial/).
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ## Cause 2: An Assignment Written Backwards
 
 In maths, `a + b = total` and `total = a + b` say the same thing. In C++, `=` means "store the right side in the left side", so the order matters:
@@ -127,8 +129,6 @@ int main() {
 ```
 5
 ```
-
-<!-- book-cta topic="fundamentals" placement="mid_article" -->
 
 ## Cause 3: Assigning to a Function's Return Value
 

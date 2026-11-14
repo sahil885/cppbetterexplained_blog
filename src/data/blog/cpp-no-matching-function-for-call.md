@@ -66,6 +66,8 @@ MSVC:   error C2661: 'add': no overloaded function takes 1 arguments
 
 **Fix:** pass what one of the versions expects, such as `add(5, 3)`. See [function overloading](/posts/cpp-function-overloading/) for how C++ picks between versions.
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ## Cause 2: No Matching Constructor
 
 The most common version of this error in object-oriented code:
@@ -114,8 +116,6 @@ int main() {
 ```
 
 More in [constructors and destructors](/posts/cpp-constructors-destructors/).
-
-<!-- book-cta topic="fundamentals" placement="mid_article" -->
 
 ## Cause 3: The Wrong Type for push_back
 

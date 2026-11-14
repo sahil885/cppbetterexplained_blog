@@ -63,6 +63,8 @@ int main() {
 
 The `%` (modulo) operator gives the remainder of a division. When `n % i == 0`, it means `i` divides `n` with nothing left over — a factor. The `break` statement stops the loop early because once we find a single factor, we already know the answer.
 
+<!-- book-cta topic="programs" placement="mid_article" -->
+
 ---
 
 ## Optimizing with the Square Root
@@ -90,8 +92,6 @@ int main() {
 ```
 
 This is dramatically faster for large numbers. Checking 1,000,003 now takes about 1,000 steps instead of a million. This is efficient because the work grows with the square root of the input rather than the input itself.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -147,6 +147,4 @@ Forgetting the `n <= 1` check is the classic bug — without it, 1 is wrongly re
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="programs" placement="end_cta" -->

@@ -138,6 +138,8 @@ int main() {
 }
 ```
 
+<!-- book-cta topic="fundamentals" placement="mid_article" -->
+
 ## Joining and Detaching Threads
 
 ### join(): Waiting for Completion
@@ -262,8 +264,6 @@ lock.unlock();
 ```
 
 **Best practice**: Use `std::lock_guard` for simple cases and `std::unique_lock` when you need flexibility.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ## Deadlock: What It Is and How to Avoid It
 
@@ -524,9 +524,7 @@ The patterns shown here—producer-consumer, fine-grained locking, condition var
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="fundamentals" placement="end_cta" -->
 
 ---
 

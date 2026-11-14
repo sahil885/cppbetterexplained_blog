@@ -66,7 +66,7 @@ for (const Person& p : people)
 
 Reading `a.age < b.age` as "a comes before b when a is younger" makes ascending order. To sort by name instead, just compare `a.name < b.name` — `std::string` already knows alphabetical order.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="programs" placement="mid_article" -->
 
 ---
 
@@ -134,6 +134,4 @@ This is handy when you'll sort the same way repeatedly, but a lambda is more fle
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="programs" placement="end_cta" -->

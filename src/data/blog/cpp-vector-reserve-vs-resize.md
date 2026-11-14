@@ -70,6 +70,8 @@ int main() {
 
 After `resize(5)`, index `4` is a real, valid element you can read and write. You can also give a fill value: `v.resize(5, -1)` pads with `-1` instead of `0`.
 
+<!-- book-cta topic="containers" placement="mid_article" -->
+
 ---
 
 ## reserve: Set Aside Memory Only
@@ -94,8 +96,6 @@ int main() {
 ```
 
 Because the size is unchanged, indexing into the reserved-but-empty slots is undefined behaviour. `reserve` is purely a performance hint, not a way to make elements.
-
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
 
 ---
 
@@ -169,6 +169,4 @@ Use `resize` when you need the elements to exist, and `reserve` when you just wa
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="containers" placement="end_cta" -->

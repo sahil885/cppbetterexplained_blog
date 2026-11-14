@@ -57,6 +57,8 @@ After function: 5
 
 The original `num` is unchanged because `addTen` received a copy.
 
+<div class="inline-cta">Pointers and references are where most C++ beginners get stuck. The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> walks through them with diagrams and plain-English mental models — just $27.</div>
+
 ---
 
 ### 2. Pass by Reference
@@ -153,8 +155,6 @@ void printName(const string& name) {
 Const reference is the standard way to pass strings, vectors, and custom objects to functions that only need to read them.
 
 ---
-
-<div class="inline-cta">Pointers and references are where most C++ beginners get stuck. The <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> walks through them with diagrams and plain-English mental models — just $27.</div>
 
 ## Practical Example: Swap Two Numbers
 

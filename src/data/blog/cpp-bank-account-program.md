@@ -104,7 +104,7 @@ Several decisions here are worth pausing on.
 
 **The getters are marked `const`.** That tells the compiler — and every reader — that calling `getBalance()` cannot modify the account. It also means you can call these on a `const Account&`, which you will need the moment you pass accounts to functions efficiently. More on this in the [const keyword guide](/posts/cpp-const-keyword/).
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="oop" placement="mid_article" -->
 
 ---
 
@@ -259,6 +259,4 @@ Number two is the natural next step, and it is what turns this from a class exer
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="oop" placement="end_cta" -->

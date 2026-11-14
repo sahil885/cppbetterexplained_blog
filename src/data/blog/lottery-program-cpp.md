@@ -100,7 +100,7 @@ void printLine(int line[]) {
 }
 ```
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="programs" placement="mid_article" -->
 
 ## Step by Step Breakdown
 

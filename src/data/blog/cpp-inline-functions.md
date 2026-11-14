@@ -54,7 +54,7 @@ Compilers have far better information than you do — they know the function's s
 
 If you compile the `square` example with `g++ -O2`, it gets inlined whether or not you write the keyword. Remove the keyword and the generated assembly is identical.
 
-<div class="inline-cta">If you're looking to go deeper with C++, the <a href="https://start.cppbetterexplained.com/tw-sales-page">C++ Better Explained Ebook</a> is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just $27.</div>
+<!-- book-cta topic="compiling" placement="mid_article" -->
 
 ---
 
@@ -192,6 +192,4 @@ The short version: think of `inline` as a linkage keyword that happens to have "
 
 ## Take Your C++ Further
 
-If you're looking to go deeper with C++, the **[C++ Better Explained Ebook](https://start.cppbetterexplained.com/tw-sales-page)** is perfect for you — whether you're a complete beginner or looking to solidify your understanding. Just **$27**.
-
-👉 **[Get the C++ Better Explained Ebook — $27](https://start.cppbetterexplained.com/tw-sales-page)**
+<!-- book-cta topic="compiling" placement="end_cta" -->
