@@ -26,7 +26,8 @@ faqSchema:
 |---|---|
 | GCC (g++, MinGW, Code::Blocks) | `expected '}' at end of input`, then `note: to match this '{'` |
 | Clang (Xcode, macOS) | `expected '}'`, then `note: to match this '{'` |
-| Visual Studio | `fatal error C1075: '{': no matching token found` |
+| Visual Studio editor (red squiggle) | `expected a '}'`, then `to match this '{'` |
+| Visual Studio build | `fatal error C1075: '{': no matching token found` |
 
 <!-- optin-quick error="expected '}' at end of input" -->
 
@@ -253,12 +254,15 @@ MSVC:   main.cpp(6): error C2059: syntax error: '}'
 
 **Fix:** delete the extra `}` on the line the error points to.
 
+In the Visual Studio editor, an extra `}` usually shows up as [expected a declaration](/posts/cpp-expected-a-declaration/) on the lines after it.
+
 ## Quick Reference
 
 | Message | Usual cause |
 |---|---|
 | `expected '}' at end of input` (GCC), `expected '}'` (Clang) | A `{` with no matching `}`; the note shows which one |
 | `C1075: '{': no matching token found` (Visual Studio) | The same; the line number is the unclosed `{` |
+| `expected a '}'` (Visual Studio editor) | The same; the note `to match this '{'` shows which one |
 | `expected '}' before 'else'` | Missing `}` at the end of an `if` block |
 | `a function-definition is not allowed here` | The function above is missing its `}` |
 | `expected declaration before '}' token` | One `}` too many |

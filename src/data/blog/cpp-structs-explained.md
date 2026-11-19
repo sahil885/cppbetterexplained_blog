@@ -316,5 +316,6 @@ int main() {
 - [C++ Variables and Data Types](/posts/cpp-variables-data-types/) — the building blocks you group together inside structs.
 - [C++ Vector Tutorial: Complete Guide to std::vector](/posts/cpp-vector-tutorial/) — use vectors to store collections of structs.
 - [How to Use Pointers in C++](/posts/pointers-in-cpp/) — understand the arrow operator and pointer-to-struct patterns.
+- [How to Fix 'type name is not allowed'](/posts/cpp-type-name-is-not-allowed/) — the error from writing `Point.x` instead of `p.x`.
 - [C++ Pass by Value, Reference & Pointer: Complete Guide](/posts/cpp-pass-by-value-reference/) — learn the best way to pass structs to functions.
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — quick reference for struct syntax alongside classes and OOP.

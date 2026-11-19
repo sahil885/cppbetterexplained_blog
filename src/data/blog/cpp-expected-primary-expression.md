@@ -30,6 +30,8 @@ The same mistake gets different wording on each compiler:
 | Clang (Xcode, macOS) | `expected expression`, or `expected '(' for function-style cast or type construction` |
 | Visual Studio | `C2144: syntax error: 'int' should be preceded by ')'`, or `C2059: syntax error` |
 
+In the Visual Studio editor, the red squiggle for these mistakes usually says [`expected an expression`](/posts/cpp-expected-an-expression/), or [`type name is not allowed`](/posts/cpp-type-name-is-not-allowed/) when a type is where a value should be.
+
 <!-- optin-quick error="expected primary-expression" -->
 
 ---
@@ -186,7 +188,7 @@ Clang:  error: expected '(' for function-style cast or type construction
 MSVC:   error C2275: 'std::string': expected an expression instead of a type
 ```
 
-**Fix:** call it on the variable — `name.length()`. It's the same mistake with your own classes: `Player.getName()` instead of `player.getName()`. The class is the blueprint; the object is the thing that has a name.
+**Fix:** call it on the variable — `name.length()`. It's the same mistake with your own classes: `Player.getName()` instead of `player.getName()`. The class is the blueprint; the object is the thing that has a name. Visual Studio's editor flags this one as [type name is not allowed](/posts/cpp-type-name-is-not-allowed/).
 
 ## Cause 7: A Missing template Keyword (Templates Only)
 
@@ -244,6 +246,7 @@ Errors like this come from the difference between *declaring* things and *using*
 
 - [C++ Error Messages Explained](/posts/cpp-error-messages/) — the most common errors and what they mean.
 - [How to Fix Expected ';' Errors](/posts/cpp-expected-semicolon/) — the other syntax error every beginner hits.
+- [How to Fix 'expected an expression'](/posts/cpp-expected-an-expression/) — Visual Studio's wording for this error.
 - [How to Fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/) — when the compiler doesn't know a name.
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — defining functions vs calling them.
 - [How to Pass an Array to a Function](/posts/cpp-pass-array-to-function/) — the right way to hand over an array.

@@ -332,6 +332,10 @@ Another way a program can stop at runtime is `terminate called after throwing an
 | `no matching function for call to` | Wrong argument types/count ([full fix](/posts/cpp-no-matching-function-for-call/)) |
 | `expected ';' before` | Missing semicolon on previous line ([full fix](/posts/cpp-expected-semicolon/)) |
 | `expected primary-expression before` | A type or empty `[]` where a value belongs ([full fix](/posts/cpp-expected-primary-expression/)) |
+| `expected an expression` (Visual Studio) | A missing value after `=`, in `if ()` or a function call ([full fix](/posts/cpp-expected-an-expression/)) |
+| `expected a ')'` (Visual Studio) | A bracket left open, or a missing `&&` ([full fix](/posts/cpp-expected-closing-parenthesis/)) |
+| `expected a declaration` (Visual Studio) | An extra `}`, or code outside a function ([full fix](/posts/cpp-expected-a-declaration/)) |
+| `type name is not allowed` (Visual Studio) | A type where a value belongs, like `Point.x` ([full fix](/posts/cpp-type-name-is-not-allowed/)) |
 | `does not name a type` | A type used before it's declared, or code outside a function ([full fix](/posts/cpp-does-not-name-a-type/)) |
 | `stray '\342' in program` | Curly quotes or dashes pasted into code ([full fix](/posts/cpp-stray-in-program/)) |
 | `no match for 'operator<<'` | Printing a type with no output operator ([full fix](/posts/cpp-no-match-for-operator/)) |
@@ -372,6 +376,10 @@ Another way a program can stop at runtime is `terminate called after throwing an
 - [Fix 'expression must have a constant value'](/posts/cpp-expression-must-have-constant-value/) — array sizes, case labels and std::array.
 - [Fix 'collect2: error: ld returned 1 exit status'](/posts/cpp-ld-returned-1-exit-status/) — reading the linker's real error.
 - [Fix 'terminate called after throwing an instance of'](/posts/cpp-terminate-called-after-throwing/) — uncaught exceptions at runtime.
+- [Fix 'expected an expression'](/posts/cpp-expected-an-expression/) — Visual Studio's missing-value error.
+- [Fix "expected a ')'"](/posts/cpp-expected-closing-parenthesis/) — a bracket left open.
+- [Fix 'expected a declaration'](/posts/cpp-expected-a-declaration/) — an extra brace or code outside a function.
+- [Fix 'type name is not allowed'](/posts/cpp-type-name-is-not-allowed/) — a type where a value belongs.
 
 ---
 
