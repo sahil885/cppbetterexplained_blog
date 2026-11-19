@@ -227,3 +227,5 @@ For other common messages, see [C++ error messages explained](/posts/cpp-error-m
 - [Header Files in C++](/posts/cpp-header-files/) — sharing classes between files.
 - [using namespace std in C++](/posts/cpp-using-namespace-std/) — the missing-`std::` problem in depth.
 - [C++ Classes and Objects](/posts/cpp-classes-and-objects/) — how classes are declared and used.
+- [How to Fix 'expected a declaration'](/posts/cpp-expected-a-declaration/) — Visual Studio's message for code outside a function.
+- [How to Fix 'type name is not allowed'](/posts/cpp-type-name-is-not-allowed/) — a type used where a value belongs.
