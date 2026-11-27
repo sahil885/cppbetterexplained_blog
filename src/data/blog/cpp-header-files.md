@@ -286,6 +286,7 @@ If `A.h` includes `B.h` and `B.h` includes `A.h`, you have a circular dependency
 - [C++ Error Messages Explained](/posts/cpp-error-messages/) — fixing "undefined reference" and "redefinition" errors
 - [using namespace std in C++](/posts/cpp-using-namespace-std/) — what it does and why it's discouraged.
 - [Fix 'was not declared in this scope'](/posts/cpp-not-declared-in-this-scope/) — the six usual causes.
+- [Fix 'expected a file name'](/posts/cpp-expected-a-file-name/) — when the #include line itself is wrong.
 
 ---
 

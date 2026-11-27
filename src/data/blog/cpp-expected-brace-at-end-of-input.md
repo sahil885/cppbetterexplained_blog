@@ -18,7 +18,7 @@ faqSchema:
     answer: "It's the opposite problem: there's one } too many, so the compiler finds a closing brace where it expected a new declaration. Delete the extra }. Clang calls this an extraneous closing brace."
 ---
 
-# How to Fix "expected '}' at end of input" in C++
+# How to Fix "expected ‘}’ at end of input" in C++
 
 **Short answer:** a `{` in your file never got its closing `}`, and the compiler reached the end of the file still waiting for it. The error points at the last line, but the missing brace is earlier, usually at the end of a function, loop or `if` block. The **note** under the error points to the `{` that was never closed.
 
@@ -235,6 +235,8 @@ If the broken header is included **before** `<iostream>`, it's much worse. The u
 4. **Type both braces at once.** When you open a block, type `{` and `}` together, then fill in the middle. Many editors do this for you.
 
 ## The Opposite Problem: One } Too Many
+
+(A missing *opening* brace is different again: Visual Studio's editor reports [`expected a '{'`](/posts/cpp-expected-an-opening-brace/).)
 
 ```cpp
 #include <iostream>

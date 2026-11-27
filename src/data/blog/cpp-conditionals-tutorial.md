@@ -428,5 +428,6 @@ Conditionals let your program make decisions. `if/else` handles true/false branc
 - [Fix 'lvalue required as left operand of assignment'](/posts/cpp-lvalue-required-left-operand/) — the error `=` instead of `==` can cause.
 - [Fix expected '}' at end of input](/posts/cpp-expected-brace-at-end-of-input/) — when an if or else block is missing its closing brace.
 - [Fix 'expected an expression'](/posts/cpp-expected-an-expression/) — what `=>` instead of `>=` does in Visual Studio.
-- [Fix "expected a ')'"](/posts/cpp-expected-closing-parenthesis/) — a condition missing its bracket or its `&&`.
+- [Fix `expected a ')'`](/posts/cpp-expected-closing-parenthesis/) — a condition missing its bracket or its `&&`.
+- [Fix `expected a '('`](/posts/cpp-expected-an-opening-parenthesis/) — `if x > 5` without brackets.
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/) — wrap conditional logic in functions to keep code clean and reusable.

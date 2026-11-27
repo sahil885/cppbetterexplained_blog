@@ -18,7 +18,7 @@ faqSchema:
     answer: "A #define is pasted into the code exactly as written, semicolon included. #define LIMIT 10; turns if (n == LIMIT) into if (n == 10;), and the ; arrives before the ). Remove the semicolon, or better, use constexpr int LIMIT = 10;."
 ---
 
-# How to Fix "expected a ')'" in C++ (Visual Studio)
+# How to Fix "expected a ‘)’" in C++ (Visual Studio)
 
 **Short answer:** a `(` was opened, and before Visual Studio found the matching `)` it ran into something that can't go inside the brackets. Usually the `)` is just missing. If the brackets do match, look for two conditions with no `&&` or `||` between them, or a `#define` that ends in a semicolon.
 

@@ -18,7 +18,7 @@ faqSchema:
     answer: "The compiler only knows a semicolon is missing when it reaches the next token, which is often on the following line. Check the end of the line above the one reported, and fix the first error before the others, because one missing semicolon can trigger several follow-on errors."
 ---
 
-# How to Fix "expected ';'" Errors in C++
+# How to Fix "expected ‘;’" Errors in C++
 
 **Short answer:** the compiler reached a point where a statement should already have ended, and there was no semicolon. Look at the **end of the line above** the error first — that's where the `;` is missing most of the time. In Visual Studio the same error reads `expected a ';'`, and if no semicolon is missing there, you're probably missing a closing `}`.
 
@@ -358,5 +358,5 @@ Syntax errors stop being scary once you understand what the compiler is actually
 - [How to Fix 'expected primary-expression before'](/posts/cpp-expected-primary-expression/) — when a value is missing.
 - [How to Fix stray '\342' in program](/posts/cpp-stray-in-program/) — when pasted code hides odd characters.
 - [How to Fix Expected '}' at End of Input](/posts/cpp-expected-brace-at-end-of-input/) — when a brace is missing instead.
-- [How to Fix "expected a ')'"](/posts/cpp-expected-closing-parenthesis/) — Visual Studio's message for a missing bracket.
+- [How to Fix `expected a ')'`](/posts/cpp-expected-closing-parenthesis/) — Visual Studio's message for a missing bracket.
 - [How to Fix 'expected an expression'](/posts/cpp-expected-an-expression/) — when a value is missing.

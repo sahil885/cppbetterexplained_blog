@@ -235,5 +235,5 @@ For the GCC wording of the same mistakes, see [expected primary-expression befor
 - [C++ Error Messages Explained](/posts/cpp-error-messages/) — the most common errors and what they mean.
 - [How to Fix 'expected primary-expression before'](/posts/cpp-expected-primary-expression/) — the GCC version of this error.
 - [How to Fix Expected ';' Errors](/posts/cpp-expected-semicolon/) — Visual Studio's `expected a ';'` and friends.
-- [How to Fix "expected a ')'"](/posts/cpp-expected-closing-parenthesis/) — when a bracket is left open.
+- [How to Fix `expected a ')'`](/posts/cpp-expected-closing-parenthesis/) — when a bracket is left open.
 - [C++ Conditionals Tutorial](/posts/cpp-conditionals-tutorial/) — if, else and the comparison operators.

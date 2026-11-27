@@ -41,7 +41,7 @@ The message comes in two parts:
 
 Find the version you meant to call, and compare its parameters with what you passed. The mismatch is almost always visible right there.
 
-A side note: GCC only says "no matching function" when there's more than one version to choose from. Call a function that has a single version with the wrong arguments, and you'll get `too few arguments to function` or `could not convert` instead. Same problem, plainer wording.
+A side note: GCC only says "no matching function" when there's more than one version to choose from. Call a function that has a single version with the wrong arguments, and you'll get `too few arguments to function` or `could not convert` instead. Same problem, plainer wording. Visual Studio's editor calls it [too few arguments in function call](/posts/cpp-too-few-arguments-in-function-call/).
 
 ## Cause 1: Wrong Number of Arguments
 
@@ -239,6 +239,7 @@ For other common messages, see [C++ error messages explained](/posts/cpp-error-m
 
 - [C++ Error Messages Explained](/posts/cpp-error-messages/) — the most common errors and what they mean.
 - [Function Overloading in C++](/posts/cpp-function-overloading/) — how C++ picks between versions.
+- [How to Fix 'too few arguments in function call'](/posts/cpp-too-few-arguments-in-function-call/) — the wrong number of arguments.
 - [Constructors and Destructors](/posts/cpp-constructors-destructors/) — writing the constructors you need.
 - [How to Fix 'expected primary-expression before'](/posts/cpp-expected-primary-expression/) — another common function-call mistake.
 - [C++ Vector Tutorial](/posts/cpp-vector-tutorial/) — what a vector can and can't hold.

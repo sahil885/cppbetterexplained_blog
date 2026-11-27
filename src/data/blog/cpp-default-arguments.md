@@ -174,6 +174,7 @@ int main() {
 
 - [C++ Functions Tutorial: How to Write and Use Functions](/posts/cpp-functions-tutorial/)
 - [C++ Function Overloading: Same Name, Different Parameters Explained](/posts/cpp-function-overloading/)
+- [How to Fix 'too few arguments in function call'](/posts/cpp-too-few-arguments-in-function-call/)
 - [C++ Header Files Explained for Beginners](/posts/cpp-header-files/)
 - [C++ Pass by Value vs Pass by Reference](/posts/cpp-pass-by-value-reference/)
 
