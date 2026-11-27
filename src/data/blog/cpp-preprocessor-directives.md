@@ -302,7 +302,7 @@ These are genuinely useful for logging — `__FILE__` and `__LINE__` let an erro
 - [The const Keyword in C++](/posts/cpp-const-keyword/) — the modern replacement for `#define` constants
 - [const vs constexpr in C++](/posts/cpp-const-vs-constexpr/) — compile-time constants done right
 - [Understanding C++ Error Messages](/posts/cpp-error-messages/) — decoding what the compiler tells you
-- [How to Fix "expected a ')'"](/posts/cpp-expected-closing-parenthesis/) — what a semicolon at the end of a `#define` does
+- [How to Fix `expected a ')'`](/posts/cpp-expected-closing-parenthesis/) — what a semicolon at the end of a `#define` does
 - [Breakdown of a Simple C++ Program](/posts/breakdown-simple-cpp-program/) — what `#include <iostream>` is doing there
 
 ---

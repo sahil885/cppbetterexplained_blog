@@ -273,6 +273,7 @@ namespace MyLib {
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — functions and scope
 - [C++ Static Keyword](/posts/cpp-static-keyword/) — static vs anonymous namespaces
 - [using namespace std in C++](/posts/cpp-using-namespace-std/) — what it does and why it's discouraged.
+- [How to Fix `expected a '{'`](/posts/cpp-expected-an-opening-brace/) — a namespace, function or try without its braces.
 
 ---
 

@@ -283,4 +283,6 @@ Without the braces, declaring a variable in one case and jumping over it in anot
 - [C++ Loops Tutorial: for, while, and do-while Explained](/posts/cpp-loops-tutorial/) — the natural next topic after mastering conditionals.
 - [C++ Enum Tutorial: enum and enum class Explained](/posts/cpp-enum-tutorial/) — switch and enums work together beautifully — learn enums here.
 - [C++ Functions Tutorial](/posts/cpp-functions-tutorial/) — organise your switch logic into clean, reusable functions.
+- [How to Fix `expected a ':'`](/posts/cpp-expected-a-colon/) — `case 1;` and `default;` instead of a colon.
+- [How to Fix `expected a '('`](/posts/cpp-expected-an-opening-parenthesis/) — `switch choice` without brackets.
 - [C++ Cheat Sheet: Quick Reference for Syntax, STL, and OOP](/posts/cpp-cheat-sheet/) — a handy reference covering switch syntax alongside all other C++ basics.

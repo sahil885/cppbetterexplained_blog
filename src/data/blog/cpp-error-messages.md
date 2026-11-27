@@ -336,6 +336,11 @@ Another way a program can stop at runtime is `terminate called after throwing an
 | `expected a ')'` (Visual Studio) | A bracket left open, or a missing `&&` ([full fix](/posts/cpp-expected-closing-parenthesis/)) |
 | `expected a declaration` (Visual Studio) | An extra `}`, or code outside a function ([full fix](/posts/cpp-expected-a-declaration/)) |
 | `type name is not allowed` (Visual Studio) | A type where a value belongs, like `Point.x` ([full fix](/posts/cpp-type-name-is-not-allowed/)) |
+| `too few arguments in function call` (Visual Studio) | A call passing fewer values than the function needs ([full fix](/posts/cpp-too-few-arguments-in-function-call/)) |
+| `expected a file name` (Visual Studio) | `#include iostream` without `< >` ([full fix](/posts/cpp-expected-a-file-name/)) |
+| `expected a '('` (Visual Studio) | `if`, `while`, `for` or `switch` without brackets ([full fix](/posts/cpp-expected-an-opening-parenthesis/)) |
+| `expected a '{'` (Visual Studio) | A function, namespace or `try` without its braces ([full fix](/posts/cpp-expected-an-opening-brace/)) |
+| `expected a ':'` (Visual Studio) | `case 1;`, `default;` or `public` without a colon ([full fix](/posts/cpp-expected-a-colon/)) |
 | `does not name a type` | A type used before it's declared, or code outside a function ([full fix](/posts/cpp-does-not-name-a-type/)) |
 | `stray '\342' in program` | Curly quotes or dashes pasted into code ([full fix](/posts/cpp-stray-in-program/)) |
 | `no match for 'operator<<'` | Printing a type with no output operator ([full fix](/posts/cpp-no-match-for-operator/)) |
@@ -377,9 +382,14 @@ Another way a program can stop at runtime is `terminate called after throwing an
 - [Fix 'collect2: error: ld returned 1 exit status'](/posts/cpp-ld-returned-1-exit-status/) — reading the linker's real error.
 - [Fix 'terminate called after throwing an instance of'](/posts/cpp-terminate-called-after-throwing/) — uncaught exceptions at runtime.
 - [Fix 'expected an expression'](/posts/cpp-expected-an-expression/) — Visual Studio's missing-value error.
-- [Fix "expected a ')'"](/posts/cpp-expected-closing-parenthesis/) — a bracket left open.
+- [Fix `expected a ')'`](/posts/cpp-expected-closing-parenthesis/) — a bracket left open.
 - [Fix 'expected a declaration'](/posts/cpp-expected-a-declaration/) — an extra brace or code outside a function.
 - [Fix 'type name is not allowed'](/posts/cpp-type-name-is-not-allowed/) — a type where a value belongs.
+- [Fix 'too few arguments in function call'](/posts/cpp-too-few-arguments-in-function-call/) — the wrong number of arguments.
+- [Fix 'expected a file name'](/posts/cpp-expected-a-file-name/) — a broken #include line.
+- [Fix `expected a '('`](/posts/cpp-expected-an-opening-parenthesis/) — a condition without brackets.
+- [Fix `expected a '{'`](/posts/cpp-expected-an-opening-brace/) — a missing opening brace.
+- [Fix `expected a ':'`](/posts/cpp-expected-a-colon/) — a semicolon where a colon belongs.
 
 ---
 

@@ -147,4 +147,5 @@ Once VS Code is happy, the real learning starts. The **[C++ Better Explained Ebo
 - [How to Fix 'g++ is not recognized'](/posts/cpp-g-plus-plus-not-recognized/) — when the terminal can't find your compiler.
 - [How to Run a .cpp File](/posts/how-to-run-cpp-file/) — compile and run from VS Code or the terminal.
 - [Header Files in C++](/posts/cpp-header-files/) — how #include works.
+- [How to Fix 'expected a file name'](/posts/cpp-expected-a-file-name/) — when the brackets or quotes on #include are wrong.
 - [Online C++ Compilers](/posts/cpp-online-compiler/) — code in your browser with nothing to configure.
